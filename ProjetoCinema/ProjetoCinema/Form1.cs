@@ -19,11 +19,6 @@ namespace ProjetoCinema
             timer1.Start();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime date = DateTime.Now;
@@ -34,6 +29,20 @@ namespace ProjetoCinema
         private void Form1_Load(object sender, EventArgs e)
         {
             current_time_lbl.Font = new Font("Digital-7", 24, FontStyle.Regular);
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if(pnMenu.Width==189 && pnMenu.Height==396)
+            {
+                pnMenu.Width = 40;
+                pnMenu.Height = 396;
+            }
+            else
+            {
+                pnMenu.Width = 189;
+                pnMenu.Height = 396;
+            }
         }
     }
 }

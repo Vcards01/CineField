@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.nextSections_lbl = new System.Windows.Forms.Label();
@@ -36,17 +37,19 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Início = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btn_sessao = new System.Windows.Forms.Button();
-            this.btn_filme = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.current_time_lbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pnMenu = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnFilme = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnVendas = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -56,12 +59,9 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
+            this.panel1.Controls.Add(this.pnMenu);
             this.panel1.Controls.Add(this.nextSections_lbl);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.btn_sessao);
-            this.panel1.Controls.Add(this.btn_filme);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -117,56 +117,6 @@
             this.Início.HeaderText = "Início";
             this.Início.Name = "Início";
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::ProjetoCinema.Properties.Resources.movie_film_border_hi;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(31, 251);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 54);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Ingressos";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btn_sessao
-            // 
-            this.btn_sessao.BackgroundImage = global::ProjetoCinema.Properties.Resources.movie_film_border_hi;
-            this.btn_sessao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_sessao.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sessao.Location = new System.Drawing.Point(31, 176);
-            this.btn_sessao.Name = "btn_sessao";
-            this.btn_sessao.Size = new System.Drawing.Size(150, 54);
-            this.btn_sessao.TabIndex = 6;
-            this.btn_sessao.Text = "Sessões";
-            this.btn_sessao.UseVisualStyleBackColor = true;
-            // 
-            // btn_filme
-            // 
-            this.btn_filme.BackgroundImage = global::ProjetoCinema.Properties.Resources.movie_film_border_hi;
-            this.btn_filme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_filme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_filme.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_filme.Location = new System.Drawing.Point(31, 105);
-            this.btn_filme.Name = "btn_filme";
-            this.btn_filme.Size = new System.Drawing.Size(150, 54);
-            this.btn_filme.TabIndex = 5;
-            this.btn_filme.Text = "Filmes";
-            this.btn_filme.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::ProjetoCinema.Properties.Resources.movie_film_border_hi;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(32, 325);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 54);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Comidas";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -174,10 +124,9 @@
             this.panel2.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.current_time_lbl);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(670, 78);
+            this.panel2.Size = new System.Drawing.Size(664, 70);
             this.panel2.TabIndex = 0;
             // 
             // current_time_lbl
@@ -186,24 +135,113 @@
             this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
             this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
-            this.current_time_lbl.Location = new System.Drawing.Point(422, 25);
+            this.current_time_lbl.Location = new System.Drawing.Point(341, 22);
             this.current_time_lbl.Name = "current_time_lbl";
             this.current_time_lbl.Size = new System.Drawing.Size(85, 41);
             this.current_time_lbl.TabIndex = 1;
             this.current_time_lbl.Text = "Hora";
             // 
-            // label1
+            // pnMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 66);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CINEMA";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pnMenu.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
+            this.pnMenu.Controls.Add(this.button2);
+            this.pnMenu.Controls.Add(this.btnVendas);
+            this.pnMenu.Controls.Add(this.button1);
+            this.pnMenu.Controls.Add(this.btnFilme);
+            this.pnMenu.Controls.Add(this.btnMenu);
+            this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.Size = new System.Drawing.Size(189, 396);
+            this.pnMenu.TabIndex = 10;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.Location = new System.Drawing.Point(4, 4);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(32, 33);
+            this.btnMenu.TabIndex = 8;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnFilme
+            // 
+            this.btnFilme.BackColor = System.Drawing.Color.Transparent;
+            this.btnFilme.FlatAppearance.BorderSize = 0;
+            this.btnFilme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnFilme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnFilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnFilme.ForeColor = System.Drawing.Color.White;
+            this.btnFilme.Image = ((System.Drawing.Image)(resources.GetObject("btnFilme.Image")));
+            this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFilme.Location = new System.Drawing.Point(0, 105);
+            this.btnFilme.Name = "btnFilme";
+            this.btnFilme.Size = new System.Drawing.Size(158, 39);
+            this.btnFilme.TabIndex = 9;
+            this.btnFilme.Text = "Filmes";
+            this.btnFilme.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 170);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 39);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Sessão";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnVendas
+            // 
+            this.btnVendas.BackColor = System.Drawing.Color.Transparent;
+            this.btnVendas.FlatAppearance.BorderSize = 0;
+            this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnVendas.ForeColor = System.Drawing.Color.White;
+            this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
+            this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendas.Location = new System.Drawing.Point(0, 235);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(158, 39);
+            this.btnVendas.TabIndex = 11;
+            this.btnVendas.Text = "Vendas";
+            this.btnVendas.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 300);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 39);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Configurações";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -221,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -229,7 +268,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label current_time_lbl;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label nextSections_lbl;
@@ -237,10 +275,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
         private System.Windows.Forms.DataGridViewTextBoxColumn Início;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btn_sessao;
-        private System.Windows.Forms.Button btn_filme;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel pnMenu;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnFilme;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnVendas;
+        private System.Windows.Forms.Button button1;
     }
 }
 
