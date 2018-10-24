@@ -9,6 +9,6 @@ namespace ProjetoCinema
     class Sala
     {
         private int numeroSala;
-
+        private Dictionary<int, Sessao> Sessões = new Dictionary<int, Sessao>();
     }
 }

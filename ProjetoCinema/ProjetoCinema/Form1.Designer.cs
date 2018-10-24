@@ -75,7 +75,7 @@
             this.nextSections_lbl.BackColor = System.Drawing.Color.Transparent;
             this.nextSections_lbl.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextSections_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.nextSections_lbl.Location = new System.Drawing.Point(285, 86);
+            this.nextSections_lbl.Location = new System.Drawing.Point(283, 90);
             this.nextSections_lbl.Name = "nextSections_lbl";
             this.nextSections_lbl.Size = new System.Drawing.Size(106, 12);
             this.nextSections_lbl.TabIndex = 9;
