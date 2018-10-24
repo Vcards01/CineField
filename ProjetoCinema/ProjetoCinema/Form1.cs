@@ -44,5 +44,11 @@ namespace ProjetoCinema
                 pnMenu.Height = 396;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Configurações config = new Configurações();
+            config.ShowDialog();
+        }
     }
 }
