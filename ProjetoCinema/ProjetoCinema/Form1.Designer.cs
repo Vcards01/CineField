@@ -32,26 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnMenu = new System.Windows.Forms.Panel();
+            this.pnMeio = new System.Windows.Forms.Panel();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnVendas = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btIngresso = new System.Windows.Forms.Button();
             this.btnFilme = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.titleLabel = new System.Windows.Forms.Label();
-            this.current_time_lbl = new System.Windows.Forms.Label();
+            this.pnBaixo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbdata = new System.Windows.Forms.Label();
+            this.lbHora = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnTop.SuspendLayout();
+            this.pnBaixo.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -61,223 +55,154 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.pnMenu);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pnBaixo);
+            this.panel1.Controls.Add(this.pnMeio);
+            this.panel1.Controls.Add(this.pnTop);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 485);
+            this.panel1.Size = new System.Drawing.Size(896, 441);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox1
+            // pnMeio
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnMeio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Location = new System.Drawing.Point(202, 76);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(674, 345);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sessoes";
+            this.pnMeio.BackgroundImage = global::ProjetoCinema.Properties.Resources.logoo;
+            this.pnMeio.Location = new System.Drawing.Point(0, 61);
+            this.pnMeio.Name = "pnMeio";
+            this.pnMeio.Size = new System.Drawing.Size(896, 347);
+            this.pnMeio.TabIndex = 1;
             // 
-            // dataGridView1
+            // pnTop
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.button,
-            this.filme,
-            this.dura,
-            this.cat});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(670, 328);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.pnTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnTop.BackColor = System.Drawing.Color.Transparent;
+            this.pnTop.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnTop.Controls.Add(this.panel3);
+            this.pnTop.Controls.Add(this.button3);
+            this.pnTop.Controls.Add(this.button2);
+            this.pnTop.Controls.Add(this.btIngresso);
+            this.pnTop.Controls.Add(this.btnFilme);
+            this.pnTop.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(896, 61);
+            this.pnTop.TabIndex = 0;
             // 
-            // button
+            // panel3
             // 
-            this.button.HeaderText = "IR";
-            this.button.Name = "button";
-            this.button.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.button.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel3.BackgroundImage = global::ProjetoCinema.Properties.Resources.Loguinho;
+            this.panel3.Location = new System.Drawing.Point(386, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(102, 57);
+            this.panel3.TabIndex = 4;
             // 
-            // filme
+            // button3
             // 
-            this.filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.filme.HeaderText = "Filme";
-            this.filme.Name = "filme";
-            // 
-            // dura
-            // 
-            this.dura.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dura.HeaderText = "Duração";
-            this.dura.Name = "dura";
-            // 
-            // cat
-            // 
-            this.cat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cat.HeaderText = "Categoria";
-            this.cat.Name = "cat";
-            // 
-            // pnMenu
-            // 
-            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnMenu.BackColor = System.Drawing.Color.Black;
-            this.pnMenu.Controls.Add(this.button2);
-            this.pnMenu.Controls.Add(this.btnVendas);
-            this.pnMenu.Controls.Add(this.button1);
-            this.pnMenu.Controls.Add(this.btnFilme);
-            this.pnMenu.Controls.Add(this.btnMenu);
-            this.pnMenu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnMenu.Location = new System.Drawing.Point(3, 76);
-            this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(189, 406);
-            this.pnMenu.TabIndex = 10;
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::ProjetoCinema.Properties.Resources.ADMIcon;
+            this.button3.Location = new System.Drawing.Point(722, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(50, 50);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 320);
+            this.button2.Image = global::ProjetoCinema.Properties.Resources.pipocaIcon;
+            this.button2.Location = new System.Drawing.Point(610, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 39);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Administração";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Size = new System.Drawing.Size(50, 50);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnVendas
+            // btIngresso
             // 
-            this.btnVendas.BackColor = System.Drawing.Color.Transparent;
-            this.btnVendas.FlatAppearance.BorderSize = 0;
-            this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
-            this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(0, 240);
-            this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(158, 39);
-            this.btnVendas.TabIndex = 11;
-            this.btnVendas.Text = "Vendas";
-            this.btnVendas.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 39);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Sessão";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btIngresso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btIngresso.FlatAppearance.BorderSize = 0;
+            this.btIngresso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btIngresso.Image = global::ProjetoCinema.Properties.Resources.IngressoIcon;
+            this.btIngresso.Location = new System.Drawing.Point(236, 5);
+            this.btIngresso.Name = "btIngresso";
+            this.btIngresso.Size = new System.Drawing.Size(50, 50);
+            this.btIngresso.TabIndex = 1;
+            this.btIngresso.UseVisualStyleBackColor = true;
             // 
             // btnFilme
             // 
-            this.btnFilme.BackColor = System.Drawing.Color.Transparent;
+            this.btnFilme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnFilme.FlatAppearance.BorderSize = 0;
-            this.btnFilme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.btnFilme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btnFilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilme.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilme.ForeColor = System.Drawing.Color.White;
-            this.btnFilme.Image = ((System.Drawing.Image)(resources.GetObject("btnFilme.Image")));
-            this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilme.Location = new System.Drawing.Point(0, 86);
+            this.btnFilme.Image = global::ProjetoCinema.Properties.Resources.FilmIcon;
+            this.btnFilme.Location = new System.Drawing.Point(124, 5);
             this.btnFilme.Name = "btnFilme";
-            this.btnFilme.Size = new System.Drawing.Size(158, 39);
-            this.btnFilme.TabIndex = 9;
-            this.btnFilme.Text = "Filmes";
-            this.btnFilme.UseVisualStyleBackColor = false;
+            this.btnFilme.Size = new System.Drawing.Size(50, 50);
+            this.btnFilme.TabIndex = 0;
+            this.btnFilme.UseVisualStyleBackColor = true;
             // 
-            // btnMenu
+            // pnBaixo
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(4, 4);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(32, 33);
-            this.btnMenu.TabIndex = 8;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.titleLabel);
-            this.panel2.Controls.Add(this.current_time_lbl);
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 70);
-            this.panel2.TabIndex = 0;
+            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnBaixo.Controls.Add(this.lbHora);
+            this.pnBaixo.Controls.Add(this.lbdata);
+            this.pnBaixo.Controls.Add(this.label1);
+            this.pnBaixo.Location = new System.Drawing.Point(0, 403);
+            this.pnBaixo.Name = "pnBaixo";
+            this.pnBaixo.Size = new System.Drawing.Size(896, 38);
+            this.pnBaixo.TabIndex = 0;
             // 
-            // titleLabel
+            // label1
             // 
-            this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.titleLabel.Location = new System.Drawing.Point(194, 24);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(308, 44);
-            this.titleLabel.TabIndex = 1;
-            this.titleLabel.Text = "Cine Dênis Pote";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bem Vindo ao CINEFIELD";
             // 
-            // current_time_lbl
+            // lbdata
             // 
-            this.current_time_lbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.current_time_lbl.AutoSize = true;
-            this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
-            this.current_time_lbl.Location = new System.Drawing.Point(753, 29);
-            this.current_time_lbl.Name = "current_time_lbl";
-            this.current_time_lbl.Size = new System.Drawing.Size(85, 41);
-            this.current_time_lbl.TabIndex = 1;
-            this.current_time_lbl.Text = "Hora";
+            this.lbdata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbdata.AutoSize = true;
+            this.lbdata.BackColor = System.Drawing.Color.Transparent;
+            this.lbdata.ForeColor = System.Drawing.Color.Aquamarine;
+            this.lbdata.Location = new System.Drawing.Point(772, 16);
+            this.lbdata.Name = "lbdata";
+            this.lbdata.Size = new System.Drawing.Size(30, 13);
+            this.lbdata.TabIndex = 1;
+            this.lbdata.Text = "Data";
+            // 
+            // lbHora
+            // 
+            this.lbHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHora.AutoSize = true;
+            this.lbHora.BackColor = System.Drawing.Color.Transparent;
+            this.lbHora.ForeColor = System.Drawing.Color.Aquamarine;
+            this.lbHora.Location = new System.Drawing.Point(840, 16);
+            this.lbHora.Name = "lbHora";
+            this.lbHora.Size = new System.Drawing.Size(30, 13);
+            this.lbHora.TabIndex = 2;
+            this.lbHora.Text = "Hora";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 485);
+            this.ClientSize = new System.Drawing.Size(896, 441);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -285,11 +210,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pnMenu.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnTop.ResumeLayout(false);
+            this.pnBaixo.ResumeLayout(false);
+            this.pnBaixo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -297,22 +220,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnTop;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel pnMenu;
-        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnFilme;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnVendas;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewButtonColumn button;
-        private System.Windows.Forms.DataGridViewTextBoxColumn filme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cat;
-        private System.Windows.Forms.Label current_time_lbl;
+        private System.Windows.Forms.Button btIngresso;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnMeio;
+        private System.Windows.Forms.Panel pnBaixo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbHora;
+        private System.Windows.Forms.Label lbdata;
     }
 }
 

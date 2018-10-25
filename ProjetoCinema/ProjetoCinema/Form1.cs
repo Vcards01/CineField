@@ -21,31 +21,16 @@ namespace ProjetoCinema
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            DateTime date = DateTime.Now;
-            date.ToString();
-            this.current_time_lbl.Text = date.ToString();
+            lbdata.Text = DateTime.Now.ToShortDateString();
+            lbHora.Text = DateTime.Now.ToShortTimeString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            titleLabel.Font = new Font("Magneto", 24, FontStyle.Regular);
-            current_time_lbl.Font = new Font("Digital-7", 10, FontStyle.Regular);
+            
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            if(pnMenu.Width==189 && pnMenu.Height==434)
-            {
-                pnMenu.Width = 40;
-                pnMenu.Height = 434;
-            }
-            else
-            {
-                pnMenu.Width = 189;
-                pnMenu.Height = 434;
-            }
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Configurações config = new Configurações();

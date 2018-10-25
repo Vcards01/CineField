@@ -113,6 +113,27 @@
   <ItemGroup>
     <None Include="Resources\movie-film-border-hi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilmIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IngressoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipocaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loguinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
