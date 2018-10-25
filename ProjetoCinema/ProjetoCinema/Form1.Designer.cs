@@ -72,6 +72,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox1.Location = new System.Drawing.Point(202, 76);
@@ -127,6 +130,8 @@
             // 
             // pnMenu
             // 
+            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnMenu.BackColor = System.Drawing.Color.Black;
             this.pnMenu.Controls.Add(this.button2);
             this.pnMenu.Controls.Add(this.btnVendas);
@@ -244,24 +249,25 @@
             // 
             // titleLabel
             // 
+            this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.titleLabel.Location = new System.Drawing.Point(194, 6);
+            this.titleLabel.Location = new System.Drawing.Point(194, 24);
             this.titleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(308, 44);
             this.titleLabel.TabIndex = 1;
             this.titleLabel.Text = "Cine Dênis Pote";
-            this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // current_time_lbl
             // 
+            this.current_time_lbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.current_time_lbl.AutoSize = true;
             this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
             this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
-            this.current_time_lbl.Location = new System.Drawing.Point(742, 12);
+            this.current_time_lbl.Location = new System.Drawing.Point(753, 29);
             this.current_time_lbl.Name = "current_time_lbl";
             this.current_time_lbl.Size = new System.Drawing.Size(85, 41);
             this.current_time_lbl.TabIndex = 1;
