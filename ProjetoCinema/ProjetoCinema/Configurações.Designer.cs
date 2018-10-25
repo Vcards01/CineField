@@ -46,9 +46,8 @@
             this.pnMenu.Controls.Add(this.button1);
             this.pnMenu.Controls.Add(this.btnFilme);
             this.pnMenu.Location = new System.Drawing.Point(2, -2);
-            this.pnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(629, 444);
+            this.pnMenu.Size = new System.Drawing.Size(472, 361);
             this.pnMenu.TabIndex = 11;
             // 
             // button2
@@ -62,10 +61,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(4, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(3, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(255, 48);
+            this.button2.Size = new System.Drawing.Size(191, 39);
             this.button2.TabIndex = 12;
             this.button2.Text = "Configurações";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -81,10 +79,9 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 209);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(0, 170);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 48);
+            this.button1.Size = new System.Drawing.Size(158, 39);
             this.button1.TabIndex = 10;
             this.button1.Text = "Desligar Relógio";
             this.button1.UseVisualStyleBackColor = false;
@@ -99,20 +96,20 @@
             this.btnFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnFilme.ForeColor = System.Drawing.Color.White;
             this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilme.Location = new System.Drawing.Point(0, 138);
-            this.btnFilme.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFilme.Location = new System.Drawing.Point(0, 112);
             this.btnFilme.Name = "btnFilme";
-            this.btnFilme.Size = new System.Drawing.Size(211, 45);
+            this.btnFilme.Size = new System.Drawing.Size(158, 37);
             this.btnFilme.TabIndex = 9;
             this.btnFilme.Text = "Travar Janela";
             this.btnFilme.UseVisualStyleBackColor = false;
             // 
             // Configurações
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 443);
+            this.ClientSize = new System.Drawing.Size(474, 360);
             this.Controls.Add(this.pnMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Configurações";
             this.Text = "Configurações";
             this.pnMenu.ResumeLayout(false);
