@@ -67,7 +67,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 446);
+            this.panel1.Size = new System.Drawing.Size(896, 485);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -75,9 +75,9 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox1.Location = new System.Drawing.Point(202, 76);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(674, 345);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -93,7 +93,7 @@
             this.cat});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(670, 328);
@@ -134,9 +134,9 @@
             this.pnMenu.Controls.Add(this.btnFilme);
             this.pnMenu.Controls.Add(this.btnMenu);
             this.pnMenu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Location = new System.Drawing.Point(3, 76);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(189, 396);
+            this.pnMenu.Size = new System.Drawing.Size(189, 406);
             this.pnMenu.TabIndex = 10;
             // 
             // button2
@@ -150,7 +150,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 300);
+            this.button2.Location = new System.Drawing.Point(0, 335);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 39);
             this.button2.TabIndex = 12;
@@ -170,7 +170,7 @@
             this.btnVendas.ForeColor = System.Drawing.Color.White;
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(0, 235);
+            this.btnVendas.Location = new System.Drawing.Point(0, 240);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Size = new System.Drawing.Size(158, 39);
             this.btnVendas.TabIndex = 11;
@@ -188,7 +188,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 170);
+            this.button1.Location = new System.Drawing.Point(0, 162);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 39);
             this.button1.TabIndex = 10;
@@ -206,7 +206,7 @@
             this.btnFilme.ForeColor = System.Drawing.Color.White;
             this.btnFilme.Image = ((System.Drawing.Image)(resources.GetObject("btnFilme.Image")));
             this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilme.Location = new System.Drawing.Point(0, 105);
+            this.btnFilme.Location = new System.Drawing.Point(0, 86);
             this.btnFilme.Name = "btnFilme";
             this.btnFilme.Size = new System.Drawing.Size(158, 39);
             this.btnFilme.TabIndex = 9;
@@ -271,7 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 446);
+            this.ClientSize = new System.Drawing.Size(896, 485);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
