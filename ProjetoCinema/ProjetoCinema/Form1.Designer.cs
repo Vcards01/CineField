@@ -46,6 +46,7 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.current_time_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -235,6 +236,7 @@
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.titleLabel);
+            this.panel2.Controls.Add(this.current_time_lbl);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -253,6 +255,18 @@
             this.titleLabel.TabIndex = 1;
             this.titleLabel.Text = "Cine Dênis Pote";
             this.titleLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // current_time_lbl
+            // 
+            this.current_time_lbl.AutoSize = true;
+            this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
+            this.current_time_lbl.Location = new System.Drawing.Point(742, 12);
+            this.current_time_lbl.Name = "current_time_lbl";
+            this.current_time_lbl.Size = new System.Drawing.Size(85, 41);
+            this.current_time_lbl.TabIndex = 1;
+            this.current_time_lbl.Text = "Hora";
             // 
             // Form1
             // 
@@ -293,6 +307,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn filme;
         private System.Windows.Forms.DataGridViewTextBoxColumn dura;
         private System.Windows.Forms.DataGridViewTextBoxColumn cat;
+        private System.Windows.Forms.Label current_time_lbl;
     }
 }
 
