@@ -46,34 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InterfaceGrafica\Administração.cs">
+    <Compile Include="Administração.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceGrafica\Administração.Designer.cs">
+    <Compile Include="Administração.Designer.cs">
       <DependentUpon>Administração.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassesDoModelo\Filme.cs" />
-    <Compile Include="InterfaceGrafica\Form1.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceGrafica\Form1.Designer.cs">
+    <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmFilmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmFilmes.Designer.cs">
+      <DependentUpon>FormAdmFilmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGerFilmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerFilmes.Designer.cs">
+      <DependentUpon>FormGerFilmes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClassesDoModelo\Sala.cs" />
     <Compile Include="ClassesDoModelo\Sessao.cs" />
-    <Compile Include="InterfaceGrafica\Sessoes.cs">
+    <Compile Include="Sessoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceGrafica\Sessoes.Designer.cs">
+    <Compile Include="Sessoes.Designer.cs">
       <DependentUpon>Sessoes.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="InterfaceGrafica\Administração.resx">
+    <EmbeddedResource Include="Administração.resx">
       <DependentUpon>Administração.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfaceGrafica\Form1.resx">
+    <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmFilmes.resx">
+      <DependentUpon>FormAdmFilmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerFilmes.resx">
+      <DependentUpon>FormGerFilmes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,7 +103,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="InterfaceGrafica\Sessoes.resx">
+    <EmbeddedResource Include="Sessoes.resx">
       <DependentUpon>Sessoes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -139,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cinza1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\op.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

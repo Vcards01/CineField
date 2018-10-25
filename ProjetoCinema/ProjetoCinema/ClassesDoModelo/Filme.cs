@@ -8,9 +8,10 @@ namespace ProjetoCinema
 {
     class Filme
     {
+        private int id;
         private string nome;
         private string genero;
-        private string dataLancamento;
+        private string duracao;
         private Dictionary<int, Sessao> Sessões = new Dictionary<int, Sessao>();
         
         public string Nome
@@ -39,16 +40,29 @@ namespace ProjetoCinema
             }
         }
 
-        public string DataLancamento
+        public string Duracao
         {
             get
             {
-                return dataLancamento;
+                return duracao;
             }
 
             set
             {
-                dataLancamento = value;
+                duracao = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
     }

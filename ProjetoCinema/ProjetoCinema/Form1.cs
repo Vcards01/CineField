@@ -32,7 +32,7 @@ namespace ProjetoCinema
         private void btnFerramentas_Click(object sender, EventArgs e)
         {
 
-             Administração form = new Administração();
+            Administração form = new Administração();
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
 

@@ -73,6 +73,16 @@ namespace ProjetoCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ADMIcon {
             get {
                 object obj = ResourceManager.GetObject("ADMIcon", resourceCulture);
@@ -176,6 +186,16 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap movietheater_screen_seats_700x3961 {
             get {
                 object obj = ResourceManager.GetObject("movietheater-screen-seats-700x3961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap op {
+            get {
+                object obj = ResourceManager.GetObject("op", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

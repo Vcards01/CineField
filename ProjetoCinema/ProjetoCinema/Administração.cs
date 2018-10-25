@@ -17,14 +17,13 @@ namespace ProjetoCinema
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void btnGerFilme_Click(object sender, EventArgs e)
         {
-
+            FormAdmFilmes form = new FormAdmFilmes();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
         }
     }
 }
