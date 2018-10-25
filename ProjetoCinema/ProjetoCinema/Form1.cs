@@ -29,6 +29,8 @@ namespace ProjetoCinema
         private void Form1_Load(object sender, EventArgs e)
         {
             current_time_lbl.Font = new Font("Digital-7", 24, FontStyle.Regular);
+            titleLabel.Font = new Font("Magneto", 24, FontStyle.Regular);
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -56,6 +58,11 @@ namespace ProjetoCinema
             Sessoes ses = new Sessoes();
             ses.ShowDialog();
                
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
