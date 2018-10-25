@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gpSessões = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button = new System.Windows.Forms.DataGridViewButtonColumn();
             this.filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.current_time_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.gpSessões.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,47 +61,42 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.gpSessões);
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.pnMenu);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 510);
+            this.panel1.Size = new System.Drawing.Size(896, 446);
             this.panel1.TabIndex = 0;
             // 
-            // gpSessões
+            // groupBox1
             // 
-            this.gpSessões.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpSessões.Controls.Add(this.dataGridView1);
-            this.gpSessões.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gpSessões.Location = new System.Drawing.Point(202, 108);
-            this.gpSessões.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gpSessões.Name = "gpSessões";
-            this.gpSessões.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gpSessões.Size = new System.Drawing.Size(674, 345);
-            this.gpSessões.TabIndex = 11;
-            this.gpSessões.TabStop = false;
-            this.gpSessões.Text = "Sessoes";
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Location = new System.Drawing.Point(202, 76);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(674, 345);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sessoes";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.button,
             this.filme,
             this.dura,
             this.cat});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 13);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 15);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(669, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(670, 328);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -132,8 +127,6 @@
             // 
             // pnMenu
             // 
-            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnMenu.BackColor = System.Drawing.Color.Black;
             this.pnMenu.Controls.Add(this.button2);
             this.pnMenu.Controls.Add(this.btnVendas);
@@ -141,9 +134,9 @@
             this.pnMenu.Controls.Add(this.btnFilme);
             this.pnMenu.Controls.Add(this.btnMenu);
             this.pnMenu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnMenu.Location = new System.Drawing.Point(0, 73);
+            this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(189, 434);
+            this.pnMenu.Size = new System.Drawing.Size(189, 396);
             this.pnMenu.TabIndex = 10;
             // 
             // button2
@@ -157,7 +150,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 377);
+            this.button2.Location = new System.Drawing.Point(0, 300);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 39);
             this.button2.TabIndex = 12;
@@ -177,7 +170,7 @@
             this.btnVendas.ForeColor = System.Drawing.Color.White;
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(3, 289);
+            this.btnVendas.Location = new System.Drawing.Point(0, 235);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Size = new System.Drawing.Size(158, 39);
             this.btnVendas.TabIndex = 11;
@@ -195,7 +188,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 193);
+            this.button1.Location = new System.Drawing.Point(0, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 39);
             this.button1.TabIndex = 10;
@@ -253,23 +246,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(21, 10);
+            this.label1.Location = new System.Drawing.Point(194, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 47);
+            this.label1.Size = new System.Drawing.Size(375, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cine Rodrigo Otario";
             // 
             // current_time_lbl
             // 
-            this.current_time_lbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.current_time_lbl.AutoSize = true;
             this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
             this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
-            this.current_time_lbl.Location = new System.Drawing.Point(578, 14);
+            this.current_time_lbl.Location = new System.Drawing.Point(742, 12);
             this.current_time_lbl.Name = "current_time_lbl";
             this.current_time_lbl.Size = new System.Drawing.Size(85, 41);
             this.current_time_lbl.TabIndex = 1;
@@ -279,14 +271,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 510);
+            this.ClientSize = new System.Drawing.Size(896, 446);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.gpSessões.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -308,7 +301,7 @@
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gpSessões;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewButtonColumn button;
         private System.Windows.Forms.DataGridViewTextBoxColumn filme;
