@@ -50,5 +50,12 @@ namespace ProjetoCinema
             Configurações config = new Configurações();
             config.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Sessoes ses = new Sessoes();
+            ses.ShowDialog();
+               
+        }
     }
 }

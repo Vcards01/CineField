@@ -33,23 +33,25 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.current_time_lbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnFilme = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.nextSections_lbl = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Início = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.current_time_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnMenu.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -58,31 +60,70 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.pnMenu);
-            this.panel1.Controls.Add(this.nextSections_lbl);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 484);
+            this.panel1.Size = new System.Drawing.Size(1194, 549);
             this.panel1.TabIndex = 0;
             // 
             // pnMenu
             // 
-            this.pnMenu.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
+            this.pnMenu.BackColor = System.Drawing.Color.Black;
             this.pnMenu.Controls.Add(this.button2);
             this.pnMenu.Controls.Add(this.btnVendas);
             this.pnMenu.Controls.Add(this.button1);
             this.pnMenu.Controls.Add(this.btnFilme);
             this.pnMenu.Controls.Add(this.btnMenu);
+            this.pnMenu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnMenu.Name = "pnMenu";
             this.pnMenu.Size = new System.Drawing.Size(252, 487);
             this.pnMenu.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.current_time_lbl);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1194, 86);
+            this.panel2.TabIndex = 0;
+            // 
+            // current_time_lbl
+            // 
+            this.current_time_lbl.AutoSize = true;
+            this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
+            this.current_time_lbl.Location = new System.Drawing.Point(989, 15);
+            this.current_time_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.current_time_lbl.Name = "current_time_lbl";
+            this.current_time_lbl.Size = new System.Drawing.Size(107, 51);
+            this.current_time_lbl.TabIndex = 1;
+            this.current_time_lbl.Text = "Hora";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Magneto", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(258, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(546, 58);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cine Rodrigo Otario";
             // 
             // button2
             // 
@@ -96,7 +137,7 @@
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 369);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(248, 48);
             this.button2.TabIndex = 12;
@@ -117,7 +158,7 @@
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendas.Location = new System.Drawing.Point(0, 289);
-            this.btnVendas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVendas.Margin = new System.Windows.Forms.Padding(4);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Size = new System.Drawing.Size(211, 48);
             this.btnVendas.TabIndex = 11;
@@ -136,7 +177,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 209);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 48);
             this.button1.TabIndex = 10;
@@ -155,7 +196,7 @@
             this.btnFilme.Image = ((System.Drawing.Image)(resources.GetObject("btnFilme.Image")));
             this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFilme.Location = new System.Drawing.Point(0, 129);
-            this.btnFilme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFilme.Margin = new System.Windows.Forms.Padding(4);
             this.btnFilme.Name = "btnFilme";
             this.btnFilme.Size = new System.Drawing.Size(211, 48);
             this.btnFilme.TabIndex = 9;
@@ -172,108 +213,82 @@
             this.btnMenu.ForeColor = System.Drawing.Color.Transparent;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.Location = new System.Drawing.Point(5, 5);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(43, 41);
             this.btnMenu.TabIndex = 8;
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // nextSections_lbl
+            // groupBox1
             // 
-            this.nextSections_lbl.AutoSize = true;
-            this.nextSections_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.nextSections_lbl.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextSections_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.nextSections_lbl.Location = new System.Drawing.Point(377, 111);
-            this.nextSections_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nextSections_lbl.Name = "nextSections_lbl";
-            this.nextSections_lbl.Size = new System.Drawing.Size(135, 16);
-            this.nextSections_lbl.TabIndex = 9;
-            this.nextSections_lbl.Text = "PRÓXIMAS SESSÕES";
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Location = new System.Drawing.Point(269, 93);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(898, 425);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sessoes";
             // 
-            // panel3
+            // cat
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(380, 129);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(469, 336);
-            this.panel3.TabIndex = 8;
+            this.cat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cat.HeaderText = "Categoria";
+            this.cat.Name = "cat";
+            // 
+            // dura
+            // 
+            this.dura.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dura.HeaderText = "Duração";
+            this.dura.Name = "dura";
+            // 
+            // filme
+            // 
+            this.filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.filme.HeaderText = "Filme";
+            this.filme.Name = "filme";
+            // 
+            // button
+            // 
+            this.button.HeaderText = "IR";
+            this.button.Name = "button";
+            this.button.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.button.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Filme,
-            this.Início});
+            this.button,
+            this.filme,
+            this.dura,
+            this.cat});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 18);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(469, 336);
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(892, 404);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Filme
-            // 
-            this.Filme.HeaderText = "Filme";
-            this.Filme.Name = "Filme";
-            this.Filme.Width = 250;
-            // 
-            // Início
-            // 
-            this.Início.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Início.HeaderText = "Início";
-            this.Início.Name = "Início";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackgroundImage = global::ProjetoCinema.Properties.Resources.movietheater_screen_seats_700x3961;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.current_time_lbl);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(883, 86);
-            this.panel2.TabIndex = 0;
-            // 
-            // current_time_lbl
-            // 
-            this.current_time_lbl.AutoSize = true;
-            this.current_time_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.current_time_lbl.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.current_time_lbl.ForeColor = System.Drawing.Color.Snow;
-            this.current_time_lbl.Location = new System.Drawing.Point(455, 27);
-            this.current_time_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.current_time_lbl.Name = "current_time_lbl";
-            this.current_time_lbl.Size = new System.Drawing.Size(107, 51);
-            this.current_time_lbl.TabIndex = 1;
-            this.current_time_lbl.Text = "Hora";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 484);
+            this.ClientSize = new System.Drawing.Size(1194, 549);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(901, 554);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.pnMenu.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,17 +299,19 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label current_time_lbl;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label nextSections_lbl;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Início;
         private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnFilme;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewButtonColumn button;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cat;
     }
 }
 
