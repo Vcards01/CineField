@@ -33,15 +33,15 @@ namespace ProjetoCinema
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if(pnMenu.Width==189 && pnMenu.Height==396)
+            if(pnMenu.Width==189 && pnMenu.Height==434)
             {
                 pnMenu.Width = 40;
-                pnMenu.Height = 396;
+                pnMenu.Height = 434;
             }
             else
             {
                 pnMenu.Width = 189;
-                pnMenu.Height = 396;
+                pnMenu.Height = 434;
             }
         }
 
