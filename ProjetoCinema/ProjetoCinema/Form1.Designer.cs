@@ -146,15 +146,15 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 335);
+            this.button2.Location = new System.Drawing.Point(0, 320);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 39);
             this.button2.TabIndex = 12;
-            this.button2.Text = "Configurações";
+            this.button2.Text = "Administração";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -166,7 +166,7 @@
             this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnVendas.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,7 +184,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +202,7 @@
             this.btnFilme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.btnFilme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btnFilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnFilme.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilme.ForeColor = System.Drawing.Color.White;
             this.btnFilme.Image = ((System.Drawing.Image)(resources.GetObject("btnFilme.Image")));
             this.btnFilme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,7 +234,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.titleLabel);
             this.panel2.Controls.Add(this.current_time_lbl);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
