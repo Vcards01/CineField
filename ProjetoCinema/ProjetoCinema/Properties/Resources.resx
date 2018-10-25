@@ -139,8 +139,14 @@
   <data name="Loguinho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loguinho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cinza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipocaIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipocaIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +154,7 @@
   <data name="FilmIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilmIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinza1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinza1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

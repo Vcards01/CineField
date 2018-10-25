@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoCinema
 {
-    public partial class Configurações : Form
+    public partial class Administração : Form
     {
-        public Configurações()
+        public Administração()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace ProjetoCinema
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnGerFilme_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

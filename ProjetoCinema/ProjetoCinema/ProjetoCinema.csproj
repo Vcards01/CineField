@@ -46,33 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configurações.cs">
+    <Compile Include="InterfaceGrafica\Administração.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configurações.Designer.cs">
-      <DependentUpon>Configurações.cs</DependentUpon>
+    <Compile Include="InterfaceGrafica\Administração.Designer.cs">
+      <DependentUpon>Administração.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filme.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="ClassesDoModelo\Filme.cs" />
+    <Compile Include="InterfaceGrafica\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="InterfaceGrafica\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sala.cs" />
-    <Compile Include="Sessao.cs" />
-    <Compile Include="Sessoes.cs">
+    <Compile Include="ClassesDoModelo\Sala.cs" />
+    <Compile Include="ClassesDoModelo\Sessao.cs" />
+    <Compile Include="InterfaceGrafica\Sessoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sessoes.Designer.cs">
+    <Compile Include="InterfaceGrafica\Sessoes.Designer.cs">
       <DependentUpon>Sessoes.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Configurações.resx">
-      <DependentUpon>Configurações.cs</DependentUpon>
+    <EmbeddedResource Include="InterfaceGrafica\Administração.resx">
+      <DependentUpon>Administração.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="InterfaceGrafica\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,7 +85,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Sessoes.resx">
+    <EmbeddedResource Include="InterfaceGrafica\Sessoes.resx">
       <DependentUpon>Sessoes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -133,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinza1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

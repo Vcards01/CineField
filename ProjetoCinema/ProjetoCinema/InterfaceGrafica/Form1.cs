@@ -15,7 +15,6 @@ namespace ProjetoCinema
         public Form1()
         {
             InitializeComponent();
-
             timer1.Start();
         }
 
@@ -29,23 +28,13 @@ namespace ProjetoCinema
         {
             
         }
-
         
-        private void button2_Click(object sender, EventArgs e)
+        private void btnFerramentas_Click(object sender, EventArgs e)
         {
-            Configurações config = new Configurações();
-            config.ShowDialog();
-        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            Sessoes ses = new Sessoes();
-            ses.ShowDialog();
-               
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+             Administração form = new Administração();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
 
         }
     }
