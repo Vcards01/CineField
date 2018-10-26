@@ -46,7 +46,57 @@ namespace ProjetoCinema
 
         private void btIngresso_Click(object sender, EventArgs e)
         {
+            FormIngressos form = new FormIngressos();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
 
+        private void btnFilme_MouseEnter(object sender, EventArgs e)
+        {
+            btnFilme.FlatAppearance.BorderSize = 1;
+            btnFilme.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btnFilme_MouseLeave(object sender, EventArgs e)
+        {
+            btnFilme.FlatAppearance.BorderSize = 0;
+            btnFilme.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btIngresso_MouseEnter(object sender, EventArgs e)
+        {
+            btIngresso.FlatAppearance.BorderSize = 1;
+            btIngresso.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btIngresso_MouseLeave(object sender, EventArgs e)
+        {
+            btIngresso.FlatAppearance.BorderSize = 0;
+            btIngresso.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btnAlimentação_MouseEnter(object sender, EventArgs e)
+        {
+            btnAlimentação.FlatAppearance.BorderSize = 1;
+            btnAlimentação.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btnAlimentação_MouseLeave(object sender, EventArgs e)
+        {
+            btnAlimentação.FlatAppearance.BorderSize = 0;
+            btnAlimentação.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btnFerramentas_MouseEnter(object sender, EventArgs e)
+        {
+            btnFerramentas.FlatAppearance.BorderSize = 1;
+            btnFerramentas.FlatAppearance.BorderColor = Color.DarkOrange;
+        }
+
+        private void btnFerramentas_MouseLeave(object sender, EventArgs e)
+        {
+            btnFerramentas.FlatAppearance.BorderSize = 0;
+            btnFerramentas.FlatAppearance.BorderColor = Color.DarkOrange;
         }
     }
 }

@@ -93,6 +93,16 @@ namespace ProjetoCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cinema_silhueta_assento_318_41143 {
+            get {
+                object obj = ResourceManager.GetObject("cinema-silhueta-assento_318-41143", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cinza {
             get {
                 object obj = ResourceManager.GetObject("Cinza", resourceCulture);

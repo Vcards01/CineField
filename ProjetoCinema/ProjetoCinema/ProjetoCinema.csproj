@@ -89,6 +89,18 @@
     <Compile Include="FormGerSalas.Designer.cs">
       <DependentUpon>FormGerSalas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIngressos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngressos.Designer.cs">
+      <DependentUpon>FormIngressos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReserva.Designer.cs">
+      <DependentUpon>FormReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClassesDoModelo\Sala.cs" />
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerSalas.resx">
       <DependentUpon>FormGerSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngressos.resx">
+      <DependentUpon>FormIngressos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReserva.resx">
+      <DependentUpon>FormReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-silhueta-assento_318-41143.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
