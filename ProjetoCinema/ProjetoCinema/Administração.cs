@@ -25,5 +25,12 @@ namespace ProjetoCinema
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
+
+        private void btnGerSala_Click(object sender, EventArgs e)
+        {
+            FormAdmSalas form = new FormAdmSalas();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
     }
 }

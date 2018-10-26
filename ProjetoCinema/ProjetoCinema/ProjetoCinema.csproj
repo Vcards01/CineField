@@ -65,11 +65,23 @@
     <Compile Include="FormAdmFilmes.Designer.cs">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdmSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmSalas.Designer.cs">
+      <DependentUpon>FormAdmSalas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGerFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGerFilmes.Designer.cs">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGerSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerSalas.Designer.cs">
+      <DependentUpon>FormGerSalas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,8 +102,14 @@
     <EmbeddedResource Include="FormAdmFilmes.resx">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmSalas.resx">
+      <DependentUpon>FormAdmSalas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGerFilmes.resx">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerSalas.resx">
+      <DependentUpon>FormGerSalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

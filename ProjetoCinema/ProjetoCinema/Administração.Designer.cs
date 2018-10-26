@@ -127,6 +127,7 @@
             this.btnGerSala.TabIndex = 4;
             this.btnGerSala.Text = "Gerenciar Salas";
             this.btnGerSala.UseVisualStyleBackColor = false;
+            this.btnGerSala.Click += new System.EventHandler(this.btnGerSala_Click);
             // 
             // btnGerFilme
             // 
