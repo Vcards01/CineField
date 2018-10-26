@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.lbHora = new System.Windows.Forms.Label();
             this.lbdata = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.btnAlimentação = new System.Windows.Forms.Button();
             this.btIngresso = new System.Windows.Forms.Button();
             this.btnFilme = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.pnBaixo.SuspendLayout();
             this.pnTop.SuspendLayout();
@@ -121,6 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnMeio.BackgroundImage = global::ProjetoCinema.Properties.Resources.logoo;
+            this.pnMeio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnMeio.Location = new System.Drawing.Point(0, 61);
             this.pnMeio.Name = "pnMeio";
             this.pnMeio.Size = new System.Drawing.Size(896, 347);

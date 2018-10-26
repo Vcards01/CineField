@@ -16,5 +16,11 @@ namespace ProjetoCinema
         {
             InitializeComponent();
         }
+
+        private void btn_E1_Click(object sender, EventArgs e)
+        {
+            btn_E1.Image = Image.FromFile("sarmchair(3).png");
+
+        }
     }
 }
