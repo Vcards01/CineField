@@ -71,6 +71,12 @@
     <Compile Include="FormAdmSalas.Designer.cs">
       <DependentUpon>FormAdmSalas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEmCartaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmCartaz.Designer.cs">
+      <DependentUpon>FormEmCartaz.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGerFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmSalas.resx">
       <DependentUpon>FormAdmSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmCartaz.resx">
+      <DependentUpon>FormEmCartaz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerFilmes.resx">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>

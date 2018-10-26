@@ -37,5 +37,16 @@ namespace ProjetoCinema
             form.ShowDialog(this);
 
         }
+
+        private void btnFilme_Click(object sender, EventArgs e)
+        {
+            FormEmCartaz filmes = new FormEmCartaz();
+            filmes.ShowDialog();
+        }
+
+        private void btIngresso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
