@@ -56,6 +56,7 @@
             this.btnGerFuncionarios.Text = "Gerenciar Funcionarios";
             this.btnGerFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGerFuncionarios.UseVisualStyleBackColor = false;
+            this.btnGerFuncionarios.Click += new System.EventHandler(this.btnGerFuncionarios_Click);
             // 
             // pnOpções
             // 
@@ -80,6 +81,7 @@
             this.btnGerLoja.TabIndex = 5;
             this.btnGerLoja.Text = "Gerenciar Loja";
             this.btnGerLoja.UseVisualStyleBackColor = false;
+            this.btnGerLoja.Click += new System.EventHandler(this.btnGerLoja_Click);
             // 
             // pnAdministração
             // 

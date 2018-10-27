@@ -10,40 +10,42 @@ using System.Windows.Forms;
 
 namespace ProjetoCinema
 {
-    public partial class FormGerFilmes : Form
+    public partial class FormGerFuncionario : Form
     {
-        private bool salvar=true;
-        private bool editavel = false;
-
-        public FormGerFilmes()
+        private bool salvar = true;
+        private bool editavel;
+        public FormGerFuncionario()
         {
             InitializeComponent();
         }
-        public FormGerFilmes(bool editavel)
+
+        public FormGerFuncionario(bool editavel)
         {
             salvar = false;
             this.editavel = editavel;
             InitializeComponent();
-            if(editavel==false)
+            if (editavel == false)
             {
-                txtTitulo.Enabled = false;
-                txtCodigo.Enabled = false;
-                dtpHorario.Enabled = false;
-                cbGenero.Enabled = false;
+                txtNome.Enabled = false;
+                txtIdade.Enabled = false;
+                txtCPF.Enabled = false;
+                rbFeminino.Enabled = false;
+                rbMasculino.Enabled = false;
+                rbOutro.Enabled = false;
             }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if(salvar)
+            if (salvar)
             {
                 Dispose();
             }
-            if(editavel)
+            if (editavel)
             {
                 Dispose();
             }
-            if(!salvar&&!editavel)
+            if (!salvar && !editavel)
             {
                 Dispose();
             }
