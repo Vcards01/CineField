@@ -13,6 +13,19 @@ namespace ProjetoCinema
         private int idVenda;
         private List<Item> itens = new List<Item>();
 
+        public int IdVenda
+        {
+            get
+            {
+                return idVenda;
+            }
+
+            set
+            {
+                idVenda = value;
+            }
+        }
+
         public double ValorTotal()
         {
             for(int i=0;i<itens.Count;i++)

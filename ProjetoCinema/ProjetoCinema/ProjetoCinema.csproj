@@ -68,6 +68,18 @@
     <Compile Include="FormAdmFilmes.Designer.cs">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmFuncionario.Designer.cs">
+      <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmLoja.Designer.cs">
+      <DependentUpon>FormAdmLoja.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdmSalas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,18 @@
     </Compile>
     <Compile Include="FormGerFilmes.Designer.cs">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGerFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerFuncionario.Designer.cs">
+      <DependentUpon>FormGerFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGerLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerLoja.Designer.cs">
+      <DependentUpon>FormGerLoja.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGerSalas.cs">
       <SubType>Form</SubType>
@@ -133,6 +157,12 @@
     <EmbeddedResource Include="FormAdmFilmes.resx">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmFuncionario.resx">
+      <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmLoja.resx">
+      <DependentUpon>FormAdmLoja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdmSalas.resx">
       <DependentUpon>FormAdmSalas.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerFilmes.resx">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerFuncionario.resx">
+      <DependentUpon>FormGerFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerLoja.resx">
+      <DependentUpon>FormGerLoja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerSalas.resx">
       <DependentUpon>FormGerSalas.cs</DependentUpon>
