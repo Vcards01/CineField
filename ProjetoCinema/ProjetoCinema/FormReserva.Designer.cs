@@ -46,8 +46,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pnBaixo = new System.Windows.Forms.Panel();
-            this.btn_confirm = new System.Windows.Forms.Button();
             this.btn_B4 = new System.Windows.Forms.Button();
             this.btn_D4 = new System.Windows.Forms.Button();
             this.btn_C4 = new System.Windows.Forms.Button();
@@ -78,6 +76,8 @@
             this.btn_B2 = new System.Windows.Forms.Button();
             this.btn_A1 = new System.Windows.Forms.Button();
             this.btn_E1 = new System.Windows.Forms.Button();
+            this.pnBaixo = new System.Windows.Forms.Panel();
+            this.btn_confirm = new System.Windows.Forms.Button();
             this.pnTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnMeio.SuspendLayout();
@@ -301,6 +301,457 @@
             this.label13.TabIndex = 44;
             this.label13.Text = "1";
             // 
+            // btn_B4
+            // 
+            this.btn_B4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B4.BackgroundImage")));
+            this.btn_B4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B4.FlatAppearance.BorderSize = 0;
+            this.btn_B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B4.Location = new System.Drawing.Point(331, 220);
+            this.btn_B4.Name = "btn_B4";
+            this.btn_B4.Size = new System.Drawing.Size(48, 45);
+            this.btn_B4.TabIndex = 31;
+            this.btn_B4.UseVisualStyleBackColor = false;
+            this.btn_B4.Click += new System.EventHandler(this.btn_B4_Click);
+            // 
+            // btn_D4
+            // 
+            this.btn_D4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D4.BackgroundImage")));
+            this.btn_D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D4.FlatAppearance.BorderSize = 0;
+            this.btn_D4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D4.Location = new System.Drawing.Point(331, 95);
+            this.btn_D4.Name = "btn_D4";
+            this.btn_D4.Size = new System.Drawing.Size(48, 45);
+            this.btn_D4.TabIndex = 30;
+            this.btn_D4.UseVisualStyleBackColor = false;
+            this.btn_D4.Click += new System.EventHandler(this.btn_D4_Click);
+            // 
+            // btn_C4
+            // 
+            this.btn_C4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C4.BackgroundImage")));
+            this.btn_C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C4.FlatAppearance.BorderSize = 0;
+            this.btn_C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C4.Location = new System.Drawing.Point(331, 157);
+            this.btn_C4.Name = "btn_C4";
+            this.btn_C4.Size = new System.Drawing.Size(48, 45);
+            this.btn_C4.TabIndex = 29;
+            this.btn_C4.UseVisualStyleBackColor = false;
+            this.btn_C4.Click += new System.EventHandler(this.btn_C4_Click);
+            // 
+            // btn_E4
+            // 
+            this.btn_E4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E4.BackgroundImage")));
+            this.btn_E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E4.FlatAppearance.BorderSize = 0;
+            this.btn_E4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E4.Location = new System.Drawing.Point(331, 37);
+            this.btn_E4.Name = "btn_E4";
+            this.btn_E4.Size = new System.Drawing.Size(48, 45);
+            this.btn_E4.TabIndex = 28;
+            this.btn_E4.UseVisualStyleBackColor = false;
+            this.btn_E4.Click += new System.EventHandler(this.btn_E4_Click);
+            // 
+            // btn_E3
+            // 
+            this.btn_E3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E3.BackgroundImage")));
+            this.btn_E3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E3.FlatAppearance.BorderSize = 0;
+            this.btn_E3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E3.Location = new System.Drawing.Point(165, 37);
+            this.btn_E3.Name = "btn_E3";
+            this.btn_E3.Size = new System.Drawing.Size(48, 45);
+            this.btn_E3.TabIndex = 27;
+            this.btn_E3.UseVisualStyleBackColor = false;
+            this.btn_E3.Click += new System.EventHandler(this.btn_E3_Click);
+            // 
+            // btn_B3
+            // 
+            this.btn_B3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B3.BackgroundImage")));
+            this.btn_B3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B3.FlatAppearance.BorderSize = 0;
+            this.btn_B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B3.Location = new System.Drawing.Point(165, 220);
+            this.btn_B3.Name = "btn_B3";
+            this.btn_B3.Size = new System.Drawing.Size(48, 45);
+            this.btn_B3.TabIndex = 26;
+            this.btn_B3.UseVisualStyleBackColor = false;
+            this.btn_B3.Click += new System.EventHandler(this.btn_B3_Click);
+            // 
+            // btn_C3
+            // 
+            this.btn_C3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C3.BackgroundImage")));
+            this.btn_C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C3.FlatAppearance.BorderSize = 0;
+            this.btn_C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C3.Location = new System.Drawing.Point(165, 157);
+            this.btn_C3.Name = "btn_C3";
+            this.btn_C3.Size = new System.Drawing.Size(48, 45);
+            this.btn_C3.TabIndex = 25;
+            this.btn_C3.UseVisualStyleBackColor = false;
+            this.btn_C3.Click += new System.EventHandler(this.btn_C3_Click);
+            // 
+            // btn_D3
+            // 
+            this.btn_D3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D3.BackgroundImage")));
+            this.btn_D3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D3.FlatAppearance.BorderSize = 0;
+            this.btn_D3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D3.Location = new System.Drawing.Point(165, 95);
+            this.btn_D3.Name = "btn_D3";
+            this.btn_D3.Size = new System.Drawing.Size(48, 45);
+            this.btn_D3.TabIndex = 24;
+            this.btn_D3.UseVisualStyleBackColor = false;
+            this.btn_D3.Click += new System.EventHandler(this.btn_D3_Click);
+            // 
+            // btn_A4
+            // 
+            this.btn_A4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A4.BackgroundImage")));
+            this.btn_A4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A4.FlatAppearance.BorderSize = 0;
+            this.btn_A4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A4.Location = new System.Drawing.Point(331, 282);
+            this.btn_A4.Name = "btn_A4";
+            this.btn_A4.Size = new System.Drawing.Size(48, 45);
+            this.btn_A4.TabIndex = 23;
+            this.btn_A4.UseVisualStyleBackColor = false;
+            this.btn_A4.Click += new System.EventHandler(this.btn_A4_Click);
+            // 
+            // btn_A3
+            // 
+            this.btn_A3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A3.BackgroundImage")));
+            this.btn_A3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A3.FlatAppearance.BorderSize = 0;
+            this.btn_A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A3.Location = new System.Drawing.Point(165, 282);
+            this.btn_A3.Name = "btn_A3";
+            this.btn_A3.Size = new System.Drawing.Size(48, 45);
+            this.btn_A3.TabIndex = 21;
+            this.btn_A3.UseVisualStyleBackColor = false;
+            this.btn_A3.Click += new System.EventHandler(this.btn_A3_Click);
+            // 
+            // btn_A6
+            // 
+            this.btn_A6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A6.BackgroundImage")));
+            this.btn_A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A6.FlatAppearance.BorderSize = 0;
+            this.btn_A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A6.Location = new System.Drawing.Point(439, 282);
+            this.btn_A6.Name = "btn_A6";
+            this.btn_A6.Size = new System.Drawing.Size(48, 45);
+            this.btn_A6.TabIndex = 19;
+            this.btn_A6.UseVisualStyleBackColor = false;
+            this.btn_A6.Click += new System.EventHandler(this.btn_A6_Click);
+            // 
+            // btn_E6
+            // 
+            this.btn_E6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E6.BackgroundImage")));
+            this.btn_E6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E6.FlatAppearance.BorderSize = 0;
+            this.btn_E6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E6.Location = new System.Drawing.Point(439, 37);
+            this.btn_E6.Name = "btn_E6";
+            this.btn_E6.Size = new System.Drawing.Size(48, 45);
+            this.btn_E6.TabIndex = 18;
+            this.btn_E6.UseVisualStyleBackColor = false;
+            this.btn_E6.Click += new System.EventHandler(this.btn_E6_Click);
+            // 
+            // btn_D5
+            // 
+            this.btn_D5.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D5.BackgroundImage")));
+            this.btn_D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D5.FlatAppearance.BorderSize = 0;
+            this.btn_D5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_D5.Location = new System.Drawing.Point(385, 95);
+            this.btn_D5.Name = "btn_D5";
+            this.btn_D5.Size = new System.Drawing.Size(48, 45);
+            this.btn_D5.TabIndex = 17;
+            this.btn_D5.UseVisualStyleBackColor = false;
+            this.btn_D5.Click += new System.EventHandler(this.btn_D5_Click);
+            // 
+            // btn_D6
+            // 
+            this.btn_D6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D6.BackgroundImage")));
+            this.btn_D6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D6.FlatAppearance.BorderSize = 0;
+            this.btn_D6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D6.Location = new System.Drawing.Point(439, 95);
+            this.btn_D6.Name = "btn_D6";
+            this.btn_D6.Size = new System.Drawing.Size(48, 45);
+            this.btn_D6.TabIndex = 16;
+            this.btn_D6.UseVisualStyleBackColor = false;
+            this.btn_D6.Click += new System.EventHandler(this.btn_D6_Click);
+            // 
+            // btn_C5
+            // 
+            this.btn_C5.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C5.BackgroundImage")));
+            this.btn_C5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C5.FlatAppearance.BorderSize = 0;
+            this.btn_C5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C5.Location = new System.Drawing.Point(385, 159);
+            this.btn_C5.Name = "btn_C5";
+            this.btn_C5.Size = new System.Drawing.Size(48, 45);
+            this.btn_C5.TabIndex = 15;
+            this.btn_C5.UseVisualStyleBackColor = false;
+            this.btn_C5.Click += new System.EventHandler(this.btn_C5_Click);
+            // 
+            // btn_C6
+            // 
+            this.btn_C6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C6.BackgroundImage")));
+            this.btn_C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C6.FlatAppearance.BorderSize = 0;
+            this.btn_C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C6.Location = new System.Drawing.Point(439, 159);
+            this.btn_C6.Name = "btn_C6";
+            this.btn_C6.Size = new System.Drawing.Size(48, 45);
+            this.btn_C6.TabIndex = 14;
+            this.btn_C6.UseVisualStyleBackColor = false;
+            this.btn_C6.Click += new System.EventHandler(this.btn_C6_Click);
+            // 
+            // btn_B5
+            // 
+            this.btn_B5.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B5.BackgroundImage")));
+            this.btn_B5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B5.FlatAppearance.BorderSize = 0;
+            this.btn_B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B5.Location = new System.Drawing.Point(385, 220);
+            this.btn_B5.Name = "btn_B5";
+            this.btn_B5.Size = new System.Drawing.Size(48, 45);
+            this.btn_B5.TabIndex = 13;
+            this.btn_B5.UseVisualStyleBackColor = false;
+            this.btn_B5.Click += new System.EventHandler(this.btn_B5_Click);
+            // 
+            // btn_B6
+            // 
+            this.btn_B6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B6.BackgroundImage")));
+            this.btn_B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B6.FlatAppearance.BorderSize = 0;
+            this.btn_B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B6.Location = new System.Drawing.Point(439, 220);
+            this.btn_B6.Name = "btn_B6";
+            this.btn_B6.Size = new System.Drawing.Size(48, 45);
+            this.btn_B6.TabIndex = 12;
+            this.btn_B6.UseVisualStyleBackColor = false;
+            this.btn_B6.Click += new System.EventHandler(this.btn_B6_Click);
+            // 
+            // btn_A5
+            // 
+            this.btn_A5.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A5.BackgroundImage")));
+            this.btn_A5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A5.FlatAppearance.BorderSize = 0;
+            this.btn_A5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A5.Location = new System.Drawing.Point(385, 282);
+            this.btn_A5.Name = "btn_A5";
+            this.btn_A5.Size = new System.Drawing.Size(48, 45);
+            this.btn_A5.TabIndex = 11;
+            this.btn_A5.UseVisualStyleBackColor = false;
+            this.btn_A5.Click += new System.EventHandler(this.btn_A5_Click);
+            // 
+            // btn_E5
+            // 
+            this.btn_E5.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E5.BackgroundImage")));
+            this.btn_E5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E5.FlatAppearance.BorderSize = 0;
+            this.btn_E5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E5.Location = new System.Drawing.Point(385, 37);
+            this.btn_E5.Name = "btn_E5";
+            this.btn_E5.Size = new System.Drawing.Size(48, 45);
+            this.btn_E5.TabIndex = 10;
+            this.btn_E5.UseVisualStyleBackColor = false;
+            this.btn_E5.Click += new System.EventHandler(this.btn_E5_Click);
+            // 
+            // btn_A2
+            // 
+            this.btn_A2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A2.BackgroundImage")));
+            this.btn_A2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A2.FlatAppearance.BorderSize = 0;
+            this.btn_A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A2.Location = new System.Drawing.Point(111, 282);
+            this.btn_A2.Name = "btn_A2";
+            this.btn_A2.Size = new System.Drawing.Size(48, 45);
+            this.btn_A2.TabIndex = 9;
+            this.btn_A2.UseVisualStyleBackColor = false;
+            this.btn_A2.Click += new System.EventHandler(this.btn_A2_Click);
+            // 
+            // btn_E2
+            // 
+            this.btn_E2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E2.BackgroundImage = global::ProjetoCinema.Properties.Resources.armchair__1_;
+            this.btn_E2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E2.FlatAppearance.BorderSize = 0;
+            this.btn_E2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E2.Location = new System.Drawing.Point(111, 37);
+            this.btn_E2.Name = "btn_E2";
+            this.btn_E2.Size = new System.Drawing.Size(48, 45);
+            this.btn_E2.TabIndex = 8;
+            this.btn_E2.UseVisualStyleBackColor = false;
+            this.btn_E2.Click += new System.EventHandler(this.btn_E2_Click);
+            // 
+            // btn_D1
+            // 
+            this.btn_D1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D1.BackgroundImage")));
+            this.btn_D1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D1.FlatAppearance.BorderSize = 0;
+            this.btn_D1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D1.Location = new System.Drawing.Point(57, 95);
+            this.btn_D1.Name = "btn_D1";
+            this.btn_D1.Size = new System.Drawing.Size(48, 45);
+            this.btn_D1.TabIndex = 7;
+            this.btn_D1.UseVisualStyleBackColor = false;
+            this.btn_D1.Click += new System.EventHandler(this.btn_D1_Click);
+            // 
+            // btn_D2
+            // 
+            this.btn_D2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_D2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D2.BackgroundImage")));
+            this.btn_D2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_D2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_D2.FlatAppearance.BorderSize = 0;
+            this.btn_D2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_D2.Location = new System.Drawing.Point(111, 95);
+            this.btn_D2.Name = "btn_D2";
+            this.btn_D2.Size = new System.Drawing.Size(48, 45);
+            this.btn_D2.TabIndex = 6;
+            this.btn_D2.UseVisualStyleBackColor = false;
+            this.btn_D2.Click += new System.EventHandler(this.btn_D2_Click);
+            // 
+            // btn_C1
+            // 
+            this.btn_C1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C1.BackgroundImage")));
+            this.btn_C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C1.FlatAppearance.BorderSize = 0;
+            this.btn_C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C1.Location = new System.Drawing.Point(57, 159);
+            this.btn_C1.Name = "btn_C1";
+            this.btn_C1.Size = new System.Drawing.Size(48, 45);
+            this.btn_C1.TabIndex = 5;
+            this.btn_C1.UseVisualStyleBackColor = false;
+            this.btn_C1.Click += new System.EventHandler(this.btn_C1_Click);
+            // 
+            // btn_C2
+            // 
+            this.btn_C2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_C2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C2.BackgroundImage")));
+            this.btn_C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_C2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_C2.FlatAppearance.BorderSize = 0;
+            this.btn_C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_C2.Location = new System.Drawing.Point(111, 159);
+            this.btn_C2.Name = "btn_C2";
+            this.btn_C2.Size = new System.Drawing.Size(48, 45);
+            this.btn_C2.TabIndex = 4;
+            this.btn_C2.UseVisualStyleBackColor = false;
+            this.btn_C2.Click += new System.EventHandler(this.btn_C2_Click);
+            // 
+            // btn_B1
+            // 
+            this.btn_B1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B1.BackgroundImage")));
+            this.btn_B1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B1.FlatAppearance.BorderSize = 0;
+            this.btn_B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B1.Location = new System.Drawing.Point(57, 220);
+            this.btn_B1.Name = "btn_B1";
+            this.btn_B1.Size = new System.Drawing.Size(48, 45);
+            this.btn_B1.TabIndex = 3;
+            this.btn_B1.UseVisualStyleBackColor = false;
+            this.btn_B1.Click += new System.EventHandler(this.btn_B1_Click);
+            // 
+            // btn_B2
+            // 
+            this.btn_B2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_B2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B2.BackgroundImage")));
+            this.btn_B2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_B2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_B2.FlatAppearance.BorderSize = 0;
+            this.btn_B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_B2.Location = new System.Drawing.Point(111, 220);
+            this.btn_B2.Name = "btn_B2";
+            this.btn_B2.Size = new System.Drawing.Size(48, 45);
+            this.btn_B2.TabIndex = 2;
+            this.btn_B2.UseVisualStyleBackColor = false;
+            this.btn_B2.Click += new System.EventHandler(this.btn_B2_Click);
+            // 
+            // btn_A1
+            // 
+            this.btn_A1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_A1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A1.BackgroundImage")));
+            this.btn_A1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_A1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_A1.FlatAppearance.BorderSize = 0;
+            this.btn_A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_A1.Location = new System.Drawing.Point(57, 282);
+            this.btn_A1.Name = "btn_A1";
+            this.btn_A1.Size = new System.Drawing.Size(48, 45);
+            this.btn_A1.TabIndex = 1;
+            this.btn_A1.UseVisualStyleBackColor = false;
+            this.btn_A1.Click += new System.EventHandler(this.btn_A1_Click);
+            // 
+            // btn_E1
+            // 
+            this.btn_E1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_E1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E1.BackgroundImage")));
+            this.btn_E1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_E1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_E1.FlatAppearance.BorderSize = 0;
+            this.btn_E1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_E1.Location = new System.Drawing.Point(57, 37);
+            this.btn_E1.Name = "btn_E1";
+            this.btn_E1.Size = new System.Drawing.Size(48, 45);
+            this.btn_E1.TabIndex = 0;
+            this.btn_E1.UseVisualStyleBackColor = false;
+            this.btn_E1.Click += new System.EventHandler(this.btn_E1_Click);
+            // 
             // pnBaixo
             // 
             this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -320,428 +771,6 @@
             this.btn_confirm.TabIndex = 0;
             this.btn_confirm.Text = "Confirmar reserva";
             this.btn_confirm.UseVisualStyleBackColor = true;
-            // 
-            // btn_B4
-            // 
-            this.btn_B4.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B4.BackgroundImage")));
-            this.btn_B4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B4.FlatAppearance.BorderSize = 0;
-            this.btn_B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B4.Location = new System.Drawing.Point(331, 220);
-            this.btn_B4.Name = "btn_B4";
-            this.btn_B4.Size = new System.Drawing.Size(48, 45);
-            this.btn_B4.TabIndex = 31;
-            this.btn_B4.UseVisualStyleBackColor = false;
-            // 
-            // btn_D4
-            // 
-            this.btn_D4.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D4.BackgroundImage")));
-            this.btn_D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D4.FlatAppearance.BorderSize = 0;
-            this.btn_D4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D4.Location = new System.Drawing.Point(331, 95);
-            this.btn_D4.Name = "btn_D4";
-            this.btn_D4.Size = new System.Drawing.Size(48, 45);
-            this.btn_D4.TabIndex = 30;
-            this.btn_D4.UseVisualStyleBackColor = false;
-            // 
-            // btn_C4
-            // 
-            this.btn_C4.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C4.BackgroundImage")));
-            this.btn_C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C4.FlatAppearance.BorderSize = 0;
-            this.btn_C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C4.Location = new System.Drawing.Point(331, 157);
-            this.btn_C4.Name = "btn_C4";
-            this.btn_C4.Size = new System.Drawing.Size(48, 45);
-            this.btn_C4.TabIndex = 29;
-            this.btn_C4.UseVisualStyleBackColor = false;
-            // 
-            // btn_E4
-            // 
-            this.btn_E4.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E4.BackgroundImage")));
-            this.btn_E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E4.FlatAppearance.BorderSize = 0;
-            this.btn_E4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E4.Location = new System.Drawing.Point(331, 37);
-            this.btn_E4.Name = "btn_E4";
-            this.btn_E4.Size = new System.Drawing.Size(48, 45);
-            this.btn_E4.TabIndex = 28;
-            this.btn_E4.UseVisualStyleBackColor = false;
-            // 
-            // btn_E3
-            // 
-            this.btn_E3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E3.BackgroundImage")));
-            this.btn_E3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E3.FlatAppearance.BorderSize = 0;
-            this.btn_E3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E3.Location = new System.Drawing.Point(165, 37);
-            this.btn_E3.Name = "btn_E3";
-            this.btn_E3.Size = new System.Drawing.Size(48, 45);
-            this.btn_E3.TabIndex = 27;
-            this.btn_E3.UseVisualStyleBackColor = false;
-            // 
-            // btn_B3
-            // 
-            this.btn_B3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B3.BackgroundImage")));
-            this.btn_B3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B3.FlatAppearance.BorderSize = 0;
-            this.btn_B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B3.Location = new System.Drawing.Point(165, 220);
-            this.btn_B3.Name = "btn_B3";
-            this.btn_B3.Size = new System.Drawing.Size(48, 45);
-            this.btn_B3.TabIndex = 26;
-            this.btn_B3.UseVisualStyleBackColor = false;
-            // 
-            // btn_C3
-            // 
-            this.btn_C3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C3.BackgroundImage")));
-            this.btn_C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C3.FlatAppearance.BorderSize = 0;
-            this.btn_C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C3.Location = new System.Drawing.Point(165, 157);
-            this.btn_C3.Name = "btn_C3";
-            this.btn_C3.Size = new System.Drawing.Size(48, 45);
-            this.btn_C3.TabIndex = 25;
-            this.btn_C3.UseVisualStyleBackColor = false;
-            // 
-            // btn_D3
-            // 
-            this.btn_D3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D3.BackgroundImage")));
-            this.btn_D3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D3.FlatAppearance.BorderSize = 0;
-            this.btn_D3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D3.Location = new System.Drawing.Point(165, 95);
-            this.btn_D3.Name = "btn_D3";
-            this.btn_D3.Size = new System.Drawing.Size(48, 45);
-            this.btn_D3.TabIndex = 24;
-            this.btn_D3.UseVisualStyleBackColor = false;
-            // 
-            // btn_A4
-            // 
-            this.btn_A4.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A4.BackgroundImage")));
-            this.btn_A4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A4.FlatAppearance.BorderSize = 0;
-            this.btn_A4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A4.Location = new System.Drawing.Point(331, 282);
-            this.btn_A4.Name = "btn_A4";
-            this.btn_A4.Size = new System.Drawing.Size(48, 45);
-            this.btn_A4.TabIndex = 23;
-            this.btn_A4.UseVisualStyleBackColor = false;
-            // 
-            // btn_A3
-            // 
-            this.btn_A3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A3.BackgroundImage")));
-            this.btn_A3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A3.FlatAppearance.BorderSize = 0;
-            this.btn_A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A3.Location = new System.Drawing.Point(165, 282);
-            this.btn_A3.Name = "btn_A3";
-            this.btn_A3.Size = new System.Drawing.Size(48, 45);
-            this.btn_A3.TabIndex = 21;
-            this.btn_A3.UseVisualStyleBackColor = false;
-            // 
-            // btn_A6
-            // 
-            this.btn_A6.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A6.BackgroundImage")));
-            this.btn_A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A6.FlatAppearance.BorderSize = 0;
-            this.btn_A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A6.Location = new System.Drawing.Point(439, 282);
-            this.btn_A6.Name = "btn_A6";
-            this.btn_A6.Size = new System.Drawing.Size(48, 45);
-            this.btn_A6.TabIndex = 19;
-            this.btn_A6.UseVisualStyleBackColor = false;
-            // 
-            // btn_E6
-            // 
-            this.btn_E6.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E6.BackgroundImage")));
-            this.btn_E6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E6.FlatAppearance.BorderSize = 0;
-            this.btn_E6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E6.Location = new System.Drawing.Point(439, 37);
-            this.btn_E6.Name = "btn_E6";
-            this.btn_E6.Size = new System.Drawing.Size(48, 45);
-            this.btn_E6.TabIndex = 18;
-            this.btn_E6.UseVisualStyleBackColor = false;
-            // 
-            // btn_D5
-            // 
-            this.btn_D5.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D5.BackgroundImage")));
-            this.btn_D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D5.FlatAppearance.BorderSize = 0;
-            this.btn_D5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btn_D5.Location = new System.Drawing.Point(385, 95);
-            this.btn_D5.Name = "btn_D5";
-            this.btn_D5.Size = new System.Drawing.Size(48, 45);
-            this.btn_D5.TabIndex = 17;
-            this.btn_D5.UseVisualStyleBackColor = false;
-            // 
-            // btn_D6
-            // 
-            this.btn_D6.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D6.BackgroundImage")));
-            this.btn_D6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D6.FlatAppearance.BorderSize = 0;
-            this.btn_D6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D6.Location = new System.Drawing.Point(439, 95);
-            this.btn_D6.Name = "btn_D6";
-            this.btn_D6.Size = new System.Drawing.Size(48, 45);
-            this.btn_D6.TabIndex = 16;
-            this.btn_D6.UseVisualStyleBackColor = false;
-            // 
-            // btn_C5
-            // 
-            this.btn_C5.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C5.BackgroundImage")));
-            this.btn_C5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C5.FlatAppearance.BorderSize = 0;
-            this.btn_C5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C5.Location = new System.Drawing.Point(385, 159);
-            this.btn_C5.Name = "btn_C5";
-            this.btn_C5.Size = new System.Drawing.Size(48, 45);
-            this.btn_C5.TabIndex = 15;
-            this.btn_C5.UseVisualStyleBackColor = false;
-            // 
-            // btn_C6
-            // 
-            this.btn_C6.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C6.BackgroundImage")));
-            this.btn_C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C6.FlatAppearance.BorderSize = 0;
-            this.btn_C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C6.Location = new System.Drawing.Point(439, 159);
-            this.btn_C6.Name = "btn_C6";
-            this.btn_C6.Size = new System.Drawing.Size(48, 45);
-            this.btn_C6.TabIndex = 14;
-            this.btn_C6.UseVisualStyleBackColor = false;
-            // 
-            // btn_B5
-            // 
-            this.btn_B5.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B5.BackgroundImage")));
-            this.btn_B5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B5.FlatAppearance.BorderSize = 0;
-            this.btn_B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B5.Location = new System.Drawing.Point(385, 220);
-            this.btn_B5.Name = "btn_B5";
-            this.btn_B5.Size = new System.Drawing.Size(48, 45);
-            this.btn_B5.TabIndex = 13;
-            this.btn_B5.UseVisualStyleBackColor = false;
-            // 
-            // btn_B6
-            // 
-            this.btn_B6.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B6.BackgroundImage")));
-            this.btn_B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B6.FlatAppearance.BorderSize = 0;
-            this.btn_B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B6.Location = new System.Drawing.Point(439, 220);
-            this.btn_B6.Name = "btn_B6";
-            this.btn_B6.Size = new System.Drawing.Size(48, 45);
-            this.btn_B6.TabIndex = 12;
-            this.btn_B6.UseVisualStyleBackColor = false;
-            // 
-            // btn_A5
-            // 
-            this.btn_A5.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A5.BackgroundImage")));
-            this.btn_A5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A5.FlatAppearance.BorderSize = 0;
-            this.btn_A5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A5.Location = new System.Drawing.Point(385, 282);
-            this.btn_A5.Name = "btn_A5";
-            this.btn_A5.Size = new System.Drawing.Size(48, 45);
-            this.btn_A5.TabIndex = 11;
-            this.btn_A5.UseVisualStyleBackColor = false;
-            // 
-            // btn_E5
-            // 
-            this.btn_E5.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E5.BackgroundImage")));
-            this.btn_E5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E5.FlatAppearance.BorderSize = 0;
-            this.btn_E5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E5.Location = new System.Drawing.Point(385, 37);
-            this.btn_E5.Name = "btn_E5";
-            this.btn_E5.Size = new System.Drawing.Size(48, 45);
-            this.btn_E5.TabIndex = 10;
-            this.btn_E5.UseVisualStyleBackColor = false;
-            // 
-            // btn_A2
-            // 
-            this.btn_A2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A2.BackgroundImage")));
-            this.btn_A2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A2.FlatAppearance.BorderSize = 0;
-            this.btn_A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A2.Location = new System.Drawing.Point(111, 282);
-            this.btn_A2.Name = "btn_A2";
-            this.btn_A2.Size = new System.Drawing.Size(48, 45);
-            this.btn_A2.TabIndex = 9;
-            this.btn_A2.UseVisualStyleBackColor = false;
-            // 
-            // btn_E2
-            // 
-            this.btn_E2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E2.BackgroundImage = global::ProjetoCinema.Properties.Resources.armchair__1_;
-            this.btn_E2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E2.FlatAppearance.BorderSize = 0;
-            this.btn_E2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E2.Location = new System.Drawing.Point(111, 37);
-            this.btn_E2.Name = "btn_E2";
-            this.btn_E2.Size = new System.Drawing.Size(48, 45);
-            this.btn_E2.TabIndex = 8;
-            this.btn_E2.UseVisualStyleBackColor = false;
-            // 
-            // btn_D1
-            // 
-            this.btn_D1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D1.BackgroundImage")));
-            this.btn_D1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D1.FlatAppearance.BorderSize = 0;
-            this.btn_D1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D1.Location = new System.Drawing.Point(57, 95);
-            this.btn_D1.Name = "btn_D1";
-            this.btn_D1.Size = new System.Drawing.Size(48, 45);
-            this.btn_D1.TabIndex = 7;
-            this.btn_D1.UseVisualStyleBackColor = false;
-            // 
-            // btn_D2
-            // 
-            this.btn_D2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_D2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_D2.BackgroundImage")));
-            this.btn_D2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_D2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_D2.FlatAppearance.BorderSize = 0;
-            this.btn_D2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_D2.Location = new System.Drawing.Point(111, 95);
-            this.btn_D2.Name = "btn_D2";
-            this.btn_D2.Size = new System.Drawing.Size(48, 45);
-            this.btn_D2.TabIndex = 6;
-            this.btn_D2.UseVisualStyleBackColor = false;
-            // 
-            // btn_C1
-            // 
-            this.btn_C1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C1.BackgroundImage")));
-            this.btn_C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C1.FlatAppearance.BorderSize = 0;
-            this.btn_C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C1.Location = new System.Drawing.Point(57, 159);
-            this.btn_C1.Name = "btn_C1";
-            this.btn_C1.Size = new System.Drawing.Size(48, 45);
-            this.btn_C1.TabIndex = 5;
-            this.btn_C1.UseVisualStyleBackColor = false;
-            // 
-            // btn_C2
-            // 
-            this.btn_C2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_C2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_C2.BackgroundImage")));
-            this.btn_C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_C2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_C2.FlatAppearance.BorderSize = 0;
-            this.btn_C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_C2.Location = new System.Drawing.Point(111, 159);
-            this.btn_C2.Name = "btn_C2";
-            this.btn_C2.Size = new System.Drawing.Size(48, 45);
-            this.btn_C2.TabIndex = 4;
-            this.btn_C2.UseVisualStyleBackColor = false;
-            // 
-            // btn_B1
-            // 
-            this.btn_B1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B1.BackgroundImage")));
-            this.btn_B1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B1.FlatAppearance.BorderSize = 0;
-            this.btn_B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B1.Location = new System.Drawing.Point(57, 220);
-            this.btn_B1.Name = "btn_B1";
-            this.btn_B1.Size = new System.Drawing.Size(48, 45);
-            this.btn_B1.TabIndex = 3;
-            this.btn_B1.UseVisualStyleBackColor = false;
-            // 
-            // btn_B2
-            // 
-            this.btn_B2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_B2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_B2.BackgroundImage")));
-            this.btn_B2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_B2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_B2.FlatAppearance.BorderSize = 0;
-            this.btn_B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_B2.Location = new System.Drawing.Point(111, 220);
-            this.btn_B2.Name = "btn_B2";
-            this.btn_B2.Size = new System.Drawing.Size(48, 45);
-            this.btn_B2.TabIndex = 2;
-            this.btn_B2.UseVisualStyleBackColor = false;
-            // 
-            // btn_A1
-            // 
-            this.btn_A1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_A1.BackgroundImage")));
-            this.btn_A1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_A1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_A1.FlatAppearance.BorderSize = 0;
-            this.btn_A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_A1.Location = new System.Drawing.Point(57, 282);
-            this.btn_A1.Name = "btn_A1";
-            this.btn_A1.Size = new System.Drawing.Size(48, 45);
-            this.btn_A1.TabIndex = 1;
-            this.btn_A1.UseVisualStyleBackColor = false;
-            // 
-            // btn_E1
-            // 
-            this.btn_E1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_E1.BackgroundImage")));
-            this.btn_E1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_E1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_E1.FlatAppearance.BorderSize = 0;
-            this.btn_E1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_E1.Location = new System.Drawing.Point(57, 37);
-            this.btn_E1.Name = "btn_E1";
-            this.btn_E1.Size = new System.Drawing.Size(48, 45);
-            this.btn_E1.TabIndex = 0;
-            this.btn_E1.UseVisualStyleBackColor = false;
-            this.btn_E1.Click += new System.EventHandler(this.btn_E1_Click);
             // 
             // pnTop
             // 
