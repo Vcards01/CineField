@@ -10,34 +10,37 @@ using System.Windows.Forms;
 
 namespace ProjetoCinema
 {
-    public partial class Administração : Form
+    public partial class FormAdmSessao : Form
     {
-        public Administração()
+        public FormAdmSessao()
         {
             InitializeComponent();
         }
 
-        
-
-        private void btnGerFilme_Click(object sender, EventArgs e)
+        private void btnNovo_Click(object sender, EventArgs e)
         {
-            FormAdmFilmes form = new FormAdmFilmes();
+            FormGerSessao form = new FormGerSessao();
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
 
-        private void btnGerSala_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
-            FormAdmSalas form = new FormAdmSalas();
+            FormGerSessao form = new FormGerSessao(true);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
 
-        private void btnGerSessões_Click(object sender, EventArgs e)
+        private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            FormAdmSessao form = new FormAdmSessao();
+            FormGerSessao form = new FormGerSessao(false);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

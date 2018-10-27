@@ -161,6 +161,7 @@
             this.btnGerSessões.TabIndex = 3;
             this.btnGerSessões.Text = "Gerenciar Sessões";
             this.btnGerSessões.UseVisualStyleBackColor = false;
+            this.btnGerSessões.Click += new System.EventHandler(this.btnGerSessões_Click);
             // 
             // Administração
             // 
