@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormIngressos));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gpFilmes = new System.Windows.Forms.GroupBox();
             this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gpFilmes = new System.Windows.Forms.GroupBox();
             this.pnFilmes = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
@@ -61,17 +62,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(508, 166);
             this.dataGridView1.TabIndex = 0;
             // 
-            // gpFilmes
-            // 
-            this.gpFilmes.BackColor = System.Drawing.Color.Transparent;
-            this.gpFilmes.Controls.Add(this.dataGridView1);
-            this.gpFilmes.Location = new System.Drawing.Point(-2, 67);
-            this.gpFilmes.Name = "gpFilmes";
-            this.gpFilmes.Size = new System.Drawing.Size(514, 185);
-            this.gpFilmes.TabIndex = 4;
-            this.gpFilmes.TabStop = false;
-            this.gpFilmes.Text = "Sessões";
-            // 
             // Filme
             // 
             this.Filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -92,6 +82,17 @@
             this.cHorario.HeaderText = "Horário";
             this.cHorario.Name = "cHorario";
             this.cHorario.ReadOnly = true;
+            // 
+            // gpFilmes
+            // 
+            this.gpFilmes.BackColor = System.Drawing.Color.Transparent;
+            this.gpFilmes.Controls.Add(this.dataGridView1);
+            this.gpFilmes.Location = new System.Drawing.Point(-2, 67);
+            this.gpFilmes.Name = "gpFilmes";
+            this.gpFilmes.Size = new System.Drawing.Size(514, 185);
+            this.gpFilmes.TabIndex = 4;
+            this.gpFilmes.TabStop = false;
+            this.gpFilmes.Text = "Sessões";
             // 
             // pnFilmes
             // 
@@ -162,8 +163,9 @@
             this.Controls.Add(this.pnFilmes);
             this.Controls.Add(this.pnFilmesBaixo);
             this.Controls.Add(this.gpFilmes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormIngressos";
-            this.Text = "FormIngressos";
+            this.Text = "Ingressos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gpFilmes.ResumeLayout(false);
             this.pnFilmes.ResumeLayout(false);

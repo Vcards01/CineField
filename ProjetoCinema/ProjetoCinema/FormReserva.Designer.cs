@@ -805,8 +805,9 @@
             this.Controls.Add(this.pnBaixo);
             this.Controls.Add(this.pnMeio);
             this.Controls.Add(this.pnTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReserva";
-            this.Text = "FormReserva";
+            this.Text = "Reserva de lugar";
             this.pnMeio.ResumeLayout(false);
             this.pnMeio.PerformLayout();
             this.pnBaixo.ResumeLayout(false);

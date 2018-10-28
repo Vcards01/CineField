@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmCartaz));
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,9 +48,8 @@
             this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
             this.pnTopo.Controls.Add(this.lbTitulo);
             this.pnTopo.Location = new System.Drawing.Point(0, 0);
-            this.pnTopo.Margin = new System.Windows.Forms.Padding(4);
             this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(798, 65);
+            this.pnTopo.Size = new System.Drawing.Size(598, 53);
             this.pnTopo.TabIndex = 12;
             // 
             // lbTitulo
@@ -61,10 +61,9 @@
             this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(292, 9);
-            this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTitulo.Location = new System.Drawing.Point(219, 7);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(186, 39);
+            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
             this.lbTitulo.TabIndex = 3;
             this.lbTitulo.Text = "Em Cartaz";
             // 
@@ -79,10 +78,11 @@
             this.tituloFilme,
             this.duraFilme,
             this.genFilme});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 50);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(798, 329);
+            this.dataGridView1.Size = new System.Drawing.Size(598, 267);
             this.dataGridView1.TabIndex = 13;
             // 
             // tituloFilme
@@ -109,24 +109,25 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.panel1.Location = new System.Drawing.Point(0, 390);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 317);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 65);
+            this.panel1.Size = new System.Drawing.Size(598, 53);
             this.panel1.TabIndex = 13;
             // 
             // FormEmCartaz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(602, 372);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnTopo);
-            this.MaximumSize = new System.Drawing.Size(818, 497);
-            this.MinimumSize = new System.Drawing.Size(818, 497);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(618, 411);
+            this.MinimumSize = new System.Drawing.Size(618, 411);
             this.Name = "FormEmCartaz";
-            this.Text = "FormEmCartaz";
+            this.Text = "Filmes em cartaz";
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

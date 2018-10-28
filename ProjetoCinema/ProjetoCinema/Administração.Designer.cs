@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administração));
             this.btnGerFuncionarios = new System.Windows.Forms.Button();
             this.pnOpções = new System.Windows.Forms.Panel();
             this.btnGerLoja = new System.Windows.Forms.Button();
@@ -177,13 +178,14 @@
             this.Controls.Add(this.btnGerSala);
             this.Controls.Add(this.btnGerFilme);
             this.Controls.Add(this.btnGerSessões);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(285, 432);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(285, 432);
             this.Name = "Administração";
-            this.Text = "Configurações";
+            this.Text = "Administração";
             this.pnAdministração.ResumeLayout(false);
             this.pnAdministração.PerformLayout();
             this.ResumeLayout(false);
