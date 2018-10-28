@@ -92,6 +92,12 @@
     <Compile Include="FormAdmSessao.Designer.cs">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComida.Designer.cs">
+      <DependentUpon>FormComida.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmCartaz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmSessao.resx">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComida.resx">
+      <DependentUpon>FormComida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmCartaz.resx">
       <DependentUpon>FormEmCartaz.cs</DependentUpon>
@@ -272,6 +281,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\armchair %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

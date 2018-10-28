@@ -98,5 +98,11 @@ namespace ProjetoCinema
             btnFerramentas.FlatAppearance.BorderSize = 0;
             btnFerramentas.FlatAppearance.BorderColor = Color.DarkOrange;
         }
+
+        private void btnAlimentação_Click(object sender, EventArgs e)
+        {
+            FormComida comida = new FormComida();
+            comida.ShowDialog();
+        }
     }
 }
