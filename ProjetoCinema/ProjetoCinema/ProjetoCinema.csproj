@@ -140,6 +140,12 @@
     <Compile Include="FormIngressos.Designer.cs">
       <DependentUpon>FormIngressos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReserva.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormIngressos.resx">
       <DependentUpon>FormIngressos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReserva.resx">
       <DependentUpon>FormReserva.cs</DependentUpon>
@@ -296,6 +305,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo2.0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-azul-escuro-degrade-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-glasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17_Background_Color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

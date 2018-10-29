@@ -17,7 +17,12 @@ namespace ProjetoCinema
             InitializeComponent();
             timer1.Start();
         }
-
+        public Form1(int flag)
+        { 
+            InitializeComponent();
+            btnFerramentas.Enabled = false;
+            timer1.Start();
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbdata.Text = DateTime.Now.ToShortDateString();

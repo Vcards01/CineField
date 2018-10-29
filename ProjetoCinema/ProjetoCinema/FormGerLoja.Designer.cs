@@ -38,9 +38,9 @@
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbAlimentação = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
             this.txtPreço = new System.Windows.Forms.MaskedTextBox();
+            this.txtTipo = new System.Windows.Forms.ComboBox();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
@@ -134,13 +134,6 @@
             this.panel1.Size = new System.Drawing.Size(456, 124);
             this.panel1.TabIndex = 2;
             // 
-            // txtTipo
-            // 
-            this.txtTipo.Location = new System.Drawing.Point(73, 89);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(128, 20);
-            this.txtTipo.TabIndex = 17;
-            // 
             // lbNome
             // 
             this.lbNome.AutoSize = true;
@@ -152,19 +145,33 @@
             // 
             // txtPreço
             // 
+            this.txtPreço.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txtPreço.Location = new System.Drawing.Point(248, 90);
-            this.txtPreço.Mask = "$";
+            this.txtPreço.Mask = "$00.00";
             this.txtPreço.Name = "txtPreço";
             this.txtPreço.Size = new System.Drawing.Size(124, 20);
             this.txtPreço.TabIndex = 19;
+            this.txtPreço.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.FormattingEnabled = true;
+            this.txtTipo.Items.AddRange(new object[] {
+            "Pequeno",
+            "Médio",
+            "Grande"});
+            this.txtTipo.Location = new System.Drawing.Point(72, 90);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(121, 21);
+            this.txtTipo.TabIndex = 20;
             // 
             // FormGerLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 170);
-            this.Controls.Add(this.txtPreço);
             this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.txtPreço);
             this.Controls.Add(this.lbDuração);
             this.Controls.Add(this.lbGenero);
             this.Controls.Add(this.lbNome);
@@ -194,8 +201,8 @@
         private System.Windows.Forms.Panel pnTopo;
         private System.Windows.Forms.Label lbAlimentação;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.MaskedTextBox txtPreço;
+        private System.Windows.Forms.ComboBox txtTipo;
     }
 }

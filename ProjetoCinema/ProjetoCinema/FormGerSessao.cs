@@ -52,5 +52,6 @@ namespace ProjetoCinema
         {
             Dispose();
         }
+        
     }
 }

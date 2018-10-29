@@ -36,12 +36,12 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMeio = new System.Windows.Forms.Panel();
-            this.lbCodigo = new System.Windows.Forms.Label();
             this.cbFilme = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbCodigo = new System.Windows.Forms.Label();
+            this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.cbSala = new System.Windows.Forms.ComboBox();
-            this.dtpHorario = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.pnMeio.SuspendLayout();
@@ -130,6 +130,25 @@
             this.pnMeio.Size = new System.Drawing.Size(505, 115);
             this.pnMeio.TabIndex = 30;
             // 
+            // cbFilme
+            // 
+            this.cbFilme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cbFilme.FormattingEnabled = true;
+            this.cbFilme.Location = new System.Drawing.Point(105, 21);
+            this.cbFilme.Name = "cbFilme";
+            this.cbFilme.Size = new System.Drawing.Size(332, 21);
+            this.cbFilme.TabIndex = 25;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(288, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Horario";
+            // 
             // lbCodigo
             // 
             this.lbCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -140,14 +159,18 @@
             this.lbCodigo.TabIndex = 24;
             this.lbCodigo.Text = "Sala";
             // 
-            // cbFilme
+            // dtpHorario
             // 
-            this.cbFilme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cbFilme.FormattingEnabled = true;
-            this.cbFilme.Location = new System.Drawing.Point(105, 21);
-            this.cbFilme.Name = "cbFilme";
-            this.cbFilme.Size = new System.Drawing.Size(332, 21);
-            this.cbFilme.TabIndex = 25;
+            this.dtpHorario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dtpHorario.Checked = false;
+            this.dtpHorario.CustomFormat = "HH: mm: ss tt ";
+            this.dtpHorario.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpHorario.Location = new System.Drawing.Point(335, 62);
+            this.dtpHorario.Name = "dtpHorario";
+            this.dtpHorario.ShowUpDown = true;
+            this.dtpHorario.Size = new System.Drawing.Size(107, 20);
+            this.dtpHorario.TabIndex = 28;
+            this.dtpHorario.Value = new System.DateTime(2018, 10, 28, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -167,27 +190,6 @@
             this.cbSala.Name = "cbSala";
             this.cbSala.Size = new System.Drawing.Size(164, 21);
             this.cbSala.TabIndex = 27;
-            // 
-            // dtpHorario
-            // 
-            this.dtpHorario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dtpHorario.CustomFormat = "hh:mm:ss";
-            this.dtpHorario.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHorario.Location = new System.Drawing.Point(335, 62);
-            this.dtpHorario.Name = "dtpHorario";
-            this.dtpHorario.Size = new System.Drawing.Size(107, 20);
-            this.dtpHorario.TabIndex = 28;
-            this.dtpHorario.Value = new System.DateTime(2018, 10, 27, 14, 28, 0, 0);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Horario";
             // 
             // FormGerSessao
             // 

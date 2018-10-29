@@ -10,7 +10,7 @@ namespace ProjetoCinema
     {
         Dictionary<long, Funcionario> Funcionarios = new Dictionary<long, Funcionario>();
 
-        public Adiministrador(string nome, long cpf, int idade, string sexo) : base(nome, cpf, idade, sexo)
+        public Adiministrador(string nome, long cpf, int idade, string senha,string sexo) : base(nome, cpf, idade,senha, sexo)
         {
             
         }

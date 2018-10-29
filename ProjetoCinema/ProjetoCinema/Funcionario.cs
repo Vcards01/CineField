@@ -11,9 +11,10 @@ namespace ProjetoCinema
         private string nome;
         private long cpf;
         private int idade;
+        private string senha;
         private string sexo;
 
-        public Funcionario(string nome, long cpf, int idade, string sexo)
+        public Funcionario(string nome, long cpf, int idade, string senha, string sexo)
         {
             this.nome = nome;
             this.cpf = cpf;
@@ -70,6 +71,19 @@ namespace ProjetoCinema
             set
             {
                 sexo = value;
+            }
+        }
+
+        public string Senha
+        {
+            get
+            {
+                return senha;
+            }
+
+            set
+            {
+                senha = value;
             }
         }
     }

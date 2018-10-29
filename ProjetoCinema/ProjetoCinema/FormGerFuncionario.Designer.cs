@@ -200,7 +200,7 @@
             // 
             this.txtCPF.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txtCPF.Location = new System.Drawing.Point(240, 95);
-            this.txtCPF.Mask = "   ,   ,   -  ";
+            this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(127, 20);
             this.txtCPF.TabIndex = 31;
