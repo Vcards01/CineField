@@ -16,5 +16,11 @@ namespace ProjetoCinema
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FormIngressos ing = new FormIngressos();
+            ing.ShowDialog();
+        }
     }
 }
