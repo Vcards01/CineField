@@ -178,6 +178,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.pnBaixo);
             this.Controls.Add(this.pnTopo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

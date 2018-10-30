@@ -199,6 +199,7 @@
             this.Controls.Add(this.pnMeio);
             this.Controls.Add(this.pnBaixo);
             this.Controls.Add(this.pnTopo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormGerSessao";
             this.Text = "Gerenciar Sessões";

@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerFilmes));
-            this.pnBaixo = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.pnTopo = new System.Windows.Forms.Panel();
-            this.lbTitulo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
@@ -43,76 +37,15 @@
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.dtpHorario = new System.Windows.Forms.DateTimePicker();
+            this.pnBaixo = new System.Windows.Forms.Panel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.pnTopo = new System.Windows.Forms.Panel();
+            this.lbTitulo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnBaixo
-            // 
-            this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnBaixo.Controls.Add(this.btnCancelar);
-            this.pnBaixo.Controls.Add(this.btnSalvar);
-            this.pnBaixo.Location = new System.Drawing.Point(0, 160);
-            this.pnBaixo.Name = "pnBaixo";
-            this.pnBaixo.Size = new System.Drawing.Size(456, 42);
-            this.pnBaixo.TabIndex = 1;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCancelar.Location = new System.Drawing.Point(280, 10);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnSalvar.Location = new System.Drawing.Point(85, 10);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 0;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // pnTopo
-            // 
-            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnTopo.Controls.Add(this.lbTitulo);
-            this.pnTopo.Controls.Add(this.panel1);
-            this.pnTopo.Location = new System.Drawing.Point(0, 1);
-            this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(456, 42);
-            this.pnTopo.TabIndex = 0;
-            // 
-            // lbTitulo
-            // 
-            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbTitulo.AutoSize = true;
-            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(174, 5);
-            this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(100, 31);
-            this.lbTitulo.TabIndex = 3;
-            this.lbTitulo.Text = "Filmes";
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.cinza1;
-            this.panel1.Location = new System.Drawing.Point(0, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 124);
-            this.panel1.TabIndex = 2;
             // 
             // txtTitulo
             // 
@@ -195,6 +128,73 @@
             this.dtpHorario.TabIndex = 29;
             this.dtpHorario.Value = new System.DateTime(2018, 10, 28, 0, 0, 0, 0);
             // 
+            // pnBaixo
+            // 
+            this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnBaixo.Controls.Add(this.btnCancelar);
+            this.pnBaixo.Controls.Add(this.btnSalvar);
+            this.pnBaixo.Location = new System.Drawing.Point(0, 160);
+            this.pnBaixo.Name = "pnBaixo";
+            this.pnBaixo.Size = new System.Drawing.Size(456, 42);
+            this.pnBaixo.TabIndex = 1;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnCancelar.Location = new System.Drawing.Point(280, 10);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnSalvar.Location = new System.Drawing.Point(85, 10);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // pnTopo
+            // 
+            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnTopo.Controls.Add(this.lbTitulo);
+            this.pnTopo.Controls.Add(this.panel1);
+            this.pnTopo.Location = new System.Drawing.Point(0, 1);
+            this.pnTopo.Name = "pnTopo";
+            this.pnTopo.Size = new System.Drawing.Size(456, 42);
+            this.pnTopo.TabIndex = 0;
+            // 
+            // lbTitulo
+            // 
+            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.ForeColor = System.Drawing.Color.White;
+            this.lbTitulo.Location = new System.Drawing.Point(174, 5);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(100, 31);
+            this.lbTitulo.TabIndex = 3;
+            this.lbTitulo.Text = "Filmes";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.cinza1;
+            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(456, 124);
+            this.panel1.TabIndex = 2;
+            // 
             // FormGerFilmes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +210,7 @@
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.pnBaixo);
             this.Controls.Add(this.pnTopo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

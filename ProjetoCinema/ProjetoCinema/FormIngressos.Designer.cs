@@ -39,7 +39,6 @@
             this.lbFiltro = new System.Windows.Forms.Label();
             this.pnFilmesBaixo = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBoxMeia = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gpFilmes.SuspendLayout();
             this.pnFilmes.SuspendLayout();
@@ -126,7 +125,6 @@
             // 
             this.pnFilmesBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
             this.pnFilmesBaixo.Controls.Add(this.button1);
-            this.pnFilmesBaixo.Controls.Add(this.checkBoxMeia);
             this.pnFilmesBaixo.Location = new System.Drawing.Point(-2, 249);
             this.pnFilmesBaixo.Name = "pnFilmesBaixo";
             this.pnFilmesBaixo.Size = new System.Drawing.Size(514, 61);
@@ -142,19 +140,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBoxMeia
-            // 
-            this.checkBoxMeia.AutoSize = true;
-            this.checkBoxMeia.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxMeia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMeia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxMeia.Location = new System.Drawing.Point(412, 20);
-            this.checkBoxMeia.Name = "checkBoxMeia";
-            this.checkBoxMeia.Size = new System.Drawing.Size(66, 24);
-            this.checkBoxMeia.TabIndex = 0;
-            this.checkBoxMeia.Text = "Meia";
-            this.checkBoxMeia.UseVisualStyleBackColor = false;
-            // 
             // FormIngressos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +148,7 @@
             this.Controls.Add(this.pnFilmes);
             this.Controls.Add(this.pnFilmesBaixo);
             this.Controls.Add(this.gpFilmes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormIngressos";
             this.Text = "Ingressos";
@@ -171,7 +157,6 @@
             this.pnFilmes.ResumeLayout(false);
             this.pnFilmes.PerformLayout();
             this.pnFilmesBaixo.ResumeLayout(false);
-            this.pnFilmesBaixo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -184,7 +169,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel pnFilmesBaixo;
         private System.Windows.Forms.GroupBox gpFilmes;
-        private System.Windows.Forms.CheckBox checkBoxMeia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
         private System.Windows.Forms.DataGridViewTextBoxColumn cSala;
         private System.Windows.Forms.DataGridViewTextBoxColumn cHorario;

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.lbHora = new System.Windows.Forms.Label();
             this.lbdata = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.btnAlimentação = new System.Windows.Forms.Button();
             this.btIngresso = new System.Windows.Forms.Button();
             this.btnFilme = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.pnBaixo.SuspendLayout();
             this.pnTop.SuspendLayout();
@@ -123,6 +123,7 @@
             this.pnMeio.BackgroundImage = global::ProjetoCinema.Properties.Resources.Fundo2_0;
             this.pnMeio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnMeio.Location = new System.Drawing.Point(0, 61);
+            this.pnMeio.MinimumSize = new System.Drawing.Size(896, 347);
             this.pnMeio.Name = "pnMeio";
             this.pnMeio.Size = new System.Drawing.Size(896, 347);
             this.pnMeio.TabIndex = 1;
@@ -143,6 +144,7 @@
             this.pnTop.Name = "pnTop";
             this.pnTop.Size = new System.Drawing.Size(896, 61);
             this.pnTop.TabIndex = 0;
+            this.pnTop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnTop_Paint);
             // 
             // panel3
             // 
@@ -235,12 +237,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 441);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "                                                                                 " +
     "                                                                ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.pnBaixo.ResumeLayout(false);
             this.pnBaixo.PerformLayout();

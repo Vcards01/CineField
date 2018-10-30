@@ -467,5 +467,13 @@ namespace ProjetoCinema
 
             }
         }
+
+        private void btn_confirm_Click(object sender, EventArgs e)
+        {
+            FormPrintIngresso form = new FormPrintIngresso();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+
+        }
     }
 }

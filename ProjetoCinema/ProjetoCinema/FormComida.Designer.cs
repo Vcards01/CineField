@@ -75,7 +75,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(158, 223);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(185, 167);
             this.panel2.TabIndex = 6;
@@ -85,7 +85,7 @@
             this.button1.BackgroundImage = global::ProjetoCinema.Properties.Resources.shopping_cart;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(56, 62);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 53);
             this.button1.TabIndex = 2;
@@ -120,7 +120,7 @@
             this.item,
             this.preco});
             this.dataGridView1.Location = new System.Drawing.Point(158, 61);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(185, 170);
@@ -150,7 +150,7 @@
             this.panel1.Controls.Add(this.btn_doce);
             this.panel1.Controls.Add(this.btn_pipoca);
             this.panel1.Location = new System.Drawing.Point(0, 61);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(158, 328);
             this.panel1.TabIndex = 4;
@@ -159,7 +159,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(9, 162);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(33, 17);
             this.radioButton4.TabIndex = 8;
@@ -171,7 +171,7 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(9, 139);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(34, 17);
             this.radioButton5.TabIndex = 7;
@@ -183,7 +183,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(9, 116);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(32, 17);
             this.radioButton6.TabIndex = 6;
@@ -195,7 +195,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(9, 65);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(33, 17);
             this.radioButton3.TabIndex = 5;
@@ -207,7 +207,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(9, 42);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(34, 17);
             this.radioButton2.TabIndex = 4;
@@ -219,7 +219,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(9, 20);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(32, 17);
             this.radioButton1.TabIndex = 3;
@@ -232,7 +232,7 @@
             this.btn_bebida.BackgroundImage = global::ProjetoCinema.Properties.Resources.can;
             this.btn_bebida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_bebida.Location = new System.Drawing.Point(44, 116);
-            this.btn_bebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_bebida.Margin = new System.Windows.Forms.Padding(2);
             this.btn_bebida.Name = "btn_bebida";
             this.btn_bebida.Size = new System.Drawing.Size(56, 68);
             this.btn_bebida.TabIndex = 2;
@@ -243,7 +243,7 @@
             this.btn_doce.BackgroundImage = global::ProjetoCinema.Properties.Resources.chocolate;
             this.btn_doce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_doce.Location = new System.Drawing.Point(44, 234);
-            this.btn_doce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_doce.Margin = new System.Windows.Forms.Padding(2);
             this.btn_doce.Name = "btn_doce";
             this.btn_doce.Size = new System.Drawing.Size(56, 73);
             this.btn_doce.TabIndex = 1;
@@ -254,7 +254,7 @@
             this.btn_pipoca.BackgroundImage = global::ProjetoCinema.Properties.Resources.popcorn;
             this.btn_pipoca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_pipoca.Location = new System.Drawing.Point(44, 18);
-            this.btn_pipoca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_pipoca.Margin = new System.Windows.Forms.Padding(2);
             this.btn_pipoca.Name = "btn_pipoca";
             this.btn_pipoca.Size = new System.Drawing.Size(56, 64);
             this.btn_pipoca.TabIndex = 0;
@@ -279,10 +279,11 @@
             this.ClientSize = new System.Drawing.Size(344, 440);
             this.Controls.Add(this.pnTopo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(360, 479);
             this.MinimumSize = new System.Drawing.Size(360, 479);
             this.Name = "FormComida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lanches";
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();

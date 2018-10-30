@@ -29,43 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmCartaz));
-            this.pnTopo = new System.Windows.Forms.Panel();
-            this.lbTitulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tituloFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.duraFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnTopo.SuspendLayout();
+            this.pnTopo = new System.Windows.Forms.Panel();
+            this.lbTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnTopo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnTopo
-            // 
-            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnTopo.Controls.Add(this.lbTitulo);
-            this.pnTopo.Location = new System.Drawing.Point(0, 0);
-            this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(598, 53);
-            this.pnTopo.TabIndex = 12;
-            // 
-            // lbTitulo
-            // 
-            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTitulo.AutoSize = true;
-            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(219, 7);
-            this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
-            this.lbTitulo.TabIndex = 3;
-            this.lbTitulo.Text = "Em Cartaz";
             // 
             // dataGridView1
             // 
@@ -79,7 +52,7 @@
             this.duraFilme,
             this.genFilme});
             this.dataGridView1.Location = new System.Drawing.Point(0, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(598, 267);
@@ -114,6 +87,33 @@
             this.panel1.Size = new System.Drawing.Size(598, 53);
             this.panel1.TabIndex = 13;
             // 
+            // pnTopo
+            // 
+            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnTopo.Controls.Add(this.lbTitulo);
+            this.pnTopo.Location = new System.Drawing.Point(0, 0);
+            this.pnTopo.Name = "pnTopo";
+            this.pnTopo.Size = new System.Drawing.Size(598, 53);
+            this.pnTopo.TabIndex = 12;
+            // 
+            // lbTitulo
+            // 
+            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.ForeColor = System.Drawing.Color.White;
+            this.lbTitulo.Location = new System.Drawing.Point(219, 7);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
+            this.lbTitulo.TabIndex = 3;
+            this.lbTitulo.Text = "Em Cartaz";
+            // 
             // FormEmCartaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,15 +122,16 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnTopo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(618, 411);
             this.MinimumSize = new System.Drawing.Size(618, 411);
             this.Name = "FormEmCartaz";
             this.Text = "Filmes em cartaz";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

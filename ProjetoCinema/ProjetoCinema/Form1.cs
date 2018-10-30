@@ -28,11 +28,6 @@ namespace ProjetoCinema
             lbdata.Text = DateTime.Now.ToShortDateString();
             lbHora.Text = DateTime.Now.ToShortTimeString();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
         
         private void btnFerramentas_Click(object sender, EventArgs e)
         {
@@ -108,6 +103,11 @@ namespace ProjetoCinema
         {
             FormComida comida = new FormComida();
             comida.ShowDialog();
+        }
+
+        private void pnTop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
