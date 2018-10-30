@@ -11,8 +11,17 @@ namespace ProjetoCinema
         
         private double soma;
         private int idVenda;
+        private Funcionario f;
         private List<Item> itens = new List<Item>();
-
+        
+        public void add(Item i)
+        {
+            itens.Add(i);
+        }
+        public void rmv(Item i)
+        {
+            itens.Remove(i);
+        }
         public int IdVenda
         {
             get
@@ -23,6 +32,19 @@ namespace ProjetoCinema
             set
             {
                 idVenda = value;
+            }
+        }
+
+        internal Funcionario F
+        {
+            get
+            {
+                return f;
+            }
+
+            set
+            {
+                f = value;
             }
         }
 

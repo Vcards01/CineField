@@ -74,29 +74,30 @@
             this.pnTopo.Controls.Add(this.lbTitulo);
             this.pnTopo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnTopo.Location = new System.Drawing.Point(0, 0);
-            this.pnTopo.Margin = new System.Windows.Forms.Padding(4);
             this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(579, 532);
+            this.pnTopo.Size = new System.Drawing.Size(434, 432);
             this.pnTopo.TabIndex = 12;
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.Controls.Add(this.button8);
             this.panel5.Controls.Add(this.button5);
             this.panel5.Controls.Add(this.button2);
-            this.panel5.Location = new System.Drawing.Point(0, 328);
+            this.panel5.Location = new System.Drawing.Point(0, 266);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(312, 136);
+            this.panel5.Size = new System.Drawing.Size(234, 110);
             this.panel5.TabIndex = 8;
             // 
             // button8
             // 
             this.button8.BackgroundImage = global::ProjetoCinema.Properties.Resources.chocolate;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(12, 18);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(9, 15);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 84);
+            this.button8.Size = new System.Drawing.Size(56, 68);
             this.button8.TabIndex = 5;
             this.button8.UseVisualStyleBackColor = true;
             // 
@@ -104,10 +105,10 @@
             // 
             this.button5.BackgroundImage = global::ProjetoCinema.Properties.Resources.gummy_bear;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(224, 18);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(168, 15);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 84);
+            this.button5.Size = new System.Drawing.Size(56, 68);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -115,39 +116,43 @@
             // 
             this.button2.BackgroundImage = global::ProjetoCinema.Properties.Resources.chips;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(118, 18);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(88, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 84);
+            this.button2.Size = new System.Drawing.Size(56, 68);
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button7);
             this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Location = new System.Drawing.Point(318, 75);
+            this.panel4.Location = new System.Drawing.Point(238, 61);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(261, 389);
+            this.panel4.Size = new System.Drawing.Size(196, 316);
             this.panel4.TabIndex = 7;
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(102, 203);
+            this.textBox1.Location = new System.Drawing.Point(76, 165);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 22);
+            this.textBox1.Size = new System.Drawing.Size(104, 20);
             this.textBox1.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 196);
+            this.label4.Location = new System.Drawing.Point(19, 159);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 29);
+            this.label4.Size = new System.Drawing.Size(62, 24);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total:";
             // 
@@ -155,9 +160,10 @@
             // 
             this.button7.BackgroundImage = global::ProjetoCinema.Properties.Resources.shopping_cart;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(84, 271);
+            this.button7.Location = new System.Drawing.Point(63, 220);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 75);
+            this.button7.Size = new System.Drawing.Size(63, 61);
             this.button7.TabIndex = 1;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -167,10 +173,11 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.quant,
             this.nome});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(255, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(191, 122);
             this.dataGridView1.TabIndex = 0;
             // 
             // quant
@@ -186,21 +193,23 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(212, 75);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(159, 61);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 248);
+            this.panel3.Size = new System.Drawing.Size(75, 202);
             this.panel3.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 25);
+            this.label3.Location = new System.Drawing.Point(33, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 17);
+            this.label3.Size = new System.Drawing.Size(15, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "G";
             // 
@@ -208,10 +217,10 @@
             // 
             this.button4.BackgroundImage = global::ProjetoCinema.Properties.Resources.can;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(12, 153);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(9, 124);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 84);
+            this.button4.Size = new System.Drawing.Size(56, 68);
             this.button4.TabIndex = 2;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -219,30 +228,32 @@
             // 
             this.button6.BackgroundImage = global::ProjetoCinema.Properties.Resources.popcorn;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(12, 55);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(9, 45);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 79);
+            this.button6.Size = new System.Drawing.Size(56, 64);
             this.button6.TabIndex = 0;
             this.button6.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(106, 75);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(80, 61);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 248);
+            this.panel2.Size = new System.Drawing.Size(75, 202);
             this.panel2.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 25);
+            this.label2.Location = new System.Drawing.Point(33, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 17);
+            this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "M";
             // 
@@ -250,10 +261,10 @@
             // 
             this.button1.BackgroundImage = global::ProjetoCinema.Properties.Resources.can;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(12, 153);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(9, 124);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 84);
+            this.button1.Size = new System.Drawing.Size(56, 68);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -261,30 +272,32 @@
             // 
             this.button3.BackgroundImage = global::ProjetoCinema.Properties.Resources.popcorn;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(12, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(9, 45);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 79);
+            this.button3.Size = new System.Drawing.Size(56, 64);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_bebida);
             this.panel1.Controls.Add(this.btn_pipoca);
-            this.panel1.Location = new System.Drawing.Point(0, 75);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 61);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 248);
+            this.panel1.Size = new System.Drawing.Size(75, 202);
             this.panel1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 25);
+            this.label1.Location = new System.Drawing.Point(33, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
+            this.label1.Size = new System.Drawing.Size(14, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "P";
             // 
@@ -292,10 +305,10 @@
             // 
             this.btn_bebida.BackgroundImage = global::ProjetoCinema.Properties.Resources.can;
             this.btn_bebida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_bebida.Location = new System.Drawing.Point(12, 153);
-            this.btn_bebida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_bebida.Location = new System.Drawing.Point(9, 124);
+            this.btn_bebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_bebida.Name = "btn_bebida";
-            this.btn_bebida.Size = new System.Drawing.Size(75, 84);
+            this.btn_bebida.Size = new System.Drawing.Size(56, 68);
             this.btn_bebida.TabIndex = 2;
             this.btn_bebida.UseVisualStyleBackColor = true;
             // 
@@ -303,10 +316,10 @@
             // 
             this.btn_pipoca.BackgroundImage = global::ProjetoCinema.Properties.Resources.popcorn;
             this.btn_pipoca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_pipoca.Location = new System.Drawing.Point(12, 55);
-            this.btn_pipoca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_pipoca.Location = new System.Drawing.Point(9, 45);
+            this.btn_pipoca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_pipoca.Name = "btn_pipoca";
-            this.btn_pipoca.Size = new System.Drawing.Size(75, 79);
+            this.btn_pipoca.Size = new System.Drawing.Size(56, 64);
             this.btn_pipoca.TabIndex = 0;
             this.btn_pipoca.UseVisualStyleBackColor = true;
             // 
@@ -316,22 +329,25 @@
             this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(198, 9);
-            this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTitulo.Location = new System.Drawing.Point(148, 7);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(225, 39);
+            this.lbTitulo.Size = new System.Drawing.Size(182, 31);
             this.lbTitulo.TabIndex = 3;
             this.lbTitulo.Text = "Field Snacks";
             // 
             // FormComida
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 532);
+            this.ClientSize = new System.Drawing.Size(434, 432);
             this.Controls.Add(this.pnTopo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormComida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lanches";
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();

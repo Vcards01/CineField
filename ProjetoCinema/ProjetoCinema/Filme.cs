@@ -11,16 +11,30 @@ namespace ProjetoCinema
         private int id;
         private string nome;
         private string genero;
-        private DateTime Duração;
-        Dictionary<int, Sessão> sessoes = new Dictionary<int, Sessão>();
+        private string sinopse;
+        private DateTime duração;
+        private List<Sessão> sessoes = new List<Sessão>();
+
+        public Filme(int id, string nome, string genero, string sinopse, DateTime duração)
+        {
+            this.id = id;
+            this.nome = nome;
+            this.genero = genero;
+            this.sinopse = sinopse;
+            this.duração = duração;
+        }
+        public Filme()
+        {
+
+        }
 
         public void AddSessao(Sessão s)
         {
-            sessoes.Add(s.Id, s);
+            sessoes.Add(s);
         }
         public void RmvSessao(Sessão s)
         {
-            sessoes.Remove(s.Id);
+            sessoes.Remove(s);
         }
         
         public int Id
@@ -62,7 +76,7 @@ namespace ProjetoCinema
             }
         }
 
-        public DateTime Duração1
+        public DateTime Duração
         {
             get
             {
@@ -72,6 +86,19 @@ namespace ProjetoCinema
             set
             {
                 Duração = value;
+            }
+        }
+
+        public string Sinopse
+        {
+            get
+            {
+                return sinopse;
+            }
+
+            set
+            {
+                sinopse = value;
             }
         }
     }

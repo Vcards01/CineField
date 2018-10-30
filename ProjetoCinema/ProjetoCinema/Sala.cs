@@ -9,29 +9,26 @@ namespace ProjetoCinema
     class Sala
     {
         private int id;
-        private int qtddLugares;
-        Dictionary<int, Sessão> sessoes = new Dictionary<int, Sessão>();
+        private int qtddLugares=30;
+        private List<Sessão> sessoes = new List<Sessão>();
 
-        public int QtddLugares
+        public Sala(int id, int qtddLugares)
         {
-            get
-            {
-                return qtddLugares;
-            }
+            this.id = id;
+            this.qtddLugares = qtddLugares;
+        }
+        public Sala()
+        {
 
-            set
-            {
-                qtddLugares = value;
-            }
         }
 
         public void AddSessao(Sessão s)
         {
-            sessoes.Add(s.Id, s);
+            sessoes.Add(s);
         }
-        public void RmvSessao(int id)
+        public void RmvSessao(Sessão s)
         {
-            sessoes.Remove(Id);
+            sessoes.Remove(s);
         }
         public int Id
         {

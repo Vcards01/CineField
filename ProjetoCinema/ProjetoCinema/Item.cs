@@ -9,6 +9,16 @@ namespace ProjetoCinema
     class Item
     {
         private double preco;
+        List<Venda> vendas = new List<Venda>();
+
+        public void add(Venda v)
+        {
+            vendas.Add(v);
+        }
+        public void rmv(Venda v)
+        {
+            vendas.Remove(v);
+        }
 
         public double Preco
         {

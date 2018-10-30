@@ -118,6 +118,7 @@
             this.MinimumSize = new System.Drawing.Size(281, 327);
             this.Name = "FormLogin";
             this.Text = "CineField";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

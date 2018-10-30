@@ -14,6 +14,27 @@ namespace ProjetoCinema
         private Sala sala;
         List<Ingresso> ingressos = new List<Ingresso>();
 
+        public Sessão(int id, DateTime horario, Filme filme, Sala sala)
+        {
+            this.id = id;
+            this.horario = horario;
+            this.filme = filme;
+            this.sala = sala;
+        }
+        public Sessão()
+        {
+
+        }
+
+        public void AddIngresso(Ingresso i)
+        {
+            ingressos.Add(i);
+        }
+        public void rmvIngresso(Ingresso i)
+        {
+            ingressos.Remove(i);
+        }
+
         public int Id
         {
             get

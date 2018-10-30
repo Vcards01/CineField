@@ -28,7 +28,7 @@ namespace ProjetoCinema
                 this.Hide();
                 form.ShowDialog(this);
             }
-            if (txtUsername.Text.ToUpper() == "ADMIN" && txtPassword.Text == "admin")
+            else if (txtUsername.Text.ToUpper() == "ADMIN" && txtPassword.Text == "admin")
             {
                 Form1 form = new Form1();
                 form.StartPosition = FormStartPosition.CenterParent;
@@ -39,6 +39,11 @@ namespace ProjetoCinema
             {
                 MessageBox.Show("Por favor digite um usuario e senha validos", "Senha ou Usuario incoreto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

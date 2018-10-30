@@ -13,6 +13,16 @@ namespace ProjetoCinema
         private int idade;
         private string senha;
         private string sexo;
+        List<Venda> vendas = new List<Venda>();
+
+        public void add(Venda v)
+        {
+            vendas.Add(v);
+        }
+        public void rmv(Venda v)
+        {
+            vendas.Remove(v);
+        }
 
         public Funcionario(string nome, long cpf, int idade, string senha, string sexo)
         {
@@ -20,6 +30,14 @@ namespace ProjetoCinema
             this.cpf = cpf;
             this.idade = idade;
             this.sexo = sexo;
+        }
+        public Funcionario()
+        {
+
+        }
+        public int QtddVendas()
+        {
+            return vendas.Count;
         }
 
         public string Nome
@@ -86,5 +104,6 @@ namespace ProjetoCinema
                 senha = value;
             }
         }
+        
     }
 }
