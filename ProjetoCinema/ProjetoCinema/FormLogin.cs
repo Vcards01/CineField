@@ -25,15 +25,15 @@ namespace ProjetoCinema
             {
                 Form1 form = new Form1(1);
                 form.StartPosition = FormStartPosition.CenterParent;
+                this.Hide();
                 form.ShowDialog(this);
-                Dispose();
             }
             if (txtUsername.Text.ToUpper() == "ADMIN" && txtPassword.Text == "admin")
             {
                 Form1 form = new Form1();
                 form.StartPosition = FormStartPosition.CenterParent;
+                this.Hide();
                 form.ShowDialog(this);
-                Dispose();
             }
             else
             {
