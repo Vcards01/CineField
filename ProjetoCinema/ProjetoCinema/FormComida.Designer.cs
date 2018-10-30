@@ -93,7 +93,7 @@
             // 
             this.button8.BackgroundImage = global::ProjetoCinema.Properties.Resources.chocolate;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(12, 26);
+            this.button8.Location = new System.Drawing.Point(12, 18);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 84);
@@ -104,7 +104,7 @@
             // 
             this.button5.BackgroundImage = global::ProjetoCinema.Properties.Resources.gummy_bear;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(224, 26);
+            this.button5.Location = new System.Drawing.Point(224, 18);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 84);
@@ -115,7 +115,7 @@
             // 
             this.button2.BackgroundImage = global::ProjetoCinema.Properties.Resources.chips;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(116, 26);
+            this.button2.Location = new System.Drawing.Point(118, 18);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 84);
