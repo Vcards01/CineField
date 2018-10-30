@@ -16,5 +16,21 @@ namespace ProjetoCinema
         {
             InitializeComponent();
         }
+
+        private void i_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja comprar algo para comer ou não?", "Encerrar compra?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result==DialogResult.Yes)
+            {
+                FormComida form = new FormComida();
+                form.StartPosition = FormStartPosition.CenterScreen;
+                this.Hide();
+                form.ShowDialog(this);
+            }
+            else
+            {
+                Dispose();
+            }
+        }
     }
 }

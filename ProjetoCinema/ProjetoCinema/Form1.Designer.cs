@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.lbHora = new System.Windows.Forms.Label();
             this.lbdata = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.btnAlimentação = new System.Windows.Forms.Button();
             this.btIngresso = new System.Windows.Forms.Button();
             this.btnFilme = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.pnBaixo.SuspendLayout();
             this.pnTop.SuspendLayout();
@@ -147,11 +147,11 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel3.BackgroundImage = global::ProjetoCinema.Properties.Resources.Loguinho;
+            this.panel3.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(386, 1);
+            this.panel3.Location = new System.Drawing.Point(387, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(102, 57);
+            this.panel3.Size = new System.Drawing.Size(103, 50);
             this.panel3.TabIndex = 4;
             // 
             // btnFerramentas

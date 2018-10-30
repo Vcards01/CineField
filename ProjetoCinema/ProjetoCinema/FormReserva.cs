@@ -471,7 +471,8 @@ namespace ProjetoCinema
         private void btn_confirm_Click(object sender, EventArgs e)
         {
             FormPrintIngresso form = new FormPrintIngresso();
-            form.StartPosition = FormStartPosition.CenterParent;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
             form.ShowDialog(this);
 
         }

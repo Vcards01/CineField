@@ -16,5 +16,9 @@ namespace ProjetoCinema
         {
             InitializeComponent();
         }
+        public FormComida(double PreçoIngreço)
+        {
+            InitializeComponent();
+        }
     }
 }

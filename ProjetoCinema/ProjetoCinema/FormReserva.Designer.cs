@@ -46,8 +46,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pnBaixo = new System.Windows.Forms.Panel();
-            this.btn_confirm = new System.Windows.Forms.Button();
             this.btn_B4 = new System.Windows.Forms.Button();
             this.btn_D4 = new System.Windows.Forms.Button();
             this.btn_C4 = new System.Windows.Forms.Button();
@@ -78,6 +76,8 @@
             this.btn_B2 = new System.Windows.Forms.Button();
             this.btn_A1 = new System.Windows.Forms.Button();
             this.btn_E1 = new System.Windows.Forms.Button();
+            this.pnBaixo = new System.Windows.Forms.Panel();
+            this.btn_confirm = new System.Windows.Forms.Button();
             this.pnTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnMeio.SuspendLayout();
@@ -300,27 +300,6 @@
             this.label13.Size = new System.Drawing.Size(25, 25);
             this.label13.TabIndex = 44;
             this.label13.Text = "1";
-            // 
-            // pnBaixo
-            // 
-            this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnBaixo.Controls.Add(this.btn_confirm);
-            this.pnBaixo.Location = new System.Drawing.Point(-2, 416);
-            this.pnBaixo.Name = "pnBaixo";
-            this.pnBaixo.Size = new System.Drawing.Size(538, 58);
-            this.pnBaixo.TabIndex = 2;
-            // 
-            // btn_confirm
-            // 
-            this.btn_confirm.Location = new System.Drawing.Point(15, 10);
-            this.btn_confirm.Name = "btn_confirm";
-            this.btn_confirm.Size = new System.Drawing.Size(126, 35);
-            this.btn_confirm.TabIndex = 0;
-            this.btn_confirm.Text = "Confirmar reserva";
-            this.btn_confirm.UseVisualStyleBackColor = true;
-            this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
             // 
             // btn_B4
             // 
@@ -773,6 +752,27 @@
             this.btn_E1.UseVisualStyleBackColor = false;
             this.btn_E1.Click += new System.EventHandler(this.btn_E1_Click);
             // 
+            // pnBaixo
+            // 
+            this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnBaixo.Controls.Add(this.btn_confirm);
+            this.pnBaixo.Location = new System.Drawing.Point(-2, 416);
+            this.pnBaixo.Name = "pnBaixo";
+            this.pnBaixo.Size = new System.Drawing.Size(538, 58);
+            this.pnBaixo.TabIndex = 2;
+            // 
+            // btn_confirm
+            // 
+            this.btn_confirm.Location = new System.Drawing.Point(15, 10);
+            this.btn_confirm.Name = "btn_confirm";
+            this.btn_confirm.Size = new System.Drawing.Size(126, 35);
+            this.btn_confirm.TabIndex = 0;
+            this.btn_confirm.Text = "Confirmar reserva";
+            this.btn_confirm.UseVisualStyleBackColor = true;
+            this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
+            // 
             // pnTop
             // 
             this.pnTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -808,6 +808,7 @@
             this.Controls.Add(this.pnTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormReserva";
             this.Text = "Reserva de lugar";
             this.pnMeio.ResumeLayout(false);

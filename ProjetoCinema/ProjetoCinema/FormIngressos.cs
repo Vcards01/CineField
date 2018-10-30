@@ -21,6 +21,7 @@ namespace ProjetoCinema
         {
             FormReserva form = new FormReserva();
             form.StartPosition = FormStartPosition.CenterParent;
+            this.Hide();
             form.ShowDialog(this);
         }
     }
