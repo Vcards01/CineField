@@ -149,7 +149,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel3.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(387, 6);
+            this.panel3.Location = new System.Drawing.Point(387, 7);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(103, 50);
             this.panel3.TabIndex = 4;
