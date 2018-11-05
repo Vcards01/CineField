@@ -127,8 +127,8 @@
   <data name="armchair (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\armchair (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movietheater-screen-seats-700x396" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movietheater-screen-seats-700x396.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -141,6 +141,9 @@
   </data>
   <data name="Sem Título-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sem Título-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="17_Background_Color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\17_Background_Color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,8 +181,8 @@
   <data name="fundo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cinza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movietheater-screen-seats-700x3961" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movietheater-screen-seats-700x3961.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +190,23 @@
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sem Título-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem Título-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FilmIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilmIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Loguinho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loguinho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cinza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IngressoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IngressoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +226,7 @@
   <data name="3d-glasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3d-glasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sem Título-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sem Título-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fundo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fundo2.01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
