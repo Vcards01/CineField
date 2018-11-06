@@ -32,6 +32,7 @@ namespace ProjetoCinema
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            AbrirForm(new Home());
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -41,16 +42,29 @@ namespace ProjetoCinema
             {
                 this.Close();
             }
-            
-            
-            
         }
-
+       private void AbrirForm(object form)
+        {
+            if(this.pnFundo.Controls.Count>0)
+            {
+                this.pnFundo.Controls.RemoveAt(0);
+            }
+            Form f = form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.pnFundo.Controls.Add(f);
+            pnFundo.Tag = f;
+            f.WindowState = FormWindowState.Maximized;
+            f.Show(); 
+        }
         private void btnFilme_Click(object sender, EventArgs e)
         {
-            FormEmCartaz child = new FormEmCartaz();
-            child.MdiParent = this;
-            child.Show();
+            AbrirForm(new FormEmCartaz());
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Home());
         }
     }
 }

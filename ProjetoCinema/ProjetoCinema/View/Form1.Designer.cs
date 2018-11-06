@@ -33,7 +33,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnFundo = new System.Windows.Forms.Panel();
             this.tpTopo = new System.Windows.Forms.ToolStrip();
+            this.btnHome = new System.Windows.Forms.ToolStripButton();
             this.btnFilme = new System.Windows.Forms.ToolStripButton();
             this.btnIngresso = new System.Windows.Forms.ToolStripButton();
             this.btnAlgo = new System.Windows.Forms.ToolStripButton();
@@ -54,9 +56,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.Fundo21;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pnFundo);
             this.panel1.Controls.Add(this.tpTopo);
             this.panel1.Controls.Add(this.statusStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -65,16 +67,27 @@
             this.panel1.Size = new System.Drawing.Size(896, 441);
             this.panel1.TabIndex = 0;
             // 
+            // pnFundo
+            // 
+            this.pnFundo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnFundo.Location = new System.Drawing.Point(0, 55);
+            this.pnFundo.Name = "pnFundo";
+            this.pnFundo.Size = new System.Drawing.Size(896, 356);
+            this.pnFundo.TabIndex = 5;
+            // 
             // tpTopo
             // 
             this.tpTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tpTopo.AutoSize = false;
             this.tpTopo.BackColor = System.Drawing.Color.Transparent;
-            this.tpTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo3;
+            this.tpTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo5;
             this.tpTopo.Dock = System.Windows.Forms.DockStyle.None;
             this.tpTopo.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tpTopo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHome,
             this.btnFilme,
             this.btnIngresso,
             this.btnAlgo,
@@ -84,9 +97,22 @@
             this.tpTopo.Location = new System.Drawing.Point(0, 0);
             this.tpTopo.Name = "tpTopo";
             this.tpTopo.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tpTopo.Size = new System.Drawing.Size(900, 60);
+            this.tpTopo.Size = new System.Drawing.Size(900, 61);
             this.tpTopo.TabIndex = 4;
             this.tpTopo.Text = "toolStrip1";
+            // 
+            // btnHome
+            // 
+            this.btnHome.AutoSize = false;
+            this.btnHome.BackgroundImage = global::ProjetoCinema.Properties.Resources.home_filled_building;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnHome.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHome.Margin = new System.Windows.Forms.Padding(100, 10, 0, 2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(40, 40);
+            this.btnHome.ToolTipText = "Home";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnFilme
             // 
@@ -95,7 +121,7 @@
             this.btnFilme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFilme.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             this.btnFilme.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.btnFilme.Margin = new System.Windows.Forms.Padding(50, 10, 0, 2);
+            this.btnFilme.Margin = new System.Windows.Forms.Padding(100, 10, 0, 2);
             this.btnFilme.Name = "btnFilme";
             this.btnFilme.Size = new System.Drawing.Size(40, 40);
             this.btnFilme.ToolTipText = "Filme";
@@ -145,7 +171,7 @@
             this.btnFechar.BackgroundImage = global::ProjetoCinema.Properties.Resources.powerIcon;
             this.btnFechar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnFechar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(650, 10, 0, 2);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(580, 10, 0, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(40, 40);
             this.btnFechar.Text = "toolStripButton1";
@@ -203,7 +229,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "                                                                                 " +
     "                                                                ";
@@ -233,6 +258,8 @@
         private System.Windows.Forms.ToolStripButton btnAlgo;
         private System.Windows.Forms.ToolStripButton btnAdm;
         private System.Windows.Forms.ToolStripButton btnFechar;
+        private System.Windows.Forms.Panel pnFundo;
+        private System.Windows.Forms.ToolStripButton btnHome;
     }
 }
 
