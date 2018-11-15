@@ -6,26 +6,28 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Filme
+    public class Filme
     {
         private int id;
         private string nome;
         private string genero;
         private string sinopse;
-        private DateTime duração;
+        private string duracao;
         private List<Sessão> sessoes = new List<Sessão>();
 
-        public Filme(int id, string nome, string genero, string sinopse, DateTime duração)
+        
+        public Filme()
+        {
+
+        }
+
+        public Filme(int id, string nome, string genero, string sinopse, string duracao)
         {
             this.id = id;
             this.nome = nome;
             this.genero = genero;
             this.sinopse = sinopse;
-            this.duração = duração;
-        }
-        public Filme()
-        {
-
+            this.duracao = duracao;
         }
 
         public void AddSessao(Sessão s)
@@ -76,18 +78,7 @@ namespace ProjetoCinema
             }
         }
 
-        public DateTime Duração
-        {
-            get
-            {
-                return Duração;
-            }
-
-            set
-            {
-                Duração = value;
-            }
-        }
+        
 
         public string Sinopse
         {
@@ -99,6 +90,19 @@ namespace ProjetoCinema
             set
             {
                 sinopse = value;
+            }
+        }
+
+        public string Duracao
+        {
+            get
+            {
+                return duracao;
+            }
+
+            set
+            {
+                duracao = value;
             }
         }
     }

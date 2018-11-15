@@ -29,142 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmCartaz));
-            this.gpFilmes = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tituloFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duraFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessao = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.pnFundo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnTopo = new System.Windows.Forms.Panel();
-            this.lbTitulo = new System.Windows.Forms.Label();
-            this.gpFilmes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnTopo.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gpFilmes
+            // pnFundo
             // 
-            this.gpFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnFundo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpFilmes.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo5;
-            this.gpFilmes.Controls.Add(this.dataGridView1);
-            this.gpFilmes.ForeColor = System.Drawing.Color.White;
-            this.gpFilmes.Location = new System.Drawing.Point(0, 52);
-            this.gpFilmes.Name = "gpFilmes";
-            this.gpFilmes.Size = new System.Drawing.Size(596, 287);
-            this.gpFilmes.TabIndex = 14;
-            this.gpFilmes.TabStop = false;
-            this.gpFilmes.Text = "Filmes";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tituloFilme,
-            this.duraFilme,
-            this.genFilme,
-            this.sessao});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(590, 268);
-            this.dataGridView1.TabIndex = 13;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tituloFilme
-            // 
-            this.tituloFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tituloFilme.HeaderText = "Titulo";
-            this.tituloFilme.Name = "tituloFilme";
-            // 
-            // duraFilme
-            // 
-            this.duraFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.duraFilme.HeaderText = "Duração";
-            this.duraFilme.Name = "duraFilme";
-            // 
-            // genFilme
-            // 
-            this.genFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.genFilme.HeaderText = "Genero";
-            this.genFilme.Name = "genFilme";
-            // 
-            // sessao
-            // 
-            this.sessao.HeaderText = "Sessões";
-            this.sessao.Name = "sessao";
-            this.sessao.Text = "Ver";
+            this.pnFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            this.pnFundo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnFundo.BackgroundImage")));
+            this.pnFundo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnFundo.Location = new System.Drawing.Point(0, 0);
+            this.pnFundo.Name = "pnFundo";
+            this.pnFundo.Size = new System.Drawing.Size(896, 441);
+            this.pnFundo.TabIndex = 5;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo5;
-            this.panel1.Location = new System.Drawing.Point(0, 335);
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pnFundo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(605, 35);
-            this.panel1.TabIndex = 13;
-            // 
-            // pnTopo
-            // 
-            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo5;
-            this.pnTopo.Controls.Add(this.lbTitulo);
-            this.pnTopo.Location = new System.Drawing.Point(0, 0);
-            this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(605, 53);
-            this.pnTopo.TabIndex = 12;
-            // 
-            // lbTitulo
-            // 
-            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbTitulo.AutoSize = true;
-            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(222, 7);
-            this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
-            this.lbTitulo.TabIndex = 3;
-            this.lbTitulo.Text = "Em Cartaz";
+            this.panel1.Size = new System.Drawing.Size(896, 441);
+            this.panel1.TabIndex = 1;
             // 
             // FormEmCartaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 370);
-            this.Controls.Add(this.gpFilmes);
+            this.ClientSize = new System.Drawing.Size(896, 441);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnTopo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEmCartaz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Filmes em cartaz";
-            this.gpFilmes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pnTopo.ResumeLayout(false);
-            this.pnTopo.PerformLayout();
+            this.Load += new System.EventHandler(this.FormEmCartaz_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnTopo;
-        private System.Windows.Forms.Label lbTitulo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel pnFundo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tituloFilme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn duraFilme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genFilme;
-        private System.Windows.Forms.DataGridViewButtonColumn sessao;
-        private System.Windows.Forms.GroupBox gpFilmes;
     }
 }

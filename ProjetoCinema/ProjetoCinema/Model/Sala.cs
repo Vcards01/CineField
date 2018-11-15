@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Sala
+    public class Sala
     {
         private int id;
         private int qtddLugares=30;

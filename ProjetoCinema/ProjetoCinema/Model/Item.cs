@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Item
+    public class Item
     {
         private double preco;
         List<Venda> vendas = new List<Venda>();

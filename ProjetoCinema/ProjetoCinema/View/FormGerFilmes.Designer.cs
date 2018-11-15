@@ -32,17 +32,19 @@
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
-            this.lbDuração = new System.Windows.Forms.Label();
             this.lbCodigo = new System.Windows.Forms.Label();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Sinopse = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHoras = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
@@ -72,19 +74,10 @@
             this.lbGenero.TabIndex = 4;
             this.lbGenero.Text = "Genero";
             // 
-            // lbDuração
-            // 
-            this.lbDuração.AutoSize = true;
-            this.lbDuração.Location = new System.Drawing.Point(207, 94);
-            this.lbDuração.Name = "lbDuração";
-            this.lbDuração.Size = new System.Drawing.Size(48, 13);
-            this.lbDuração.TabIndex = 5;
-            this.lbDuração.Text = "Duração";
-            // 
             // lbCodigo
             // 
             this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Location = new System.Drawing.Point(33, 123);
+            this.lbCodigo.Location = new System.Drawing.Point(199, 94);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(40, 13);
             this.lbCodigo.TabIndex = 6;
@@ -110,23 +103,10 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(72, 120);
+            this.txtCodigo.Location = new System.Drawing.Point(245, 91);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(127, 20);
             this.txtCodigo.TabIndex = 9;
-            // 
-            // dtpHorario
-            // 
-            this.dtpHorario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dtpHorario.Checked = false;
-            this.dtpHorario.CustomFormat = "HH: mm: ss tt ";
-            this.dtpHorario.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHorario.Location = new System.Drawing.Point(265, 88);
-            this.dtpHorario.Name = "dtpHorario";
-            this.dtpHorario.ShowUpDown = true;
-            this.dtpHorario.Size = new System.Drawing.Size(107, 20);
-            this.dtpHorario.TabIndex = 29;
-            this.dtpHorario.Value = new System.DateTime(2018, 10, 28, 0, 0, 0, 0);
             // 
             // pnBaixo
             // 
@@ -135,15 +115,15 @@
             this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
             this.pnBaixo.Controls.Add(this.btnCancelar);
             this.pnBaixo.Controls.Add(this.btnSalvar);
-            this.pnBaixo.Location = new System.Drawing.Point(0, 160);
+            this.pnBaixo.Location = new System.Drawing.Point(0, 303);
             this.pnBaixo.Name = "pnBaixo";
-            this.pnBaixo.Size = new System.Drawing.Size(456, 42);
+            this.pnBaixo.Size = new System.Drawing.Size(418, 42);
             this.pnBaixo.TabIndex = 1;
             // 
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCancelar.Location = new System.Drawing.Point(280, 10);
+            this.btnCancelar.Location = new System.Drawing.Point(261, 10);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 1;
@@ -154,7 +134,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnSalvar.Location = new System.Drawing.Point(85, 10);
+            this.btnSalvar.Location = new System.Drawing.Point(66, 10);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 0;
@@ -171,7 +151,7 @@
             this.pnTopo.Controls.Add(this.panel1);
             this.pnTopo.Location = new System.Drawing.Point(0, 1);
             this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(456, 42);
+            this.pnTopo.Size = new System.Drawing.Size(418, 42);
             this.pnTopo.TabIndex = 0;
             // 
             // lbTitulo
@@ -181,7 +161,7 @@
             this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(174, 5);
+            this.lbTitulo.Location = new System.Drawing.Point(155, 5);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(100, 31);
             this.lbTitulo.TabIndex = 3;
@@ -195,16 +175,51 @@
             this.panel1.Size = new System.Drawing.Size(456, 124);
             this.panel1.TabIndex = 2;
             // 
+            // Sinopse
+            // 
+            this.Sinopse.AutoSize = true;
+            this.Sinopse.Location = new System.Drawing.Point(31, 207);
+            this.Sinopse.Name = "Sinopse";
+            this.Sinopse.Size = new System.Drawing.Size(45, 13);
+            this.Sinopse.TabIndex = 30;
+            this.Sinopse.Text = "Sinopse";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 207);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(290, 90);
+            this.textBox1.TabIndex = 31;
+            // 
+            // txtHoras
+            // 
+            this.txtHoras.Location = new System.Drawing.Point(82, 147);
+            this.txtHoras.Name = "txtHoras";
+            this.txtHoras.Size = new System.Drawing.Size(111, 20);
+            this.txtHoras.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Duração";
+            // 
             // FormGerFilmes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 202);
-            this.Controls.Add(this.dtpHorario);
+            this.ClientSize = new System.Drawing.Size(418, 345);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtHoras);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Sinopse);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.cbGenero);
             this.Controls.Add(this.lbCodigo);
-            this.Controls.Add(this.lbDuração);
             this.Controls.Add(this.lbGenero);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtTitulo);
@@ -216,6 +231,7 @@
             this.MinimizeBox = false;
             this.Name = "FormGerFilmes";
             this.Text = "Gerenciar Filmes";
+            this.Load += new System.EventHandler(this.FormGerFilmes_Load);
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();
@@ -233,12 +249,14 @@
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label lbGenero;
-        private System.Windows.Forms.Label lbDuração;
         private System.Windows.Forms.Label lbCodigo;
         private System.Windows.Forms.ComboBox cbGenero;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.DateTimePicker dtpHorario;
+        private System.Windows.Forms.Label Sinopse;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHoras;
+        private System.Windows.Forms.Label label1;
     }
 }

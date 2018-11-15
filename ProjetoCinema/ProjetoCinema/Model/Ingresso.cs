@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Ingresso:Item
+    public class Ingresso:Item
     {
         Sessão sessao = new Sessão();
     }

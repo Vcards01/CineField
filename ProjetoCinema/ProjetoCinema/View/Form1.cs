@@ -16,6 +16,7 @@ namespace ProjetoCinema
         {
             InitializeComponent();
             timer1.Start();
+            AbrirForm(new Home());
         }
         public Form1(int flag)
         { 
@@ -32,16 +33,12 @@ namespace ProjetoCinema
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            AbrirForm(new Home());
+           
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Deseja mesmo fechar o sistema?", "Encerrar o programa?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(result==DialogResult.Yes)
-            {
-                this.Close();
-            }
+            
         }
        private void AbrirForm(object form)
         {
@@ -54,8 +51,13 @@ namespace ProjetoCinema
             f.Dock = DockStyle.Fill;
             this.pnFundo.Controls.Add(f);
             pnFundo.Tag = f;
-            f.WindowState = FormWindowState.Maximized;
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.Show(); 
+        }
+        private void FecharForm(object form)
+        {
+            Form f = form as Form;
+            f.Close();
         }
         private void btnFilme_Click(object sender, EventArgs e)
         {
@@ -65,6 +67,25 @@ namespace ProjetoCinema
         private void btnHome_Click(object sender, EventArgs e)
         {
             AbrirForm(new Home());
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja mesmo fechar o sistema?", "Encerrar o programa?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnAdm_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Administração());
         }
     }
 }

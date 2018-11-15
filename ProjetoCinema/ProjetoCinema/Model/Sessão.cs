@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Sessão
+   public class Sessão
     {
         private int id;
         private DateTime horario;

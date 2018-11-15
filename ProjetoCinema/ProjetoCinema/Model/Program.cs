@@ -18,6 +18,7 @@ namespace ProjetoCinema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DataBase bd = DataBase.GetInstance();
             Application.Run(new Form1());
             
         }

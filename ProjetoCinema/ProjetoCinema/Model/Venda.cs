@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Venda
+   public class Venda
     {
         
         private double soma;

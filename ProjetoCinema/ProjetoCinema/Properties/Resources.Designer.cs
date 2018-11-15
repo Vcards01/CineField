@@ -203,6 +203,26 @@ namespace ProjetoCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clap {
+            get {
+                object obj = ResourceManager.GetObject("Clap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clapp {
+            get {
+                object obj = ResourceManager.GetObject("Clapp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -476,6 +496,16 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap Sem_Título_2 {
             get {
                 object obj = ResourceManager.GetObject("Sem Título-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_21 {
+            get {
+                object obj = ResourceManager.GetObject("Sem Título-21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

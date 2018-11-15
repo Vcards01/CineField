@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmFilmes));
             this.gpFilmes = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cGenero = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +44,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
             this.gpFilmes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
             this.pnFilmesBaixo.SuspendLayout();
             this.pnFilmes.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpFilmes.BackColor = System.Drawing.Color.Transparent;
-            this.gpFilmes.Controls.Add(this.dataGridView1);
+            this.gpFilmes.Controls.Add(this.dgvFilmes);
             this.gpFilmes.Location = new System.Drawing.Point(1, 58);
             this.gpFilmes.Name = "gpFilmes";
             this.gpFilmes.Size = new System.Drawing.Size(475, 185);
@@ -63,22 +63,22 @@
             this.gpFilmes.TabStop = false;
             this.gpFilmes.Text = "Filmes";
             // 
-            // dataGridView1
+            // dgvFilmes
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFilmes.AllowUserToAddRows = false;
+            this.dgvFilmes.AllowUserToDeleteRows = false;
+            this.dgvFilmes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFilmes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cid,
             this.cNome,
             this.cGenero,
             this.cDuração});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(469, 166);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvFilmes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvFilmes.Location = new System.Drawing.Point(3, 16);
+            this.dgvFilmes.Name = "dgvFilmes";
+            this.dgvFilmes.ReadOnly = true;
+            this.dgvFilmes.Size = new System.Drawing.Size(469, 166);
+            this.dgvFilmes.TabIndex = 0;
             // 
             // Cid
             // 
@@ -128,6 +128,7 @@
             this.btnExcluir.TabIndex = 3;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnVisualizar
             // 
@@ -208,8 +209,9 @@
             this.MinimizeBox = false;
             this.Name = "FormAdmFilmes";
             this.Text = "Administrar Filmes";
+            this.Load += new System.EventHandler(this.FormAdmFilmes_Load);
             this.gpFilmes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).EndInit();
             this.pnFilmesBaixo.ResumeLayout(false);
             this.pnFilmes.ResumeLayout(false);
             this.pnFilmes.PerformLayout();
@@ -221,7 +223,7 @@
 
         private System.Windows.Forms.Panel pnFilmes;
         private System.Windows.Forms.GroupBox gpFilmes;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFilmes;
         private System.Windows.Forms.Panel pnFilmesBaixo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbFiltro;

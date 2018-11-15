@@ -33,6 +33,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbTitulo = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.pnFundo = new System.Windows.Forms.Panel();
             this.tpTopo = new System.Windows.Forms.ToolStrip();
             this.btnHome = new System.Windows.Forms.ToolStripButton();
@@ -40,14 +44,21 @@
             this.btnIngresso = new System.Windows.Forms.ToolStripButton();
             this.btnAlgo = new System.Windows.Forms.ToolStripButton();
             this.btnAdm = new System.Windows.Forms.ToolStripButton();
-            this.btnFechar = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lbBemVindo = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbHoras = new System.Windows.Forms.ToolStripStatusLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.retirarValorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tpTopo.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -58,23 +69,77 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pnFundo);
             this.panel1.Controls.Add(this.tpTopo);
             this.panel1.Controls.Add(this.statusStrip1);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.menuStrip2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(896, 441);
             this.panel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(203)))));
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.lbTitulo);
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Location = new System.Drawing.Point(0, -4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(896, 28);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_21;
+            this.panel3.Location = new System.Drawing.Point(12, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(21, 21);
+            this.panel3.TabIndex = 2;
+            // 
+            // lbTitulo
+            // 
+            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.ForeColor = System.Drawing.Color.White;
+            this.lbTitulo.Location = new System.Drawing.Point(39, 9);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(62, 13);
+            this.lbTitulo.TabIndex = 1;
+            this.lbTitulo.Text = "CINEFIELD";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(873, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(21, 21);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // pnFundo
             // 
             this.pnFundo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnFundo.Location = new System.Drawing.Point(0, 55);
+            this.pnFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            this.pnFundo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnFundo.BackgroundImage")));
+            this.pnFundo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnFundo.Location = new System.Drawing.Point(0, 111);
             this.pnFundo.Name = "pnFundo";
-            this.pnFundo.Size = new System.Drawing.Size(896, 356);
+            this.pnFundo.Size = new System.Drawing.Size(896, 300);
             this.pnFundo.TabIndex = 5;
             // 
             // tpTopo
@@ -82,8 +147,7 @@
             this.tpTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tpTopo.AutoSize = false;
-            this.tpTopo.BackColor = System.Drawing.Color.Transparent;
-            this.tpTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo5;
+            this.tpTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.tpTopo.Dock = System.Windows.Forms.DockStyle.None;
             this.tpTopo.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tpTopo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -91,13 +155,12 @@
             this.btnFilme,
             this.btnIngresso,
             this.btnAlgo,
-            this.btnAdm,
-            this.btnFechar});
+            this.btnAdm});
             this.tpTopo.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.tpTopo.Location = new System.Drawing.Point(0, 0);
+            this.tpTopo.Location = new System.Drawing.Point(0, 48);
             this.tpTopo.Name = "tpTopo";
             this.tpTopo.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tpTopo.Size = new System.Drawing.Size(900, 61);
+            this.tpTopo.Size = new System.Drawing.Size(900, 66);
             this.tpTopo.TabIndex = 4;
             this.tpTopo.Text = "toolStrip1";
             // 
@@ -164,24 +227,12 @@
             this.btnAdm.Size = new System.Drawing.Size(40, 40);
             this.btnAdm.Text = "toolStripButton1";
             this.btnAdm.ToolTipText = "Administração";
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.AutoSize = false;
-            this.btnFechar.BackgroundImage = global::ProjetoCinema.Properties.Resources.powerIcon;
-            this.btnFechar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnFechar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(580, 10, 0, 2);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(40, 40);
-            this.btnFechar.Text = "toolStripButton1";
-            this.btnFechar.ToolTipText = "Fechar";
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            this.btnAdm.Click += new System.EventHandler(this.btnAdm_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.AutoSize = false;
-            this.statusStrip1.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo4;
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(203)))));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lbBemVindo,
             this.lbDate,
@@ -221,6 +272,53 @@
             this.lbHoras.Size = new System.Drawing.Size(49, 25);
             this.lbHoras.Text = "Hora";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.caixaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(896, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // caixaToolStripMenuItem
+            // 
+            this.caixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirToolStripMenuItem,
+            this.fecharToolStripMenuItem,
+            this.retirarValorToolStripMenuItem});
+            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.caixaToolStripMenuItem.Text = "Caixa";
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.abrirToolStripMenuItem.Text = "Abrir";
+            // 
+            // fecharToolStripMenuItem
+            // 
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            // 
+            // retirarValorToolStripMenuItem
+            // 
+            this.retirarValorToolStripMenuItem.Name = "retirarValorToolStripMenuItem";
+            this.retirarValorToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.retirarValorToolStripMenuItem.Text = "Retirar valor";
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(896, 24);
+            this.menuStrip2.TabIndex = 8;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,16 +327,22 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "                                                                                 " +
     "                                                                ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.tpTopo.ResumeLayout(false);
             this.tpTopo.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -257,9 +361,18 @@
         private System.Windows.Forms.ToolStripButton btnIngresso;
         private System.Windows.Forms.ToolStripButton btnAlgo;
         private System.Windows.Forms.ToolStripButton btnAdm;
-        private System.Windows.Forms.ToolStripButton btnFechar;
         private System.Windows.Forms.Panel pnFundo;
         private System.Windows.Forms.ToolStripButton btnHome;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbTitulo;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem retirarValorToolStripMenuItem;
     }
 }
 
