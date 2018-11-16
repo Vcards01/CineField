@@ -32,43 +32,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
-            this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.CID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tituloFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.duraFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sinopse = new System.Windows.Forms.DataGridViewButtonColumn();
             gpFilmes = new System.Windows.Forms.GroupBox();
-            this.pnTopo.SuspendLayout();
             gpFilmes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
+            this.pnTopo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnTopo
-            // 
-            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.Controls.Add(this.lbTitulo);
-            this.pnTopo.Location = new System.Drawing.Point(303, 3);
-            this.pnTopo.MaximumSize = new System.Drawing.Size(517, 51);
-            this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(517, 51);
-            this.pnTopo.TabIndex = 21;
-            // 
-            // lbTitulo
-            // 
-            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbTitulo.AutoSize = true;
-            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(178, 7);
-            this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
-            this.lbTitulo.TabIndex = 3;
-            this.lbTitulo.Text = "Em Cartaz";
             // 
             // gpFilmes
             // 
@@ -124,11 +100,37 @@
             this.dgvFilmes.TabIndex = 13;
             this.dgvFilmes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellContentClick);
             // 
+            // pnTopo
+            // 
+            this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnTopo.Controls.Add(this.lbTitulo);
+            this.pnTopo.Location = new System.Drawing.Point(303, 3);
+            this.pnTopo.MaximumSize = new System.Drawing.Size(517, 51);
+            this.pnTopo.Name = "pnTopo";
+            this.pnTopo.Size = new System.Drawing.Size(517, 51);
+            this.pnTopo.TabIndex = 21;
+            // 
+            // lbTitulo
+            // 
+            this.lbTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.ForeColor = System.Drawing.Color.White;
+            this.lbTitulo.Location = new System.Drawing.Point(178, 7);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(151, 31);
+            this.lbTitulo.TabIndex = 3;
+            this.lbTitulo.Text = "Em Cartaz";
+            // 
             // CID
             // 
+            this.CID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.CID.HeaderText = "ID";
             this.CID.Name = "CID";
             this.CID.ReadOnly = true;
+            this.CID.Width = 30;
             // 
             // tituloFilme
             // 
@@ -153,7 +155,7 @@
             // 
             // Sinopse
             // 
-            this.Sinopse.HeaderText = "Sessões";
+            this.Sinopse.HeaderText = "Sinopse";
             this.Sinopse.Name = "Sinopse";
             this.Sinopse.ReadOnly = true;
             this.Sinopse.Text = "Ver";
@@ -173,10 +175,10 @@
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
-            this.pnTopo.ResumeLayout(false);
-            this.pnTopo.PerformLayout();
             gpFilmes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).EndInit();
+            this.pnTopo.ResumeLayout(false);
+            this.pnTopo.PerformLayout();
             this.ResumeLayout(false);
 
         }

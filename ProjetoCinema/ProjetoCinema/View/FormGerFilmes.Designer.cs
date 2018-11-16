@@ -43,8 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Sinopse = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtHoras = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtHoras = new System.Windows.Forms.DateTimePicker();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
@@ -192,13 +192,6 @@
             this.textBox1.Size = new System.Drawing.Size(290, 90);
             this.textBox1.TabIndex = 31;
             // 
-            // txtHoras
-            // 
-            this.txtHoras.Location = new System.Drawing.Point(82, 147);
-            this.txtHoras.Name = "txtHoras";
-            this.txtHoras.Size = new System.Drawing.Size(111, 20);
-            this.txtHoras.TabIndex = 32;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -208,13 +201,24 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Duração";
             // 
+            // txtHoras
+            // 
+            this.txtHoras.CustomFormat = "HH:mm";
+            this.txtHoras.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtHoras.Location = new System.Drawing.Point(81, 147);
+            this.txtHoras.Name = "txtHoras";
+            this.txtHoras.ShowUpDown = true;
+            this.txtHoras.Size = new System.Drawing.Size(60, 20);
+            this.txtHoras.TabIndex = 34;
+            this.txtHoras.Value = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
+            // 
             // FormGerFilmes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 345);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoras);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Sinopse);
             this.Controls.Add(this.txtCodigo);
@@ -256,7 +260,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label Sinopse;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtHoras;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker txtHoras;
     }
 }

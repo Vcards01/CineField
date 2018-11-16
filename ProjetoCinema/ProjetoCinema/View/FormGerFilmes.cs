@@ -27,7 +27,7 @@ namespace ProjetoCinema
             this.editavel = editavel;
             InitializeComponent();
             txtCodigo.Text = f.Id.ToString();
-            txtHoras.Text = f.Duracao;
+            txtHoras.Text = f.Duracao.ToString();
             txtTitulo.Text = f.Nome;
             cbGenero.Text = f.Genero;
             textBox1.Text = f.Sinopse;
@@ -44,11 +44,11 @@ namespace ProjetoCinema
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Filme f = new Filme();
-            f.Id = int.Parse(txtCodigo.Text);
+            
             f.Nome = txtTitulo.Text;
             f.Genero = cbGenero.Text;
             f.Sinopse = textBox1.Text;
-            f.Duracao = txtHoras.Text;
+            f.Duracao = DateTime.Parse(txtHoras.Text);
             if(salvar)
             {
                 DAO.Create(f);
@@ -56,6 +56,7 @@ namespace ProjetoCinema
             }
             if(editavel)
             {
+                f.Id = int.Parse(txtCodigo.Text);
                 DAO.Update(f);
                 Dispose();
             }
