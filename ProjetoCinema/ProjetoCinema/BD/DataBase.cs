@@ -20,14 +20,17 @@ namespace ProjetoCinema
         {
             connection = new SQLiteConnection("Data Source=" + dbName);
         }
-
+        private void CreateTables()
+        {
+            
+        }
         public static DataBase GetInstance()
         {
             if (instance == null)
                 instance = new DataBase();
             return instance;
         }
-               
+       
         public void ExecuteNonQuery(SQLiteCommand cmd)
         {
             if (connection.State != System.Data.ConnectionState.Open)

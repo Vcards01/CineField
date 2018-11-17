@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmSalas));
             this.gpSalas = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSalas = new System.Windows.Forms.DataGridView();
             this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
             this.gpSalas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.pnSalas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpSalas.BackColor = System.Drawing.Color.Transparent;
-            this.gpSalas.Controls.Add(this.dataGridView1);
+            this.gpSalas.Controls.Add(this.dgvSalas);
             this.gpSalas.Location = new System.Drawing.Point(138, 67);
             this.gpSalas.Name = "gpSalas";
             this.gpSalas.Size = new System.Drawing.Size(335, 198);
@@ -60,20 +60,20 @@
             this.gpSalas.TabStop = false;
             this.gpSalas.Text = "Salas";
             // 
-            // dataGridView1
+            // dgvSalas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSalas.AllowUserToAddRows = false;
+            this.dgvSalas.AllowUserToDeleteRows = false;
+            this.dgvSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSalas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cid,
             this.cNome});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(329, 179);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvSalas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSalas.Location = new System.Drawing.Point(3, 16);
+            this.dgvSalas.Name = "dgvSalas";
+            this.dgvSalas.ReadOnly = true;
+            this.dgvSalas.Size = new System.Drawing.Size(329, 179);
+            this.dgvSalas.TabIndex = 0;
             // 
             // Cid
             // 
@@ -98,6 +98,7 @@
             this.btnExcluir.TabIndex = 3;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnVisualizar
             // 
@@ -195,7 +196,7 @@
             this.Name = "FormAdmSalas";
             this.Text = "Administrar Salas";
             this.gpSalas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
             this.pnSalas.ResumeLayout(false);
             this.pnSalas.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +211,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.GroupBox gpSalas;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSalas;
         private System.Windows.Forms.Panel pnSalas;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbFiltro;

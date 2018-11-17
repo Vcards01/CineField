@@ -32,14 +32,14 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lbCodigo = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.NmLugares = new System.Windows.Forms.NumericUpDown();
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.pnMeio = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).BeginInit();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtCodigo.Enabled = false;
             this.txtCodigo.Location = new System.Drawing.Point(125, 76);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(121, 20);
@@ -72,13 +73,13 @@
             this.lbGenero.TabIndex = 15;
             this.lbGenero.Text = "Numero de lugares";
             // 
-            // numericUpDown1
+            // NmLugares
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.numericUpDown1.Location = new System.Drawing.Point(386, 77);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown1.TabIndex = 20;
+            this.NmLugares.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NmLugares.Location = new System.Drawing.Point(386, 77);
+            this.NmLugares.Name = "NmLugares";
+            this.NmLugares.Size = new System.Drawing.Size(42, 20);
+            this.NmLugares.TabIndex = 20;
             // 
             // pnBaixo
             // 
@@ -154,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 169);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.NmLugares);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lbCodigo);
             this.Controls.Add(this.lbGenero);
@@ -166,7 +167,7 @@
             this.MinimizeBox = false;
             this.Name = "FormGerSalas";
             this.Text = "Gerenciar Salas";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).EndInit();
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();
@@ -185,6 +186,6 @@
         private System.Windows.Forms.Panel pnTopo;
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.Panel pnMeio;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NmLugares;
     }
 }
