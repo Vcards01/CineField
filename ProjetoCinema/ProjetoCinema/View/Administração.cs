@@ -16,21 +16,33 @@ namespace ProjetoCinema
         {
             InitializeComponent();
         }
+        private void AbrirForm(object form)
+        {
+            if (this.pnFundo.Controls.Count > 0)
+            {
+                this.pnFundo.Controls.RemoveAt(0);
+            }
+            Form f = form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.pnFundo.Controls.Add(f);
+            pnFundo.Tag = f;
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+            pnFundo.Visible = true;
+        }
 
-        
 
         private void btnGerFilme_Click(object sender, EventArgs e)
         {
-            FormAdmFilmes form = new FormAdmFilmes();
-            form.StartPosition = FormStartPosition.CenterParent;
-            form.ShowDialog(this);
+            AbrirForm(new FormAdmFilmes());
+            
         }
 
         private void btnGerSala_Click(object sender, EventArgs e)
         {
-            FormAdmSalas form = new FormAdmSalas();
-            form.StartPosition = FormStartPosition.CenterParent;
-            form.ShowDialog(this);
+            AbrirForm(new FormAdmSalas());
+           
         }
 
         private void btnGerSessões_Click(object sender, EventArgs e)
@@ -52,6 +64,11 @@ namespace ProjetoCinema
             FormAdmFuncionario form = new FormAdmFuncionario();
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
+        }
+
+        private void Administração_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

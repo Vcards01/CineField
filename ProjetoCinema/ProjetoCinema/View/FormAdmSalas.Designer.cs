@@ -48,8 +48,7 @@
             // 
             // gpSalas
             // 
-            this.gpSalas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gpSalas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpSalas.BackColor = System.Drawing.Color.Transparent;
             this.gpSalas.Controls.Add(this.dgvSalas);
@@ -90,8 +89,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluir.Location = new System.Drawing.Point(39, 236);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
@@ -102,8 +100,7 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVisualizar.Location = new System.Drawing.Point(39, 174);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(75, 23);
@@ -114,8 +111,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.Location = new System.Drawing.Point(39, 120);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
@@ -126,8 +122,7 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNovo.Location = new System.Drawing.Point(39, 67);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 23);
@@ -141,9 +136,9 @@
             this.pnSalasBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnSalasBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnSalasBaixo.Location = new System.Drawing.Point(-2, 265);
+            this.pnSalasBaixo.Location = new System.Drawing.Point(4, 270);
             this.pnSalasBaixo.Name = "pnSalasBaixo";
-            this.pnSalasBaixo.Size = new System.Drawing.Size(475, 61);
+            this.pnSalasBaixo.Size = new System.Drawing.Size(467, 50);
             this.pnSalasBaixo.TabIndex = 5;
             // 
             // pnSalas
@@ -153,15 +148,15 @@
             this.pnSalas.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
             this.pnSalas.Controls.Add(this.textBox1);
             this.pnSalas.Controls.Add(this.lbFiltro);
-            this.pnSalas.Location = new System.Drawing.Point(1, 0);
+            this.pnSalas.Location = new System.Drawing.Point(4, 4);
             this.pnSalas.Name = "pnSalas";
-            this.pnSalas.Size = new System.Drawing.Size(475, 61);
+            this.pnSalas.Size = new System.Drawing.Size(467, 58);
             this.pnSalas.TabIndex = 3;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Location = new System.Drawing.Point(73, 17);
+            this.textBox1.Location = new System.Drawing.Point(69, 17);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 20);
             this.textBox1.TabIndex = 1;
@@ -172,7 +167,7 @@
             this.lbFiltro.AutoSize = true;
             this.lbFiltro.BackColor = System.Drawing.Color.Transparent;
             this.lbFiltro.ForeColor = System.Drawing.Color.Aquamarine;
-            this.lbFiltro.Location = new System.Drawing.Point(35, 20);
+            this.lbFiltro.Location = new System.Drawing.Point(31, 20);
             this.lbFiltro.Name = "lbFiltro";
             this.lbFiltro.Size = new System.Drawing.Size(32, 13);
             this.lbFiltro.TabIndex = 0;
@@ -182,6 +177,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(475, 325);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.pnSalasBaixo);
@@ -190,7 +187,8 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.pnSalas);
             this.Controls.Add(this.btnNovo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormAdmSalas";
