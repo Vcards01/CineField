@@ -26,14 +26,15 @@ namespace ProjetoCinema
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FormGerSessao form = new FormGerSessao(true);
+            Sessão s;
+            FormGerSessao form = new FormGerSessao();
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            FormGerSessao form = new FormGerSessao(false);
+            FormGerSessao form = new FormGerSessao();
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }

@@ -26,6 +26,7 @@ namespace ProjetoCinema
             this.editavel = editavel;
             InitializeComponent();
             txtCodigo.Text = s.Id.ToString();
+            txtNome.Text = s.Nome;       
             NmLugares.Value = s.QtddLugares;
             if (editavel == false)
             {
@@ -38,6 +39,7 @@ namespace ProjetoCinema
         {
             Sala s = new Sala();
             s.QtddLugares=int.Parse(NmLugares.Value.ToString());
+            s.Nome = txtNome.Text;
             if (salvar)
             {
                 DAO.Create(s);

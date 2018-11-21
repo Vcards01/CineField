@@ -31,8 +31,8 @@ namespace ProjetoCinema
             dgvSalas.Rows.Clear();
             foreach (Sala a in data)
                 if (filter == "")
-                    dgvSalas.Rows.Add(a.Id,a.QtddLugares);
-            Console.Read();
+                    dgvSalas.Rows.Add(a.Id, a.Nome, a.QtddLugares);
+           
         }
         private void btnNovo_Click(object sender, EventArgs e)
         {
@@ -67,6 +67,11 @@ namespace ProjetoCinema
             DAO.Delete(s.Id);
             LoadDatabase();
             Fill("");
+        }
+
+        private void FormAdmSalas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

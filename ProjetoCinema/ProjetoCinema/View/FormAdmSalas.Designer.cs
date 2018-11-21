@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmSalas));
             this.gpSalas = new System.Windows.Forms.GroupBox();
             this.dgvSalas = new System.Windows.Forms.DataGridView();
-            this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -41,6 +39,9 @@
             this.pnSalas = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
+            this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cQtdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpSalas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.pnSalas.SuspendLayout();
@@ -52,9 +53,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpSalas.BackColor = System.Drawing.Color.Transparent;
             this.gpSalas.Controls.Add(this.dgvSalas);
-            this.gpSalas.Location = new System.Drawing.Point(138, 67);
+            this.gpSalas.Location = new System.Drawing.Point(120, 67);
             this.gpSalas.Name = "gpSalas";
-            this.gpSalas.Size = new System.Drawing.Size(335, 198);
+            this.gpSalas.Size = new System.Drawing.Size(353, 198);
             this.gpSalas.TabIndex = 4;
             this.gpSalas.TabStop = false;
             this.gpSalas.Text = "Salas";
@@ -66,26 +67,14 @@
             this.dgvSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSalas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cid,
-            this.cNome});
+            this.CNome,
+            this.cQtdd});
             this.dgvSalas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSalas.Location = new System.Drawing.Point(3, 16);
             this.dgvSalas.Name = "dgvSalas";
             this.dgvSalas.ReadOnly = true;
-            this.dgvSalas.Size = new System.Drawing.Size(329, 179);
+            this.dgvSalas.Size = new System.Drawing.Size(347, 179);
             this.dgvSalas.TabIndex = 0;
-            // 
-            // Cid
-            // 
-            this.Cid.HeaderText = "Numero";
-            this.Cid.Name = "Cid";
-            this.Cid.ReadOnly = true;
-            // 
-            // cNome
-            // 
-            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cNome.HeaderText = "Quantidade de Lugares";
-            this.cNome.Name = "cNome";
-            this.cNome.ReadOnly = true;
             // 
             // btnExcluir
             // 
@@ -173,6 +162,26 @@
             this.lbFiltro.TabIndex = 0;
             this.lbFiltro.Text = "Filtrar";
             // 
+            // Cid
+            // 
+            this.Cid.HeaderText = "Numero";
+            this.Cid.Name = "Cid";
+            this.Cid.ReadOnly = true;
+            // 
+            // CNome
+            // 
+            this.CNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNome.HeaderText = "Nome";
+            this.CNome.Name = "CNome";
+            this.CNome.ReadOnly = true;
+            // 
+            // cQtdd
+            // 
+            this.cQtdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cQtdd.HeaderText = "Quantidade de Lugares";
+            this.cQtdd.Name = "cQtdd";
+            this.cQtdd.ReadOnly = true;
+            // 
             // FormAdmSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +202,7 @@
             this.MaximizeBox = false;
             this.Name = "FormAdmSalas";
             this.Text = "Administrar Salas";
+            this.Load += new System.EventHandler(this.FormAdmSalas_Load);
             this.gpSalas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
             this.pnSalas.ResumeLayout(false);
@@ -214,6 +224,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbFiltro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cQtdd;
     }
 }

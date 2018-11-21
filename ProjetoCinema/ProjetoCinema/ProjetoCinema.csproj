@@ -72,6 +72,7 @@
     <Compile Include="BD\DataBase.cs" />
     <Compile Include="BD\FilmeDAO.cs" />
     <Compile Include="BD\SalaDAO.cs" />
+    <Compile Include="BD\SessaoDAO.cs" />
     <Compile Include="BD\Tables.cs" />
     <Compile Include="Model\Adiministrador.cs" />
     <Compile Include="Model\Caixa.cs" />

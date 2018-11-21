@@ -8,19 +8,23 @@ namespace ProjetoCinema
 {
     public class Sala
     {
+        private string nome;
         private int id;
         private int qtddLugares;
         private List<Sessão> sessoes = new List<Sessão>();
 
-        public Sala(int id, int qtddLugares)
+        public Sala(int id, int qtddLugares,string nome)
         {
             this.id = id;
             this.QtddLugares = qtddLugares;
+            this.Nome = nome;
         }
         public Sala()
         {
 
         }
+
+        
 
         public void AddSessao(Sessão s)
         {
@@ -53,6 +57,19 @@ namespace ProjetoCinema
             set
             {
                 qtddLugares = value;
+            }
+        }
+
+        public string Nome
+        {
+            get
+            {
+                return nome;
+            }
+
+            set
+            {
+                nome = value;
             }
         }
     }

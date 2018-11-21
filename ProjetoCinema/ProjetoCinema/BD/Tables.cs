@@ -42,7 +42,8 @@ namespace ProjetoCinema.BD
             DataBase bd = DataBase.GetInstance();
             StringBuilder sql = new StringBuilder();
             sql.AppendLine("CREATE TABLE IF NOT EXISTS Sala([Codigo] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
-            sql.AppendLine("[QtdLugares] INTEGER);");
+            sql.AppendLine("[QtdLugares] INTEGER,");
+            sql.AppendLine("[Nome] VARCHAR(20));");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
