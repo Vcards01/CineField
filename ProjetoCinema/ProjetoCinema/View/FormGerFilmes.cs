@@ -16,7 +16,7 @@ namespace ProjetoCinema
         private bool salvar=true;
         private bool editavel = false;
         private FilmeDAO DAO = new FilmeDAO();
-
+        
         public FormGerFilmes()
         {
             InitializeComponent();

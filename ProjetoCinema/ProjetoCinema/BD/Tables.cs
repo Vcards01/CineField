@@ -20,7 +20,7 @@ namespace ProjetoCinema.BD
                 CreateFilme();
                 CreateSala();
                 CreateSessao();
-           
+                CreateProdutos();
 
 
 
@@ -58,6 +58,18 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Sala]  INTEGER,");
             sql.AppendLine("[Horario] VARCHAR(20),");
             sql.AppendLine("[Lugares] INTEGER);");
+            SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
+            bd.ExecuteNonQuery(cmd);
+        }
+        public void CreateProdutos()
+        {
+
+            DataBase bd = DataBase.GetInstance();
+            StringBuilder sql = new StringBuilder();
+            sql.AppendLine("CREATE TABLE IF NOT EXISTS Produtos([Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
+            sql.AppendLine("[Nome] VARCHAR(30),");
+            sql.AppendLine("[Tipo] VARCHAR(20),");
+            sql.AppendLine("[Preco] DOUBLE);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }

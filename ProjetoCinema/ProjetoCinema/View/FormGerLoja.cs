@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoCinema.BD;
 
 namespace ProjetoCinema
 {
@@ -14,16 +15,21 @@ namespace ProjetoCinema
     {
         private bool salvar = true;
         private bool editavel;
+        private ProdutosDAO DAO = new ProdutosDAO();
         public FormGerLoja()
         {
             InitializeComponent();
         }
 
-        public FormGerLoja(bool editavel)
+        public FormGerLoja(bool editavel, Produtos p)
         {
+           
             salvar = false;
             this.editavel = editavel;
             InitializeComponent();
+            txtNome.Text = p.Nome;
+            txtTipo.Text = p.Tipo;
+            txtPreço.Text = p.Preco.ToString();
             if (editavel == false)
             {
                 txtNome.Enabled = false;
@@ -34,13 +40,22 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            Produtos p = new Produtos();
+
+            p.Nome = txtNome.Text;
+            p.Tipo = txtTipo.Text;
+            p.Preco = double.Parse(txtPreço.Text);
             if (salvar)
             {
+                DAO.Create(p);
                 Dispose();
             }
             if (editavel)
             {
+                p.Nome = txtNome.Text;
+                DAO.Update(p);
                 Dispose();
+                
             }
             if (!salvar && !editavel)
             {
