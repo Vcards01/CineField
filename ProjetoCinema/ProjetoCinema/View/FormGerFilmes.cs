@@ -48,7 +48,7 @@ namespace ProjetoCinema
             f.Nome = txtTitulo.Text;
             f.Genero = cbGenero.Text;
             f.Sinopse = textBox1.Text;
-            f.Duracao = DateTime.Parse(txtHoras.Text);
+            f.Duracao = txtHoras.Text;
             if(salvar)
             {
                 DAO.Create(f);

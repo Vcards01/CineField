@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using ProjetoCinema.View;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,7 +67,7 @@ namespace ProjetoCinema
         }
         private void btnFilme_Click(object sender, EventArgs e)
         {
-            AbrirForm(new FormEmCartaz());
+            AbrirForm(new FormCompra());
         }
 
         private void btnHome_Click(object sender, EventArgs e)

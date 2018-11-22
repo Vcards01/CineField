@@ -56,9 +56,8 @@ namespace ProjetoCinema
         {
            dgvFilmes.Rows.Clear();
             foreach (Filme a in data)
-                if (filter == "" ||a.Nome.ToUpper().Contains(filter.ToUpper()) || a.Genero.ToUpper().Contains(filter.ToUpper()))
-                    dgvFilmes.Rows.Add(a.Id,a.Nome,a.Genero,a.Duracao);
-            Console.Read();
+                if (filter == "" || a.Nome.ToUpper().Contains(filter.ToUpper()) || a.Genero.ToUpper().Contains(filter.ToUpper()))
+                    dgvFilmes.Rows.Add(a.Id, a.Nome, a.Genero, a.Duracao);
         }
         private void FormAdmFilmes_Load(object sender, EventArgs e)
         {
