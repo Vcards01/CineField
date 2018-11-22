@@ -36,15 +36,20 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMeio = new System.Windows.Forms.Panel();
+            this.lbLugares = new System.Windows.Forms.Label();
+            this.NmLugares = new System.Windows.Forms.NumericUpDown();
+            this.TxtCod = new System.Windows.Forms.TextBox();
+            this.lbCod = new System.Windows.Forms.Label();
             this.cbFilme = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbCodigo = new System.Windows.Forms.Label();
+            this.lbSala = new System.Windows.Forms.Label();
             this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.cbSala = new System.Windows.Forms.ComboBox();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.pnMeio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBaixo
@@ -119,9 +124,13 @@
             this.pnMeio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnMeio.Controls.Add(this.lbLugares);
+            this.pnMeio.Controls.Add(this.NmLugares);
+            this.pnMeio.Controls.Add(this.TxtCod);
+            this.pnMeio.Controls.Add(this.lbCod);
             this.pnMeio.Controls.Add(this.cbFilme);
             this.pnMeio.Controls.Add(this.label2);
-            this.pnMeio.Controls.Add(this.lbCodigo);
+            this.pnMeio.Controls.Add(this.lbSala);
             this.pnMeio.Controls.Add(this.dtpHorario);
             this.pnMeio.Controls.Add(this.label1);
             this.pnMeio.Controls.Add(this.cbSala);
@@ -130,34 +139,67 @@
             this.pnMeio.Size = new System.Drawing.Size(505, 115);
             this.pnMeio.TabIndex = 30;
             // 
+            // lbLugares
+            // 
+            this.lbLugares.AutoSize = true;
+            this.lbLugares.Location = new System.Drawing.Point(220, 57);
+            this.lbLugares.Name = "lbLugares";
+            this.lbLugares.Size = new System.Drawing.Size(97, 13);
+            this.lbLugares.TabIndex = 33;
+            this.lbLugares.Text = "Lugares Diponiveis";
+            // 
+            // NmLugares
+            // 
+            this.NmLugares.Location = new System.Drawing.Point(323, 53);
+            this.NmLugares.Name = "NmLugares";
+            this.NmLugares.Size = new System.Drawing.Size(120, 20);
+            this.NmLugares.TabIndex = 32;
+            // 
+            // TxtCod
+            // 
+            this.TxtCod.Enabled = false;
+            this.TxtCod.Location = new System.Drawing.Point(98, 88);
+            this.TxtCod.Name = "TxtCod";
+            this.TxtCod.Size = new System.Drawing.Size(46, 20);
+            this.TxtCod.TabIndex = 31;
+            // 
+            // lbCod
+            // 
+            this.lbCod.AutoSize = true;
+            this.lbCod.Location = new System.Drawing.Point(58, 92);
+            this.lbCod.Name = "lbCod";
+            this.lbCod.Size = new System.Drawing.Size(40, 13);
+            this.lbCod.TabIndex = 30;
+            this.lbCod.Text = "Codigo";
+            // 
             // cbFilme
             // 
             this.cbFilme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cbFilme.FormattingEnabled = true;
-            this.cbFilme.Location = new System.Drawing.Point(105, 21);
+            this.cbFilme.Location = new System.Drawing.Point(95, 25);
             this.cbFilme.Name = "cbFilme";
-            this.cbFilme.Size = new System.Drawing.Size(332, 21);
+            this.cbFilme.Size = new System.Drawing.Size(161, 21);
             this.cbFilme.TabIndex = 25;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 65);
+            this.label2.Location = new System.Drawing.Point(58, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 29;
             this.label2.Text = "Horario";
             // 
-            // lbCodigo
+            // lbSala
             // 
-            this.lbCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Location = new System.Drawing.Point(68, 65);
-            this.lbCodigo.Name = "lbCodigo";
-            this.lbCodigo.Size = new System.Drawing.Size(28, 13);
-            this.lbCodigo.TabIndex = 24;
-            this.lbCodigo.Text = "Sala";
+            this.lbSala.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbSala.AutoSize = true;
+            this.lbSala.Location = new System.Drawing.Point(275, 28);
+            this.lbSala.Name = "lbSala";
+            this.lbSala.Size = new System.Drawing.Size(28, 13);
+            this.lbSala.TabIndex = 24;
+            this.lbSala.Text = "Sala";
             // 
             // dtpHorario
             // 
@@ -165,7 +207,7 @@
             this.dtpHorario.Checked = false;
             this.dtpHorario.CustomFormat = "HH: mm: ss tt ";
             this.dtpHorario.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHorario.Location = new System.Drawing.Point(335, 62);
+            this.dtpHorario.Location = new System.Drawing.Point(105, 53);
             this.dtpHorario.Name = "dtpHorario";
             this.dtpHorario.ShowUpDown = true;
             this.dtpHorario.Size = new System.Drawing.Size(107, 20);
@@ -176,7 +218,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 24);
+            this.label1.Location = new System.Drawing.Point(58, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 26;
@@ -186,7 +228,7 @@
             // 
             this.cbSala.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cbSala.FormattingEnabled = true;
-            this.cbSala.Location = new System.Drawing.Point(110, 62);
+            this.cbSala.Location = new System.Drawing.Point(309, 25);
             this.cbSala.Name = "cbSala";
             this.cbSala.Size = new System.Drawing.Size(164, 21);
             this.cbSala.TabIndex = 27;
@@ -203,11 +245,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormGerSessao";
             this.Text = "Gerenciar Sessões";
+            this.Load += new System.EventHandler(this.FormGerSessao_Load);
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();
             this.pnMeio.ResumeLayout(false);
             this.pnMeio.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,9 +266,13 @@
         private System.Windows.Forms.Panel pnMeio;
         private System.Windows.Forms.ComboBox cbFilme;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbCodigo;
+        private System.Windows.Forms.Label lbSala;
         private System.Windows.Forms.DateTimePicker dtpHorario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbSala;
+        private System.Windows.Forms.TextBox TxtCod;
+        private System.Windows.Forms.Label lbCod;
+        private System.Windows.Forms.Label lbLugares;
+        private System.Windows.Forms.NumericUpDown NmLugares;
     }
 }

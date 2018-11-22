@@ -39,6 +39,8 @@
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.pnMeio = new System.Windows.Forms.Panel();
+            this.lbNome = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).BeginInit();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
@@ -48,16 +50,16 @@
             // 
             this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(125, 76);
+            this.txtCodigo.Location = new System.Drawing.Point(117, 42);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(53, 20);
             this.txtCodigo.TabIndex = 19;
             // 
             // lbCodigo
             // 
             this.lbCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Location = new System.Drawing.Point(42, 80);
+            this.lbCodigo.Location = new System.Drawing.Point(34, 45);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(77, 13);
             this.lbCodigo.TabIndex = 17;
@@ -67,7 +69,7 @@
             // 
             this.lbGenero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbGenero.AutoSize = true;
-            this.lbGenero.Location = new System.Drawing.Point(278, 79);
+            this.lbGenero.Location = new System.Drawing.Point(263, 83);
             this.lbGenero.Name = "lbGenero";
             this.lbGenero.Size = new System.Drawing.Size(96, 13);
             this.lbGenero.TabIndex = 15;
@@ -76,7 +78,7 @@
             // NmLugares
             // 
             this.NmLugares.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.NmLugares.Location = new System.Drawing.Point(386, 77);
+            this.NmLugares.Location = new System.Drawing.Point(365, 81);
             this.NmLugares.Name = "NmLugares";
             this.NmLugares.Size = new System.Drawing.Size(42, 20);
             this.NmLugares.TabIndex = 20;
@@ -150,11 +152,29 @@
             this.pnMeio.Size = new System.Drawing.Size(490, 94);
             this.pnMeio.TabIndex = 2;
             // 
+            // lbNome
+            // 
+            this.lbNome.AutoSize = true;
+            this.lbNome.Location = new System.Drawing.Point(34, 86);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(72, 13);
+            this.lbNome.TabIndex = 21;
+            this.lbNome.Text = "Nome da sala";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(112, 83);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(111, 20);
+            this.txtNome.TabIndex = 22;
+            // 
             // FormGerSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 169);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lbNome);
             this.Controls.Add(this.NmLugares);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lbCodigo);
@@ -167,6 +187,7 @@
             this.MinimizeBox = false;
             this.Name = "FormGerSalas";
             this.Text = "Gerenciar Salas";
+            this.Load += new System.EventHandler(this.FormGerSalas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).EndInit();
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);
@@ -187,5 +208,7 @@
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.Panel pnMeio;
         private System.Windows.Forms.NumericUpDown NmLugares;
+        private System.Windows.Forms.Label lbNome;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }

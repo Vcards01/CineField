@@ -12,6 +12,7 @@ namespace ProjetoCinema
         private DateTime horario;
         private Filme filme;
         private Sala sala;
+        private int lugaresdisponiveis;
         List<Ingresso> ingressos = new List<Ingresso>();
 
         public Sessão(int id, DateTime horario, Filme filme, Sala sala)
@@ -84,6 +85,19 @@ namespace ProjetoCinema
             set
             {
                 sala = value;
+            }
+        }
+
+        public int LugaresDisponiveis
+        {
+            get
+            {
+                return lugaresdisponiveis;
+            }
+
+            set
+            {
+                lugaresdisponiveis = value;
             }
         }
     }

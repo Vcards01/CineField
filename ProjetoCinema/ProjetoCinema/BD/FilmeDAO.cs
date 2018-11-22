@@ -65,6 +65,15 @@ namespace ProjetoCinema.BD
             f.Duracao = dr["Duracao"].ToString();
             return f;
         }
-
+        public Filme FindByName(string nome)
+        {
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("SELECT * FROM Filme WHERE Nome = '{0}';", nome);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            DataSet ds = bd.ExecuteQuery(cmd);
+            DataRow dr = ds.Tables[0].Rows[0];
+            Filme f = RowToApp(dr);
+            return f;
+        }
     }
 }

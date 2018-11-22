@@ -19,7 +19,8 @@ namespace ProjetoCinema.BD
                 SQLiteConnection.CreateFile("database");
                 CreateFilme();
                 CreateSala();
-                
+                CreateSessao();
+           
 
 
 
@@ -42,10 +43,24 @@ namespace ProjetoCinema.BD
             DataBase bd = DataBase.GetInstance();
             StringBuilder sql = new StringBuilder();
             sql.AppendLine("CREATE TABLE IF NOT EXISTS Sala([Codigo] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
-            sql.AppendLine("[QtdLugares] INTEGER);");
+            sql.AppendLine("[QtdLugares] INTEGER,");
+            sql.AppendLine("[Nome] VARCHAR(20));");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
+        public void CreateSessao()
+        {
+           
+            DataBase bd = DataBase.GetInstance();
+            StringBuilder sql = new StringBuilder();
+            sql.AppendLine("CREATE TABLE IF NOT EXISTS Sessao([Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
+            sql.AppendLine("[Filme] INTEGER,");
+            sql.AppendLine("[Sala]  INTEGER,");
+            sql.AppendLine("[Horario] VARCHAR(20),");
+            sql.AppendLine("[Lugares] INTEGER);");
+            SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
+            bd.ExecuteNonQuery(cmd);
         }
+    }
     }
 

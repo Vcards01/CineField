@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
         public void Create(Sala s)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Sala(QtdLugares)VALUES({0});",s.QtddLugares);
+            string sql = string.Format("Insert into Sala(QtdLugares,Nome)VALUES({0},'{1}');",s.QtddLugares,s.Nome);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -30,7 +30,7 @@ namespace ProjetoCinema.BD
         public void Update(Sala s)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("UPDATE Sala set QtdLugares={0} where Codigo={1} ;",s.QtddLugares,s.Id);
+            string sql = string.Format("UPDATE Sala set QtdLugares={0}, Nome='{1}' where Codigo={2} ;",s.QtddLugares,s.Nome,s.Id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -57,10 +57,20 @@ namespace ProjetoCinema.BD
         private Sala RowToApp(DataRow dr)
         {
             Sala s = new Sala();
+            s.Nome = (dr["Nome"]).ToString();
             s.Id = int.Parse(dr["Codigo"].ToString());
             s.QtddLugares = int.Parse(dr["QtdLugares"].ToString());
             return s;
         }
-
+        public Sala FindByName(string nome)
+        {
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("SELECT * FROM Sala WHERE Nome='{0}';", nome);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            DataSet ds = bd.ExecuteQuery(cmd);
+            DataRow dr = ds.Tables[0].Rows[0];
+            Sala s = RowToApp(dr);
+            return s;
+        }
     }
 }
