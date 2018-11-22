@@ -30,7 +30,7 @@ namespace ProjetoCinema
             dgvSessao.Rows.Clear();
             foreach (Sessão a in data)
                 if (filter == "")
-                    dgvSessao.Rows.Add(a.Filme.Nome,a.Sala.Nome,a.Horario,a.LugaresDisponiveis);
+                    dgvSessao.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Nome,a.Horario,a.LugaresDisponiveis);
 
         }
         private void btnNovo_Click(object sender, EventArgs e)
@@ -45,22 +45,26 @@ namespace ProjetoCinema
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Sessão s;
-            FormGerSessao form = new FormGerSessao();
+            Sessão s = DAO.Read(int.Parse(dgvSessao.CurrentRow.Cells[0].Value.ToString()));
+            FormGerSessao form = new FormGerSessao(true,s);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            FormGerSessao form = new FormGerSessao();
+            Sessão s = DAO.Read((int.Parse(dgvSessao.CurrentRow.Cells[0].Value.ToString())));
+            FormGerSessao form = new FormGerSessao(false,s);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            Sessão s = DAO.Read((int.Parse(dgvSessao.CurrentRow.Cells[0].Value.ToString())));
+            DAO.Delete(s.Id);
+            LoadDatabase();
+            Fill("");
         }
 
         private void FormAdmSessao_Load(object sender, EventArgs e)

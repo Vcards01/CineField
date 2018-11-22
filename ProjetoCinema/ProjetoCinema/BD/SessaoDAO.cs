@@ -30,7 +30,7 @@ namespace ProjetoCinema.BD
             public void Update(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-                string sql = string.Format("UPDATE Sessao set Filme ={0},Sala={1},Horario={2},Lugares={3} where Id={4} ;",s.Filme.Id,s.Sala.Id,s.Horario.ToString(),s.LugaresDisponiveis,s.Id);
+                string sql = string.Format("UPDATE Sessao set Filme ={0},Sala={1},Horario='{2}',Lugares={3} where Id={4} ;",s.Filme.Id,s.Sala.Id,s.Horario.ToString(),s.LugaresDisponiveis,s.Id);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }

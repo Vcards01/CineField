@@ -39,6 +39,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
             this.pnFilmesBaixo = new System.Windows.Forms.Panel();
+            this.CId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +69,7 @@
             this.dgvSessao.AllowUserToDeleteRows = false;
             this.dgvSessao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSessao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CId,
             this.Filme,
             this.cSala,
             this.cHorario,
@@ -169,6 +171,12 @@
             this.pnFilmesBaixo.Size = new System.Drawing.Size(512, 61);
             this.pnFilmesBaixo.TabIndex = 8;
             // 
+            // CId
+            // 
+            this.CId.HeaderText = "ID";
+            this.CId.Name = "CId";
+            this.CId.ReadOnly = true;
+            // 
             // Filme
             // 
             this.Filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -234,6 +242,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
         private System.Windows.Forms.DataGridViewTextBoxColumn cSala;
         private System.Windows.Forms.DataGridViewTextBoxColumn cHorario;

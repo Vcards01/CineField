@@ -205,12 +205,12 @@
             // 
             this.dtpHorario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtpHorario.Checked = false;
-            this.dtpHorario.CustomFormat = "HH: mm: ss tt ";
+            this.dtpHorario.CustomFormat = "HH: mm";
             this.dtpHorario.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpHorario.Location = new System.Drawing.Point(105, 53);
             this.dtpHorario.Name = "dtpHorario";
             this.dtpHorario.ShowUpDown = true;
-            this.dtpHorario.Size = new System.Drawing.Size(107, 20);
+            this.dtpHorario.Size = new System.Drawing.Size(58, 20);
             this.dtpHorario.TabIndex = 28;
             this.dtpHorario.Value = new System.DateTime(2018, 10, 28, 0, 0, 0, 0);
             // 
