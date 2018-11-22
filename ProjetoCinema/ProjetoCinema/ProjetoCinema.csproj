@@ -127,6 +127,12 @@
     <Compile Include="View\FormComida.Designer.cs">
       <DependentUpon>FormComida.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCompra.Designer.cs">
+      <DependentUpon>FormCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormEmCartaz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormComida.resx">
       <DependentUpon>FormComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCompra.resx">
+      <DependentUpon>FormCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormEmCartaz.resx">
       <DependentUpon>FormEmCartaz.cs</DependentUpon>

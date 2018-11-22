@@ -12,7 +12,7 @@ namespace ProjetoCinema
         private string nome;
         private string genero;
         private string sinopse;
-        private DateTime duracao;
+        private string duracao;
         private List<Sessão> sessoes = new List<Sessão>();
 
         
@@ -21,7 +21,7 @@ namespace ProjetoCinema
 
         }
 
-        public Filme(int id, string nome, string genero, string sinopse, DateTime duracao)
+        public Filme(int id, string nome, string genero, string sinopse, string duracao)
         {
             this.id = id;
             this.nome = nome;
@@ -93,7 +93,7 @@ namespace ProjetoCinema
             }
         }
 
-        public DateTime Duracao
+        public string Duracao
         {
             get
             {

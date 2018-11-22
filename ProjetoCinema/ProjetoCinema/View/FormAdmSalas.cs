@@ -31,8 +31,9 @@ namespace ProjetoCinema
             dgvSalas.Rows.Clear();
             foreach (Sala a in data)
                 if (filter == "")
+
                     dgvSalas.Rows.Add(a.Id, a.Nome, a.QtddLugares);
-           
+
         }
         private void btnNovo_Click(object sender, EventArgs e)
         {
