@@ -14,9 +14,10 @@ namespace ProjetoCinema
 {
     public partial class Form1 : Form
     {
-        Tables tb = new Tables();
+        
         public Form1()
         {
+            Tables tb = new Tables();
             tb.CreateTable();
             InitializeComponent();
             timer1.Start();

@@ -187,6 +187,7 @@
             this.MinimizeBox = false;
             this.Name = "FormGerSalas";
             this.Text = "Gerenciar Salas";
+            this.Load += new System.EventHandler(this.FormGerSalas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).EndInit();
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);

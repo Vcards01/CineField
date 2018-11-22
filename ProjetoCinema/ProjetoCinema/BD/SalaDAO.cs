@@ -62,6 +62,15 @@ namespace ProjetoCinema.BD
             s.QtddLugares = int.Parse(dr["QtdLugares"].ToString());
             return s;
         }
-
+        public Sala FindByName(string nome)
+        {
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("SELECT * FROM Sala WHERE Nome='{0}';", nome);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            DataSet ds = bd.ExecuteQuery(cmd);
+            DataRow dr = ds.Tables[0].Rows[0];
+            Sala s = RowToApp(dr);
+            return s;
+        }
     }
 }

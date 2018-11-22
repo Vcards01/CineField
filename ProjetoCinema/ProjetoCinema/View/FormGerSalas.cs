@@ -61,5 +61,10 @@ namespace ProjetoCinema
         {
             Dispose();
         }
+
+        private void FormGerSalas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

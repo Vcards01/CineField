@@ -16,17 +16,27 @@ namespace ProjetoCinema
         private FilmeDAO DAOf = new FilmeDAO();
         private SalaDAO DAOs = new SalaDAO();
         private bool salvar= true;
-        private bool editavel;
+        private bool editavel=false;
         public FormGerSessao()
         {
             
             InitializeComponent();
+            FillComboBox();
         }
         private void FillComboBox()
         {
+
+            List<Filme> f = DAOf.ListAll();
+            List<Sala> s = DAOs.ListAll();
+            for (int i=0;i<f.Count;i++)
+            {
+                cbFilme.Items.Insert(i,f[i].Nome);
+            }
+            for(int i=0;i<s.Count;i++)
+            {
+                cbSala.Items.Insert(i, s[i].Nome);
+            }
             
-            cbFilme.DataSource = DAOs.ListAll();
-            cbSala.DataSource = DAOf.ListAll();
         }
         public FormGerSessao(bool editavel,Sessão s)
         {
@@ -44,7 +54,6 @@ namespace ProjetoCinema
                 cbFilme.Enabled = false;
                 cbSala.Enabled = false;
                 dtpHorario.Enabled = false;
-                dtpHorario.Enabled = false;
                 NmLugares.Enabled = false;
                 
             }
@@ -52,15 +61,21 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Sessão s;
+            Sessão s = new Sessão();
+            s.Filme = DAOf.FindByName(cbFilme.Text);
+            s.Sala = DAOs.FindByName(cbSala.Text);
+            s.Horario = dtpHorario.Value;
+            s.LugaresDisponiveis = int.Parse(NmLugares.Value.ToString());
             
             if (salvar)
             {
-                
+                DAO.Create(s);
                 Dispose();
             }
             if (editavel)
             {
+                s.Id = int.Parse(TxtCod.Text);
+                DAO.Update(s);
                 Dispose();
             }
             if (!salvar && !editavel)
@@ -73,6 +88,10 @@ namespace ProjetoCinema
         {
             Dispose();
         }
-        
+
+        private void FormGerSessao_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
             public void Create(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Sessao(Id,Filme,Sala,Horario,Lugares)VALUES({0},{1},{2},'{3}',{4});", s.Id, s.Filme.Id, s.Sala.Id, s.Horario.ToShortTimeString(),s.LugaresDisponiveis);
+                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares)VALUES('{0}','{1}','{2}',{3});",s.Filme.Id, s.Sala.Id, s.Horario.ToShortTimeString(),s.LugaresDisponiveis);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }
@@ -45,7 +45,7 @@ namespace ProjetoCinema.BD
             {
                 List<Sessão> sessoes = new List<Sessão>();
 
-                String sql = string.Format("SELECT * FROM Sessap");
+                String sql = string.Format("SELECT * FROM Sessao;");
                 SQLiteCommand com = new SQLiteCommand(sql);
                 DataSet ds = DataBase.GetInstance().ExecuteQuery(com);
                 foreach (DataRow dr in ds.Tables[0].Rows)
@@ -62,8 +62,9 @@ namespace ProjetoCinema.BD
                 s.Id = int.Parse(dr["Id"].ToString());
                 s.Filme = DAOf.Read(int.Parse(dr["Filme"].ToString()));
                 s.Sala = DAOs.Read(int.Parse(dr["Sala"].ToString()));
-                s.LugaresDisponiveis=(int.Parse(dr["Lugares"].ToString()));
                 s.Horario = DateTime.Parse(dr["Horario"].ToString());
+                s.LugaresDisponiveis=(int.Parse(dr["Lugares"].ToString()));
+                
                 return s;
             }
         }

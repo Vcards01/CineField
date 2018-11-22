@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmSessao));
             this.gpFilmes = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSessao = new System.Windows.Forms.DataGridView();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnVisualizar = new System.Windows.Forms.Button();
@@ -42,8 +39,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
             this.pnFilmesBaixo = new System.Windows.Forms.Panel();
+            this.Filme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLugares = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpFilmes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSessao)).BeginInit();
             this.pnFilmes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpFilmes.BackColor = System.Drawing.Color.Transparent;
-            this.gpFilmes.Controls.Add(this.dataGridView1);
+            this.gpFilmes.Controls.Add(this.dgvSessao);
             this.gpFilmes.Location = new System.Drawing.Point(0, 60);
             this.gpFilmes.Name = "gpFilmes";
             this.gpFilmes.Size = new System.Drawing.Size(379, 192);
@@ -61,42 +62,22 @@
             this.gpFilmes.TabStop = false;
             this.gpFilmes.Text = "Sessões";
             // 
-            // dataGridView1
+            // dgvSessao
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSessao.AllowUserToAddRows = false;
+            this.dgvSessao.AllowUserToDeleteRows = false;
+            this.dgvSessao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSessao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Filme,
             this.cSala,
-            this.cHorario});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(373, 173);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Filme
-            // 
-            this.Filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Filme.HeaderText = "Filme";
-            this.Filme.Name = "Filme";
-            this.Filme.ReadOnly = true;
-            // 
-            // cSala
-            // 
-            this.cSala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cSala.HeaderText = "Sala";
-            this.cSala.Name = "cSala";
-            this.cSala.ReadOnly = true;
-            this.cSala.Width = 50;
-            // 
-            // cHorario
-            // 
-            this.cHorario.HeaderText = "Horário";
-            this.cHorario.Name = "cHorario";
-            this.cHorario.ReadOnly = true;
+            this.cHorario,
+            this.cLugares});
+            this.dgvSessao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSessao.Location = new System.Drawing.Point(3, 16);
+            this.dgvSessao.Name = "dgvSessao";
+            this.dgvSessao.ReadOnly = true;
+            this.dgvSessao.Size = new System.Drawing.Size(373, 173);
+            this.dgvSessao.TabIndex = 0;
             // 
             // btnNovo
             // 
@@ -188,6 +169,33 @@
             this.pnFilmesBaixo.Size = new System.Drawing.Size(512, 61);
             this.pnFilmesBaixo.TabIndex = 8;
             // 
+            // Filme
+            // 
+            this.Filme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Filme.HeaderText = "Filme";
+            this.Filme.Name = "Filme";
+            this.Filme.ReadOnly = true;
+            // 
+            // cSala
+            // 
+            this.cSala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cSala.HeaderText = "Sala";
+            this.cSala.Name = "cSala";
+            this.cSala.ReadOnly = true;
+            this.cSala.Width = 50;
+            // 
+            // cHorario
+            // 
+            this.cHorario.HeaderText = "Horário";
+            this.cHorario.Name = "cHorario";
+            this.cHorario.ReadOnly = true;
+            // 
+            // cLugares
+            // 
+            this.cLugares.HeaderText = "Lugares ";
+            this.cLugares.Name = "cLugares";
+            this.cLugares.ReadOnly = true;
+            // 
             // FormAdmSessao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,8 +213,9 @@
             this.MaximizeBox = false;
             this.Name = "FormAdmSessao";
             this.Text = "Administrar Sessões";
+            this.Load += new System.EventHandler(this.FormAdmSessao_Load);
             this.gpFilmes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSessao)).EndInit();
             this.pnFilmes.ResumeLayout(false);
             this.pnFilmes.PerformLayout();
             this.ResumeLayout(false);
@@ -221,12 +230,13 @@
         private System.Windows.Forms.Panel pnFilmesBaixo;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.GroupBox gpFilmes;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cSala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cHorario;
+        private System.Windows.Forms.DataGridView dgvSessao;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Filme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cSala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cHorario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cLugares;
     }
 }

@@ -92,12 +92,12 @@ namespace ProjetoCinema
         {
             get
             {
-                return LugaresDisponiveis;
+                return lugaresdisponiveis;
             }
 
             set
             {
-                LugaresDisponiveis = value;
+                lugaresdisponiveis = value;
             }
         }
     }
