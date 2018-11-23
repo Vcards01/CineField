@@ -8,6 +8,7 @@ namespace ProjetoCinema
 {
     public class Produtos
     {
+        private int id;
         private string nome;
         private string tipo;
         private double preco;
@@ -67,11 +68,25 @@ namespace ProjetoCinema
             }
         }
 
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
         public Produtos(string nome, string tipo, double preco)
         {
             this.nome = nome;
             this.tipo = tipo;
             this.preco = preco;
         }
+
     }
 }

@@ -78,10 +78,10 @@
     <Compile Include="Model\Adiministrador.cs" />
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Produtos.cs" />
-    <Compile Include="View\Administração.cs">
+    <Compile Include="View\Telas de CRUD\Administração.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Administração.Designer.cs">
+    <Compile Include="View\Telas de CRUD\Administração.Designer.cs">
       <DependentUpon>Administração.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Alimentaçao.cs" />
@@ -93,34 +93,34 @@
     <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormAdmFilmes.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormAdmFilmes.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmFilmes.Designer.cs">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormAdmFuncionario.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormAdmFuncionario.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmFuncionario.Designer.cs">
       <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormAdmLoja.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmLoja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormAdmLoja.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmLoja.Designer.cs">
       <DependentUpon>FormAdmLoja.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormAdmSalas.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmSalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormAdmSalas.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmSalas.Designer.cs">
       <DependentUpon>FormAdmSalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormAdmSessao.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmSessao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormAdmSessao.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormAdmSessao.Designer.cs">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormComida.cs">
@@ -135,40 +135,34 @@
     <Compile Include="View\FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormEmCartaz.cs">
+    <Compile Include="View\Telas de CRUD\FormGerFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormEmCartaz.Designer.cs">
-      <DependentUpon>FormEmCartaz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormGerFilmes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormGerFilmes.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormGerFilmes.Designer.cs">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormGerFuncionario.cs">
+    <Compile Include="View\Telas de CRUD\FormGerFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerFuncionario.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormGerFuncionario.Designer.cs">
       <DependentUpon>FormGerFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormGerLoja.cs">
+    <Compile Include="View\Telas de CRUD\FormGerLoja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerLoja.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormGerLoja.Designer.cs">
       <DependentUpon>FormGerLoja.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormGerSalas.cs">
+    <Compile Include="View\Telas de CRUD\FormGerSalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerSalas.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormGerSalas.Designer.cs">
       <DependentUpon>FormGerSalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormGerSessao.cs">
+    <Compile Include="View\Telas de CRUD\FormGerSessao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerSessao.Designer.cs">
+    <Compile Include="View\Telas de CRUD\FormGerSessao.Designer.cs">
       <DependentUpon>FormGerSessao.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormIngressos.cs">
@@ -209,25 +203,25 @@
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Sessão.cs" />
     <Compile Include="Model\Venda.cs" />
-    <EmbeddedResource Include="View\Administração.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\Administração.resx">
       <DependentUpon>Administração.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormAdmFilmes.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormAdmFilmes.resx">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormAdmFuncionario.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormAdmFuncionario.resx">
       <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormAdmLoja.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormAdmLoja.resx">
       <DependentUpon>FormAdmLoja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormAdmSalas.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormAdmSalas.resx">
       <DependentUpon>FormAdmSalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormAdmSessao.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormAdmSessao.resx">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormComida.resx">
@@ -236,22 +230,19 @@
     <EmbeddedResource Include="View\FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormEmCartaz.resx">
-      <DependentUpon>FormEmCartaz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerFilmes.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormGerFilmes.resx">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerFuncionario.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormGerFuncionario.resx">
       <DependentUpon>FormGerFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerLoja.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormGerLoja.resx">
       <DependentUpon>FormGerLoja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerSalas.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormGerSalas.resx">
       <DependentUpon>FormGerSalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerSessao.resx">
+    <EmbeddedResource Include="View\Telas de CRUD\FormGerSessao.resx">
       <DependentUpon>FormGerSessao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormIngressos.resx">

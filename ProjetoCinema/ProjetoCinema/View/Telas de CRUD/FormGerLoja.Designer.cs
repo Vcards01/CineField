@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerLoja));
             this.lbDuração = new System.Windows.Forms.Label();
-            this.lbGenero = new System.Windows.Forms.Label();
+            this.lbCategoria = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -41,6 +41,8 @@
             this.lbNome = new System.Windows.Forms.Label();
             this.txtPreço = new System.Windows.Forms.MaskedTextBox();
             this.txtTipo = new System.Windows.Forms.ComboBox();
+            this.lnId = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
@@ -54,20 +56,20 @@
             this.lbDuração.TabIndex = 16;
             this.lbDuração.Text = "Preço";
             // 
-            // lbGenero
+            // lbCategoria
             // 
-            this.lbGenero.AutoSize = true;
-            this.lbGenero.Location = new System.Drawing.Point(31, 93);
-            this.lbGenero.Name = "lbGenero";
-            this.lbGenero.Size = new System.Drawing.Size(28, 13);
-            this.lbGenero.TabIndex = 15;
-            this.lbGenero.Text = "Tipo";
+            this.lbCategoria.AutoSize = true;
+            this.lbCategoria.Location = new System.Drawing.Point(31, 93);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lbCategoria.TabIndex = 15;
+            this.lbCategoria.Text = "Categoria";
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(72, 59);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(300, 20);
+            this.txtNome.Size = new System.Drawing.Size(168, 20);
             this.txtNome.TabIndex = 13;
             // 
             // pnBaixo
@@ -160,20 +162,39 @@
             "Pequeno",
             "Médio",
             "Grande"});
-            this.txtTipo.Location = new System.Drawing.Point(72, 90);
+            this.txtTipo.Location = new System.Drawing.Point(85, 90);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(121, 21);
             this.txtTipo.TabIndex = 20;
+            // 
+            // lnId
+            // 
+            this.lnId.AutoSize = true;
+            this.lnId.Location = new System.Drawing.Point(246, 62);
+            this.lnId.Name = "lnId";
+            this.lnId.Size = new System.Drawing.Size(18, 13);
+            this.lnId.TabIndex = 0;
+            this.lnId.Text = "ID";
+            // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(271, 59);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 21;
             // 
             // FormGerLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 170);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lnId);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.txtPreço);
             this.Controls.Add(this.lbDuração);
-            this.Controls.Add(this.lbGenero);
+            this.Controls.Add(this.lbCategoria);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.pnBaixo);
@@ -194,7 +215,7 @@
 
         #endregion
         private System.Windows.Forms.Label lbDuração;
-        private System.Windows.Forms.Label lbGenero;
+        private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Panel pnBaixo;
         private System.Windows.Forms.Button btnCancelar;
@@ -205,5 +226,7 @@
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.MaskedTextBox txtPreço;
         private System.Windows.Forms.ComboBox txtTipo;
+        private System.Windows.Forms.Label lnId;
+        private System.Windows.Forms.TextBox txtID;
     }
 }

@@ -27,6 +27,7 @@ namespace ProjetoCinema
             salvar = false;
             this.editavel = editavel;
             InitializeComponent();
+            txtID.Text = p.Id.ToString();
             txtNome.Text = p.Nome;
             txtTipo.Text = p.Tipo;
             txtPreço.Text = p.Preco.ToString();
@@ -52,7 +53,7 @@ namespace ProjetoCinema
             }
             if (editavel)
             {
-                
+                p.Id = int.Parse(txtID.Text);
                 DAO.Update(p);
                 Dispose();
                 

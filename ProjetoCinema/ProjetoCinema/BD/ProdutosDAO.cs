@@ -18,10 +18,10 @@ namespace ProjetoCinema.BD
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
-        public Produtos Read(string nome)
+        public Produtos Read(int id)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("SELECT * FROM Produtos WHERE Nome='{0}';", nome);
+            string sql = string.Format("SELECT * FROM Produtos WHERE Id={0};", id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             DataSet ds = bd.ExecuteQuery(cmd);
             DataRow dr = ds.Tables[0].Rows[0];
@@ -31,14 +31,14 @@ namespace ProjetoCinema.BD
         public void Update(Produtos p)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("UPDATE Produtos set Nome ='{0}',Tipo='{1}',Preco='{2}' where Nome='{3}' ;",p.Nome, p.Tipo,p.Preco,p.Nome);
+            string sql = string.Format("UPDATE Produtos set Nome ='{0}',Tipo='{1}',Preco='{2}' where Id='{3}' ;",p.Nome, p.Tipo,p.Preco,p.Id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
-        public void Delete(string nome)
+        public void Delete(int id)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Delete from Produto where Nome='{0}';", nome);
+            string sql = string.Format("Delete from Produtos where Id='{0}';", id );
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -58,6 +58,7 @@ namespace ProjetoCinema.BD
         private Produtos RowToApp(DataRow dr)
         {
             Produtos p = new Produtos();
+            p.Id = int.Parse(dr["Id"].ToString());
             p.Nome = dr["Nome"].ToString();
             p.Tipo = dr["Tipo"].ToString();
             p.Preco = double.Parse(dr["Preco"].ToString());
