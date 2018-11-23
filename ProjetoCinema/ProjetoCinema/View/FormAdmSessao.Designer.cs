@@ -51,14 +51,13 @@
             // 
             // gpFilmes
             // 
-            this.gpFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gpFilmes.BackColor = System.Drawing.Color.Transparent;
             this.gpFilmes.Controls.Add(this.dgvSessao);
-            this.gpFilmes.Location = new System.Drawing.Point(0, 60);
+            this.gpFilmes.Location = new System.Drawing.Point(6, 67);
             this.gpFilmes.Name = "gpFilmes";
-            this.gpFilmes.Size = new System.Drawing.Size(379, 192);
+            this.gpFilmes.Size = new System.Drawing.Size(373, 176);
             this.gpFilmes.TabIndex = 7;
             this.gpFilmes.TabStop = false;
             this.gpFilmes.Text = "Sessões";
@@ -67,6 +66,7 @@
             // 
             this.dgvSessao.AllowUserToAddRows = false;
             this.dgvSessao.AllowUserToDeleteRows = false;
+            this.dgvSessao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgvSessao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSessao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CId,
@@ -74,18 +74,16 @@
             this.cSala,
             this.cHorario,
             this.cLugares});
-            this.dgvSessao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSessao.Location = new System.Drawing.Point(3, 16);
             this.dgvSessao.Name = "dgvSessao";
             this.dgvSessao.ReadOnly = true;
-            this.dgvSessao.Size = new System.Drawing.Size(373, 173);
+            this.dgvSessao.Size = new System.Drawing.Size(373, 164);
             this.dgvSessao.TabIndex = 0;
             // 
             // btnNovo
             // 
-            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovo.Location = new System.Drawing.Point(385, 67);
+            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovo.Location = new System.Drawing.Point(385, 73);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(102, 23);
             this.btnNovo.TabIndex = 1;
@@ -95,8 +93,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.Location = new System.Drawing.Point(385, 120);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(102, 23);
@@ -107,8 +104,7 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVisualizar.Location = new System.Drawing.Point(385, 170);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(102, 23);
@@ -119,8 +115,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluir.Location = new System.Drawing.Point(385, 220);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(102, 23);
@@ -133,18 +128,18 @@
             // 
             this.pnFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnFilmes.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnFilmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnFilmes.Controls.Add(this.textBox1);
             this.pnFilmes.Controls.Add(this.lbFiltro);
-            this.pnFilmes.Location = new System.Drawing.Point(0, 0);
+            this.pnFilmes.Location = new System.Drawing.Point(6, 6);
             this.pnFilmes.Name = "pnFilmes";
-            this.pnFilmes.Size = new System.Drawing.Size(512, 61);
+            this.pnFilmes.Size = new System.Drawing.Size(499, 61);
             this.pnFilmes.TabIndex = 6;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Location = new System.Drawing.Point(72, 17);
+            this.textBox1.Location = new System.Drawing.Point(65, 17);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(389, 20);
             this.textBox1.TabIndex = 1;
@@ -155,7 +150,7 @@
             this.lbFiltro.AutoSize = true;
             this.lbFiltro.BackColor = System.Drawing.Color.Transparent;
             this.lbFiltro.ForeColor = System.Drawing.Color.Aquamarine;
-            this.lbFiltro.Location = new System.Drawing.Point(34, 20);
+            this.lbFiltro.Location = new System.Drawing.Point(27, 20);
             this.lbFiltro.Name = "lbFiltro";
             this.lbFiltro.Size = new System.Drawing.Size(32, 13);
             this.lbFiltro.TabIndex = 0;
@@ -165,17 +160,19 @@
             // 
             this.pnFilmesBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnFilmesBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnFilmesBaixo.Location = new System.Drawing.Point(0, 249);
+            this.pnFilmesBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pnFilmesBaixo.Location = new System.Drawing.Point(6, 247);
             this.pnFilmesBaixo.Name = "pnFilmesBaixo";
-            this.pnFilmesBaixo.Size = new System.Drawing.Size(512, 61);
+            this.pnFilmesBaixo.Size = new System.Drawing.Size(499, 58);
             this.pnFilmesBaixo.TabIndex = 8;
             // 
             // CId
             // 
+            this.CId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.CId.HeaderText = "ID";
             this.CId.Name = "CId";
             this.CId.ReadOnly = true;
+            this.CId.Width = 25;
             // 
             // Filme
             // 
@@ -186,28 +183,32 @@
             // 
             // cSala
             // 
-            this.cSala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cSala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.cSala.HeaderText = "Sala";
             this.cSala.Name = "cSala";
             this.cSala.ReadOnly = true;
-            this.cSala.Width = 50;
             // 
             // cHorario
             // 
             this.cHorario.HeaderText = "Horário";
             this.cHorario.Name = "cHorario";
             this.cHorario.ReadOnly = true;
+            this.cHorario.Width = 50;
             // 
             // cLugares
             // 
             this.cLugares.HeaderText = "Lugares ";
             this.cLugares.Name = "cLugares";
             this.cLugares.ReadOnly = true;
+            this.cLugares.Width = 50;
             // 
             // FormAdmSessao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            this.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_22;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(511, 310);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnVisualizar);
@@ -216,7 +217,8 @@
             this.Controls.Add(this.pnFilmes);
             this.Controls.Add(this.pnFilmesBaixo);
             this.Controls.Add(this.gpFilmes);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormAdmSessao";

@@ -87,7 +87,7 @@
             // 
             this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnBaixo.Controls.Add(this.btnCancelar);
             this.pnBaixo.Controls.Add(this.btnSalvar);
             this.pnBaixo.Location = new System.Drawing.Point(0, 129);
@@ -121,7 +121,7 @@
             // 
             this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnTopo.Controls.Add(this.lbTitulo);
             this.pnTopo.Controls.Add(this.pnMeio);
             this.pnTopo.Location = new System.Drawing.Point(0, 0);

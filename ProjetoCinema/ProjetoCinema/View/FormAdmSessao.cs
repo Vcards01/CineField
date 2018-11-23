@@ -49,6 +49,8 @@ namespace ProjetoCinema
             FormGerSessao form = new FormGerSessao(true,s);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
+            LoadDatabase();
+            Fill("");
         }
 
         private void btnVisualizar_Click(object sender, EventArgs e)

@@ -52,7 +52,7 @@ namespace ProjetoCinema
             }
             if (editavel)
             {
-                p.Nome = txtNome.Text;
+                
                 DAO.Update(p);
                 Dispose();
                 

@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmSalas));
             this.gpSalas = new System.Windows.Forms.GroupBox();
             this.dgvSalas = new System.Windows.Forms.DataGridView();
+            this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cQtdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -39,9 +42,6 @@
             this.pnSalas = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
-            this.Cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cQtdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpSalas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.pnSalas.SuspendLayout();
@@ -55,7 +55,7 @@
             this.gpSalas.Controls.Add(this.dgvSalas);
             this.gpSalas.Location = new System.Drawing.Point(120, 67);
             this.gpSalas.Name = "gpSalas";
-            this.gpSalas.Size = new System.Drawing.Size(353, 198);
+            this.gpSalas.Size = new System.Drawing.Size(343, 198);
             this.gpSalas.TabIndex = 4;
             this.gpSalas.TabStop = false;
             this.gpSalas.Text = "Salas";
@@ -73,8 +73,28 @@
             this.dgvSalas.Location = new System.Drawing.Point(3, 16);
             this.dgvSalas.Name = "dgvSalas";
             this.dgvSalas.ReadOnly = true;
-            this.dgvSalas.Size = new System.Drawing.Size(347, 179);
+            this.dgvSalas.Size = new System.Drawing.Size(337, 179);
             this.dgvSalas.TabIndex = 0;
+            // 
+            // Cid
+            // 
+            this.Cid.HeaderText = "Numero";
+            this.Cid.Name = "Cid";
+            this.Cid.ReadOnly = true;
+            // 
+            // CNome
+            // 
+            this.CNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNome.HeaderText = "Nome";
+            this.CNome.Name = "CNome";
+            this.CNome.ReadOnly = true;
+            // 
+            // cQtdd
+            // 
+            this.cQtdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cQtdd.HeaderText = "Quantidade de Lugares";
+            this.cQtdd.Name = "cQtdd";
+            this.cQtdd.ReadOnly = true;
             // 
             // btnExcluir
             // 
@@ -124,28 +144,28 @@
             // 
             this.pnSalasBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnSalasBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnSalasBaixo.Location = new System.Drawing.Point(4, 270);
+            this.pnSalasBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pnSalasBaixo.Location = new System.Drawing.Point(5, 269);
             this.pnSalasBaixo.Name = "pnSalasBaixo";
-            this.pnSalasBaixo.Size = new System.Drawing.Size(467, 50);
+            this.pnSalasBaixo.Size = new System.Drawing.Size(464, 50);
             this.pnSalasBaixo.TabIndex = 5;
             // 
             // pnSalas
             // 
             this.pnSalas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnSalas.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnSalas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnSalas.Controls.Add(this.textBox1);
             this.pnSalas.Controls.Add(this.lbFiltro);
-            this.pnSalas.Location = new System.Drawing.Point(4, 4);
+            this.pnSalas.Location = new System.Drawing.Point(6, 5);
             this.pnSalas.Name = "pnSalas";
-            this.pnSalas.Size = new System.Drawing.Size(467, 58);
+            this.pnSalas.Size = new System.Drawing.Size(464, 58);
             this.pnSalas.TabIndex = 3;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Location = new System.Drawing.Point(69, 17);
+            this.textBox1.Location = new System.Drawing.Point(68, 17);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 20);
             this.textBox1.TabIndex = 1;
@@ -156,36 +176,17 @@
             this.lbFiltro.AutoSize = true;
             this.lbFiltro.BackColor = System.Drawing.Color.Transparent;
             this.lbFiltro.ForeColor = System.Drawing.Color.Aquamarine;
-            this.lbFiltro.Location = new System.Drawing.Point(31, 20);
+            this.lbFiltro.Location = new System.Drawing.Point(30, 20);
             this.lbFiltro.Name = "lbFiltro";
             this.lbFiltro.Size = new System.Drawing.Size(32, 13);
             this.lbFiltro.TabIndex = 0;
             this.lbFiltro.Text = "Filtrar";
             // 
-            // Cid
-            // 
-            this.Cid.HeaderText = "Numero";
-            this.Cid.Name = "Cid";
-            this.Cid.ReadOnly = true;
-            // 
-            // CNome
-            // 
-            this.CNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CNome.HeaderText = "Nome";
-            this.CNome.Name = "CNome";
-            this.CNome.ReadOnly = true;
-            // 
-            // cQtdd
-            // 
-            this.cQtdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cQtdd.HeaderText = "Quantidade de Lugares";
-            this.cQtdd.Name = "cQtdd";
-            this.cQtdd.ReadOnly = true;
-            // 
             // FormAdmSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(475, 325);

@@ -38,7 +38,8 @@ namespace ProjetoCinema
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FormGerLoja form = new FormGerLoja();
+            Produtos p = DAO.Read(dgvProdutos.CurrentRow.Cells[0].Value.ToString());
+            FormGerLoja form = new FormGerLoja(true,p);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
             LoadDatabase();
@@ -47,7 +48,8 @@ namespace ProjetoCinema
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            FormGerLoja form = new FormGerLoja();
+            Produtos p = DAO.Read(dgvProdutos.CurrentRow.Cells[0].Value.ToString());
+            FormGerLoja form = new FormGerLoja(false, p);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
             
@@ -55,7 +57,8 @@ namespace ProjetoCinema
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-         
+            Produtos p = DAO.Read(dgvProdutos.CurrentRow.Cells[0].Value.ToString());
+            DAO.Delete(p.Nome);
         }
         private void Fill(string filter)
         {
@@ -63,7 +66,7 @@ namespace ProjetoCinema
             foreach (Produtos a in data)
 
                 if (filter == "" || a.Nome.ToUpper().Contains(filter.ToUpper()) || a.Tipo.ToUpper().Contains(filter.ToUpper()))
-                    dgvProdutos.Rows.Add(a.Nome, a.Tipo, a.Preco);
+                    dgvProdutos.Rows.Add(a.Nome, a.Tipo,(a.Preco/100).ToString("c"));
         }
         private void FormAdmLoja_Load(object sender, EventArgs e)
         {

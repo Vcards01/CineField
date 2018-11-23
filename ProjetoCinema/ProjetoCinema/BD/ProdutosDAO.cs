@@ -21,7 +21,7 @@ namespace ProjetoCinema.BD
         public Produtos Read(string nome)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("SELECT * FROM Produtos WHERE Nome={0};", nome);
+            string sql = string.Format("SELECT * FROM Produtos WHERE Nome='{0}';", nome);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             DataSet ds = bd.ExecuteQuery(cmd);
             DataRow dr = ds.Tables[0].Rows[0];
@@ -31,14 +31,14 @@ namespace ProjetoCinema.BD
         public void Update(Produtos p)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("UPDATE Produto set Nome='{0}',Tipo='{1}',Preco='{2}' where Nome={3} ;", p.Nome, p.Tipo,p.Preco,p.Nome);
+            string sql = string.Format("UPDATE Produtos set Nome ='{0}',Tipo='{1}',Preco='{2}' where Nome='{3}' ;",p.Nome, p.Tipo,p.Preco,p.Nome);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
         public void Delete(string nome)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Delete from Produto where Nome={0};", nome);
+            string sql = string.Format("Delete from Produto where Nome='{0}';", nome);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }

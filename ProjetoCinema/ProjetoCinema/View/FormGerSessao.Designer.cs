@@ -56,7 +56,7 @@
             // 
             this.pnBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnBaixo.Controls.Add(this.btnCancelar);
             this.pnBaixo.Controls.Add(this.btnSalvar);
             this.pnBaixo.Location = new System.Drawing.Point(-1, 150);
@@ -90,7 +90,7 @@
             // 
             this.pnTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnTopo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
+            this.pnTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnTopo.Controls.Add(this.lbTitulo);
             this.pnTopo.Controls.Add(this.panel1);
             this.pnTopo.Location = new System.Drawing.Point(-1, 0);
@@ -243,6 +243,8 @@
             this.Controls.Add(this.pnTopo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormGerSessao";
             this.Text = "Gerenciar Sessões";
             this.Load += new System.EventHandler(this.FormGerSessao_Load);

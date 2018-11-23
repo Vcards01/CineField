@@ -119,12 +119,12 @@
             // 
             this.pnFilmesBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnFilmesBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            this.pnFilmesBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnFilmesBaixo.Controls.Add(this.btnExcluir);
             this.pnFilmesBaixo.Controls.Add(this.btnVisualizar);
             this.pnFilmesBaixo.Controls.Add(this.btnEditar);
             this.pnFilmesBaixo.Controls.Add(this.btnNovo);
-            this.pnFilmesBaixo.Location = new System.Drawing.Point(5, 242);
+            this.pnFilmesBaixo.Location = new System.Drawing.Point(5, 245);
             this.pnFilmesBaixo.Name = "pnFilmesBaixo";
             this.pnFilmesBaixo.Size = new System.Drawing.Size(467, 51);
             this.pnFilmesBaixo.TabIndex = 2;
@@ -177,10 +177,10 @@
             // 
             this.pnFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnFilmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            this.pnFilmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnFilmes.Controls.Add(this.textBox1);
             this.pnFilmes.Controls.Add(this.lbFiltro);
-            this.pnFilmes.Location = new System.Drawing.Point(5, 5);
+            this.pnFilmes.Location = new System.Drawing.Point(5, 3);
             this.pnFilmes.Name = "pnFilmes";
             this.pnFilmes.Size = new System.Drawing.Size(467, 61);
             this.pnFilmes.TabIndex = 0;
@@ -209,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_22;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 299);
             this.Controls.Add(this.pnFilmesBaixo);
