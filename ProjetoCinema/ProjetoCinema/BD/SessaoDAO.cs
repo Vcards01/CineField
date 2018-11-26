@@ -66,7 +66,20 @@ namespace ProjetoCinema.BD
 
                 return s;
             }
-            public Sessão RowToApp(DataRow dr)
+        public List<Sessão> FindBySala(int id)
+        {
+            List<Sessão> s = new List<Sessão>();
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("SELECT * FROM Sessao WHERE Sala={0};", id);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            DataSet ds = DataBase.GetInstance().ExecuteQuery(cmd);
+            foreach (DataRow dr in ds.Tables[0].Rows)
+                s.Add(RowToApp(dr));
+
+            return s;
+        }
+
+        public Sessão RowToApp(DataRow dr)
             {
                 FilmeDAO DAOf = new FilmeDAO();
                 SalaDAO DAOs = new SalaDAO();

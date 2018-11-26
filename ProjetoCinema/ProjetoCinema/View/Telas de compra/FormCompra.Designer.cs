@@ -51,10 +51,14 @@
             this.btnProximoS = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
+            this.pnlugares = new System.Windows.Forms.Panel();
+            this.pnCadeiras = new System.Windows.Forms.FlowLayoutPanel();
+            this.CID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CLugares = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnAssentos2 = new System.Windows.Forms.FlowLayoutPanel();
             gpFilmes = new System.Windows.Forms.GroupBox();
             groupBox1 = new System.Windows.Forms.GroupBox();
             gpFilmes.SuspendLayout();
@@ -65,6 +69,7 @@
             this.panel1.SuspendLayout();
             this.pnSessões.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnlugares.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpFilmes
@@ -145,7 +150,7 @@
             groupBox1.ForeColor = System.Drawing.Color.White;
             groupBox1.Location = new System.Drawing.Point(-120, 44);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(563, 100);
+            groupBox1.Size = new System.Drawing.Size(563, 134);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
             groupBox1.Text = "Filmes";
@@ -166,9 +171,10 @@
             this.dgvSessoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSessoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSessoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CID,
+            this.CFilme,
             this.CSala,
             this.CHorario,
-            this.CFilme,
             this.CLugares});
             this.dgvSessoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSessoes.EnableHeadersVisualStyles = false;
@@ -184,7 +190,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dgvSessoes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSessoes.RowTemplate.Height = 24;
-            this.dgvSessoes.Size = new System.Drawing.Size(557, 81);
+            this.dgvSessoes.Size = new System.Drawing.Size(557, 115);
             this.dgvSessoes.TabIndex = 13;
             // 
             // pnFilmes
@@ -197,7 +203,7 @@
             this.pnFilmes.Controls.Add(this.textBox1);
             this.pnFilmes.Controls.Add(this.panel1);
             this.pnFilmes.Controls.Add(this.Filtrolbl);
-            this.pnFilmes.Location = new System.Drawing.Point(249, 41);
+            this.pnFilmes.Location = new System.Drawing.Point(278, 54);
             this.pnFilmes.Name = "pnFilmes";
             this.pnFilmes.Size = new System.Drawing.Size(337, 258);
             this.pnFilmes.TabIndex = 43;
@@ -268,9 +274,9 @@
             this.pnSessões.Controls.Add(groupBox1);
             this.pnSessões.Controls.Add(this.textBox2);
             this.pnSessões.Controls.Add(this.lbFiltro);
-            this.pnSessões.Location = new System.Drawing.Point(249, 74);
+            this.pnSessões.Location = new System.Drawing.Point(279, 54);
             this.pnSessões.Name = "pnSessões";
-            this.pnSessões.Size = new System.Drawing.Size(337, 224);
+            this.pnSessões.Size = new System.Drawing.Size(337, 258);
             this.pnSessões.TabIndex = 43;
             // 
             // panel2
@@ -279,7 +285,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btnVoltarS);
             this.panel2.Controls.Add(this.btnProximoS);
-            this.panel2.Location = new System.Drawing.Point(97, 185);
+            this.panel2.Location = new System.Drawing.Point(97, 219);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(132, 32);
             this.panel2.TabIndex = 41;
@@ -306,6 +312,7 @@
             this.btnProximoS.TabIndex = 2;
             this.btnProximoS.Text = "Next ->";
             this.btnProximoS.UseVisualStyleBackColor = false;
+            this.btnProximoS.Click += new System.EventHandler(this.btnProximoS_Click);
             // 
             // textBox2
             // 
@@ -328,6 +335,40 @@
             this.lbFiltro.TabIndex = 39;
             this.lbFiltro.Text = "Filtro";
             // 
+            // pnlugares
+            // 
+            this.pnlugares.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlugares.Controls.Add(this.pnAssentos2);
+            this.pnlugares.Controls.Add(this.pnCadeiras);
+            this.pnlugares.Location = new System.Drawing.Point(278, 54);
+            this.pnlugares.Name = "pnlugares";
+            this.pnlugares.Size = new System.Drawing.Size(338, 258);
+            this.pnlugares.TabIndex = 44;
+            // 
+            // pnCadeiras
+            // 
+            this.pnCadeiras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnCadeiras.Location = new System.Drawing.Point(0, 0);
+            this.pnCadeiras.Name = "pnCadeiras";
+            this.pnCadeiras.Size = new System.Drawing.Size(136, 258);
+            this.pnCadeiras.TabIndex = 0;
+            // 
+            // CID
+            // 
+            this.CID.HeaderText = "ID";
+            this.CID.Name = "CID";
+            this.CID.ReadOnly = true;
+            this.CID.Width = 50;
+            // 
+            // CFilme
+            // 
+            this.CFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CFilme.HeaderText = "Filme";
+            this.CFilme.Name = "CFilme";
+            this.CFilme.ReadOnly = true;
+            // 
             // CSala
             // 
             this.CSala.HeaderText = "Sala";
@@ -339,20 +380,21 @@
             this.CHorario.HeaderText = "Horario";
             this.CHorario.Name = "CHorario";
             this.CHorario.ReadOnly = true;
-            this.CHorario.Width = 207;
-            // 
-            // CFilme
-            // 
-            this.CFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CFilme.HeaderText = "Filme";
-            this.CFilme.Name = "CFilme";
-            this.CFilme.ReadOnly = true;
+            this.CHorario.Width = 80;
             // 
             // CLugares
             // 
             this.CLugares.HeaderText = "Lugares";
             this.CLugares.Name = "CLugares";
             this.CLugares.ReadOnly = true;
+            // 
+            // pnAssentos2
+            // 
+            this.pnAssentos2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnAssentos2.Location = new System.Drawing.Point(200, 0);
+            this.pnAssentos2.Name = "pnAssentos2";
+            this.pnAssentos2.Size = new System.Drawing.Size(137, 258);
+            this.pnAssentos2.TabIndex = 1;
             // 
             // FormCompra
             // 
@@ -362,6 +404,7 @@
             this.BackgroundImage = global::ProjetoCinema.Properties.Resources.Tema;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(816, 350);
+            this.Controls.Add(this.pnlugares);
             this.Controls.Add(this.pnFilmes);
             this.Controls.Add(this.pnSessões);
             this.DoubleBuffered = true;
@@ -379,6 +422,7 @@
             this.pnSessões.ResumeLayout(false);
             this.pnSessões.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.pnlugares.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -401,9 +445,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnVoltarS;
         private System.Windows.Forms.Button btnProximoS;
+        private System.Windows.Forms.Panel pnlugares;
+        private System.Windows.Forms.FlowLayoutPanel pnCadeiras;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CFilme;
         private System.Windows.Forms.DataGridViewTextBoxColumn CSala;
         private System.Windows.Forms.DataGridViewTextBoxColumn CHorario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CFilme;
         private System.Windows.Forms.DataGridViewTextBoxColumn CLugares;
+        private System.Windows.Forms.FlowLayoutPanel pnAssentos2;
     }
 }

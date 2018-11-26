@@ -34,6 +34,10 @@ namespace ProjetoCinema
         {
             sessoes.Remove(s);
         }
+        public List<Sessão> GetList()
+        {
+            return sessoes;
+        }
         public int Id
         {
             get

@@ -78,6 +78,12 @@
     <Compile Include="Model\Adiministrador.cs" />
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Produtos.cs" />
+    <Compile Include="View\Telas de compra\SelectLugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Telas de compra\SelectLugar.Designer.cs">
+      <DependentUpon>SelectLugar.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Telas de CRUD\Administração.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Sessão.cs" />
     <Compile Include="Model\Venda.cs" />
+    <EmbeddedResource Include="View\Telas de compra\SelectLugar.resx">
+      <DependentUpon>SelectLugar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de CRUD\Administração.resx">
       <DependentUpon>Administração.cs</DependentUpon>
     </EmbeddedResource>

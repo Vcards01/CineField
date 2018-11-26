@@ -47,8 +47,11 @@ namespace ProjetoCinema
             }
             if (editavel)
             {
+                
                 s.Id = int.Parse(txtCodigo.Text);
                 DAO.Update(s);
+                GetSessao(s);
+                updateSessões(s);
                 Dispose();
             }
             if (!salvar && !editavel)
@@ -56,7 +59,25 @@ namespace ProjetoCinema
                 Dispose();
             }
         }
+        private void GetSessao(Sala sa)
+        {
+            SessaoDAO dao = new SessaoDAO();
+            List<Sessão> s = dao.FindBySala(sa.Id);
+            foreach(Sessão se in s)
+            {
+                sa.AddSessao(se);
+            }
 
+        }
+        private void updateSessões(Sala s)
+        {
+            SessaoDAO dao = new SessaoDAO();
+            foreach (Sessão a in s.GetList())
+            {
+                a.LugaresDisponiveis = s.QtddLugares;
+                dao.Update(a);
+            }
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Dispose();
