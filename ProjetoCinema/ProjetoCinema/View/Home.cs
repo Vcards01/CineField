@@ -15,14 +15,18 @@ namespace ProjetoCinema
     {
         List<Filme> data = new List<Filme>();
         private FilmeDAO DAO = new FilmeDAO();
+        private SessaoDAO DAOs = new SessaoDAO();
 
         public Home()
         {
+            
             InitializeComponent();
             LoadDatabase();
+            
+
         }
        
-               
+        
         private void LoadDatabase()
         {
             data = DAO.ListAll();
@@ -63,5 +67,7 @@ namespace ProjetoCinema
                
             }
         }
+
+        
     }
 }

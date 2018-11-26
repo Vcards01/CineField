@@ -47,14 +47,13 @@ namespace ProjetoCinema
             cbFilme.Text = s.Filme.Nome;
             cbSala.Text = s.Sala.Nome;
             dtpHorario.Text = s.Horario.ToShortTimeString();
-            NmLugares.Value = s.LugaresDisponiveis;
+            
             if (editavel == false)
             {
                 TxtCod.Enabled = false;
                 cbFilme.Enabled = false;
                 cbSala.Enabled = false;
                 dtpHorario.Enabled = false;
-                NmLugares.Enabled = false;
                 
             }
         }
@@ -65,7 +64,7 @@ namespace ProjetoCinema
             s.Filme = DAOf.FindByName(cbFilme.Text);
             s.Sala = DAOs.FindByName(cbSala.Text);
             s.Horario = dtpHorario.Value;
-            s.LugaresDisponiveis = int.Parse(NmLugares.Value.ToString());
+            s.LugaresDisponiveis = s.Sala.QtddLugares;
             
             if (salvar)
             {
@@ -74,14 +73,18 @@ namespace ProjetoCinema
             }
             if (editavel)
             {
+                s.Filme.RmvSessao(s);
                 s.Id = int.Parse(TxtCod.Text);
                 DAO.Update(s);
+                s.Filme.AddSessao(s);
                 Dispose();
             }
             if (!salvar && !editavel)
             {
                 Dispose();
             }
+            
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

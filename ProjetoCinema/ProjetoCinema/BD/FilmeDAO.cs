@@ -11,6 +11,7 @@ namespace ProjetoCinema.BD
 {
     class FilmeDAO
     {
+        SessaoDAO DAO = new SessaoDAO();
         public void Create(Filme f)
         {
             DataBase bd = DataBase.GetInstance();

@@ -36,8 +36,6 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMeio = new System.Windows.Forms.Panel();
-            this.lbLugares = new System.Windows.Forms.Label();
-            this.NmLugares = new System.Windows.Forms.NumericUpDown();
             this.TxtCod = new System.Windows.Forms.TextBox();
             this.lbCod = new System.Windows.Forms.Label();
             this.cbFilme = new System.Windows.Forms.ComboBox();
@@ -49,7 +47,6 @@
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.pnMeio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBaixo
@@ -124,8 +121,6 @@
             this.pnMeio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnMeio.Controls.Add(this.lbLugares);
-            this.pnMeio.Controls.Add(this.NmLugares);
             this.pnMeio.Controls.Add(this.TxtCod);
             this.pnMeio.Controls.Add(this.lbCod);
             this.pnMeio.Controls.Add(this.cbFilme);
@@ -139,26 +134,10 @@
             this.pnMeio.Size = new System.Drawing.Size(505, 115);
             this.pnMeio.TabIndex = 30;
             // 
-            // lbLugares
-            // 
-            this.lbLugares.AutoSize = true;
-            this.lbLugares.Location = new System.Drawing.Point(220, 57);
-            this.lbLugares.Name = "lbLugares";
-            this.lbLugares.Size = new System.Drawing.Size(97, 13);
-            this.lbLugares.TabIndex = 33;
-            this.lbLugares.Text = "Lugares Diponiveis";
-            // 
-            // NmLugares
-            // 
-            this.NmLugares.Location = new System.Drawing.Point(323, 53);
-            this.NmLugares.Name = "NmLugares";
-            this.NmLugares.Size = new System.Drawing.Size(120, 20);
-            this.NmLugares.TabIndex = 32;
-            // 
             // TxtCod
             // 
             this.TxtCod.Enabled = false;
-            this.TxtCod.Location = new System.Drawing.Point(98, 88);
+            this.TxtCod.Location = new System.Drawing.Point(321, 52);
             this.TxtCod.Name = "TxtCod";
             this.TxtCod.Size = new System.Drawing.Size(46, 20);
             this.TxtCod.TabIndex = 31;
@@ -166,7 +145,7 @@
             // lbCod
             // 
             this.lbCod.AutoSize = true;
-            this.lbCod.Location = new System.Drawing.Point(58, 92);
+            this.lbCod.Location = new System.Drawing.Point(275, 55);
             this.lbCod.Name = "lbCod";
             this.lbCod.Size = new System.Drawing.Size(40, 13);
             this.lbCod.TabIndex = 30;
@@ -253,7 +232,6 @@
             this.pnTopo.PerformLayout();
             this.pnMeio.ResumeLayout(false);
             this.pnMeio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NmLugares)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,7 +252,5 @@
         private System.Windows.Forms.ComboBox cbSala;
         private System.Windows.Forms.TextBox TxtCod;
         private System.Windows.Forms.Label lbCod;
-        private System.Windows.Forms.Label lbLugares;
-        private System.Windows.Forms.NumericUpDown NmLugares;
     }
 }

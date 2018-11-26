@@ -73,6 +73,7 @@ namespace ProjetoCinema.BD
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
+        
     }
     }
 

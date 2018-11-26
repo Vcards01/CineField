@@ -12,16 +12,9 @@ namespace ProjetoCinema
         private double soma;
         private int idVenda;
         private Funcionario f;
-        private List<Item> itens = new List<Item>();
         
-        public void add(Item i)
-        {
-            itens.Add(i);
-        }
-        public void rmv(Item i)
-        {
-            itens.Remove(i);
-        }
+        
+       
         public int IdVenda
         {
             get
@@ -48,13 +41,6 @@ namespace ProjetoCinema
             }
         }
 
-        public double ValorTotal()
-        {
-            for(int i=0;i<itens.Count;i++)
-            {
-                soma = soma + itens[i].Preco;
-            }
-            return soma;
-        }
+        
     }
 }

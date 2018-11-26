@@ -64,6 +64,7 @@ namespace ProjetoCinema
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Sessão s = DAO.Read((int.Parse(dgvSessao.CurrentRow.Cells[0].Value.ToString())));
+            s.Filme.RmvSessao(s);
             DAO.Delete(s.Id);
             LoadDatabase();
             Fill("");
@@ -73,5 +74,7 @@ namespace ProjetoCinema
         {
 
         }
+
+        
     }
 }

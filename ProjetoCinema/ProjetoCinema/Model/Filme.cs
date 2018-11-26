@@ -23,6 +23,7 @@ namespace ProjetoCinema
 
         public Filme(int id, string nome, string genero, string sinopse, string duracao)
         {
+            
             this.id = id;
             this.nome = nome;
             this.genero = genero;
@@ -32,11 +33,11 @@ namespace ProjetoCinema
 
         public void AddSessao(Sessão s)
         {
-            sessoes.Add(s);
+            Sessoes.Add(s);
         }
         public void RmvSessao(Sessão s)
         {
-            sessoes.Remove(s);
+            Sessoes.Remove(s);
         }
         
         public int Id
@@ -51,7 +52,11 @@ namespace ProjetoCinema
                 id = value;
             }
         }
-
+       
+        public List<Sessão> listSessao()
+        {
+            return Sessoes;
+        }
         public string Nome
         {
             get
@@ -103,6 +108,19 @@ namespace ProjetoCinema
             set
             {
                 duracao = value;
+            }
+        }
+
+        public List<Sessão> Sessoes
+        {
+            get
+            {
+                return sessoes;
+            }
+
+            set
+            {
+                sessoes = value;
             }
         }
     }

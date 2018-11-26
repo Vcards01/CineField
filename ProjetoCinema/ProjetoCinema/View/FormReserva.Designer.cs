@@ -79,10 +79,8 @@
             this.pnBaixo = new System.Windows.Forms.Panel();
             this.btn_confirm = new System.Windows.Forms.Button();
             this.pnTop = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnMeio.SuspendLayout();
             this.pnBaixo.SuspendLayout();
-            this.pnTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMeio
@@ -779,24 +777,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnTop.BackColor = System.Drawing.Color.Transparent;
             this.pnTop.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
-            this.pnTop.Controls.Add(this.label1);
             this.pnTop.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnTop.Location = new System.Drawing.Point(-5, 1);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(538, 61);
+            this.pnTop.Size = new System.Drawing.Size(538, 67);
             this.pnTop.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(74, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(402, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Selecione um ou mais lugares";
             // 
             // FormReserva
             // 
@@ -814,8 +799,6 @@
             this.pnMeio.ResumeLayout(false);
             this.pnMeio.PerformLayout();
             this.pnBaixo.ResumeLayout(false);
-            this.pnTop.ResumeLayout(false);
-            this.pnTop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -872,6 +855,5 @@
         private System.Windows.Forms.Panel pnTop;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
     }
 }
