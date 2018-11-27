@@ -22,25 +22,28 @@ namespace ProjetoCinema.View
         {
 
             InitializeComponent();
-            pnlugares.Visible = false;
+            //pnlugares.Visible = false;
             pnSessões.Visible = false;
             LoadDatabase();
             Fill("");
             dgvFilmes.CurrentCell = dgvFilmes.Rows[0].Cells[0];
 
         }
+        //Carrega tds os filmes
        private void LoadDatabase()
         {
             FilmeDAO DAO = new FilmeDAO();
             data = DAO.ListAll();
             
         }
+        //Prenche o DataGride de filmes
         private void Fill(string filter)
         {
             dgvFilmes.Rows.Clear();
             foreach (Filme a in data)
                 dgvFilmes.Rows.Add(a.Nome, a.Duracao, a.Genero);
         }
+        //Prenche o DataGride de sessões
         private void Fill(Filme f)
         {
             dgvSessoes.Rows.Clear();
@@ -48,14 +51,16 @@ namespace ProjetoCinema.View
             foreach (Sessão a in s)
                 dgvSessoes.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Id,a.Horario,a.LugaresDisponiveis);
         }
-        public Filme GetFilme()
+        //Retorna um Filme para prencher o DataGrid
+       public Filme GetFilme()
         {
             
             FilmeDAO DAO = new FilmeDAO();
             Filme f = DAO.FindByName(dgvFilmes.CurrentRow.Cells[0].Value.ToString());
             return f;
         }
-        private void FillList(Filme f)
+        //Preenche a lista de sessões dos filmes
+       private void FillList(Filme f)
         {
             SessaoDAO DAO = new SessaoDAO();
             List<Sessão> sessoes = DAO.FindByFilme(f.Id);
@@ -65,7 +70,8 @@ namespace ProjetoCinema.View
 
             }
         }
-        private void CleanList(Filme f)
+        //Esvazia a lista de sessões dos filmes
+       private void CleanList(Filme f)
         {
             SessaoDAO DAO = new SessaoDAO();
             List<Sessão> sessoes = DAO.FindByFilme(f.Id);
@@ -75,31 +81,26 @@ namespace ProjetoCinema.View
 
             }
         }
+        //Retorna uma sessão para prencher o DataGrid
        private Sessão GetSession()
         {
-            dgvSessoes.CurrentCell = dgvFilmes.Rows[0].Cells[0];
+            
             SessaoDAO DAo = new SessaoDAO();
             Sessão s = DAo.Read(int.Parse(dgvSessoes.CurrentRow.Cells[0].Value.ToString()));
             return s;
         }
-        private void btnNext_Click(object sender, EventArgs e)
-         {
-           
-         }
-
-        private void btnNext_Click_1(object sender, EventArgs e)
+       //Abre o painel se sessões e carrega o DataGrid Sessões
+       private void btnNext_Click_1(object sender, EventArgs e)
         {
             pnSessões.Visible = true;
             pnFilmes.Visible = false;
             Filme f = GetFilme();
             FillList(f);
             Fill(f);
-            
-           
-            
+                              
         }
-
-        private void btnVoltar_Click(object sender, EventArgs e)
+        //Retorna ao painel de filmes 
+       private void btnVoltar_Click(object sender, EventArgs e)
         {
             pnSessões.Visible = false;
             pnFilmes.Visible = true;
@@ -107,66 +108,26 @@ namespace ProjetoCinema.View
             CleanList(f);
             Fill("");
         }
-
-        private void btnCancelarF_Click(object sender, EventArgs e)
+        //Fecha o Painel de filmes
+       private void btnCancelarF_Click(object sender, EventArgs e)
         {
             Dispose();
         }
-        void ButtonClick(object sender, EventArgs e)
+       
+      
+       
+       private void btnProximoS_Click(object sender, EventArgs e)
         {
+            pnSessões.Visible = false;
+            Sessão s = GetSession();
+            VenderIngresso V = new VenderIngresso(s);
+            V.StartPosition = FormStartPosition.CenterParent;
+            V.ShowDialog(this);
            
-            Button currentButton = (Button)sender;
-            if (Flag==0)
-            {
-                currentButton.BackgroundImage = Properties.Resources.armchair__1_;
-                currentButton.BackgroundImageLayout = ImageLayout.Stretch;
-                Flag = 1;
-            }
-            else
-            {
-                currentButton.BackgroundImage = Properties.Resources.armchair__3_;
-                currentButton.BackgroundImageLayout = ImageLayout.Stretch;
-                Flag = 0;
-            }
-            
-        }
-        private Button addButton(int i)
-        {
-            Button b = new Button();
-            b.Name = "Assento" + i.ToString();
-            b.BackgroundImage = Properties.Resources.armchair__1_;
-            b.BackgroundImageLayout = ImageLayout.Stretch;
-            b.Width = 50;
-            b.Height = 50;
-            b.FlatStyle = FlatStyle.Flat;
-            b.Margin = new Padding(5);
-
-            return b;
         }
         private void FormCompra_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnProximoS_Click(object sender, EventArgs e)
-        {
-            pnlugares.Visible = true;
-            pnSessões.Visible = false;
-            Sessão s = GetSession();
-            for (int i = 0; i < s.LugaresDisponiveis/2; i++)
-            {
-                Button b = addButton(i);
-                pnCadeiras.Controls.Add(b);
-                b.Click += new System.EventHandler(this.ButtonClick);
-
-            }
-            for (int i = 0; i < s.LugaresDisponiveis / 2; i++)
-            {
-                Button b = addButton(i);
-                pnAssentos2.Controls.Add(b);
-                b.Click += new System.EventHandler(this.ButtonClick);
-
-            }
         }
     }
 }

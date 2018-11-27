@@ -75,6 +75,13 @@
     <Compile Include="BD\SalaDAO.cs" />
     <Compile Include="BD\SessaoDAO.cs" />
     <Compile Include="BD\Tables.cs" />
+    <Compile Include="BD\VendaDAO.cs" />
+    <Compile Include="View\Telas de compra\VenderIngresso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Telas de compra\VenderIngresso.Designer.cs">
+      <DependentUpon>VenderIngresso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Adiministrador.cs" />
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Produtos.cs" />
@@ -201,12 +208,14 @@
     <Compile Include="View\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Ingresso.cs" />
     <Compile Include="Model\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Sessão.cs" />
     <Compile Include="Model\Venda.cs" />
+    <EmbeddedResource Include="View\Telas de compra\VenderIngresso.resx">
+      <DependentUpon>VenderIngresso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de compra\SelectLugar.resx">
       <DependentUpon>SelectLugar.cs</DependentUpon>
     </EmbeddedResource>
