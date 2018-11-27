@@ -18,7 +18,8 @@ namespace ProjetoCinema.Model
             this.data = data;
             this.valorInicial = valorInicial;
             this.lucro = lucro;
-            this.valorAtual = valorAtual;
+            this.valorAtual = valorAtual; 
+
         }
         public Caixa()
         {
