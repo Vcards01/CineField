@@ -9,7 +9,7 @@ namespace ProjetoCinema
    public class Sessão
     {
         private int id;
-        private DateTime horario;
+        private string horario;
         private Filme filme;
         private Sala sala;
         private int lugaresdisponiveis;
@@ -17,7 +17,7 @@ namespace ProjetoCinema
         private float precoMeia;
         
 
-        public Sessão(int id, DateTime horario, Filme filme, Sala sala)
+        public Sessão(int id, string horario, Filme filme, Sala sala)
         {
             this.id = id;
             this.horario = horario;
@@ -42,7 +42,7 @@ namespace ProjetoCinema
             }
         }
 
-        public DateTime Horario
+        public string Horario
         {
             get
             {

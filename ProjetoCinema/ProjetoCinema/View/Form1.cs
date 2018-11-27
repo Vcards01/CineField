@@ -20,6 +20,7 @@ namespace ProjetoCinema
         {
             Tables tb = new Tables();
             tb.CreateTable();
+            tb.addInformation();
             InitializeComponent();
             timer1.Start();
             AbrirForm(new Home());
@@ -74,7 +75,6 @@ namespace ProjetoCinema
         private void btnHome_Click(object sender, EventArgs e)
         {
             AbrirForm(new Home());
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)

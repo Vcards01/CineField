@@ -57,7 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpFilmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.gpFilmes.Controls.Add(this.dgvFilmes);
-            this.gpFilmes.ForeColor = System.Drawing.Color.White;
+            this.gpFilmes.ForeColor = System.Drawing.Color.Black;
             this.gpFilmes.Location = new System.Drawing.Point(5, 61);
             this.gpFilmes.Name = "gpFilmes";
             this.gpFilmes.Size = new System.Drawing.Size(467, 185);

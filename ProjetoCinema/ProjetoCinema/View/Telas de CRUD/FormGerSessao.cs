@@ -46,7 +46,7 @@ namespace ProjetoCinema
             TxtCod.Text = s.Id.ToString();
             cbFilme.Text = s.Filme.Nome;
             cbSala.Text = s.Sala.Nome;
-            dtpHorario.Text = s.Horario.ToShortTimeString();
+            dtpHorario.Text = s.Horario;
             txtPreço.Text = s.PrecoInteira.ToString();
             txtPreçoMeia.Text = s.PrecoMeia.ToString();
             if (editavel == false)
@@ -66,7 +66,7 @@ namespace ProjetoCinema
             Sessão s = new Sessão();
             s.Filme = DAOf.FindByName(cbFilme.Text);
             s.Sala = DAOs.FindByName(cbSala.Text);
-            s.Horario = dtpHorario.Value;
+            s.Horario = dtpHorario.Text;
             s.LugaresDisponiveis = s.Sala.QtddLugares;
             s.PrecoInteira = (float.Parse(txtPreço.Text))/ 100;
             s.PrecoMeia = (float.Parse(txtPreçoMeia.Text))/ 100;
