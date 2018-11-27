@@ -13,8 +13,8 @@ namespace ProjetoCinema
         private Filme filme;
         private Sala sala;
         private int lugaresdisponiveis;
-        private float precoInteira;
-        private float precoMeia;
+        private float precoEntrada;
+        
         
 
         public Sessão(int id, string horario, Filme filme, Sala sala)
@@ -94,29 +94,16 @@ namespace ProjetoCinema
             }
         }
 
-        public float PrecoInteira
+        public float PrecoEntrada
         {
             get
             {
-                return precoInteira;
+                return precoEntrada;
             }
 
             set
             {
-                precoInteira = value;
-            }
-        }
-
-        public float PrecoMeia
-        {
-            get
-            {
-                return precoMeia;
-            }
-
-            set
-            {
-                precoMeia = value;
+                precoEntrada = value;
             }
         }
     }

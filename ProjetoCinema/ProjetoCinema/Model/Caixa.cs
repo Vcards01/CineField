@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema.Model
 {
-    class Caixa
+   public class Caixa
     {
-        private DateTime data;
+        private int id;
+        private String data;
         private float valorInicial;
         private float lucro;
         private float valorAtual;
 
-        public Caixa(DateTime data, float valorInicial, float lucro, float valorAtual)
+        public Caixa(String data, float valorInicial, float lucro, float valorAtual)
         {
             this.data = data;
             this.valorInicial = valorInicial;
@@ -32,17 +33,21 @@ namespace ProjetoCinema.Model
             ValorAtual = inicial + Lucro;
 
         }
-        public float RetirarValor(float valor)
+        public void RetirarValor(float valor)
         {
             ValorAtual -= valor;
-            return valorAtual;
+           
+        }
+        public void AddValor(float valor)
+        {
+            ValorAtual += valor;
         }
         public void FecharCaixa()
         {
-            
+            Lucro = valorAtual - ValorInicial;
         }
 
-        public DateTime Data
+        public string Data
         {
             get
             {
@@ -91,6 +96,19 @@ namespace ProjetoCinema.Model
             set
             {
                 valorAtual = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
     }

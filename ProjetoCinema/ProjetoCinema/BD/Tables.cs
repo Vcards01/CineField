@@ -10,10 +10,8 @@ namespace ProjetoCinema.BD
 {
     class Tables
     {
-        private int flag;
-
         public void CreateTable()
-        { 
+        {
             if (!File.Exists("database"))
 
             {
@@ -25,6 +23,7 @@ namespace ProjetoCinema.BD
                 CreateProdutos();
                 CreateVendas();
                 CreateFuncionario();
+                CreateCaixa();
 
 
             }
@@ -48,6 +47,11 @@ namespace ProjetoCinema.BD
             sql.AppendLine("CREATE TABLE IF NOT EXISTS Sala([Codigo] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
             sql.AppendLine("[QtdLugares] INTEGER,");
             sql.AppendLine("[Nome] VARCHAR(20));");
+            sql.AppendLine("Insert into Sala(QtdLugares,Nome)VALUES(20,'Sala Azul');");
+            sql.AppendLine("Insert into Sala(QtdLugares,Nome)VALUES(30,'Sala Verde');");
+            sql.AppendLine("Insert into Sala(QtdLugares,Nome)VALUES(40,'Sala Vermelha');");
+            sql.AppendLine("Insert into Sala(QtdLugares,Nome)VALUES(50,'Sala Branca');");
+            sql.AppendLine("Insert into Sala(QtdLugares,Nome)VALUES(60,'Sala VIP');");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
@@ -61,8 +65,8 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Sala]  INTEGER,");
             sql.AppendLine("[Horario] VARCHAR(20),");
             sql.AppendLine("[Lugares] INTEGER,");
-            sql.AppendLine("[PInteira] INTEGER,");
-            sql.AppendLine("[PMeia] INTEGER);");
+            sql.AppendLine("[PEntrada] INTEGER);");
+            
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
@@ -74,7 +78,8 @@ namespace ProjetoCinema.BD
             sql.AppendLine("CREATE TABLE IF NOT EXISTS Produtos([Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
             sql.AppendLine("[Nome] VARCHAR(30),");
             sql.AppendLine("[Tipo] VARCHAR(20),");
-            sql.AppendLine("[Preco] DOUBLE);");
+            sql.AppendLine("[Preco] DOUBLE,");
+            sql.AppendLine("[Quantidade] DOUBLE);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
@@ -87,8 +92,19 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Valor] INTEGER,");
             sql.AppendLine("[Data] VARCHAR(20),");
             sql.AppendLine("[Hora] VARCHAR(20));");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'24/11/2018','12:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(100,'24/11/2018','13:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(50,'24/11/2018','14:30');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(120,'24/11/2018','19:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','10:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','21:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','21:30');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','20:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','18:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','17:00');");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
+            
         }
 
         public void CreateFuncionario()
@@ -104,31 +120,21 @@ namespace ProjetoCinema.BD
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
-           
-        public void addInformation()
-        { 
-            if (flag != 1)
-            {
+        private void CreateCaixa()
+        {
             DataBase bd = DataBase.GetInstance();
             StringBuilder sql = new StringBuilder();
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Rei Leão','Desenho de longa metragem','Simba e seus amigos embarcam em grandes aventuras pela savana.','1:30');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Velozes e Furiosos 3','Ação','Tokyo Drift, será que aquele cara vai conseguir se tornar um Drift King?.','2:05');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Senhor dos anéis 2: O Retorno do rei','Aventura','Aragorn, Légolas, e Gimli tentam evitar o ataque a Gondor.','2:55');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('O Grito','Terror','Não gosto de filme de terror.','2:02');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Homens de Preto','Ação','Caçadores de Alienígenas de uma associoação secreta.','2:10');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Vingadores: Guerra Infinita','Ação','Thanos quer recuperar as pedras do infinito... e coisas do tipo','2:20');");
-
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Coca','refri', '2.00');");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Pepsi','refri','2.00');");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Bala de goma', 'doce', '3.50');");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('pipoca', 'pipoca', '5.00');");
-            //sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('');");
-            //sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('');");
+            sql.AppendLine("CREATE TABLE IF NOT EXISTS Caixa([Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
+            sql.AppendLine("[Data] VARCHAR(30),");
+            sql.AppendLine("[Inicial] INTEGER(3,4),");
+            sql.AppendLine("[Atual] INTEGER(3,4),");
+            sql.AppendLine("[Lucro] INTEGER(3,4));");
+            sql.AppendLine("Insert into Caixa(Data,Inicial,Atual,Lucro)VALUES('26/11/2018',10,0,0);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
-            flag = 1;
-            }
         }
+       
+
     }
-}
+    }
 
