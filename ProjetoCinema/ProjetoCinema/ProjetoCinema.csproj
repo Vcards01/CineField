@@ -302,148 +302,148 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4.jpg" />
+    <None Include="Model\Resources\4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\movietheater-screen-seats-700x396.jpg" />
+    <None Include="Model\Resources\movietheater-screen-seats-700x396.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\movietheater-screen-seats-700x3961.jpg" />
+    <None Include="Model\Resources\movietheater-screen-seats-700x3961.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\movie-film-border-hi.png" />
+    <None Include="Model\Resources\movie-film-border-hi.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo1.jpg" />
+    <None Include="Model\Resources\fundo1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FilmIcon.png" />
+    <None Include="Model\Resources\FilmIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\IngressoIcon.png" />
+    <None Include="Model\Resources\IngressoIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pipocaIcon.png" />
+    <None Include="Model\Resources\pipocaIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ADMIcon.png" />
+    <None Include="Model\Resources\ADMIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Loguinho.png" />
+    <None Include="Model\Resources\Loguinho.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logoo.jpg" />
+    <None Include="Model\Resources\logoo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cinza.jpg" />
+    <None Include="Model\Resources\Cinza.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cinza1.jpg" />
+    <None Include="Model\Resources\cinza1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\add.png" />
+    <None Include="Model\Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\op.png" />
+    <None Include="Model\Resources\op.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cinema-silhueta-assento_318-41143.png" />
+    <None Include="Model\Resources\cinema-silhueta-assento_318-41143.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\armchair.png" />
+    <None Include="Model\Resources\armchair.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\armchair %281%29.png" />
+    <None Include="Model\Resources\armchair %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\armchair %283%29.png" />
+    <None Include="Model\Resources\armchair %283%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\popcorn.png" />
+    <None Include="Model\Resources\popcorn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chocolate.png" />
+    <None Include="Model\Resources\chocolate.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\can.png" />
+    <None Include="Model\Resources\can.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\download.png" />
+    <None Include="Model\Resources\download.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shopping-cart.png" />
+    <None Include="Model\Resources\shopping-cart.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Fundo2.0.jpg" />
+    <None Include="Model\Resources\Fundo2.0.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo-azul-escuro-degrade-2.jpg" />
+    <None Include="Model\Resources\fundo-azul-escuro-degrade-2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3d-glasses.png" />
+    <None Include="Model\Resources\3d-glasses.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\17_Background_Color.png" />
+    <None Include="Model\Resources\17_Background_Color.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chips.png" />
+    <None Include="Model\Resources\chips.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\gummy-bear.png" />
+    <None Include="Model\Resources\gummy-bear.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-1.png" />
+    <None Include="Model\Resources\Sem Título-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-11.png" />
+    <None Include="Model\Resources\Sem Título-11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-2.png" />
+    <None Include="Model\Resources\Sem Título-2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo3.jpg" />
+    <None Include="Model\Resources\fundo3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo4.jpg" />
+    <None Include="Model\Resources\fundo4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\powerIcon.png" />
+    <None Include="Model\Resources\powerIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Fundo2.01.jpg" />
+    <None Include="Model\Resources\Fundo2.01.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home.png" />
+    <None Include="Model\Resources\home.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo41.jpg" />
+    <None Include="Model\Resources\fundo41.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo5.jpg" />
+    <None Include="Model\Resources\fundo5.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo6.png" />
+    <None Include="Model\Resources\fundo6.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\HomeIcon.png" />
+    <None Include="Model\Resources\HomeIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home-filled-building.png" />
+    <None Include="Model\Resources\home-filled-building.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Clapp.png" />
+    <None Include="Model\Resources\Clapp.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Clap.png" />
+    <None Include="Model\Resources\Clap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-21.png" />
+    <None Include="Model\Resources\Sem Título-21.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-22.png" />
+    <None Include="Model\Resources\Sem Título-22.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tema.png" />
+    <None Include="Model\Resources\Tema.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" />
