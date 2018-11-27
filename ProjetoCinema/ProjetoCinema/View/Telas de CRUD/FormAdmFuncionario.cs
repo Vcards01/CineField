@@ -42,5 +42,10 @@ namespace ProjetoCinema
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmLoja));
             this.gpLoja = new System.Windows.Forms.GroupBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
+            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cPreço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnFilmes = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbFiltro = new System.Windows.Forms.Label();
@@ -39,10 +43,6 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnVisualizar = new System.Windows.Forms.Button();
-            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cPreço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpLoja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.pnFilmes.SuspendLayout();
@@ -56,6 +56,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpLoja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.gpLoja.Controls.Add(this.dgvProdutos);
+            this.gpLoja.ForeColor = System.Drawing.Color.White;
             this.gpLoja.Location = new System.Drawing.Point(3, 63);
             this.gpLoja.Name = "gpLoja";
             this.gpLoja.Size = new System.Drawing.Size(534, 189);
@@ -79,6 +80,32 @@
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.Size = new System.Drawing.Size(528, 170);
             this.dgvProdutos.TabIndex = 0;
+            // 
+            // cID
+            // 
+            this.cID.HeaderText = "ID";
+            this.cID.Name = "cID";
+            this.cID.ReadOnly = true;
+            // 
+            // cNome
+            // 
+            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cNome.HeaderText = "Nome";
+            this.cNome.Name = "cNome";
+            this.cNome.ReadOnly = true;
+            // 
+            // cTipo
+            // 
+            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cTipo.HeaderText = "Tipo";
+            this.cTipo.Name = "cTipo";
+            this.cTipo.ReadOnly = true;
+            // 
+            // cPreço
+            // 
+            this.cPreço.HeaderText = "Preço";
+            this.cPreço.Name = "cPreço";
+            this.cPreço.ReadOnly = true;
             // 
             // pnFilmes
             // 
@@ -170,32 +197,6 @@
             this.btnVisualizar.UseVisualStyleBackColor = true;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
-            // cID
-            // 
-            this.cID.HeaderText = "ID";
-            this.cID.Name = "cID";
-            this.cID.ReadOnly = true;
-            // 
-            // cNome
-            // 
-            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cNome.HeaderText = "Nome";
-            this.cNome.Name = "cNome";
-            this.cNome.ReadOnly = true;
-            // 
-            // cTipo
-            // 
-            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cTipo.HeaderText = "Tipo";
-            this.cTipo.Name = "cTipo";
-            this.cTipo.ReadOnly = true;
-            // 
-            // cPreço
-            // 
-            this.cPreço.HeaderText = "Preço";
-            this.cPreço.Name = "cPreço";
-            this.cPreço.ReadOnly = true;
-            // 
             // FormAdmLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +208,7 @@
             this.Controls.Add(this.pnFilmesBaixo);
             this.Controls.Add(this.gpLoja);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
