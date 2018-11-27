@@ -40,6 +40,7 @@
             this.Sinopse = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pnTopo = new System.Windows.Forms.Panel();
             this.lbTitulo = new System.Windows.Forms.Label();
+            this.btnVendido = new System.Windows.Forms.Button();
             gpFilmes = new System.Windows.Forms.GroupBox();
             gpFilmes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
@@ -160,6 +161,17 @@
             this.lbTitulo.TabIndex = 3;
             this.lbTitulo.Text = "Em Cartaz";
             // 
+            // btnVendido
+            // 
+            this.btnVendido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVendido.Location = new System.Drawing.Point(726, 126);
+            this.btnVendido.Name = "btnVendido";
+            this.btnVendido.Size = new System.Drawing.Size(94, 23);
+            this.btnVendido.TabIndex = 24;
+            this.btnVendido.Text = "Mais Vendido";
+            this.btnVendido.UseVisualStyleBackColor = true;
+            this.btnVendido.Click += new System.EventHandler(this.btnVendido_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,6 +180,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(832, 389);
+            this.Controls.Add(this.btnVendido);
             this.Controls.Add(this.pnTopo);
             this.Controls.Add(gpFilmes);
             this.DoubleBuffered = true;
@@ -193,5 +206,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn duraFilme;
         private System.Windows.Forms.DataGridViewTextBoxColumn genFilme;
         private System.Windows.Forms.DataGridViewButtonColumn Sinopse;
+        private System.Windows.Forms.Button btnVendido;
     }
 }

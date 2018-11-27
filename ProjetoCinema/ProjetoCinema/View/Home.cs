@@ -66,6 +66,21 @@ namespace ProjetoCinema
             }
         }
 
-        
+        private void btnVendido_Click(object sender, EventArgs e)
+        {
+            int maior = 0;
+            int id=0;
+            FilmeDAO dao = new FilmeDAO();
+            List<Filme> data = DAO.ListAll();
+            for(int i=0;i<data.Count;i++)
+            {
+                if(maior<data[i].QtddVendida)
+                {
+                    maior = data[i].QtddVendida;
+                    id = data[i].Id;
+                }
+            }
+            MessageBox.Show("Filme:" + dao.Read(id).Nome + "|Quantidade de ingresso vendidos:" + maior);
+        }
     }
 }

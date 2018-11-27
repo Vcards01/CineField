@@ -51,6 +51,10 @@ namespace ProjetoCinema.BD
         {
             txtQuantidade.Text = qtdd.ToString();
         }
+        private void QtddProd()
+        {
+            txtProd.Text = qtddp.ToString();
+        }
         //Carrega todos os produtos para um lista
         private void LoadDataBase()
         {
@@ -62,17 +66,25 @@ namespace ProjetoCinema.BD
             dgvProdutos.Rows.Clear();
             foreach (Produtos a in data)
                   
-                    dgvProdutos.Rows.Add(a.Nome, a.Tipo, (a.Preco / 100).ToString("c"),a.Quantidade);
+                    dgvProdutos.Rows.Add(a.Nome, a.Tipo, (a.Preco/100).ToString("c"),a.Quantidade);
         }
         //Adiciona ingressos
         private void btnMais_Click(object sender, EventArgs e)
         {
-            SessaoDAO DAOs = new SessaoDAO();
-            qtdd += 1;
-            Quantidade();
-            ValorTotal(precoIngreço);
-            sessão.LugaresDisponiveis -= 1;
-            DAOs.Update(sessão);
+            if(sessão.LugaresDisponiveis>0)
+            {
+                SessaoDAO DAOs = new SessaoDAO();
+                qtdd += 1;
+                Quantidade();
+                ValorTotal(precoIngreço);
+                sessão.LugaresDisponiveis -= 1;
+                DAOs.Update(sessão);
+            }
+            else
+            {
+                MessageBox.Show("Sem lugares disponiveis", "Sala cheia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
                      
         }
         //Remove ingressos
@@ -88,10 +100,7 @@ namespace ProjetoCinema.BD
                 Quantidade();
                 ReduzirTotal(precoIngreço);
             }
-            if(qtdd==sessão.LugaresDisponiveis)
-            {
-                MessageBox.Show("Sem lugares disponiveis", "Sala cheia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
            
         }
         //Atualiza o valor total da compra
@@ -116,8 +125,9 @@ namespace ProjetoCinema.BD
             {
                 if (p.Id == data[i].Id)
                 {
-                    ValorTotal(p.Preco / 100);
-                    p.Quantidade += 1;
+                    ValorTotal(p.Preco);
+                    qtddp += 1;
+                    QtddProd();
                     Fill();
                 }
 
@@ -128,28 +138,40 @@ namespace ProjetoCinema.BD
         //Remove produtos do carrinho
         private void btnRemoverProduto_Click(object sender, EventArgs e)
         {
-            string key = dgvProdutos.CurrentRow.Cells[0].Value.ToString();
-            Produtos p = dao.FindByName(key);
-            for (int i = 0; i < data.Count; i++)
+            if(qtddp==0)
             {
-                if (p.Id == data[i].Id)
-                {
-                    ReduzirTotal(p.Preco / 100);
-                    p.Quantidade -= 1;
-                    Fill();
-                }
-
+                MessageBox.Show("Sem itens no carrinho", "Impossivel Remover", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            if(qtddp>0)
+            {
+                string key = dgvProdutos.CurrentRow.Cells[0].Value.ToString();
+                Produtos p = dao.FindByName(key);
+                for (int i = 0; i < data.Count; i++)
+                {
+                    if (p.Id == data[i].Id)
+                    {
+                        ReduzirTotal(p.Preco);
+                        qtddp -= 1;
+                        QtddProd();
+                        Fill();
+                    }
+
+                }
+            }
+            
            
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
+            FilmeDAO DAOF = new FilmeDAO();
             VendaDAO DAOV = new VendaDAO();
             Venda v = new Venda();
             v.Valor1 = precoTotal;
             v.Data = DateTime.Now.ToShortDateString();
             v.Hora = DateTime.Now.ToShortTimeString();
+            sessão.Filme.QtddVendida = qtdd;
+            DAOF.Update(sessão.Filme);
             DAOV.Create(v);
             Dispose();
         }

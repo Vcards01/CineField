@@ -49,6 +49,7 @@ namespace ProjetoCinema
             f.Genero = cbGenero.Text;
             f.Sinopse = textBox1.Text;
             f.Duracao = txtHoras.Text;
+            f.QtddVendida = 0;
             if(salvar)
             {
                 DAO.Create(f);

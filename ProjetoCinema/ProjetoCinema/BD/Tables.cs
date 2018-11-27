@@ -36,7 +36,8 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Nome] VARCHAR(70),");
             sql.AppendLine("[Genero] VARCHAR(20),");
             sql.AppendLine("[Sinopse] VARCHAR(20),");
-            sql.AppendLine("[Duracao] VARCHAR(20));");
+            sql.AppendLine("[Duracao] VARCHAR(20),");
+            sql.AppendLine("[Quantidade] INTEGER);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }

@@ -15,7 +15,7 @@ namespace ProjetoCinema.BD
         public void Create(Filme f)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('{0}','{1}','{2}','{3}');", f.Nome, f.Genero, f.Sinopse,f.Duracao);
+            string sql = string.Format("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('{0}','{1}','{2}','{3}',{4});", f.Nome, f.Genero, f.Sinopse,f.Duracao,f.QtddVendida);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -32,7 +32,7 @@ namespace ProjetoCinema.BD
         public void Update(Filme f)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("UPDATE Filme set Nome='{0}',Genero='{1}',Sinopse='{2}',Duracao='{3}' where Id={4} ;", f.Nome, f.Genero, f.Sinopse, f.Duracao,f.Id);
+            string sql = string.Format("UPDATE Filme set Nome='{0}',Genero='{1}',Sinopse='{2}',Duracao='{3}', Quantidade ={4} where Id={5} ;", f.Nome, f.Genero, f.Sinopse, f.Duracao,f.QtddVendida,f.Id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -64,6 +64,7 @@ namespace ProjetoCinema.BD
             f.Sinopse = dr["Sinopse"].ToString();
             f.Genero = dr["Genero"].ToString();
             f.Duracao = dr["Duracao"].ToString();
+            f.QtddVendida = int.Parse(dr["Quantidade"].ToString());
             return f;
         }
         public Filme FindByName(string nome)

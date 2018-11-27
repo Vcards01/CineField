@@ -13,6 +13,7 @@ namespace ProjetoCinema
         private string genero;
         private string sinopse;
         private string duracao;
+        private int qtddVendida;
         private List<Sessão> sessoes = new List<Sessão>();
 
         
@@ -121,6 +122,19 @@ namespace ProjetoCinema
             set
             {
                 sessoes = value;
+            }
+        }
+
+        public int QtddVendida
+        {
+            get
+            {
+                return qtddVendida;
+            }
+
+            set
+            {
+                qtddVendida = value;
             }
         }
     }

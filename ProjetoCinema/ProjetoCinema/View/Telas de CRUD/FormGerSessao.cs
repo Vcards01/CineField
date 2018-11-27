@@ -43,12 +43,14 @@ namespace ProjetoCinema
             salvar = false;
             this.editavel = editavel;
             InitializeComponent();
+            FillComboBox();
             TxtCod.Text = s.Id.ToString();
             cbFilme.Text = s.Filme.Nome;
             cbSala.Text = s.Sala.Nome;
             dtpHorario.Text = s.Horario.ToShortTimeString();
             txtPreço.Text = s.PrecoEntrada.ToString();
-           
+            
+
             if (editavel == false)
             {
                 TxtCod.Enabled = false;
