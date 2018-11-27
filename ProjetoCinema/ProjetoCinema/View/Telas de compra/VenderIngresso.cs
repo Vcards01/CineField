@@ -33,10 +33,11 @@ namespace ProjetoCinema.BD
         {
             InitializeComponent();
             sessão = s;
+            Console.WriteLine(s.LugaresDisponiveis);
             txtCodigoSessão.Text = s.Id.ToString();
             txtFilmeNome.Text = s.Filme.Nome;
             txtTotal.Text = 0.ToString("c");
-            precoIngreço = s.PrecoInteira/100;
+            precoIngreço = s.PrecoEntrada;
             Quantidade();
             LoadDataBase();
             Fill();
@@ -61,7 +62,7 @@ namespace ProjetoCinema.BD
             dgvProdutos.Rows.Clear();
             foreach (Produtos a in data)
                   
-                    dgvProdutos.Rows.Add(a.Nome, a.Tipo, (a.Preco / 100).ToString("c"),qtddp);
+                    dgvProdutos.Rows.Add(a.Nome, a.Tipo, (a.Preco / 100).ToString("c"),a.Quantidade);
         }
         //Adiciona ingressos
         private void btnMais_Click(object sender, EventArgs e)
@@ -77,20 +78,32 @@ namespace ProjetoCinema.BD
         //Remove ingressos
         private void btnRmvIngreço_Click(object sender, EventArgs e)
         {
-            qtdd -= 1;
-            Quantidade();
-            ReduzirTotal(precoIngreço);
+            if(qtdd==0)
+            {
+                MessageBox.Show("Sem itens no carrinho", "Impossivel Remover", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (qtdd > 0 )
+            {
+                qtdd -= 1;
+                Quantidade();
+                ReduzirTotal(precoIngreço);
+            }
+            if(qtdd==sessão.LugaresDisponiveis)
+            {
+                MessageBox.Show("Sem lugares disponiveis", "Sala cheia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
         //Atualiza o valor total da compra
         private void ValorTotal(double valor)
         {
-            precoTotal += valor;
+            precoTotal += valor / 100;
             txtTotal.Text = precoTotal.ToString("c");
         }
         //Atualiza o valor total da compra
         private void ReduzirTotal(double valor)
         {
-            precoTotal -= valor;
+            precoTotal -= valor/100;
             txtTotal.Text = precoTotal.ToString("c");
         }
         //Adiciona produtos ao carrinho
@@ -104,7 +117,7 @@ namespace ProjetoCinema.BD
                 if (p.Id == data[i].Id)
                 {
                     ValorTotal(p.Preco / 100);
-                    qtddp += 1;
+                    p.Quantidade += 1;
                     Fill();
                 }
 
@@ -122,7 +135,7 @@ namespace ProjetoCinema.BD
                 if (p.Id == data[i].Id)
                 {
                     ReduzirTotal(p.Preco / 100);
-                    qtddp -= 1;
+                    p.Quantidade -= 1;
                     Fill();
                 }
 

@@ -41,8 +41,6 @@
             this.tpTopo = new System.Windows.Forms.ToolStrip();
             this.btnHome = new System.Windows.Forms.ToolStripButton();
             this.btnFilme = new System.Windows.Forms.ToolStripButton();
-            this.btnIngresso = new System.Windows.Forms.ToolStripButton();
-            this.btnAlgo = new System.Windows.Forms.ToolStripButton();
             this.btnAdm = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lbBemVindo = new System.Windows.Forms.ToolStripStatusLabel();
@@ -53,6 +51,8 @@
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.retirarValorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorioDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -153,8 +153,6 @@
             this.tpTopo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnHome,
             this.btnFilme,
-            this.btnIngresso,
-            this.btnAlgo,
             this.btnAdm});
             this.tpTopo.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.tpTopo.Location = new System.Drawing.Point(0, 48);
@@ -189,31 +187,6 @@
             this.btnFilme.Size = new System.Drawing.Size(40, 40);
             this.btnFilme.ToolTipText = "Filme";
             this.btnFilme.Click += new System.EventHandler(this.btnFilme_Click);
-            // 
-            // btnIngresso
-            // 
-            this.btnIngresso.AutoSize = false;
-            this.btnIngresso.BackgroundImage = global::ProjetoCinema.Properties.Resources.IngressoIcon;
-            this.btnIngresso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIngresso.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
-            this.btnIngresso.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.btnIngresso.Margin = new System.Windows.Forms.Padding(100, 10, 0, 0);
-            this.btnIngresso.Name = "btnIngresso";
-            this.btnIngresso.Size = new System.Drawing.Size(40, 40);
-            this.btnIngresso.Text = "toolStripButton2";
-            this.btnIngresso.ToolTipText = "Ingressos";
-            // 
-            // btnAlgo
-            // 
-            this.btnAlgo.AutoSize = false;
-            this.btnAlgo.BackgroundImage = global::ProjetoCinema.Properties.Resources.pipocaIcon;
-            this.btnAlgo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
-            this.btnAlgo.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.btnAlgo.Margin = new System.Windows.Forms.Padding(100, 10, 0, 2);
-            this.btnAlgo.Name = "btnAlgo";
-            this.btnAlgo.Size = new System.Drawing.Size(40, 40);
-            this.btnAlgo.Text = "toolStripButton3";
-            this.btnAlgo.ToolTipText = "AlgumaCoisa";
             // 
             // btnAdm
             // 
@@ -275,7 +248,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.caixaToolStripMenuItem});
+            this.caixaToolStripMenuItem,
+            this.relatoriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(896, 24);
@@ -297,6 +271,7 @@
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
+            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // fecharToolStripMenuItem
             // 
@@ -309,6 +284,21 @@
             this.retirarValorToolStripMenuItem.Name = "retirarValorToolStripMenuItem";
             this.retirarValorToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.retirarValorToolStripMenuItem.Text = "Retirar valor";
+            // 
+            // relatoriosToolStripMenuItem
+            // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relatorioDeVendasToolStripMenuItem});
+            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
+            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            // 
+            // relatorioDeVendasToolStripMenuItem
+            // 
+            this.relatorioDeVendasToolStripMenuItem.Name = "relatorioDeVendasToolStripMenuItem";
+            this.relatorioDeVendasToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.relatorioDeVendasToolStripMenuItem.Text = "Relatorio de vendas";
+            this.relatorioDeVendasToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeVendasToolStripMenuItem_Click);
             // 
             // menuStrip2
             // 
@@ -357,8 +347,6 @@
         private System.Windows.Forms.ToolStripStatusLabel lbHoras;
         private System.Windows.Forms.ToolStrip tpTopo;
         private System.Windows.Forms.ToolStripButton btnFilme;
-        private System.Windows.Forms.ToolStripButton btnIngresso;
-        private System.Windows.Forms.ToolStripButton btnAlgo;
         private System.Windows.Forms.ToolStripButton btnAdm;
         private System.Windows.Forms.Panel pnFundo;
         private System.Windows.Forms.ToolStripButton btnHome;
@@ -372,6 +360,8 @@
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem retirarValorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatorioDeVendasToolStripMenuItem;
     }
 }
 

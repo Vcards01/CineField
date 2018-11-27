@@ -81,14 +81,7 @@ namespace ProjetoCinema.View
 
             }
         }
-        //Retorna uma sessão para prencher o DataGrid
-       private Sessão GetSession()
-        {
-            
-            SessaoDAO DAo = new SessaoDAO();
-            Sessão s = DAo.Read(int.Parse(dgvSessoes.CurrentRow.Cells[0].Value.ToString()));
-            return s;
-        }
+       
        //Abre o painel se sessões e carrega o DataGrid Sessões
        private void btnNext_Click_1(object sender, EventArgs e)
         {
@@ -118,8 +111,10 @@ namespace ProjetoCinema.View
        
        private void btnProximoS_Click(object sender, EventArgs e)
         {
+            SessaoDAO DAo = new SessaoDAO();
             pnSessões.Visible = false;
-            Sessão s = GetSession();
+            pnFilmes.Visible = true;
+            Sessão s = DAo.Read(int.Parse(dgvSessoes.CurrentRow.Cells[0].Value.ToString()));
             VenderIngresso V = new VenderIngresso(s);
             V.StartPosition = FormStartPosition.CenterParent;
             V.ShowDialog(this);

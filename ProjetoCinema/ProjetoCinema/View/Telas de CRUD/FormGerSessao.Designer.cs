@@ -36,6 +36,8 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMeio = new System.Windows.Forms.Panel();
+            this.txtPreço = new System.Windows.Forms.MaskedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.TxtCod = new System.Windows.Forms.TextBox();
             this.lbCod = new System.Windows.Forms.Label();
             this.cbFilme = new System.Windows.Forms.ComboBox();
@@ -44,10 +46,6 @@
             this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.cbSala = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPreço = new System.Windows.Forms.MaskedTextBox();
-            this.txtPreçoMeia = new System.Windows.Forms.MaskedTextBox();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.pnMeio.SuspendLayout();
@@ -125,9 +123,7 @@
             this.pnMeio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnMeio.Controls.Add(this.txtPreçoMeia);
             this.pnMeio.Controls.Add(this.txtPreço);
-            this.pnMeio.Controls.Add(this.label4);
             this.pnMeio.Controls.Add(this.label3);
             this.pnMeio.Controls.Add(this.TxtCod);
             this.pnMeio.Controls.Add(this.lbCod);
@@ -141,6 +137,25 @@
             this.pnMeio.Name = "pnMeio";
             this.pnMeio.Size = new System.Drawing.Size(505, 115);
             this.pnMeio.TabIndex = 30;
+            // 
+            // txtPreço
+            // 
+            this.txtPreço.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.txtPreço.Location = new System.Drawing.Point(134, 79);
+            this.txtPreço.Mask = "$00.00";
+            this.txtPreço.Name = "txtPreço";
+            this.txtPreço.Size = new System.Drawing.Size(62, 20);
+            this.txtPreço.TabIndex = 34;
+            this.txtPreço.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(61, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Preço Entrada";
             // 
             // TxtCod
             // 
@@ -220,44 +235,6 @@
             this.cbSala.Size = new System.Drawing.Size(164, 21);
             this.cbSala.TabIndex = 27;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Preço Inteira";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(278, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Preço Meia";
-            // 
-            // txtPreço
-            // 
-            this.txtPreço.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.txtPreço.Location = new System.Drawing.Point(134, 79);
-            this.txtPreço.Mask = "$00.00";
-            this.txtPreço.Name = "txtPreço";
-            this.txtPreço.Size = new System.Drawing.Size(62, 20);
-            this.txtPreço.TabIndex = 34;
-            this.txtPreço.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
-            // txtPreçoMeia
-            // 
-            this.txtPreçoMeia.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.txtPreçoMeia.Location = new System.Drawing.Point(345, 80);
-            this.txtPreçoMeia.Mask = "$00.00";
-            this.txtPreçoMeia.Name = "txtPreçoMeia";
-            this.txtPreçoMeia.Size = new System.Drawing.Size(62, 20);
-            this.txtPreçoMeia.TabIndex = 35;
-            this.txtPreçoMeia.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
             // FormGerSessao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,9 +275,7 @@
         private System.Windows.Forms.ComboBox cbSala;
         private System.Windows.Forms.TextBox TxtCod;
         private System.Windows.Forms.Label lbCod;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox txtPreçoMeia;
         private System.Windows.Forms.MaskedTextBox txtPreço;
     }
 }

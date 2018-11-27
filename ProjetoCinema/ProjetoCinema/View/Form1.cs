@@ -10,11 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProjetoCinema.BD;
+using ProjetoCinema.Model;
 
 namespace ProjetoCinema
 {
     public partial class Form1 : Form
     {
+        private int caixa = 0;
         
         public Form1()
         {
@@ -68,7 +70,15 @@ namespace ProjetoCinema
         }
         private void btnFilme_Click(object sender, EventArgs e)
         {
-            AbrirForm(new FormCompra());
+            if(caixa==0)
+            {
+                MessageBox.Show("É necesario abrir o caixa primeiro!", "Caixa fechado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                AbrirForm(new FormCompra());
+            }
+            
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -90,5 +100,29 @@ namespace ProjetoCinema
         {
             AbrirForm(new Administração());
         }
+
+        private void relatorioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroDeVendas r = new RegistroDeVendas();
+            r.StartPosition = FormStartPosition.CenterParent;
+            r.ShowDialog(this);
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            FormAbrirCaixa f = new FormAbrirCaixa();
+           
+            MessageBox.Show("Caixa aberto");
+            caixa = 1;
+        }
+
+        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Caixa fechado");
+            caixa = 0;
+        }
+
+        
     }
 }

@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
             public void Create(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PInteira,PMeia)VALUES('{0}','{1}','{2}',{3},{4},{5});", s.Filme.Id, s.Sala.Id, s.Horario.ToShortTimeString(),s.LugaresDisponiveis,s.PrecoInteira,s.PrecoMeia);
+                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PEntrada)VALUES('{0}','{1}','{2}',{3},{4});", s.Filme.Id, s.Sala.Id, s.Horario.ToShortTimeString(),s.LugaresDisponiveis,s.PrecoEntrada);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }
@@ -30,7 +30,7 @@ namespace ProjetoCinema.BD
             public void Update(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-                string sql = string.Format("UPDATE Sessao set Filme ={0},Sala={1},Horario='{2}',Lugares={3},PInteira={4},PMeia={5} where Id={4} ;", s.Filme.Id,s.Sala.Id,s.Horario.ToString(),s.PrecoInteira,s.PrecoMeia,s.LugaresDisponiveis,s.Id);
+                string sql = string.Format("UPDATE Sessao set Filme ={0},Sala={1},Horario='{2}',Lugares={3},PEntrada={4} where Id={5} ;", s.Filme.Id,s.Sala.Id,s.Horario.ToString(), s.LugaresDisponiveis, s.PrecoEntrada,s.Id);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }
@@ -89,8 +89,8 @@ namespace ProjetoCinema.BD
                 s.Sala = DAOs.Read(int.Parse(dr["Sala"].ToString()));
                 s.Horario = DateTime.Parse(dr["Horario"].ToString());
                 s.LugaresDisponiveis=(int.Parse(dr["Lugares"].ToString()));
-                s.PrecoInteira = (float.Parse(dr["PInteira"].ToString()));
-                s.PrecoMeia = (float.Parse(dr["PMeia"].ToString()));
+                s.PrecoEntrada = (float.Parse(dr["PEntrada"].ToString()));
+                
                 
                 return s;
             }

@@ -7,22 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoCinema.Model;
+using ProjetoCinema.BD;
 
 namespace ProjetoCinema.View
 {
-    public partial class SelectLugar : Form
+    public partial class FormAbrirCaixa : Form
     {
-        public SelectLugar()
+        public FormAbrirCaixa()
         {
             InitializeComponent();
         }
+        
 
-        private void SelectLugar_Load(object sender, EventArgs e)
+        private void FormAbrirCaixa_Load(object sender, EventArgs e)
         {
-           // int start = 100;
-           // int end = 10;
-           
+
         }
-       
+
+        private void btnok_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

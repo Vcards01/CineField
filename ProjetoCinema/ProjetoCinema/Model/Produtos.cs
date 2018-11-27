@@ -9,6 +9,7 @@ namespace ProjetoCinema
     public class Produtos
     {
         private int id;
+        private int quantidade;
         private string nome;
         private string tipo;
         private double preco;
@@ -78,6 +79,19 @@ namespace ProjetoCinema
             set
             {
                 id = value;
+            }
+        }
+
+        public int Quantidade
+        {
+            get
+            {
+                return quantidade;
+            }
+
+            set
+            {
+                quantidade = value;
             }
         }
 
