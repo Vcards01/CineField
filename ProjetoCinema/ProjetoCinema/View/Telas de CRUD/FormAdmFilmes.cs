@@ -20,6 +20,7 @@ namespace ProjetoCinema
         {
             InitializeComponent();
             LoadDatabase();
+            Fill("");
         }
         private void LoadDatabase()
         {
