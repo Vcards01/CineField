@@ -22,7 +22,6 @@ namespace ProjetoCinema
         {
             Tables tb = new Tables();
             tb.CreateTable();
-            tb.addInformation();
             InitializeComponent();
             timer1.Start();
             AbrirForm(new Home());

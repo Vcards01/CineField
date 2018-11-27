@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
             public void Create(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PEntrada)VALUES('{0}','{1}','{2}',{3},{4});", s.Filme.Id, s.Sala.Id, s.Horario.ToShortTimeString(),s.LugaresDisponiveis,s.PrecoEntrada);
+                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PEntrada)VALUES('{0}','{1}','{2}',{3},{4});", s.Filme.Id, s.Sala.Id, s.Horario ,s.LugaresDisponiveis,s.PrecoEntrada);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }
@@ -87,7 +87,7 @@ namespace ProjetoCinema.BD
                 s.Id = int.Parse(dr["Id"].ToString());
                 s.Filme = DAOf.Read(int.Parse(dr["Filme"].ToString()));
                 s.Sala = DAOs.Read(int.Parse(dr["Sala"].ToString()));
-                s.Horario = DateTime.Parse(dr["Horario"].ToString());
+                s.Horario = dr["Horario"].ToString();
                 s.LugaresDisponiveis=(int.Parse(dr["Lugares"].ToString()));
                 s.PrecoEntrada = (float.Parse(dr["PEntrada"].ToString()));
                 
