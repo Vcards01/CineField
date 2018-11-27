@@ -50,10 +50,10 @@
             this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.retirarValorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.vendaDeIngressosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tpTopo.SuspendLayout();
@@ -260,8 +260,7 @@
             // 
             this.caixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.abrirToolStripMenuItem,
-            this.fecharToolStripMenuItem,
-            this.retirarValorToolStripMenuItem});
+            this.fecharToolStripMenuItem});
             this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
             this.caixaToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.caixaToolStripMenuItem.Text = "Caixa";
@@ -269,26 +268,21 @@
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // fecharToolStripMenuItem
             // 
             this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
-            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fecharToolStripMenuItem.Text = "Fechar";
-            // 
-            // retirarValorToolStripMenuItem
-            // 
-            this.retirarValorToolStripMenuItem.Name = "retirarValorToolStripMenuItem";
-            this.retirarValorToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.retirarValorToolStripMenuItem.Text = "Retirar valor";
             // 
             // relatoriosToolStripMenuItem
             // 
             this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.relatorioDeVendasToolStripMenuItem});
+            this.relatorioDeVendasToolStripMenuItem,
+            this.vendaDeIngressosToolStripMenuItem});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
@@ -307,6 +301,13 @@
             this.menuStrip2.Size = new System.Drawing.Size(896, 24);
             this.menuStrip2.TabIndex = 8;
             this.menuStrip2.Text = "menuStrip2";
+            // 
+            // vendaDeIngressosToolStripMenuItem
+            // 
+            this.vendaDeIngressosToolStripMenuItem.Name = "vendaDeIngressosToolStripMenuItem";
+            this.vendaDeIngressosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.vendaDeIngressosToolStripMenuItem.Text = "Venda de ingressos";
+            this.vendaDeIngressosToolStripMenuItem.Click += new System.EventHandler(this.vendaDeIngressosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -359,9 +360,9 @@
         private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem retirarValorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatorioDeVendasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vendaDeIngressosToolStripMenuItem;
     }
 }
 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administração));
-            this.btnGerFuncionarios = new System.Windows.Forms.Button();
             this.btnGerLoja = new System.Windows.Forms.Button();
             this.pnAdministração = new System.Windows.Forms.Panel();
             this.pnAdministracao = new System.Windows.Forms.Panel();
@@ -42,25 +41,6 @@
             this.pnAdministração.SuspendLayout();
             this.pnOpcoes.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnGerFuncionarios
-            // 
-            this.btnGerFuncionarios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerFuncionarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnGerFuncionarios.FlatAppearance.BorderSize = 0;
-            this.btnGerFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGerFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerFuncionarios.ForeColor = System.Drawing.Color.White;
-            this.btnGerFuncionarios.Image = global::ProjetoCinema.Properties.Resources.op;
-            this.btnGerFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGerFuncionarios.Location = new System.Drawing.Point(40, 245);
-            this.btnGerFuncionarios.Name = "btnGerFuncionarios";
-            this.btnGerFuncionarios.Size = new System.Drawing.Size(167, 54);
-            this.btnGerFuncionarios.TabIndex = 6;
-            this.btnGerFuncionarios.Text = "Gerenciar Funcionarios";
-            this.btnGerFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGerFuncionarios.UseVisualStyleBackColor = false;
-            this.btnGerFuncionarios.Click += new System.EventHandler(this.btnGerFuncionarios_Click);
             // 
             // btnGerLoja
             // 
@@ -167,7 +147,6 @@
             // pnOpcoes
             // 
             this.pnOpcoes.Controls.Add(this.btnGerFilme);
-            this.pnOpcoes.Controls.Add(this.btnGerFuncionarios);
             this.pnOpcoes.Controls.Add(this.btnGerSala);
             this.pnOpcoes.Controls.Add(this.btnGerLoja);
             this.pnOpcoes.Controls.Add(this.btnGerSessões);
@@ -216,7 +195,6 @@
 
         private System.Windows.Forms.Panel pnAdministração;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnGerFuncionarios;
         private System.Windows.Forms.Button btnGerLoja;
         private System.Windows.Forms.Button btnGerSala;
         private System.Windows.Forms.Button btnGerSessões;

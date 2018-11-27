@@ -17,7 +17,6 @@ namespace ProjetoCinema.View
     public partial class FormCompra : Form
     {
         List<Filme> data = new List<Filme>();
-        int Flag = 0;
         public FormCompra()
         {
 
@@ -41,7 +40,8 @@ namespace ProjetoCinema.View
         {
             dgvFilmes.Rows.Clear();
             foreach (Filme a in data)
-                dgvFilmes.Rows.Add(a.Nome, a.Duracao, a.Genero);
+                if (filter == "" || a.Nome.ToUpper().Contains(filter.ToUpper()))
+                    dgvFilmes.Rows.Add(a.Nome, a.Duracao, a.Genero);
         }
         //Prenche o DataGride de sessões
         private void Fill(Filme f)
@@ -49,7 +49,8 @@ namespace ProjetoCinema.View
             dgvSessoes.Rows.Clear();
             List<Sessão> s = f.listSessao();
             foreach (Sessão a in s)
-                dgvSessoes.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Id,a.Horario,a.LugaresDisponiveis);
+               
+                    dgvSessoes.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Id,a.Horario,a.LugaresDisponiveis);
         }
         //Retorna um Filme para prencher o DataGrid
        public Filme GetFilme()
@@ -123,6 +124,11 @@ namespace ProjetoCinema.View
         private void FormCompra_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            Fill(textBox1.Text);
         }
     }
 }

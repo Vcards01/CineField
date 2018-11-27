@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
         public void Create(Venda v)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("INSERT INTO Venda(Data,Hora,Valor)VALUES('{0}','{1}',{2});",v.Data,v.Hora, v.Valor1);
+            string sql = string.Format("INSERT INTO Venda(Data,Hora,Valor)VALUES('{0}','{1}',{2});",v.Data,v.Hora,v.Valor1);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }

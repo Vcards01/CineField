@@ -159,9 +159,12 @@
             // 
             this.txtTipo.FormattingEnabled = true;
             this.txtTipo.Items.AddRange(new object[] {
-            "Pequeno",
-            "Médio",
-            "Grande"});
+            "Refrigerante",
+            "Agua",
+            "Suco",
+            "Pipoca",
+            "Chocolate",
+            "Bala"});
             this.txtTipo.Location = new System.Drawing.Point(85, 90);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(121, 21);

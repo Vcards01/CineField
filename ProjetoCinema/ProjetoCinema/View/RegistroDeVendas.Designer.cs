@@ -44,10 +44,13 @@
             // 
             // GpVendas
             // 
+            this.GpVendas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GpVendas.Controls.Add(this.DgvVendas);
             this.GpVendas.Location = new System.Drawing.Point(-1, 33);
             this.GpVendas.Name = "GpVendas";
-            this.GpVendas.Size = new System.Drawing.Size(699, 269);
+            this.GpVendas.Size = new System.Drawing.Size(919, 338);
             this.GpVendas.TabIndex = 0;
             this.GpVendas.TabStop = false;
             this.GpVendas.Text = "Vendas Efetuadas";
@@ -66,7 +69,7 @@
             this.DgvVendas.Location = new System.Drawing.Point(3, 16);
             this.DgvVendas.Name = "DgvVendas";
             this.DgvVendas.ReadOnly = true;
-            this.DgvVendas.Size = new System.Drawing.Size(693, 250);
+            this.DgvVendas.Size = new System.Drawing.Size(913, 319);
             this.DgvVendas.TabIndex = 0;
             // 
             // CId
@@ -98,7 +101,8 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(496, 303);
+            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnImprimir.Location = new System.Drawing.Point(606, 372);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(75, 23);
             this.btnImprimir.TabIndex = 1;
@@ -107,8 +111,9 @@
             // 
             // lbBuscar
             // 
+            this.lbBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbBuscar.AutoSize = true;
-            this.lbBuscar.Location = new System.Drawing.Point(98, 14);
+            this.lbBuscar.Location = new System.Drawing.Point(208, 14);
             this.lbBuscar.Name = "lbBuscar";
             this.lbBuscar.Size = new System.Drawing.Size(40, 13);
             this.lbBuscar.TabIndex = 2;
@@ -116,7 +121,8 @@
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(144, 11);
+            this.txtBusca.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBusca.Location = new System.Drawing.Point(254, 11);
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(471, 20);
             this.txtBusca.TabIndex = 3;
@@ -124,7 +130,8 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(144, 303);
+            this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSair.Location = new System.Drawing.Point(254, 372);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 4;
@@ -136,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 331);
+            this.ClientSize = new System.Drawing.Size(917, 400);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.lbBuscar);

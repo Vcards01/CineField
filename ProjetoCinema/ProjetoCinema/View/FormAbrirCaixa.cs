@@ -27,7 +27,11 @@ namespace ProjetoCinema.View
 
         private void btnok_Click(object sender, EventArgs e)
         {
-            
+            CaixaDAO DAO = new CaixaDAO();
+            Caixa x = new Caixa();
+            x.AbrirCaixa(float.Parse(txtInicial.Text));
+            DAO.Create(x);
+            Dispose();
         }
     }
 }

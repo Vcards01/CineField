@@ -54,8 +54,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVoltarS = new System.Windows.Forms.Button();
             this.btnProximoS = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lbFiltro = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             gpFilmes = new System.Windows.Forms.GroupBox();
             groupBox1 = new System.Windows.Forms.GroupBox();
@@ -246,6 +244,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 20);
             this.textBox1.TabIndex = 38;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // panel1
             // 
@@ -303,8 +302,6 @@
             this.pnSessões.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.pnSessões.Controls.Add(this.panel2);
             this.pnSessões.Controls.Add(groupBox1);
-            this.pnSessões.Controls.Add(this.textBox2);
-            this.pnSessões.Controls.Add(this.lbFiltro);
             this.pnSessões.Location = new System.Drawing.Point(6, 20);
             this.pnSessões.Name = "pnSessões";
             this.pnSessões.Size = new System.Drawing.Size(510, 227);
@@ -345,27 +342,6 @@
             this.btnProximoS.UseVisualStyleBackColor = false;
             this.btnProximoS.Click += new System.EventHandler(this.btnProximoS_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(99, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(318, 20);
-            this.textBox2.TabIndex = 38;
-            // 
-            // lbFiltro
-            // 
-            this.lbFiltro.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbFiltro.AutoSize = true;
-            this.lbFiltro.BackColor = System.Drawing.Color.Transparent;
-            this.lbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFiltro.ForeColor = System.Drawing.Color.White;
-            this.lbFiltro.Location = new System.Drawing.Point(50, 19);
-            this.lbFiltro.Name = "lbFiltro";
-            this.lbFiltro.Size = new System.Drawing.Size(43, 16);
-            this.lbFiltro.TabIndex = 39;
-            this.lbFiltro.Text = "Filtro";
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -400,7 +376,6 @@
             this.pnFilmes.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.pnSessões.ResumeLayout(false);
-            this.pnSessões.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -420,8 +395,6 @@
         private System.Windows.Forms.Label Filtrolbl;
         private System.Windows.Forms.Panel pnSessões;
         private System.Windows.Forms.DataGridView dgvSessoes;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lbFiltro;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnVoltarS;
         private System.Windows.Forms.Button btnProximoS;

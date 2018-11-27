@@ -72,7 +72,6 @@
     <Compile Include="BD\CaixaDAO.cs" />
     <Compile Include="BD\DataBase.cs" />
     <Compile Include="BD\FilmeDAO.cs" />
-    <Compile Include="BD\FuncionarioDAO.cs" />
     <Compile Include="BD\ProdutosDAO.cs" />
     <Compile Include="BD\SalaDAO.cs" />
     <Compile Include="BD\SessaoDAO.cs" />
@@ -83,6 +82,12 @@
     </Compile>
     <Compile Include="View\FormAbrirCaixa.Designer.cs">
       <DependentUpon>FormAbrirCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Registro de ingressos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Registro de ingressos.Designer.cs">
+      <DependentUpon>Registro de ingressos.cs</DependentUpon>
     </Compile>
     <Compile Include="View\RegistroDeVendas.cs">
       <SubType>Form</SubType>
@@ -96,7 +101,6 @@
     <Compile Include="View\Telas de compra\VenderIngresso.Designer.cs">
       <DependentUpon>VenderIngresso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Adiministrador.cs" />
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Produtos.cs" />
     <Compile Include="View\Telas de CRUD\Administração.cs">
@@ -105,7 +109,6 @@
     <Compile Include="View\Telas de CRUD\Administração.Designer.cs">
       <DependentUpon>Administração.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Balconista.cs" />
     <Compile Include="Model\Filme.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
@@ -118,12 +121,6 @@
     </Compile>
     <Compile Include="View\Telas de CRUD\FormAdmFilmes.Designer.cs">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Telas de CRUD\FormAdmFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Telas de CRUD\FormAdmFuncionario.Designer.cs">
-      <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Telas de CRUD\FormAdmLoja.cs">
       <SubType>Form</SubType>
@@ -143,12 +140,6 @@
     <Compile Include="View\Telas de CRUD\FormAdmSessao.Designer.cs">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormComida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormComida.Designer.cs">
-      <DependentUpon>FormComida.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Telas de compra\FormCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,12 +151,6 @@
     </Compile>
     <Compile Include="View\Telas de CRUD\FormGerFilmes.Designer.cs">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Telas de CRUD\FormGerFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Telas de CRUD\FormGerFuncionario.Designer.cs">
-      <DependentUpon>FormGerFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Telas de CRUD\FormGerLoja.cs">
       <SubType>Form</SubType>
@@ -185,31 +170,6 @@
     <Compile Include="View\Telas de CRUD\FormGerSessao.Designer.cs">
       <DependentUpon>FormGerSessao.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormIngressos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormIngressos.Designer.cs">
-      <DependentUpon>FormIngressos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormPrintIngresso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormPrintIngresso.Designer.cs">
-      <DependentUpon>FormPrintIngresso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormReserva.Designer.cs">
-      <DependentUpon>FormReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Funcionario.cs" />
     <Compile Include="View\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +183,9 @@
     <Compile Include="Model\Venda.cs" />
     <EmbeddedResource Include="View\FormAbrirCaixa.resx">
       <DependentUpon>FormAbrirCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Registro de ingressos.resx">
+      <DependentUpon>Registro de ingressos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\RegistroDeVendas.resx">
       <DependentUpon>RegistroDeVendas.cs</DependentUpon>
@@ -239,9 +202,6 @@
     <EmbeddedResource Include="View\Telas de CRUD\FormAdmFilmes.resx">
       <DependentUpon>FormAdmFilmes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Telas de CRUD\FormAdmFuncionario.resx">
-      <DependentUpon>FormAdmFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de CRUD\FormAdmLoja.resx">
       <DependentUpon>FormAdmLoja.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,17 +211,11 @@
     <EmbeddedResource Include="View\Telas de CRUD\FormAdmSessao.resx">
       <DependentUpon>FormAdmSessao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormComida.resx">
-      <DependentUpon>FormComida.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de compra\FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de CRUD\FormGerFilmes.resx">
       <DependentUpon>FormGerFilmes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Telas de CRUD\FormGerFuncionario.resx">
-      <DependentUpon>FormGerFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de CRUD\FormGerLoja.resx">
       <DependentUpon>FormGerLoja.cs</DependentUpon>
@@ -271,18 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de CRUD\FormGerSessao.resx">
       <DependentUpon>FormGerSessao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormIngressos.resx">
-      <DependentUpon>FormIngressos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormPrintIngresso.resx">
-      <DependentUpon>FormPrintIngresso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormReserva.resx">
-      <DependentUpon>FormReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -457,6 +399,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bILHETE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SADASD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adadasd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bilhe.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" />

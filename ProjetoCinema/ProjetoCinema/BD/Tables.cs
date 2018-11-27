@@ -36,14 +36,15 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Nome] VARCHAR(70),");
             sql.AppendLine("[Genero] VARCHAR(20),");
             sql.AppendLine("[Sinopse] VARCHAR(20),");
-            sql.AppendLine("[Duracao] VARCHAR(20));");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Rei Leão','Desenho de longa metragem','Simba e seus amigos embarcam em grandes aventuras pela savana.','1:30');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Velozes e Furiosos 3','Ação','Sean Boswell é um piloto de rua que desafia seu rival e bate o carro no fim da corrida. Então, Sean decide se mudar para o Japão em companhia de seu pai para evitar a prisão nos Estados Unidos, já que os rachas não são nada populares com as autoridades','2:05');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Senhor dos anéis 2: O Retorno do rei','Aventura','Aragorn, Légolas, e Gimli tentam evitar o ataque a Gondor... Enquanto o Frodo continua sendo inútil','2:55');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('O Grito','Terror','Uma enfermeira americana que mora e trabalha em Tóquio é exposta a uma maldição misteriosa em que um espírito se apodera da pessoa, desencadeando um violento surto de raiva, antes de clamar sua vida e passar à próxima vítima.','2:02');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Homens de Preto','Ação','Kay e Jay se unem para proporcionar uma melhor linha de defesa contra uma sedutora e desafiadora missão para os MIB: proteger a Terra. Enquanto investigam um crime, Jay descobre um enredo arquitetado por Serleena, uma Kylothian monstro que se disfarça como uma modelo terráquea.','2:10');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Vingadores: Guerra Infinita','Ação','Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.','2:20');");
-            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao)VALUES('Mulan','Desenho de longa metragem','Temendo que seu pai adoentado seja convocado para servir o exército chinês, Mulan (Ming-Na Wen) se disfarça de homem e treina com os colegas. Acompanhada de seu dragão Mushu (Eddie Murphy), ela usa sua inteligência para ajudar a combater a invasão Hun e se apaixona por um charmoso capitão.','2:20');");
+            sql.AppendLine("[Duracao] VARCHAR(20),");
+            sql.AppendLine("[Quantidade] INTEGER);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Rei Leão','Desenho de longa metragem','Simba e seus amigos embarcam em grandes aventuras pela savana.','1:30',10);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Velozes e Furiosos 3','Ação','Sean Boswell é um piloto de rua que desafia seu rival e bate o carro no fim da corrida. Então, Sean decide se mudar para o Japão em companhia de seu pai para evitar a prisão nos Estados Unidos, já que os rachas não são nada populares com as autoridades','2:05',30);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Senhor dos anéis 2: O Retorno do rei','Aventura','Aragorn, Légolas, e Gimli tentam evitar o ataque a Gondor... Enquanto o Frodo continua sendo inútil','2:55',1);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('O Grito','Terror','Uma enfermeira americana que mora e trabalha em Tóquio é exposta a uma maldição misteriosa em que um espírito se apodera da pessoa, desencadeando um violento surto de raiva, antes de clamar sua vida e passar à próxima vítima.','2:02',40);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Homens de Preto','Ação','Kay e Jay se unem para proporcionar uma melhor linha de defesa contra uma sedutora e desafiadora missão para os MIB: proteger a Terra. Enquanto investigam um crime, Jay descobre um enredo arquitetado por Serleena, uma Kylothian monstro que se disfarça como uma modelo terráquea.','2:10',15);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Vingadores: Guerra Infinita','Ação','Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.','2:20',23);");
+            sql.AppendLine("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('Mulan','Desenho de longa metragem','Temendo que seu pai adoentado seja convocado para servir o exército chinês, Mulan (Ming-Na Wen) se disfarça de homem e treina com os colegas. Acompanhada de seu dragão Mushu (Eddie Murphy), ela usa sua inteligência para ajudar a combater a invasão Hun e se apaixona por um charmoso capitão.','2:20',10);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
@@ -73,7 +74,20 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Horario] VARCHAR(20),");
             sql.AppendLine("[Lugares] INTEGER,");
             sql.AppendLine("[PEntrada] INTEGER);");
-            
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(1,1,'12:00',20,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(2,1,'15:00',20,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(3,3,'12:00',40,1500);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(4,4,'22:00',50,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(5,5,'15:00',60,2000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(6,2,'21:00',30,1500);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(7,5,'12:00',60,2000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(1,2,'12:00',30,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(2,4,'12:00',50,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(4,1,'21:00',20,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(4,3,'20:00',40,1500);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(4,2,'18:00',30,1000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(5,5,'16:00',60,2000);");
+            sql.AppendLine("Insert into Sessao(Filme,Sala,Horario,Lugares,Pentrada)VALUES(7,2,'17:00',30,1000);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
@@ -87,6 +101,15 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Tipo] VARCHAR(20),");
             sql.AppendLine("[Preco] DOUBLE,");
             sql.AppendLine("[Quantidade] DOUBLE);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Coca-Cola','Refrigerante',0600);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Fanta Laranja','Refrigerante',0600);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Fanta Uva','Refrigerante',0600);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Pipoca Doce','Pipoca',0500);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Pipoca Salgada','Pipoca',0500);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Suflair','Chocolate',0400);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Kit-Kat','Chocolate',0400);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('7belo','Bala',0010);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco)VALUES('Halls','Bala',0100);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }

@@ -175,5 +175,10 @@ namespace ProjetoCinema.BD
             DAOV.Create(v);
             Dispose();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

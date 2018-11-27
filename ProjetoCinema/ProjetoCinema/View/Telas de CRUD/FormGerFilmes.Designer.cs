@@ -88,6 +88,8 @@
             this.cbGenero.FormattingEnabled = true;
             this.cbGenero.Items.AddRange(new object[] {
             "Drama",
+            "Ação",
+            "Fantasia",
             "Suspense",
             "Comédia",
             "Comédia romântica",

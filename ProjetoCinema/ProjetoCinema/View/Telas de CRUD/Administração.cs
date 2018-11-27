@@ -55,12 +55,7 @@ namespace ProjetoCinema
             AbrirForm(new FormAdmLoja());
         }
 
-        private void btnGerFuncionarios_Click(object sender, EventArgs e)
-        {
-            FormAdmFuncionario form = new FormAdmFuncionario();
-            form.StartPosition = FormStartPosition.CenterParent;
-            form.ShowDialog(this);
-        }
+       
 
         private void Administração_Load(object sender, EventArgs e)
         {

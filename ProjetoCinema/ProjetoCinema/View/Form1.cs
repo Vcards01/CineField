@@ -111,7 +111,8 @@ namespace ProjetoCinema
         {
             
             FormAbrirCaixa f = new FormAbrirCaixa();
-           
+            f.StartPosition = FormStartPosition.CenterParent;
+            f.ShowDialog(this);
             MessageBox.Show("Caixa aberto");
             caixa = 1;
         }
@@ -122,6 +123,11 @@ namespace ProjetoCinema
             caixa = 0;
         }
 
-        
+        private void vendaDeIngressosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_de_ingressos r = new Registro_de_ingressos();
+            r.StartPosition = FormStartPosition.CenterParent;
+            r.ShowDialog(this);
+        }
     }
 }

@@ -29,14 +29,7 @@ namespace ProjetoCinema
         {
             data = DAO.ListAll();
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            FormIngressos ing = new FormIngressos();
-            ing.StartPosition = FormStartPosition.CenterScreen;
-            this.Hide();
-            ing.ShowDialog();
-        }
-
+        
         private void Fill(string filter)
         {
             dgvFilmes.Rows.Clear();

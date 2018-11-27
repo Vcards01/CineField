@@ -14,7 +14,7 @@ namespace ProjetoCinema.BD
         public void Create(Produtos p)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('{0}','{1}','{2}',{3});", p.Nome, p.Tipo, p.Preco,0);
+            string sql = string.Format("Insert into Produtos(Nome,Tipo,Preco)VALUES('{0}','{1}','{2}');", p.Nome, p.Tipo, p.Preco);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -62,7 +62,7 @@ namespace ProjetoCinema.BD
             p.Nome = dr["Nome"].ToString();
             p.Tipo = dr["Tipo"].ToString();
             p.Preco = double.Parse(dr["Preco"].ToString());
-            p.Quantidade=int.Parse(dr["Quantidade"].ToString());
+            
             return p;
         }
         public Produtos FindByName(string nome)

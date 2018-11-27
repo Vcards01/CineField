@@ -93,6 +93,16 @@ namespace ProjetoCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap adadasd {
+            get {
+                object obj = ResourceManager.GetObject("adadasd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -136,6 +146,26 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap armchair__3_ {
             get {
                 object obj = ResourceManager.GetObject("armchair (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bilhe {
+            get {
+                object obj = ResourceManager.GetObject("Bilhe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bILHETE {
+            get {
+                object obj = ResourceManager.GetObject("bILHETE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +506,16 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap powerIcon {
             get {
                 object obj = ResourceManager.GetObject("powerIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SADASD {
+            get {
+                object obj = ResourceManager.GetObject("SADASD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

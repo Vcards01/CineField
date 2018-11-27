@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtProd = new System.Windows.Forms.TextBox();
             this.btnMais = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.LbQuantidade = new System.Windows.Forms.Label();
             this.txtFilmeNome = new System.Windows.Forms.TextBox();
@@ -41,14 +43,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.gpProdutos = new System.Windows.Forms.GroupBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
-            this.btnRemoverProduto = new System.Windows.Forms.Button();
-            this.btnRmvIngreço = new System.Windows.Forms.Button();
-            this.btnFinalizar = new System.Windows.Forms.Button();
-            this.txtProd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPreço = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRemoverProduto = new System.Windows.Forms.Button();
+            this.btnRmvIngreço = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gpProdutos.SuspendLayout();
@@ -71,6 +72,14 @@
             this.panel1.Size = new System.Drawing.Size(752, 93);
             this.panel1.TabIndex = 0;
             // 
+            // txtProd
+            // 
+            this.txtProd.Location = new System.Drawing.Point(541, 70);
+            this.txtProd.Name = "txtProd";
+            this.txtProd.ReadOnly = true;
+            this.txtProd.Size = new System.Drawing.Size(76, 20);
+            this.txtProd.TabIndex = 12;
+            // 
             // btnMais
             // 
             this.btnMais.Location = new System.Drawing.Point(642, 26);
@@ -79,6 +88,15 @@
             this.btnMais.TabIndex = 6;
             this.btnMais.UseVisualStyleBackColor = true;
             this.btnMais.Click += new System.EventHandler(this.btnMais_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(526, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Quantidade Produtos";
             // 
             // txtQuantidade
             // 
@@ -183,6 +201,26 @@
             this.dgvProdutos.TabIndex = 1;
             this.dgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellContentClick);
             // 
+            // cNome
+            // 
+            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cNome.HeaderText = "Nome";
+            this.cNome.Name = "cNome";
+            this.cNome.ReadOnly = true;
+            // 
+            // cTipo
+            // 
+            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cTipo.HeaderText = "Tipo";
+            this.cTipo.Name = "cTipo";
+            this.cTipo.ReadOnly = true;
+            // 
+            // cPreço
+            // 
+            this.cPreço.HeaderText = "Preço";
+            this.cPreço.Name = "cPreço";
+            this.cPreço.ReadOnly = true;
+            // 
             // btnRemoverProduto
             // 
             this.btnRemoverProduto.Location = new System.Drawing.Point(499, 218);
@@ -205,7 +243,7 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(530, 327);
+            this.btnFinalizar.Location = new System.Drawing.Point(530, 307);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(159, 23);
             this.btnFinalizar.TabIndex = 10;
@@ -213,48 +251,22 @@
             this.btnFinalizar.UseVisualStyleBackColor = true;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
-            // txtProd
+            // btnCancelar
             // 
-            this.txtProd.Location = new System.Drawing.Point(541, 70);
-            this.txtProd.Name = "txtProd";
-            this.txtProd.ReadOnly = true;
-            this.txtProd.Size = new System.Drawing.Size(76, 20);
-            this.txtProd.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(526, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Quantidade Produtos";
-            // 
-            // cNome
-            // 
-            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cNome.HeaderText = "Nome";
-            this.cNome.Name = "cNome";
-            this.cNome.ReadOnly = true;
-            // 
-            // cTipo
-            // 
-            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cTipo.HeaderText = "Tipo";
-            this.cTipo.Name = "cTipo";
-            this.cTipo.ReadOnly = true;
-            // 
-            // cPreço
-            // 
-            this.cPreço.HeaderText = "Preço";
-            this.cPreço.Name = "cPreço";
-            this.cPreço.ReadOnly = true;
+            this.btnCancelar.Location = new System.Drawing.Point(573, 333);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // VenderIngresso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 362);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.btnRmvIngreço);
             this.Controls.Add(this.btnRemoverProduto);
@@ -262,6 +274,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VenderIngresso";
             this.Text = "VenderIngresso";
             this.Load += new System.EventHandler(this.VenderIngresso_Load);
@@ -298,5 +311,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPreço;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
