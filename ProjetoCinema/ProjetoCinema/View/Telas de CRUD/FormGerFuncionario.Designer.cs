@@ -45,49 +45,56 @@
             this.rbFeminino = new System.Windows.Forms.RadioButton();
             this.rbOutro = new System.Windows.Forms.RadioButton();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtIdade
             // 
-            this.txtIdade.Location = new System.Drawing.Point(72, 96);
+            this.txtIdade.Location = new System.Drawing.Point(96, 118);
+            this.txtIdade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(128, 20);
+            this.txtIdade.Size = new System.Drawing.Size(169, 22);
             this.txtIdade.TabIndex = 26;
             // 
             // lbIdade
             // 
             this.lbIdade.AutoSize = true;
-            this.lbIdade.Location = new System.Drawing.Point(31, 96);
+            this.lbIdade.Location = new System.Drawing.Point(41, 118);
+            this.lbIdade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbIdade.Name = "lbIdade";
-            this.lbIdade.Size = new System.Drawing.Size(34, 13);
+            this.lbIdade.Size = new System.Drawing.Size(43, 17);
             this.lbIdade.TabIndex = 24;
             this.lbIdade.Text = "Idade";
             // 
             // lbcpf
             // 
             this.lbcpf.AutoSize = true;
-            this.lbcpf.Location = new System.Drawing.Point(206, 99);
+            this.lbcpf.Location = new System.Drawing.Point(275, 122);
+            this.lbcpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbcpf.Name = "lbcpf";
-            this.lbcpf.Size = new System.Drawing.Size(27, 13);
+            this.lbcpf.Size = new System.Drawing.Size(34, 17);
             this.lbcpf.TabIndex = 23;
             this.lbcpf.Text = "CPF";
             // 
             // lbNome
             // 
             this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(31, 62);
+            this.lbNome.Location = new System.Drawing.Point(41, 76);
+            this.lbNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(35, 13);
+            this.lbNome.Size = new System.Drawing.Size(45, 17);
             this.lbNome.TabIndex = 22;
             this.lbNome.Text = "Nome";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(72, 59);
+            this.txtNome.Location = new System.Drawing.Point(96, 73);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(295, 20);
+            this.txtNome.Size = new System.Drawing.Size(392, 22);
             this.txtNome.TabIndex = 21;
             // 
             // pnBaixo
@@ -95,17 +102,19 @@
             this.pnBaixo.BackgroundImage = global::ProjetoCinema.Properties.Resources.fundo1;
             this.pnBaixo.Controls.Add(this.btnCancelar);
             this.pnBaixo.Controls.Add(this.btnSalvar);
-            this.pnBaixo.Location = new System.Drawing.Point(0, 159);
+            this.pnBaixo.Location = new System.Drawing.Point(0, 196);
+            this.pnBaixo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnBaixo.Name = "pnBaixo";
-            this.pnBaixo.Size = new System.Drawing.Size(456, 42);
+            this.pnBaixo.Size = new System.Drawing.Size(608, 52);
             this.pnBaixo.TabIndex = 20;
             // 
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCancelar.Location = new System.Drawing.Point(280, 10);
+            this.btnCancelar.Location = new System.Drawing.Point(373, 12);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -114,9 +123,10 @@
             // btnSalvar
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnSalvar.Location = new System.Drawing.Point(85, 10);
+            this.btnSalvar.Location = new System.Drawing.Point(113, 12);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(100, 28);
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -130,8 +140,9 @@
             this.pnTopo.Controls.Add(this.lbAlimentação);
             this.pnTopo.Controls.Add(this.panel1);
             this.pnTopo.Location = new System.Drawing.Point(0, 0);
+            this.pnTopo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Size = new System.Drawing.Size(456, 42);
+            this.pnTopo.Size = new System.Drawing.Size(610, 52);
             this.pnTopo.TabIndex = 19;
             // 
             // lbAlimentação
@@ -140,46 +151,52 @@
             this.lbAlimentação.BackColor = System.Drawing.Color.Transparent;
             this.lbAlimentação.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAlimentação.ForeColor = System.Drawing.Color.White;
-            this.lbAlimentação.Location = new System.Drawing.Point(131, 5);
+            this.lbAlimentação.Location = new System.Drawing.Point(175, 6);
+            this.lbAlimentação.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAlimentação.Name = "lbAlimentação";
-            this.lbAlimentação.Size = new System.Drawing.Size(167, 31);
+            this.lbAlimentação.Size = new System.Drawing.Size(207, 39);
             this.lbAlimentação.TabIndex = 3;
             this.lbAlimentação.Text = "Funcionario";
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::ProjetoCinema.Properties.Resources.cinza1;
-            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Location = new System.Drawing.Point(0, 48);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 124);
+            this.panel1.Size = new System.Drawing.Size(608, 153);
             this.panel1.TabIndex = 2;
             // 
             // lbsexo
             // 
             this.lbsexo.AutoSize = true;
-            this.lbsexo.Location = new System.Drawing.Point(31, 127);
+            this.lbsexo.Location = new System.Drawing.Point(41, 156);
+            this.lbsexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbsexo.Name = "lbsexo";
-            this.lbsexo.Size = new System.Drawing.Size(31, 13);
+            this.lbsexo.Size = new System.Drawing.Size(39, 17);
             this.lbsexo.TabIndex = 27;
             this.lbsexo.Text = "Sexo";
             // 
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(72, 127);
+            this.rbMasculino.Location = new System.Drawing.Point(96, 156);
+            this.rbMasculino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.Size = new System.Drawing.Size(92, 21);
             this.rbMasculino.TabIndex = 28;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
+            this.rbMasculino.CheckedChanged += new System.EventHandler(this.rbMasculino_CheckedChanged);
             // 
             // rbFeminino
             // 
             this.rbFeminino.AutoSize = true;
-            this.rbFeminino.Location = new System.Drawing.Point(151, 127);
+            this.rbFeminino.Location = new System.Drawing.Point(201, 156);
+            this.rbFeminino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbFeminino.Name = "rbFeminino";
-            this.rbFeminino.Size = new System.Drawing.Size(67, 17);
+            this.rbFeminino.Size = new System.Drawing.Size(86, 21);
             this.rbFeminino.TabIndex = 29;
             this.rbFeminino.TabStop = true;
             this.rbFeminino.Text = "Feminino";
@@ -188,9 +205,10 @@
             // rbOutro
             // 
             this.rbOutro.AutoSize = true;
-            this.rbOutro.Location = new System.Drawing.Point(224, 127);
+            this.rbOutro.Location = new System.Drawing.Point(299, 156);
+            this.rbOutro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbOutro.Name = "rbOutro";
-            this.rbOutro.Size = new System.Drawing.Size(51, 17);
+            this.rbOutro.Size = new System.Drawing.Size(65, 21);
             this.rbOutro.TabIndex = 30;
             this.rbOutro.TabStop = true;
             this.rbOutro.Text = "Outro";
@@ -199,18 +217,37 @@
             // txtCPF
             // 
             this.txtCPF.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.txtCPF.Location = new System.Drawing.Point(240, 95);
+            this.txtCPF.Location = new System.Drawing.Point(320, 117);
+            this.txtCPF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(127, 20);
+            this.txtCPF.Size = new System.Drawing.Size(168, 22);
             this.txtCPF.TabIndex = 31;
             this.txtCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(429, 156);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(100, 22);
+            this.txtSenha.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(377, 159);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Senha";
+            // 
             // FormGerFuncionario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 201);
+            this.ClientSize = new System.Drawing.Size(609, 247);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.rbOutro);
             this.Controls.Add(this.rbFeminino);
@@ -225,6 +262,7 @@
             this.Controls.Add(this.pnTopo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormGerFuncionario";
@@ -255,5 +293,7 @@
         private System.Windows.Forms.RadioButton rbFeminino;
         private System.Windows.Forms.RadioButton rbOutro;
         private System.Windows.Forms.MaskedTextBox txtCPF;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label label1;
     }
 }

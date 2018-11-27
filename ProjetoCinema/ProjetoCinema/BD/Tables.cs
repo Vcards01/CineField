@@ -21,7 +21,7 @@ namespace ProjetoCinema.BD
                 CreateSala();
                 CreateSessao();
                 CreateProdutos();
-
+                CreateFuncionario();
 
 
             }
@@ -70,6 +70,19 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Nome] VARCHAR(30),");
             sql.AppendLine("[Tipo] VARCHAR(20),");
             sql.AppendLine("[Preco] DOUBLE);");
+            SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
+            bd.ExecuteNonQuery(cmd);
+        }
+        public void CreateFuncionario()
+        {
+            DataBase bd = DataBase.GetInstance();
+            StringBuilder sql = new StringBuilder();
+            sql.AppendLine("CREATE TABLE IF NOT EXISTS Funcionario([Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,");
+            sql.AppendLine("[Nome] VARCHAR(30),");
+            sql.AppendLine("[Cpf] INTEGER,");
+            sql.AppendLine("[Idade] INTEGER,");
+            sql.AppendLine("[Senha] VARCHAR(30),");
+            sql.AppendLine("[Sexo] VARCHAR(20));");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
