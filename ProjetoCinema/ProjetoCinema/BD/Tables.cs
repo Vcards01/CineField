@@ -102,18 +102,6 @@ namespace ProjetoCinema.BD
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }
-        
-        public void addInformation()
-        {
-            DataBase bd = DataBase.GetInstance();
-            //StringBuilder sql = new StringBuilder();
-            //string sql = string.Format("Insert into Filme(Nome, Genero, Sinopse, Duracao)VALUES('Rei Leão', 'Desenho de longa metragem', 'Simba e seus amigos procuram vingar a morte de Mufasa', '1:29'");
-           // sql.AppendLine("Insert into Filme(Nome, Genero, Sinopse, Duracao)VALUES('Irmão Urso', 'Desenho de longa metragem', 'Kenai é um bravo jovem índio com uma aversão especial por ursos. Quando seu irmão Sitka é morto por um, Kenai mata o urso, mas é magicamente transformado em um deles. Para piorar a situação, seu outro irmão, Denahi, jura matar o urso que Kenai se tornou.', '1:25')");
-           // sql.AppendLine("Insert into Filme(Nome, Genero, Sinopse, Duracao)VALUES('Procurando Nemo', 'Desenho de longa metragem', 'Em seu primeiro dia de aula, esquecendo os conselhos do pai superprotetor, Nemo é capturado por um mergulhador e acaba no aquário de um dentista. Enquanto Nemo tenta bolar um plano para escapar, seu pai cruza o oceano para resgatá-lo.', '1:41')");
-           // sql.AppendLine("Insert into Filme(Nome, Genero, Sinopse, Duracao)VALUES('Rei Leão', 'Desenho de longa metragem', 'Simba e seus amigos procuram vingar a morte de Mufasa', '1:29')");
-            SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
-            bd.ExecuteNonQuery(cmd);
-        }
 
     }
     }
