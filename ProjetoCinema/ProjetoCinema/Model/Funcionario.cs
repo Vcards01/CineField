@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoCinema
 {
-    class Funcionario
+    public class Funcionario
     {
         private string nome;
         private long cpf;
