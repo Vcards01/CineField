@@ -13,7 +13,9 @@ namespace ProjetoCinema
         private Filme filme;
         private Sala sala;
         private int lugaresdisponiveis;
-        List<Ingresso> ingressos = new List<Ingresso>();
+        private float precoInteira;
+        private float precoMeia;
+        
 
         public Sessão(int id, DateTime horario, Filme filme, Sala sala)
         {
@@ -25,15 +27,6 @@ namespace ProjetoCinema
         public Sessão()
         {
 
-        }
-
-        public void AddIngresso(Ingresso i)
-        {
-            ingressos.Add(i);
-        }
-        public void rmvIngresso(Ingresso i)
-        {
-            ingressos.Remove(i);
         }
 
         public int Id
@@ -98,6 +91,32 @@ namespace ProjetoCinema
             set
             {
                 lugaresdisponiveis = value;
+            }
+        }
+
+        public float PrecoInteira
+        {
+            get
+            {
+                return precoInteira;
+            }
+
+            set
+            {
+                precoInteira = value;
+            }
+        }
+
+        public float PrecoMeia
+        {
+            get
+            {
+                return precoMeia;
+            }
+
+            set
+            {
+                precoMeia = value;
             }
         }
     }

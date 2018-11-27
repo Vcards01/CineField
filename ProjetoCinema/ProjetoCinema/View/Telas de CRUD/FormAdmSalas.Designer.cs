@@ -53,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpSalas.BackColor = System.Drawing.Color.Transparent;
             this.gpSalas.Controls.Add(this.dgvSalas);
-            this.gpSalas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gpSalas.ForeColor = System.Drawing.Color.Black;
             this.gpSalas.Location = new System.Drawing.Point(120, 67);
             this.gpSalas.Name = "gpSalas";
             this.gpSalas.Size = new System.Drawing.Size(343, 198);

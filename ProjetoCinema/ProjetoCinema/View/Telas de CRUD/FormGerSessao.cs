@@ -47,13 +47,16 @@ namespace ProjetoCinema
             cbFilme.Text = s.Filme.Nome;
             cbSala.Text = s.Sala.Nome;
             dtpHorario.Text = s.Horario.ToShortTimeString();
-            
+            txtPreço.Text = s.PrecoInteira.ToString();
+            txtPreçoMeia.Text = s.PrecoMeia.ToString();
             if (editavel == false)
             {
                 TxtCod.Enabled = false;
                 cbFilme.Enabled = false;
                 cbSala.Enabled = false;
                 dtpHorario.Enabled = false;
+                txtPreço.Enabled = false;
+                txtPreçoMeia.Enabled = false;
                 
             }
         }
@@ -65,6 +68,8 @@ namespace ProjetoCinema
             s.Sala = DAOs.FindByName(cbSala.Text);
             s.Horario = dtpHorario.Value;
             s.LugaresDisponiveis = s.Sala.QtddLugares;
+            s.PrecoInteira = (float.Parse(txtPreço.Text))/ 100;
+            s.PrecoMeia = (float.Parse(txtPreçoMeia.Text))/ 100;
             
             if (salvar)
             {

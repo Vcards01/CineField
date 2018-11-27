@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetoCinema.Model;
 
 namespace ProjetoCinema
 {
    public class Venda
     {
-        
-        private double soma;
+        private string hora;
+        private string data;
+        private double Valor;
         private int idVenda;
-        private Funcionario f;
         
         
        
@@ -28,19 +29,43 @@ namespace ProjetoCinema
             }
         }
 
-        internal Funcionario F
+        public string Hora
         {
             get
             {
-                return f;
+                return hora;
             }
 
             set
             {
-                f = value;
+                hora = value;
             }
         }
 
-        
+        public string Data
+        {
+            get
+            {
+                return data;
+            }
+
+            set
+            {
+                data = value;
+            }
+        }
+
+        public double Valor1
+        {
+            get
+            {
+                return Valor;
+            }
+
+            set
+            {
+                Valor = value;
+            }
+        }
     }
 }

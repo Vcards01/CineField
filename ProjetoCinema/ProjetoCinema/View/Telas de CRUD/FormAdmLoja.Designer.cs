@@ -56,7 +56,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpLoja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.gpLoja.Controls.Add(this.dgvProdutos);
-            this.gpLoja.ForeColor = System.Drawing.Color.White;
+            this.gpLoja.ForeColor = System.Drawing.Color.Black;
             this.gpLoja.Location = new System.Drawing.Point(3, 63);
             this.gpLoja.Name = "gpLoja";
             this.gpLoja.Size = new System.Drawing.Size(534, 189);
