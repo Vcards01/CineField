@@ -22,8 +22,6 @@ namespace ProjetoCinema
             
             InitializeComponent();
             LoadDatabase();
-            
-
         }
        
         

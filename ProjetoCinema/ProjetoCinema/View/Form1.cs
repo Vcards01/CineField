@@ -74,6 +74,7 @@ namespace ProjetoCinema
         private void btnHome_Click(object sender, EventArgs e)
         {
             AbrirForm(new Home());
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -83,11 +84,6 @@ namespace ProjetoCinema
             {
                 this.Close();
             }
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void btnAdm_Click(object sender, EventArgs e)
