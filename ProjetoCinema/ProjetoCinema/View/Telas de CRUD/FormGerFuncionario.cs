@@ -50,6 +50,7 @@ namespace ProjetoCinema
                 txtNome.Enabled = false;
                 txtIdade.Enabled = false;
                 txtCPF.Enabled = false;
+                txtSenha.Enabled = false;
                 rbFeminino.Enabled = false;
                 rbMasculino.Enabled = false;
                 rbOutro.Enabled = false;
