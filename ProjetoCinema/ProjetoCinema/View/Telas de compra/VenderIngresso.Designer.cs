@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtProd = new System.Windows.Forms.TextBox();
             this.btnMais = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.LbQuantidade = new System.Windows.Forms.Label();
             this.txtFilmeNome = new System.Windows.Forms.TextBox();
@@ -43,18 +41,21 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.gpProdutos = new System.Windows.Forms.GroupBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
-            this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cPreço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRemoverProduto = new System.Windows.Forms.Button();
             this.btnRmvIngreço = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cPreço = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cadd = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Crmv = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gpProdutos.SuspendLayout();
@@ -65,9 +66,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtProd);
             this.panel1.Controls.Add(this.btnMais);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtQuantidade);
             this.panel1.Controls.Add(this.LbQuantidade);
             this.panel1.Controls.Add(this.txtFilmeNome);
@@ -79,14 +78,6 @@
             this.panel1.Size = new System.Drawing.Size(752, 93);
             this.panel1.TabIndex = 0;
             // 
-            // txtProd
-            // 
-            this.txtProd.Location = new System.Drawing.Point(541, 70);
-            this.txtProd.Name = "txtProd";
-            this.txtProd.ReadOnly = true;
-            this.txtProd.Size = new System.Drawing.Size(76, 20);
-            this.txtProd.TabIndex = 12;
-            // 
             // btnMais
             // 
             this.btnMais.Location = new System.Drawing.Point(642, 26);
@@ -95,15 +86,6 @@
             this.btnMais.TabIndex = 6;
             this.btnMais.UseVisualStyleBackColor = true;
             this.btnMais.Click += new System.EventHandler(this.btnMais_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(526, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Quantidade Produtos";
             // 
             // txtQuantidade
             // 
@@ -199,34 +181,17 @@
             this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNome,
             this.cTipo,
-            this.cPreço});
+            this.cPreço,
+            this.Cadd});
+            this.dgvProdutos.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvProdutos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProdutos.Location = new System.Drawing.Point(3, 16);
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
+            this.dgvProdutos.RowHeadersVisible = false;
             this.dgvProdutos.Size = new System.Drawing.Size(456, 242);
             this.dgvProdutos.TabIndex = 1;
             this.dgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellContentClick);
-            // 
-            // cNome
-            // 
-            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cNome.HeaderText = "Nome";
-            this.cNome.Name = "cNome";
-            this.cNome.ReadOnly = true;
-            // 
-            // cTipo
-            // 
-            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cTipo.HeaderText = "Tipo";
-            this.cTipo.Name = "cTipo";
-            this.cTipo.ReadOnly = true;
-            // 
-            // cPreço
-            // 
-            this.cPreço.HeaderText = "Preço";
-            this.cPreço.Name = "cPreço";
-            this.cPreço.ReadOnly = true;
             // 
             // btnRemoverProduto
             // 
@@ -271,7 +236,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvCompra);
-            this.groupBox1.Location = new System.Drawing.Point(466, 95);
+            this.groupBox1.Location = new System.Drawing.Point(466, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(274, 112);
             this.groupBox1.TabIndex = 12;
@@ -280,19 +245,59 @@
             // 
             // dgvCompra
             // 
-            this.dgvCompra.AllowUserToAddRows = false;
             this.dgvCompra.AllowUserToDeleteRows = false;
             this.dgvCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+            this.dataGridViewTextBoxColumn3,
+            this.Crmv});
             this.dgvCompra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCompra.Location = new System.Drawing.Point(3, 16);
             this.dgvCompra.Name = "dgvCompra";
             this.dgvCompra.ReadOnly = true;
+            this.dgvCompra.RowHeadersVisible = false;
             this.dgvCompra.Size = new System.Drawing.Size(268, 93);
             this.dgvCompra.TabIndex = 1;
+            this.dgvCompra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompra_CellContentClick);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::ProjetoCinema.Properties.Resources.images_Snq_1;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // cNome
+            // 
+            this.cNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cNome.HeaderText = "Nome";
+            this.cNome.Name = "cNome";
+            this.cNome.ReadOnly = true;
+            // 
+            // cTipo
+            // 
+            this.cTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cTipo.HeaderText = "Tipo";
+            this.cTipo.Name = "cTipo";
+            this.cTipo.ReadOnly = true;
+            // 
+            // cPreço
+            // 
+            this.cPreço.HeaderText = "Preço";
+            this.cPreço.Name = "cPreço";
+            this.cPreço.ReadOnly = true;
+            // 
+            // Cadd
+            // 
+            this.Cadd.HeaderText = "Adicionar";
+            this.Cadd.Name = "Cadd";
+            this.Cadd.ReadOnly = true;
+            this.Cadd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Cadd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Cadd.Text = "ADD";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -313,6 +318,13 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Quantidade";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // Crmv
+            // 
+            this.Crmv.HeaderText = "Remover";
+            this.Crmv.Name = "Crmv";
+            this.Crmv.ReadOnly = true;
+            this.Crmv.Width = 60;
             // 
             // VenderIngresso
             // 
@@ -358,20 +370,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox gpProdutos;
-        private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.Button btnRemoverProduto;
         private System.Windows.Forms.Button btnRmvIngreço;
         private System.Windows.Forms.Button btnFinalizar;
-        private System.Windows.Forms.TextBox txtProd;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cTipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cPreço;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvCompra;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridView dgvProdutos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cPreço;
+        private System.Windows.Forms.DataGridViewButtonColumn Cadd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewButtonColumn Crmv;
     }
 }
