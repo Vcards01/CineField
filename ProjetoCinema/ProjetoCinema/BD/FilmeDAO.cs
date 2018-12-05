@@ -15,7 +15,7 @@ namespace ProjetoCinema.BD
         public void Create(Filme f)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('{0}','{1}','{2}','{3}',{4});", f.Nome, f.Genero, f.Sinopse,f.Duracao,f.QtddVendida);
+            string sql = string.Format("Insert into Filme(Nome,Genero,Sinopse,Duracao,Quantidade)VALUES('{0}','{1}','{2}','{3}','{4}');",f.Nome, f.Genero, f.Sinopse,f.Duracao,f.QtddVendida);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }

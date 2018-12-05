@@ -44,7 +44,7 @@ namespace ProjetoCinema
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Filme f = new Filme();
-            
+            f.Id = int.Parse(txtCodigo.Text);
             f.Nome = txtTitulo.Text;
             f.Genero = cbGenero.Text;
             f.Sinopse = textBox1.Text;
