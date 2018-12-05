@@ -14,6 +14,7 @@ namespace ProjetoCinema.BD
 {
     public partial class VenderIngresso : Form
     {
+        List<Produtos>comprados= new List<Produtos>();
         List<Produtos> data = new List<Produtos>();
         ProdutosDAO dao = new ProdutosDAO();
         Sessão sessão;
@@ -68,6 +69,13 @@ namespace ProjetoCinema.BD
                   
                     dgvProdutos.Rows.Add(a.Nome, a.Tipo, (a.Preco/100).ToString("c"),a.Quantidade);
         }
+        private void FillCompra()
+        {
+            dgvCompra.Rows.Clear();
+            foreach (Produtos a in comprados)
+
+                dgvCompra.Rows.Add(a.Nome, a.Tipo, a.Quantidade);
+        }
         //Adiciona ingressos
         private void btnMais_Click(object sender, EventArgs e)
         {
@@ -120,18 +128,26 @@ namespace ProjetoCinema.BD
         {
             string key =dgvProdutos.CurrentRow.Cells[0].Value.ToString();
             Produtos p = dao.FindByName(key);
-            List<Produtos> data = dao.ListAll();
-            for (int i = 0; i < data.Count; i++)
+           if(comprados.Count==0)
             {
-                if (p.Id == data[i].Id)
-                {
-                    ValorTotal(p.Preco);
-                    qtddp += 1;
-                    QtddProd();
-                    Fill();
-                }
-
+                comprados.Add(p);
+                p.Quantidade = 1;
             }
+           else
+            {
+                for(int i=0;i<comprados.Count;i++)
+                {
+                    if(p.Id==comprados[i].Id)
+                    {
+                        comprados[i].Quantidade += 1;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+               }
+            }
+            FillCompra();
             
 
         }

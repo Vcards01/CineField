@@ -14,7 +14,7 @@ namespace ProjetoCinema.BD
         public void Create(Produtos p)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("Insert into Produtos(Nome,Tipo,Preco)VALUES('{0}','{1}','{2}');", p.Nome, p.Tipo, p.Preco);
+            string sql = string.Format("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('{0}','{1}','{2}',{3});", p.Nome, p.Tipo, p.Preco,0);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -32,6 +32,13 @@ namespace ProjetoCinema.BD
         {
             DataBase bd = DataBase.GetInstance();
             string sql = string.Format("UPDATE Produtos set Nome ='{0}',Tipo='{1}',Preco='{2}' where Id='{3}' ;",p.Nome, p.Tipo,p.Preco,p.Id);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            bd.ExecuteNonQuery(cmd);
+        }
+        public void UpdateQTd(Produtos p)
+        {
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("UPDATE Produtos set Quantidade ='{0}' where Id='{3}' ;", p.Nome, p.Tipo, p.Preco, p.Id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }
@@ -61,6 +68,7 @@ namespace ProjetoCinema.BD
             p.Id = int.Parse(dr["Id"].ToString());
             p.Nome = dr["Nome"].ToString();
             p.Tipo = dr["Tipo"].ToString();
+            p.Quantidade = int.Parse(dr["Quantidade"].ToString());
             p.Preco = double.Parse(dr["Preco"].ToString());
             
             return p;
