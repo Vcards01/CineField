@@ -38,7 +38,7 @@ namespace ProjetoCinema
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Filme f = DAO.Read((int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString())));
+            Filme f = DAO.Read(int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString()));
             FormGerFilmes form = new FormGerFilmes(true,f);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
@@ -48,7 +48,7 @@ namespace ProjetoCinema
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            Filme f = DAO.Read((int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString())));
+            Filme f = DAO.Read(int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString()));
             FormGerFilmes form = new FormGerFilmes(false,f);
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
@@ -69,7 +69,7 @@ namespace ProjetoCinema
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            Filme f = DAO.Read((int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString())));
+            Filme f = DAO.Read(int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString()));
             DAO.Delete(f.Id);
             LoadDatabase();
             Fill("");
