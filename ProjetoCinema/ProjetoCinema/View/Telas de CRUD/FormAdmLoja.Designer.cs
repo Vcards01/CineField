@@ -78,6 +78,7 @@
             this.dgvProdutos.Location = new System.Drawing.Point(3, 16);
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
+            this.dgvProdutos.RowHeadersVisible = false;
             this.dgvProdutos.Size = new System.Drawing.Size(528, 170);
             this.dgvProdutos.TabIndex = 0;
             // 
@@ -112,8 +113,10 @@
             this.pnFilmes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnFilmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.pnFilmes.Controls.Add(this.textBox1);
-            this.pnFilmes.Controls.Add(this.lbFiltro);
+            this.pnFilmes.Controls.Add(this.btnExcluir);
+            this.pnFilmes.Controls.Add(this.btnEditar);
+            this.pnFilmes.Controls.Add(this.btnVisualizar);
+            this.pnFilmes.Controls.Add(this.btnNovo);
             this.pnFilmes.Location = new System.Drawing.Point(3, 248);
             this.pnFilmes.Name = "pnFilmes";
             this.pnFilmes.Size = new System.Drawing.Size(534, 58);
@@ -122,7 +125,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Location = new System.Drawing.Point(83, 17);
+            this.textBox1.Location = new System.Drawing.Point(95, 19);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(389, 20);
             this.textBox1.TabIndex = 1;
@@ -133,7 +136,7 @@
             this.lbFiltro.AutoSize = true;
             this.lbFiltro.BackColor = System.Drawing.Color.Transparent;
             this.lbFiltro.ForeColor = System.Drawing.Color.Aquamarine;
-            this.lbFiltro.Location = new System.Drawing.Point(45, 20);
+            this.lbFiltro.Location = new System.Drawing.Point(57, 22);
             this.lbFiltro.Name = "lbFiltro";
             this.lbFiltro.Size = new System.Drawing.Size(32, 13);
             this.lbFiltro.TabIndex = 0;
@@ -144,10 +147,8 @@
             this.pnFilmesBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnFilmesBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.pnFilmesBaixo.Controls.Add(this.btnExcluir);
-            this.pnFilmesBaixo.Controls.Add(this.btnNovo);
-            this.pnFilmesBaixo.Controls.Add(this.btnEditar);
-            this.pnFilmesBaixo.Controls.Add(this.btnVisualizar);
+            this.pnFilmesBaixo.Controls.Add(this.lbFiltro);
+            this.pnFilmesBaixo.Controls.Add(this.textBox1);
             this.pnFilmesBaixo.Location = new System.Drawing.Point(3, 3);
             this.pnFilmesBaixo.Name = "pnFilmesBaixo";
             this.pnFilmesBaixo.Size = new System.Drawing.Size(534, 61);
@@ -156,9 +157,9 @@
             // btnExcluir
             // 
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnExcluir.Location = new System.Drawing.Point(405, 22);
+            this.btnExcluir.Location = new System.Drawing.Point(414, 20);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(102, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(70, 23);
             this.btnExcluir.TabIndex = 18;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -167,9 +168,9 @@
             // btnNovo
             // 
             this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnNovo.Location = new System.Drawing.Point(30, 22);
+            this.btnNovo.Location = new System.Drawing.Point(95, 20);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(102, 23);
+            this.btnNovo.Size = new System.Drawing.Size(70, 23);
             this.btnNovo.TabIndex = 12;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -178,9 +179,9 @@
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnEditar.Location = new System.Drawing.Point(151, 22);
+            this.btnEditar.Location = new System.Drawing.Point(204, 20);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(102, 23);
+            this.btnEditar.Size = new System.Drawing.Size(70, 23);
             this.btnEditar.TabIndex = 16;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -189,9 +190,9 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnVisualizar.Location = new System.Drawing.Point(280, 22);
+            this.btnVisualizar.Location = new System.Drawing.Point(306, 20);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(102, 23);
+            this.btnVisualizar.Size = new System.Drawing.Size(70, 23);
             this.btnVisualizar.TabIndex = 17;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
@@ -217,8 +218,8 @@
             this.gpLoja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
             this.pnFilmes.ResumeLayout(false);
-            this.pnFilmes.PerformLayout();
             this.pnFilmesBaixo.ResumeLayout(false);
+            this.pnFilmesBaixo.PerformLayout();
             this.ResumeLayout(false);
 
         }

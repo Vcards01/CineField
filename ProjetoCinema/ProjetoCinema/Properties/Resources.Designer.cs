@@ -403,6 +403,16 @@ namespace ProjetoCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images_Snq_1 {
+            get {
+                object obj = ResourceManager.GetObject("images_Snq-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IngressoIcon {
             get {
                 object obj = ResourceManager.GetObject("IngressoIcon", resourceCulture);
@@ -436,6 +446,16 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap Loguinho {
             get {
                 object obj = ResourceManager.GetObject("Loguinho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minus {
+            get {
+                object obj = ResourceManager.GetObject("Minus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -486,6 +506,26 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap pipocaIcon {
             get {
                 object obj = ResourceManager.GetObject("pipocaIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_PNG103 {
+            get {
+                object obj = ResourceManager.GetObject("plus_PNG103", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_PNG121 {
+            get {
+                object obj = ResourceManager.GetObject("plus_PNG121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -566,6 +606,36 @@ namespace ProjetoCinema.Properties {
         internal static System.Drawing.Bitmap Sem_Título_22 {
             get {
                 object obj = ResourceManager.GetObject("Sem Título-22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_500 {
+            get {
+                object obj = ResourceManager.GetObject("Sem Título-500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_501 {
+            get {
+                object obj = ResourceManager.GetObject("Sem Título-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_502 {
+            get {
+                object obj = ResourceManager.GetObject("Sem Título-502", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

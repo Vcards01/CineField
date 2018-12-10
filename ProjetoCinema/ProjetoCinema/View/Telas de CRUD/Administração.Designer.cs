@@ -158,9 +158,9 @@
             // pnFundo
             // 
             this.pnFundo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnFundo.Location = new System.Drawing.Point(128, -55);
+            this.pnFundo.Location = new System.Drawing.Point(60, -103);
             this.pnFundo.Name = "pnFundo";
-            this.pnFundo.Size = new System.Drawing.Size(613, 500);
+            this.pnFundo.Size = new System.Drawing.Size(466, 500);
             this.pnFundo.TabIndex = 8;
             this.pnFundo.Visible = false;
             // 
@@ -169,7 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProjetoCinema.Properties.Resources.Sem_Título_501;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(816, 350);
             this.Controls.Add(this.pnFundo);

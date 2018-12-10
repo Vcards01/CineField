@@ -29,21 +29,17 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.GroupBox gpFilmes;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.GroupBox groupBox1;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.tituloFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.duraFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvSessoes = new System.Windows.Forms.DataGridView();
-            this.CID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLugares = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnFilmes = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,6 +51,12 @@
             this.btnVoltarS = new System.Windows.Forms.Button();
             this.btnProximoS = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.CID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CFilme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLugares = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             gpFilmes = new System.Windows.Forms.GroupBox();
             groupBox1 = new System.Windows.Forms.GroupBox();
             gpFilmes.SuspendLayout();
@@ -87,14 +89,14 @@
             this.dgvFilmes.AllowUserToDeleteRows = false;
             this.dgvFilmes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.dgvFilmes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFilmes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFilmes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFilmes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFilmes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tituloFilme,
@@ -107,12 +109,13 @@
             this.dgvFilmes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvFilmes.Name = "dgvFilmes";
             this.dgvFilmes.ReadOnly = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvFilmes.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvFilmes.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvFilmes.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFilmes.RowTemplate.Height = 24;
             this.dgvFilmes.Size = new System.Drawing.Size(575, 29);
             this.dgvFilmes.TabIndex = 13;
@@ -126,10 +129,10 @@
             // 
             // duraFilme
             // 
-            this.duraFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.duraFilme.HeaderText = "Duração";
             this.duraFilme.Name = "duraFilme";
             this.duraFilme.ReadOnly = true;
+            this.duraFilme.Width = 70;
             // 
             // genFilme
             // 
@@ -157,21 +160,22 @@
             this.dgvSessoes.AllowUserToDeleteRows = false;
             this.dgvSessoes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.dgvSessoes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSessoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSessoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSessoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSessoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CID,
             this.CFilme,
             this.CSala,
             this.CHorario,
-            this.CLugares});
+            this.CLugares,
+            this.cValor});
             this.dgvSessoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSessoes.EnableHeadersVisualStyles = false;
             this.dgvSessoes.GridColor = System.Drawing.Color.SlateBlue;
@@ -179,48 +183,24 @@
             this.dgvSessoes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSessoes.Name = "dgvSessoes";
             this.dgvSessoes.ReadOnly = true;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSessoes.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSessoes.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvSessoes.RowHeadersVisible = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSessoes.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvSessoes.RowTemplate.Height = 24;
             this.dgvSessoes.Size = new System.Drawing.Size(557, 84);
             this.dgvSessoes.TabIndex = 13;
-            // 
-            // CID
-            // 
-            this.CID.HeaderText = "ID";
-            this.CID.Name = "CID";
-            this.CID.ReadOnly = true;
-            this.CID.Width = 50;
-            // 
-            // CFilme
-            // 
-            this.CFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CFilme.HeaderText = "Filme";
-            this.CFilme.Name = "CFilme";
-            this.CFilme.ReadOnly = true;
-            // 
-            // CSala
-            // 
-            this.CSala.HeaderText = "Sala";
-            this.CSala.Name = "CSala";
-            this.CSala.ReadOnly = true;
-            // 
-            // CHorario
-            // 
-            this.CHorario.HeaderText = "Horario";
-            this.CHorario.Name = "CHorario";
-            this.CHorario.ReadOnly = true;
-            this.CHorario.Width = 80;
-            // 
-            // CLugares
-            // 
-            this.CLugares.HeaderText = "Lugares";
-            this.CLugares.Name = "CLugares";
-            this.CLugares.ReadOnly = true;
             // 
             // pnFilmes
             // 
@@ -252,7 +232,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnCancelarF);
             this.panel1.Controls.Add(this.btnNextF);
-            this.panel1.Location = new System.Drawing.Point(142, 192);
+            this.panel1.Location = new System.Drawing.Point(144, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 32);
             this.panel1.TabIndex = 1;
@@ -302,7 +282,7 @@
             this.pnSessões.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.pnSessões.Controls.Add(this.panel2);
             this.pnSessões.Controls.Add(groupBox1);
-            this.pnSessões.Location = new System.Drawing.Point(6, 20);
+            this.pnSessões.Location = new System.Drawing.Point(164, 71);
             this.pnSessões.Name = "pnSessões";
             this.pnSessões.Size = new System.Drawing.Size(510, 227);
             this.pnSessões.TabIndex = 43;
@@ -313,7 +293,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btnVoltarS);
             this.panel2.Controls.Add(this.btnProximoS);
-            this.panel2.Location = new System.Drawing.Point(97, 188);
+            this.panel2.Location = new System.Drawing.Point(97, 161);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(305, 32);
             this.panel2.TabIndex = 41;
@@ -347,12 +327,52 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.pnSessões);
             this.panel3.Controls.Add(this.pnFilmes);
-            this.panel3.Location = new System.Drawing.Point(165, 59);
+            this.panel3.Location = new System.Drawing.Point(159, 50);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(520, 262);
             this.panel3.TabIndex = 45;
+            // 
+            // CID
+            // 
+            this.CID.HeaderText = "ID";
+            this.CID.Name = "CID";
+            this.CID.ReadOnly = true;
+            this.CID.Width = 50;
+            // 
+            // CFilme
+            // 
+            this.CFilme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CFilme.HeaderText = "Filme";
+            this.CFilme.Name = "CFilme";
+            this.CFilme.ReadOnly = true;
+            // 
+            // CSala
+            // 
+            this.CSala.HeaderText = "Sala";
+            this.CSala.Name = "CSala";
+            this.CSala.ReadOnly = true;
+            this.CSala.Width = 40;
+            // 
+            // CHorario
+            // 
+            this.CHorario.HeaderText = "Horario";
+            this.CHorario.Name = "CHorario";
+            this.CHorario.ReadOnly = true;
+            this.CHorario.Width = 80;
+            // 
+            // CLugares
+            // 
+            this.CLugares.HeaderText = "Lugares";
+            this.CLugares.Name = "CLugares";
+            this.CLugares.ReadOnly = true;
+            this.CLugares.Width = 60;
+            // 
+            // cValor
+            // 
+            this.cValor.HeaderText = "Preço";
+            this.cValor.Name = "cValor";
+            this.cValor.ReadOnly = true;
             // 
             // FormCompra
             // 
@@ -362,6 +382,7 @@
             this.BackgroundImage = global::ProjetoCinema.Properties.Resources.Tema;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(816, 350);
+            this.Controls.Add(this.pnSessões);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -388,9 +409,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnFilmes;
         private System.Windows.Forms.DataGridView dgvFilmes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tituloFilme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn duraFilme;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genFilme;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Filtrolbl;
         private System.Windows.Forms.Panel pnSessões;
@@ -398,11 +416,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnVoltarS;
         private System.Windows.Forms.Button btnProximoS;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tituloFilme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn duraFilme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genFilme;
         private System.Windows.Forms.DataGridViewTextBoxColumn CID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CFilme;
         private System.Windows.Forms.DataGridViewTextBoxColumn CSala;
         private System.Windows.Forms.DataGridViewTextBoxColumn CHorario;
         private System.Windows.Forms.DataGridViewTextBoxColumn CLugares;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cValor;
     }
 }
