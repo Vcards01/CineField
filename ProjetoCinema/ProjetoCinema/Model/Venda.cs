@@ -13,9 +13,21 @@ namespace ProjetoCinema
         private string data;
         private double Valor;
         private int idVenda;
-        
-        
-       
+        List<Ingresso> list = new List<Ingresso>();
+
+        public void AddIngresso(Ingresso i)
+        {
+            list.Add(i);
+        }
+        public void RmvIngresso(Ingresso i)
+        {
+            list.Remove(i);
+        }
+        public List<Ingresso> GetList()
+        {
+            return list;
+        }
+
         public int IdVenda
         {
             get

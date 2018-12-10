@@ -30,8 +30,8 @@ namespace ProjetoCinema
             NmLugares.Value = s.QtddLugares;
             if (editavel == false)
             {
-                txtCodigo.Enabled = false;
-                NmLugares.Enabled=false;
+                txtNome.ReadOnly = true;
+                NmLugares.ReadOnly=true;
             }
         }
 
@@ -71,10 +71,21 @@ namespace ProjetoCinema
         }
         private void updateSessões(Sala s)
         {
+            int newValor = 0;
             SessaoDAO dao = new SessaoDAO();
             foreach (Sessão a in s.GetList())
             {
-                a.LugaresDisponiveis = s.QtddLugares;
+                newValor= a.LugaresDisponiveis - s.QtddLugares;
+                Console.WriteLine(newValor);
+                if(newValor<0)
+                {
+                    a.LugaresDisponiveis = newValor * -1;
+                }
+                else
+                {
+                    a.LugaresDisponiveis = newValor;
+                }
+                
                 dao.Update(a);
             }
         }

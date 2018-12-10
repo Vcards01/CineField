@@ -12,15 +12,17 @@ using ProjetoCinema.Model;
 
 namespace ProjetoCinema.BD
 {
+     
     public partial class VenderIngresso : Form
     {
+        
         List<Produtos>comprados= new List<Produtos>();
         List<Produtos> data = new List<Produtos>();
         ProdutosDAO dao = new ProdutosDAO();
         Sessão sessão;
         private Venda v = new Venda();
         private int qtdd = 0;
-        private int qtddp = 0;
+        private int count = 0;
         private double precoIngreço;
         private double precoTotal;
 
@@ -85,6 +87,8 @@ namespace ProjetoCinema.BD
                 ValorTotal(precoIngreço);
                 sessão.LugaresDisponiveis -= 1;
                 DAOs.Update(sessão);
+                v.AddIngresso(new Ingresso(count, sessão));
+                count++;
             }
             else
             {
@@ -205,13 +209,17 @@ namespace ProjetoCinema.BD
         {
             FilmeDAO DAOF = new FilmeDAO();
             VendaDAO DAOV = new VendaDAO();
-            Venda v = new Venda();
             v.Valor1 = precoTotal;
             v.Data = DateTime.Now.ToShortDateString();
             v.Hora = DateTime.Now.ToShortTimeString();
             sessão.Filme.QtddVendida = qtdd;
             DAOF.Update(sessão.Filme);
             DAOV.Create(v);
+            foreach (Ingresso i in v.GetList())
+            {
+                Console.WriteLine(i.Id.ToString()+","+i.S.Sala.Nome+","+i.S.Filme.Nome);
+            }
+            
             Dispose();
         }
 

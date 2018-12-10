@@ -30,7 +30,7 @@ namespace ProjetoCinema
             dgvSessao.Rows.Clear();
             foreach (Sessão a in data)
                 if (filter == "")
-                    dgvSessao.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Nome,a.Horario,a.LugaresDisponiveis);
+                    dgvSessao.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Nome,a.Horario,(a.PrecoEntrada/100).ToString("C"),a.LugaresDisponiveis);
 
         }
         private void btnNovo_Click(object sender, EventArgs e)

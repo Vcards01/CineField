@@ -46,6 +46,8 @@
             this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.cbSala = new System.Windows.Forms.ComboBox();
+            this.lbLugares = new System.Windows.Forms.Label();
+            this.txtLugares = new System.Windows.Forms.TextBox();
             this.pnBaixo.SuspendLayout();
             this.pnTopo.SuspendLayout();
             this.pnMeio.SuspendLayout();
@@ -123,6 +125,8 @@
             this.pnMeio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnMeio.Controls.Add(this.txtLugares);
+            this.pnMeio.Controls.Add(this.lbLugares);
             this.pnMeio.Controls.Add(this.txtPreço);
             this.pnMeio.Controls.Add(this.label3);
             this.pnMeio.Controls.Add(this.TxtCod);
@@ -235,6 +239,24 @@
             this.cbSala.Size = new System.Drawing.Size(164, 21);
             this.cbSala.TabIndex = 27;
             // 
+            // lbLugares
+            // 
+            this.lbLugares.AutoSize = true;
+            this.lbLugares.Location = new System.Drawing.Point(278, 83);
+            this.lbLugares.Name = "lbLugares";
+            this.lbLugares.Size = new System.Drawing.Size(45, 13);
+            this.lbLugares.TabIndex = 35;
+            this.lbLugares.Text = "Lugares";
+            // 
+            // txtLugares
+            // 
+            this.txtLugares.Location = new System.Drawing.Point(321, 83);
+            this.txtLugares.Name = "txtLugares";
+            this.txtLugares.ReadOnly = true;
+            this.txtLugares.Size = new System.Drawing.Size(46, 20);
+            this.txtLugares.TabIndex = 36;
+            this.txtLugares.Visible = false;
+            // 
             // FormGerSessao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,5 +299,7 @@
         private System.Windows.Forms.Label lbCod;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox txtPreço;
+        private System.Windows.Forms.TextBox txtLugares;
+        private System.Windows.Forms.Label lbLugares;
     }
 }

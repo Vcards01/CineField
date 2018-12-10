@@ -48,8 +48,20 @@ namespace ProjetoCinema
             cbFilme.Text = s.Filme.Nome;
             cbSala.Text = s.Sala.Nome;
             dtpHorario.Text = s.Horario.ToString();
-            txtPreço.Text = s.PrecoEntrada.ToString();
-            
+            if(s.PrecoEntrada<100)
+            {
+                txtPreço.Text = "00"+s.PrecoEntrada.ToString();
+            }
+            else if (s.PrecoEntrada < 1000)
+            {
+                txtPreço.Text = "0"+ s.PrecoEntrada.ToString();
+            }
+            else
+            {
+                txtPreço.Text = s.PrecoEntrada.ToString();
+            }
+            txtLugares.Visible = true;
+            txtLugares.Text = s.LugaresDisponiveis.ToString();        
 
             if (editavel == false)
             {
@@ -65,31 +77,44 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Sessão s = new Sessão();
-            s.Filme = DAOf.FindByName(cbFilme.Text);
-            s.Sala = DAOs.FindByName(cbSala.Text);
-            s.Horario = dtpHorario.Text;
-            s.LugaresDisponiveis = s.Sala.QtddLugares;
-            s.PrecoEntrada = (float.Parse(txtPreço.Text));
-           
+            if((string.IsNullOrEmpty(cbFilme.Text))||string.IsNullOrEmpty(cbSala.Text)||string.IsNullOrEmpty(txtPreço.Text))
+            {
+                MessageBox.Show("Por favor, não deixe nenhum campo em branco", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(double.Parse(txtPreço.Text)<=0)
+            {
+                MessageBox.Show("Por favor,digite um valor maior que 0", "Preço invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Sessão s = new Sessão();
+                s.Filme = DAOf.FindByName(cbFilme.Text);
+                s.Sala = DAOs.FindByName(cbSala.Text);
+                s.Horario = dtpHorario.Text;
+                s.PrecoEntrada = (float.Parse(txtPreço.Text));
+
+
+                if (salvar)
+                {
+                    s.LugaresDisponiveis = s.Sala.QtddLugares;
+                    DAO.Create(s);
+                    Dispose();
+                }
+                if (editavel)
+                {
+                    s.LugaresDisponiveis = int.Parse(txtLugares.Text);
+                    s.Filme.RmvSessao(s);
+                    s.Id = int.Parse(TxtCod.Text);
+                    DAO.Update(s);
+                    s.Filme.AddSessao(s);
+                    Dispose();
+                }
+                if (!salvar && !editavel)
+                {
+                    Dispose();
+                }
+            }
             
-            if (salvar)
-            {
-                DAO.Create(s);
-                Dispose();
-            }
-            if (editavel)
-            {
-                s.Filme.RmvSessao(s);
-                s.Id = int.Parse(TxtCod.Text);
-                DAO.Update(s);
-                s.Filme.AddSessao(s);
-                Dispose();
-            }
-            if (!salvar && !editavel)
-            {
-                Dispose();
-            }
             
             
         }

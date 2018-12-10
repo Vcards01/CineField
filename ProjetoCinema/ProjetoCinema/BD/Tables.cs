@@ -101,15 +101,15 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Tipo] VARCHAR(20),");
             sql.AppendLine("[Preco] DOUBLE,");
             sql.AppendLine("[Quantidade] DOUBLE);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Coca-Cola','Refrigerante',0600,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Fanta Laranja','Refrigerante',0600,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Fanta Uva','Refrigerante',0600,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Pipoca Doce','Pipoca',0500,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Pipoca Salgada','Pipoca',0500,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Suflair','Chocolate',0400,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Kit-Kat','Chocolate',0400,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('7belo','Bala',0010,0);");
-            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Halls','Bala',0100,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Coca-Cola','Refrigerante',600,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Fanta Laranja','Refrigerante',600,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Fanta Uva','Refrigerante',600,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Pipoca Doce','Pipoca',500,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Pipoca Salgada','Pipoca',500,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Suflair','Chocolate',400,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Kit-Kat','Chocolate',400,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('7belo','Bala',10,0);");
+            sql.AppendLine("Insert into Produtos(Nome,Tipo,Preco,Quantidade)VALUES('Halls','Bala',100,0);");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
         }

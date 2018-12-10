@@ -30,7 +30,20 @@ namespace ProjetoCinema
             txtID.Text = p.Id.ToString();
             txtNome.Text = p.Nome;
             txtTipo.Text = p.Tipo;
-            txtPreço.Text = p.Preco.ToString();
+            Console.WriteLine(p.Preco);
+            if(100 > p.Preco)
+            {
+                txtPreço.Text = "00"+ p.Preco.ToString();
+            }
+            else if (1000 > p.Preco)
+            {
+                txtPreço.Text = "0" + p.Preco.ToString();
+            }
+            else
+            {
+                txtPreço.Text = p.Preco.ToString();
+            }
+            
             if (editavel == false)
             {
                 txtNome.Enabled = false;
