@@ -53,10 +53,7 @@ namespace ProjetoCinema.BD
         {
             txtQuantidade.Text = qtdd.ToString();
         }
-        private void QtddProd()
-        {
-           
-        }
+        
         //Carrega todos os produtos para um lista
         private void LoadDataBase()
         {
@@ -75,7 +72,7 @@ namespace ProjetoCinema.BD
             dgvCompra.Rows.Clear();
             foreach (Produtos a in comprados)
 
-                dgvCompra.Rows.Add(a.Nome, a.Tipo, a.Quantidade);
+                dgvCompra.Rows.Add(a.Nome, a.Quantidade);
         }
         //Adiciona ingressos
         private void btnMais_Click(object sender, EventArgs e)
@@ -124,67 +121,84 @@ namespace ProjetoCinema.BD
             precoTotal -= valor/100;
             txtTotal.Text = precoTotal.ToString("c");
         }
+        //Verifica se produto ja esta no carrinho
+        private bool verifica(Produtos p)
+        {
+            int flag = 0;
+            for (int i = 0; i < comprados.Count; i++)
+            {
+                if (comprados[i].Id == p.Id)
+                {
+                    flag = 0;
+                    comprados[i].Quantidade += 1;
+                    ValorTotal(comprados[i].Preco);
+                    break;
+
+                }
+                else
+                {
+                    flag = 1;
+                }
+            }
+            if (flag == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         //Adiciona produtos ao carrinho
         private void dgvProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int flag = 0;
            string key =dgvProdutos.CurrentRow.Cells[0].Value.ToString();
            Produtos p = dao.FindByName(key);
-           if(comprados.Count==0)
+            if (comprados.Count == 0)
             {
                 comprados.Add(p);
                 p.Quantidade = 1;
+                ValorTotal(p.Preco);
             }
-           else
+            else
             {
-                for(int i=0;i<comprados.Count;i++)
-                {
-                    if(comprados[i].Id==p.Id)
-                    {
-                        flag = 0;
-                        comprados[i].Quantidade += 1;
 
-                    }
-                    else
-                    {
-                        flag = 1;
-                    }
-               }
-                if(flag==1)
+                if (!verifica(p))
                 {
                     p.Quantidade = 1;
                     comprados.Add(p);
+                    ValorTotal(p.Preco);
+
                 }
+               
             }
             FillCompra();
-            
 
         }
         //Remove produtos do carrinho
-        private void btnRemoverProduto_Click(object sender, EventArgs e)
+        private void dgvCompra_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(qtddp==0)
-            {
-                MessageBox.Show("Sem itens no carrinho", "Impossivel Remover", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if(qtddp>0)
-            {
-                string key = dgvProdutos.CurrentRow.Cells[0].Value.ToString();
-                Produtos p = dao.FindByName(key);
-                for (int i = 0; i < data.Count; i++)
-                {
-                    if (p.Id == data[i].Id)
-                    {
-                        ReduzirTotal(p.Preco);
-                        qtddp -= 1;
-                        QtddProd();
-                        Fill();
-                    }
+            string key = dgvCompra.CurrentRow.Cells[0].Value.ToString();
 
+            for(int i=0;i<comprados.Count;i++)
+            {
+                if (comprados[i].Nome == key)
+                {
+                    if (comprados[i].Quantidade > 1)
+                    {
+                        comprados[i].Quantidade -= 1;
+                        ReduzirTotal(comprados[i].Preco);
+                    }
+                    else
+                    {
+                        ReduzirTotal(comprados[i].Preco);
+                        comprados.Remove(comprados[i]);
+                        
+                    }
                 }
+                FillCompra();
             }
             
-           
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
@@ -206,28 +220,6 @@ namespace ProjetoCinema.BD
             Dispose();
         }
 
-        private void dgvCompra_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string key = dgvProdutos.CurrentRow.Cells[0].Value.ToString();
-            for (int i = 0; i < comprados.Count; i++)
-            {
-                if (comprados[i].Nome == key)
-                {
-                    if(comprados[i].Quantidade>0)
-                    {
-                        comprados[i].Quantidade -= 1;
-                    }
-                    else
-                    {
-                        comprados.Remove(comprados[i]);
-                        MessageBox.Show("Sem itens no carrinho", "Impossivel Remover", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    FillCompra();
-                    
-
-                }
-                
-            }
-        }
+        
     }
 }

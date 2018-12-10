@@ -87,6 +87,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvFilmes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFilmes.RowHeadersVisible = false;
             this.dgvFilmes.Size = new System.Drawing.Size(461, 166);
             this.dgvFilmes.TabIndex = 0;
             // 

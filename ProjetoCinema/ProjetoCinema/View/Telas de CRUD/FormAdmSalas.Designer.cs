@@ -44,19 +44,21 @@
             this.lbFiltro = new System.Windows.Forms.Label();
             this.gpSalas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
+            this.pnSalasBaixo.SuspendLayout();
             this.pnSalas.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpSalas
             // 
-            this.gpSalas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gpSalas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpSalas.BackColor = System.Drawing.Color.Transparent;
             this.gpSalas.Controls.Add(this.dgvSalas);
             this.gpSalas.ForeColor = System.Drawing.Color.Black;
-            this.gpSalas.Location = new System.Drawing.Point(120, 67);
+            this.gpSalas.Location = new System.Drawing.Point(6, 62);
             this.gpSalas.Name = "gpSalas";
-            this.gpSalas.Size = new System.Drawing.Size(343, 198);
+            this.gpSalas.Size = new System.Drawing.Size(463, 201);
             this.gpSalas.TabIndex = 4;
             this.gpSalas.TabStop = false;
             this.gpSalas.Text = "Salas";
@@ -74,7 +76,8 @@
             this.dgvSalas.Location = new System.Drawing.Point(3, 16);
             this.dgvSalas.Name = "dgvSalas";
             this.dgvSalas.ReadOnly = true;
-            this.dgvSalas.Size = new System.Drawing.Size(337, 179);
+            this.dgvSalas.RowHeadersVisible = false;
+            this.dgvSalas.Size = new System.Drawing.Size(457, 182);
             this.dgvSalas.TabIndex = 0;
             // 
             // Cid
@@ -99,8 +102,8 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.Location = new System.Drawing.Point(39, 236);
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnExcluir.Location = new System.Drawing.Point(312, 15);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 3;
@@ -110,8 +113,8 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVisualizar.Location = new System.Drawing.Point(39, 174);
+            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnVisualizar.Location = new System.Drawing.Point(231, 15);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(75, 23);
             this.btnVisualizar.TabIndex = 2;
@@ -121,8 +124,8 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Location = new System.Drawing.Point(39, 120);
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnEditar.Location = new System.Drawing.Point(150, 15);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 1;
@@ -132,8 +135,8 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovo.Location = new System.Drawing.Point(39, 67);
+            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnNovo.Location = new System.Drawing.Point(69, 15);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 23);
             this.btnNovo.TabIndex = 0;
@@ -146,6 +149,10 @@
             this.pnSalasBaixo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnSalasBaixo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pnSalasBaixo.Controls.Add(this.btnExcluir);
+            this.pnSalasBaixo.Controls.Add(this.btnVisualizar);
+            this.pnSalasBaixo.Controls.Add(this.btnNovo);
+            this.pnSalasBaixo.Controls.Add(this.btnEditar);
             this.pnSalasBaixo.Location = new System.Drawing.Point(5, 269);
             this.pnSalasBaixo.Name = "pnSalasBaixo";
             this.pnSalasBaixo.Size = new System.Drawing.Size(464, 50);
@@ -191,13 +198,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(475, 325);
-            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.pnSalasBaixo);
-            this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.gpSalas);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.pnSalas);
-            this.Controls.Add(this.btnNovo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -207,6 +210,7 @@
             this.Load += new System.EventHandler(this.FormAdmSalas_Load);
             this.gpSalas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
+            this.pnSalasBaixo.ResumeLayout(false);
             this.pnSalas.ResumeLayout(false);
             this.pnSalas.PerformLayout();
             this.ResumeLayout(false);

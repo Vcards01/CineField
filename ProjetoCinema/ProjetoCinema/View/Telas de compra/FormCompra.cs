@@ -50,7 +50,7 @@ namespace ProjetoCinema.View
             List<Sessão> s = f.listSessao();
             foreach (Sessão a in s)
                
-                    dgvSessoes.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Id,a.Horario,a.LugaresDisponiveis);
+                    dgvSessoes.Rows.Add(a.Id,a.Filme.Nome,a.Sala.Id,a.Horario,a.LugaresDisponiveis,(a.PrecoEntrada/100).ToString("c"));
         }
         //Retorna um Filme para prencher o DataGrid
        public Filme GetFilme()
@@ -82,8 +82,7 @@ namespace ProjetoCinema.View
 
             }
         }
-       
-       //Abre o painel se sessões e carrega o DataGrid Sessões
+        //Abre o painel se sessões e carrega o DataGrid Sessões
        private void btnNext_Click_1(object sender, EventArgs e)
         {
             pnSessões.Visible = true;
@@ -107,9 +106,7 @@ namespace ProjetoCinema.View
         {
             Dispose();
         }
-       
-      
-       
+       //Abre a Janela de vender ingressos
        private void btnProximoS_Click(object sender, EventArgs e)
         {
             SessaoDAO DAo = new SessaoDAO();
@@ -121,11 +118,12 @@ namespace ProjetoCinema.View
             V.ShowDialog(this);
            
         }
+        //Load do Form
         private void FormCompra_Load(object sender, EventArgs e)
         {
 
         }
-
+        //Pesquisa
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             Fill(textBox1.Text);
