@@ -43,27 +43,44 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Filme f = new Filme();
-            f.Id = int.Parse(txtCodigo.Text);
-            f.Nome = txtTitulo.Text;
-            f.Genero = cbGenero.Text;
-            f.Sinopse = textBox1.Text;
-            f.Duracao = txtHoras.Text;
-            f.QtddVendida = 0;
-            if(salvar)
+            if ((string.IsNullOrEmpty(txtTitulo.Text))|| (string.IsNullOrEmpty(cbGenero.Text)))
             {
-                DAO.Create(f);
-                Dispose();
+                MessageBox.Show("Por favor, não deixe nenhum campo em branco", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if(editavel)
+            else if (txtHoras.Text=="00:00")
             {
-                f.Id = int.Parse(txtCodigo.Text);
-                DAO.Update(f);
-                Dispose();
+                MessageBox.Show("Por favor,digite uma duração maior que 0", "Duração invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if(!salvar&&!editavel)
+            else
             {
-                Dispose();
+                Filme f = new Filme();
+                f.Nome = txtTitulo.Text;
+                f.Genero = cbGenero.Text;
+                if(string.IsNullOrEmpty(textBox1.Text))
+                {
+                    f.Sinopse = "Sinopse não disponivel";
+                }
+                else
+                {
+                    f.Sinopse = textBox1.Text;
+                }
+                f.Duracao = txtHoras.Text;
+                f.QtddVendida = 0;
+                if (salvar)
+                {
+                    DAO.Create(f);
+                    Dispose();
+                }
+                if (editavel)
+                {
+                    f.Id = int.Parse(txtCodigo.Text);
+                    DAO.Update(f);
+                    Dispose();
+                }
+                if (!salvar && !editavel)
+                {
+                    Dispose();
+                }
             }
         }
 
