@@ -92,7 +92,19 @@
     <Compile Include="BD\SessaoDAO.cs" />
     <Compile Include="BD\Tables.cs" />
     <Compile Include="BD\VendaDAO.cs" />
+    <Compile Include="FormRelatorioProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioProdutos.Designer.cs">
+      <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Ingresso.cs" />
+    <Compile Include="RelatorioProduto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioProduto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\FormAbrirCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +209,13 @@
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Sessão.cs" />
     <Compile Include="Model\Venda.cs" />
+    <EmbeddedResource Include="FormRelatorioProdutos.resx">
+      <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioProduto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioProduto.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormAbrirCaixa.resx">
       <DependentUpon>FormAbrirCaixa.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +276,8 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Filme.datasource" />
+    <None Include="Properties\DataSources\Produtos.datasource" />
+    <None Include="Properties\DataSources\ProjetoCinema.Model.Ingresso.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

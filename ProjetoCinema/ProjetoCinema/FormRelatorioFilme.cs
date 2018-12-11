@@ -11,26 +11,20 @@ using ProjetoCinema.BD;
 
 namespace ProjetoCinema
 {
-    public partial class FormRelatorioProdutos : Form
+    public partial class FormRelatorioFilme : Form
     {
-        public FormRelatorioProdutos()
+        public FormRelatorioFilme()
         {
             InitializeComponent();
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void FormRelatorioFilme_Load(object sender, EventArgs e)
         {
-            ProdutosDAO dao = new ProdutosDAO();
-            List<Produtos> list = dao.ListAll();
-            RelatorioProduto report = new RelatorioProduto();
+            FilmeDAO dao = new FilmeDAO();
+            List<Filme> list = dao.ListAll();
+            RelatorioFilme report = new RelatorioFilme();
             report.SetDataSource(list);
             crystalReportViewer1.ReportSource = report;
-
-        }
-
-        private void FormRelatorioProdutos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

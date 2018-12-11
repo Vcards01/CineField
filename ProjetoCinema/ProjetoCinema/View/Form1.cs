@@ -125,7 +125,7 @@ namespace ProjetoCinema
 
         private void vendaDeIngressosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro_de_ingressos r = new Registro_de_ingressos();
+            FormRelatorioFilme r = new FormRelatorioFilme();
             r.StartPosition = FormStartPosition.CenterParent;
             r.ShowDialog(this);
         }
