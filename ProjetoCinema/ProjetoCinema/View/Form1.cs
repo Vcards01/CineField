@@ -102,7 +102,7 @@ namespace ProjetoCinema
 
         private void relatorioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistroDeVendas r = new RegistroDeVendas();
+            FormRelatorioVendasTotais r = new FormRelatorioVendasTotais();
             r.StartPosition = FormStartPosition.CenterParent;
             r.ShowDialog(this);
         }

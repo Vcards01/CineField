@@ -104,7 +104,19 @@
     <Compile Include="FormRelatorioProdutos.Designer.cs">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRelatorioVendasTotais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioVendasTotais.Designer.cs">
+      <DependentUpon>FormRelatorioVendasTotais.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Ingresso.cs" />
+    <Compile Include="RelatorioDeVendasTotais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioDeVendasTotais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RelatorioFilme.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -227,6 +239,13 @@
     <EmbeddedResource Include="FormRelatorioProdutos.resx">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioVendasTotais.resx">
+      <DependentUpon>FormRelatorioVendasTotais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioDeVendasTotais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioDeVendasTotais.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RelatorioFilme.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RelatorioFilme.cs</LastGenOutput>
@@ -297,6 +316,7 @@
     <None Include="Properties\DataSources\Filme.datasource" />
     <None Include="Properties\DataSources\Produtos.datasource" />
     <None Include="Properties\DataSources\ProjetoCinema.Model.Ingresso.datasource" />
+    <None Include="Properties\DataSources\Venda.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
