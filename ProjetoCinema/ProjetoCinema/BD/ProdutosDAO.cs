@@ -38,7 +38,7 @@ namespace ProjetoCinema.BD
         public void UpdateQTd(Produtos p)
         {
             DataBase bd = DataBase.GetInstance();
-            string sql = string.Format("UPDATE Produtos set Quantidade ='{0}' where Id='{3}' ;", p.Nome, p.Tipo, p.Preco, p.Id);
+            string sql = string.Format("UPDATE Produtos set Quantidade ='{0}' where Id='{1}' ;", p.Quantidade, p.Id);
             SQLiteCommand cmd = new SQLiteCommand(sql);
             bd.ExecuteNonQuery(cmd);
         }

@@ -129,5 +129,15 @@ namespace ProjetoCinema
             r.StartPosition = FormStartPosition.CenterParent;
             r.ShowDialog(this);
         }
+
+        private void relatorioProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioProdutos form = new FormRelatorioProdutos();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.ShowDialog(this);
+       
+
+
+        }
     }
 }

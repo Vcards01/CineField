@@ -215,6 +215,15 @@ namespace ProjetoCinema.BD
             sessão.Filme.QtddVendida = qtdd;
             DAOF.Update(sessão.Filme);
             DAOV.Create(v);
+            foreach(Produtos p in comprados)
+            {
+                Produtos x=dao.Read(p.Id);
+                Console.WriteLine("Quantidade de x"+x.Quantidade);
+                Console.WriteLine("Qunatidade de y" +p.Quantidade);
+                x.Quantidade += p.Quantidade;
+                Console.WriteLine("Quantidade de x" + x.Quantidade);
+                dao.UpdateQTd(x);
+            }
             foreach (Ingresso i in v.GetList())
             {
                 Console.WriteLine(i.Id.ToString()+","+i.S.Sala.Nome+","+i.S.Filme.Nome);
