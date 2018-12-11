@@ -9,12 +9,18 @@ namespace ProjetoCinema.Model
    public class Ingresso
     {
         private int id;
-        private Sessão s;
+        private int sessão;
+        private string filme;
+        private string sala;
+        private string horario;
 
-        public Ingresso(int id, Sessão s)
+        public Ingresso(int id, int sessão, string filme, string sala, string horario)
         {
             this.id = id;
-            this.s = s;
+            this.sessão = sessão;
+            this.filme = filme;
+            this.sala = sala;
+            this.horario = horario;
         }
 
         public int Id
@@ -30,16 +36,55 @@ namespace ProjetoCinema.Model
             }
         }
 
-        public Sessão S
+        public int Sessão
         {
             get
             {
-                return s;
+                return sessão;
             }
 
             set
             {
-                s = value;
+                sessão = value;
+            }
+        }
+
+        public string Filme
+        {
+            get
+            {
+                return filme;
+            }
+
+            set
+            {
+                filme = value;
+            }
+        }
+
+        public string Sala
+        {
+            get
+            {
+                return sala;
+            }
+
+            set
+            {
+                sala = value;
+            }
+        }
+
+        public string Horario
+        {
+            get
+            {
+                return horario;
+            }
+
+            set
+            {
+                horario = value;
             }
         }
     }

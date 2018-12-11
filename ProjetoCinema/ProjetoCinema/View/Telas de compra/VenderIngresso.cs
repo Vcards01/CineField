@@ -87,7 +87,7 @@ namespace ProjetoCinema.BD
                 ValorTotal(precoIngreço);
                 sessão.LugaresDisponiveis -= 1;
                 DAOs.Update(sessão);
-                v.AddIngresso(new Ingresso(count, sessão));
+                v.AddIngresso(new Ingresso(count, sessão.Id,sessão.Filme.Nome,sessão.Sala.Nome,sessão.Horario));
                 count++;
             }
             else
@@ -226,8 +226,11 @@ namespace ProjetoCinema.BD
             }
             foreach (Ingresso i in v.GetList())
             {
-                Console.WriteLine(i.Id.ToString()+","+i.S.Sala.Nome+","+i.S.Filme.Nome);
+                Console.WriteLine(i.Id.ToString()+","+i.Filme+","+i.Sala);
             }
+            FormRelatorioIngresso f = new FormRelatorioIngresso(v.GetList());
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.ShowDialog(this);
             
             Dispose();
         }

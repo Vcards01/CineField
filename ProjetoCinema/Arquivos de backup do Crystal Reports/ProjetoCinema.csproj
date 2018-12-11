@@ -36,16 +36,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine">
-      <HintPath>..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.ReportSource">
-      <HintPath>..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.Shared">
-      <HintPath>..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.Windows.Forms">
-      <HintPath>..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -92,13 +92,37 @@
     <Compile Include="BD\SessaoDAO.cs" />
     <Compile Include="BD\Tables.cs" />
     <Compile Include="BD\VendaDAO.cs" />
+    <Compile Include="FormRelatorioFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioFilme.Designer.cs">
+      <DependentUpon>FormRelatorioFilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorioProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRelatorioProdutos.Designer.cs">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRelatorioVendasTotais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioVendasTotais.Designer.cs">
+      <DependentUpon>FormRelatorioVendasTotais.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Ingresso.cs" />
+    <Compile Include="RelatorioDeVendasTotais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioDeVendasTotais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioFilme.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioFilme.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RelatorioProduto.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -209,8 +233,22 @@
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Sessão.cs" />
     <Compile Include="Model\Venda.cs" />
+    <EmbeddedResource Include="FormRelatorioFilme.resx">
+      <DependentUpon>FormRelatorioFilme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorioProdutos.resx">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioVendasTotais.resx">
+      <DependentUpon>FormRelatorioVendasTotais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioDeVendasTotais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioDeVendasTotais.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioFilme.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioFilme.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RelatorioProduto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -278,6 +316,7 @@
     <None Include="Properties\DataSources\Filme.datasource" />
     <None Include="Properties\DataSources\Produtos.datasource" />
     <None Include="Properties\DataSources\ProjetoCinema.Model.Ingresso.datasource" />
+    <None Include="Properties\DataSources\Venda.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
