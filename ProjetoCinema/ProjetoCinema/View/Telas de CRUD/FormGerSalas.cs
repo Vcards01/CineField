@@ -37,23 +37,35 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Sala s = new Sala();
-            s.QtddLugares=int.Parse(NmLugares.Value.ToString());
-            s.Nome = txtNome.Text;
-            if (salvar)
+            if ((string.IsNullOrEmpty(txtNome.Text)))
             {
-                DAO.Create(s);
-                Dispose();
+                MessageBox.Show("Por favor, não deixe nenhum campo em branco", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (editavel)
+            else if(NmLugares.Value<=0)
             {
-                
-                s.Id = int.Parse(txtCodigo.Text);
-                DAO.Update(s);
-                GetSessao(s);
-                updateSessões(s);
-                Dispose();
+                MessageBox.Show("Por favor,digite uma quantidade de lugares que 0", "Duração invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                Sala s = new Sala();
+                s.QtddLugares = int.Parse(NmLugares.Value.ToString());
+                s.Nome = txtNome.Text;
+                if (salvar)
+                {
+                    DAO.Create(s);
+                    Dispose();
+                }
+                if (editavel)
+                {
+
+                    s.Id = int.Parse(txtCodigo.Text);
+                    DAO.Update(s);
+                    GetSessao(s);
+                    updateSessões(s);
+                    Dispose();
+                }
+            }
+
             if (!salvar && !editavel)
             {
                 Dispose();

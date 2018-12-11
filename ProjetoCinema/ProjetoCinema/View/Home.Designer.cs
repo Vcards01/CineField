@@ -64,6 +64,7 @@
             // 
             // dgvFilmes
             // 
+            this.dgvFilmes.AllowUserToAddRows = false;
             this.dgvFilmes.AllowUserToDeleteRows = false;
             this.dgvFilmes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(65)))), ((int)(((byte)(84)))));
             this.dgvFilmes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;

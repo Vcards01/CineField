@@ -98,6 +98,12 @@
     <Compile Include="FormRelatorioFilme.Designer.cs">
       <DependentUpon>FormRelatorioFilme.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRelatorioIngresso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioIngresso.Designer.cs">
+      <DependentUpon>FormRelatorioIngresso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorioProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RelatorioFilme.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioIngresso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioIngresso.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RelatorioProduto.cs">
@@ -236,6 +248,9 @@
     <EmbeddedResource Include="FormRelatorioFilme.resx">
       <DependentUpon>FormRelatorioFilme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioIngresso.resx">
+      <DependentUpon>FormRelatorioIngresso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorioProdutos.resx">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +264,10 @@
     <EmbeddedResource Include="RelatorioFilme.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RelatorioFilme.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioIngresso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioIngresso.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RelatorioProduto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

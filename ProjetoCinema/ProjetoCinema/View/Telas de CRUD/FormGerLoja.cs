@@ -54,22 +54,34 @@ namespace ProjetoCinema
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Produtos p = new Produtos();
-
-            p.Nome = txtNome.Text;
-            p.Tipo = txtTipo.Text;
-            p.Preco = double.Parse(txtPreço.Text);
-            if (salvar)
+            if ((string.IsNullOrEmpty(txtNome.Text)) || string.IsNullOrEmpty(txtPreço.Text) || string.IsNullOrEmpty(txtTipo.Text))
             {
-                DAO.Create(p);
-                Dispose();
+                MessageBox.Show("Por favor, não deixe nenhum campo em branco", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (editavel)
+            else if (double.Parse(txtPreço.Text) <= 0)
             {
-                p.Id = int.Parse(txtID.Text);
-                DAO.Update(p);
-                Dispose();
-                
+                MessageBox.Show("Por favor,digite um valor maior que 0", "Preço invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Produtos p = new Produtos();
+
+                p.Nome = txtNome.Text;
+                p.Tipo = txtTipo.Text;
+                p.Preco = double.Parse(txtPreço.Text);
+                if (salvar)
+                {
+                    DAO.Create(p);
+                    Dispose();
+                }
+                if (editavel)
+                {
+                    p.Id = int.Parse(txtID.Text);
+                    DAO.Update(p);
+                    Dispose();
+
+                }
+
             }
             if (!salvar && !editavel)
             {
@@ -80,6 +92,11 @@ namespace ProjetoCinema
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void FormGerLoja_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

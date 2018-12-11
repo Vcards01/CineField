@@ -208,6 +208,7 @@
             this.MinimizeBox = false;
             this.Name = "FormGerLoja";
             this.Text = "Gerenciar Loja";
+            this.Load += new System.EventHandler(this.FormGerLoja_Load);
             this.pnBaixo.ResumeLayout(false);
             this.pnTopo.ResumeLayout(false);
             this.pnTopo.PerformLayout();

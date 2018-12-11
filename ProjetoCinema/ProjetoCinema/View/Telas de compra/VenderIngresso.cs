@@ -22,7 +22,7 @@ namespace ProjetoCinema.BD
         Sessão sessão;
         private Venda v = new Venda();
         private int qtdd = 0;
-        private int count = 0;
+        private int count = 1;
         private double precoIngreço;
         private double precoTotal;
 
@@ -209,10 +209,10 @@ namespace ProjetoCinema.BD
         {
             FilmeDAO DAOF = new FilmeDAO();
             VendaDAO DAOV = new VendaDAO();
-            v.Valor1 = precoTotal;
+            v.Valor1 = precoTotal*100;
             v.Data = DateTime.Now.ToShortDateString();
             v.Hora = DateTime.Now.ToShortTimeString();
-            sessão.Filme.QtddVendida = qtdd;
+            sessão.Filme.QtddVendida += qtdd;
             DAOF.Update(sessão.Filme);
             DAOV.Create(v);
             foreach(Produtos p in comprados)

@@ -85,6 +85,10 @@ namespace ProjetoCinema
             {
                 MessageBox.Show("Por favor,digite um valor maior que 0", "Preço invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if(dtpHorario.Text== "00: 00")
+            {
+                MessageBox.Show("Por favor,digite um horario maior que 0", "Horario invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 Sessão s = new Sessão();

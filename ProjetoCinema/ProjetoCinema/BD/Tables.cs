@@ -122,16 +122,16 @@ namespace ProjetoCinema.BD
             sql.AppendLine("[Valor] INTEGER,");
             sql.AppendLine("[Data] VARCHAR(20),");
             sql.AppendLine("[Hora] VARCHAR(20));");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'24/11/2018','12:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(100,'24/11/2018','13:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(50,'24/11/2018','14:30');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(120,'24/11/2018','19:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','10:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','21:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'25/11/2018','21:30');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','20:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','18:00');");
-            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(20,'26/11/2018','17:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(2000,'24/11/2018','12:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(1000,'24/11/2018','13:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(5000,'24/11/2018','14:30');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(12000,'24/11/2018','19:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(3000,'25/11/2018','10:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(5000,'25/11/2018','21:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(6000,'25/11/2018','21:30');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(2000,'26/11/2018','20:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(1000,'26/11/2018','18:00');");
+            sql.AppendLine("Insert into Venda(Valor,Data,Hora)VALUES(9000,'26/11/2018','17:00');");
             SQLiteCommand cmd = new SQLiteCommand(sql.ToString());
             bd.ExecuteNonQuery(cmd);
             

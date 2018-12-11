@@ -51,12 +51,12 @@ namespace ProjetoCinema
             {
                 MessageBox.Show("Por favor,digite uma duração maior que 0", "Duração invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if(txtTitulo.Text is string)
             {
                 Filme f = new Filme();
                 f.Nome = txtTitulo.Text;
                 f.Genero = cbGenero.Text;
-                if(string.IsNullOrEmpty(textBox1.Text))
+                if (string.IsNullOrEmpty(textBox1.Text))
                 {
                     f.Sinopse = "Sinopse não disponivel";
                 }
@@ -81,6 +81,10 @@ namespace ProjetoCinema
                 {
                     Dispose();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, não digite numeros no campo titulo", "Campos inconsistentes", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
