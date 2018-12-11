@@ -65,9 +65,19 @@ namespace ProjetoCinema
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Sala s = DAO.Read((int.Parse(dgvSalas.CurrentRow.Cells[0].Value.ToString())));
-            DAO.Delete(s.Id);
-            LoadDatabase();
-            Fill("");
+            SessaoDAO daos = new SessaoDAO();
+            List < Sessão > list= daos.FindBySala(s.Id);
+            if(list.Count>0)
+            {
+                MessageBox.Show("Impossivel apagar sala,pois existem sesões em andamento nela", "Inconsistencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DAO.Delete(s.Id);
+                LoadDatabase();
+                Fill("");
+            }
+            
         }
 
         private void FormAdmSalas_Load(object sender, EventArgs e)

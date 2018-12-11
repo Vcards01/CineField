@@ -104,6 +104,12 @@
     <Compile Include="FormRelatorioIngresso.Designer.cs">
       <DependentUpon>FormRelatorioIngresso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRelatorioLucro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioLucro.Designer.cs">
+      <DependentUpon>FormRelatorioLucro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorioProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,12 @@
       <DependentUpon>RelatorioIngresso.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RelatorioLucro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioLucro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RelatorioProduto.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,18 +158,6 @@
     </Compile>
     <Compile Include="View\FormAbrirCaixa.Designer.cs">
       <DependentUpon>FormAbrirCaixa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Registro de ingressos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Registro de ingressos.Designer.cs">
-      <DependentUpon>Registro de ingressos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\RegistroDeVendas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\RegistroDeVendas.Designer.cs">
-      <DependentUpon>RegistroDeVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Telas de compra\VenderIngresso.cs">
       <SubType>Form</SubType>
@@ -251,6 +251,9 @@
     <EmbeddedResource Include="FormRelatorioIngresso.resx">
       <DependentUpon>FormRelatorioIngresso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioLucro.resx">
+      <DependentUpon>FormRelatorioLucro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorioProdutos.resx">
       <DependentUpon>FormRelatorioProdutos.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,18 +272,16 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RelatorioIngresso.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioLucro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioLucro.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RelatorioProduto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RelatorioProduto.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormAbrirCaixa.resx">
       <DependentUpon>FormAbrirCaixa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Registro de ingressos.resx">
-      <DependentUpon>Registro de ingressos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\RegistroDeVendas.resx">
-      <DependentUpon>RegistroDeVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Telas de compra\VenderIngresso.resx">
       <DependentUpon>VenderIngresso.cs</DependentUpon>
@@ -331,7 +332,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ProjetoCinema.Model.Caixa.datasource" />
+    <None Include="View\packages.config" />
     <None Include="Properties\DataSources\Filme.datasource" />
     <None Include="Properties\DataSources\Produtos.datasource" />
     <None Include="Properties\DataSources\ProjetoCinema.Model.Ingresso.datasource" />

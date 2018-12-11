@@ -14,7 +14,7 @@ namespace ProjetoCinema
         private Sala sala;
         private int lugaresdisponiveis;
         private float precoEntrada;
-        
+        private int IngressosVendidos;
         
 
         public Sessão(int id, string horario, Filme filme, Sala sala)
@@ -104,6 +104,19 @@ namespace ProjetoCinema
             set
             {
                 precoEntrada = value;
+            }
+        }
+
+        public int IngressosVendidos1
+        {
+            get
+            {
+                return IngressosVendidos;
+            }
+
+            set
+            {
+                IngressosVendidos = value;
             }
         }
     }

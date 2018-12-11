@@ -113,14 +113,23 @@ namespace ProjetoCinema
             FormAbrirCaixa f = new FormAbrirCaixa();
             f.StartPosition = FormStartPosition.CenterParent;
             f.ShowDialog(this);
-            MessageBox.Show("Caixa aberto");
+            
             caixa = 1;
         }
 
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Caixa fechado");
-            caixa = 0;
+            if (caixa == 1)
+            {
+                CaixaDAO dao = new CaixaDAO();
+                Caixa c = dao.FindbyDate(DateTime.Now.ToShortDateString());
+                MessageBox.Show("Valor atual em caixa:" + c.ValorAtual.ToString("C") + "| Lucro de hoje:" + c.Lucro.ToString("C"), "Caixa fechado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                caixa = 0;
+            }
+            else
+            {
+                MessageBox.Show("É necesario abrir o caixa primeiro!", "Caixa fechado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void vendaDeIngressosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -138,6 +147,13 @@ namespace ProjetoCinema
        
 
 
+        }
+
+        private void relatorioDeLucrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioLucro form = new FormRelatorioLucro();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
         }
     }
 }

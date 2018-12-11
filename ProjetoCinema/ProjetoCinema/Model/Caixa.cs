@@ -10,11 +10,11 @@ namespace ProjetoCinema.Model
     {
         private int id;
         private String data;
-        private float valorInicial;
-        private float lucro;
-        private float valorAtual;
+        private double valorInicial;
+        private double lucro;
+        private double valorAtual;
 
-        public Caixa(String data, float valorInicial, float lucro, float valorAtual)
+        public Caixa(String data, double valorInicial, double lucro, double valorAtual)
         {
             this.data = data;
             this.valorInicial = valorInicial;
@@ -31,16 +31,18 @@ namespace ProjetoCinema.Model
             ValorInicial=inicial;
             Lucro = 0;
             ValorAtual = inicial + Lucro;
+            Data = DateTime.Now.ToShortDateString();
 
         }
-        public void RetirarValor(float valor)
+        public void RetirarValor(double valor)
         {
             ValorAtual -= valor;
            
         }
-        public void AddValor(float valor)
+        public void AddValor(double valor)
         {
             ValorAtual += valor;
+            Lucro= valorAtual - ValorInicial;
         }
         public void FecharCaixa()
         {
@@ -60,7 +62,7 @@ namespace ProjetoCinema.Model
             }
         }
 
-        public float ValorInicial
+        public double ValorInicial
         {
             get
             {
@@ -73,7 +75,7 @@ namespace ProjetoCinema.Model
             }
         }
 
-        public float Lucro
+        public double Lucro
         {
             get
             {
@@ -86,7 +88,7 @@ namespace ProjetoCinema.Model
             }
         }
 
-        public float ValorAtual
+        public double ValorAtual
         {
             get
             {

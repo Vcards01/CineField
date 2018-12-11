@@ -64,10 +64,21 @@ namespace ProjetoCinema
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Sessão s = DAO.Read((int.Parse(dgvSessao.CurrentRow.Cells[0].Value.ToString())));
-            s.Filme.RmvSessao(s);
-            DAO.Delete(s.Id);
-            LoadDatabase();
-            Fill("");
+
+            if ((s.LugaresDisponiveis == 0) || (s.LugaresDisponiveis == s.Sala.QtddLugares))
+            {
+                s.Filme.RmvSessao(s);
+                DAO.Delete(s.Id);
+                LoadDatabase();
+                Fill("");
+            }
+            else if (s.IngressosVendidos1>0)
+            {
+                MessageBox.Show("Impossivel Apagar sessão,ingressos já foram vendidos,quando os lugares se esgotarem a sessão será exibida e assim poderá ser apagada", "Inconsistencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+            
+
         }
 
         private void FormAdmSessao_Load(object sender, EventArgs e)

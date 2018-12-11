@@ -70,9 +70,19 @@ namespace ProjetoCinema
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Filme f = DAO.Read(int.Parse(dgvFilmes.CurrentRow.Cells[0].Value.ToString()));
-            DAO.Delete(f.Id);
-            LoadDatabase();
-            Fill("");
+            SessaoDAO daos = new SessaoDAO();
+            List<Sessão> list = daos.FindByFilme(f.Id);
+            if (list.Count > 0)
+            {
+                MessageBox.Show("Impossivel apagar Filme,pois existem sesões em andamento ", "Inconsistencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DAO.Delete(f.Id);
+                LoadDatabase();
+                Fill("");
+            }
+            
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ProjetoCinema.BD
             public void Create(Sessão s)
             {
                 DataBase bd = DataBase.GetInstance();
-                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PEntrada)VALUES('{0}','{1}','{2}',{3},{4});", s.Filme.Id, s.Sala.Id, s.Horario ,s.LugaresDisponiveis,s.PrecoEntrada);
+                string sql = string.Format("Insert into Sessao(Filme,Sala,Horario,Lugares,PEntrada,Qingresso)VALUES('{0}','{1}','{2}',{3},{4},{5});", s.Filme.Id, s.Sala.Id, s.Horario ,s.LugaresDisponiveis,s.PrecoEntrada,0);
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 bd.ExecuteNonQuery(cmd);
             }
@@ -78,6 +78,13 @@ namespace ProjetoCinema.BD
 
             return s;
         }
+        public void updateQI(Sessão s)
+        {
+            DataBase bd = DataBase.GetInstance();
+            string sql = string.Format("UPDATE Sessao set QIngresso ='{0}' where Id='{1}' ;",s.IngressosVendidos1, s.Id);
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            bd.ExecuteNonQuery(cmd);
+        }
 
         public Sessão RowToApp(DataRow dr)
             {
@@ -90,6 +97,7 @@ namespace ProjetoCinema.BD
                 s.Horario = dr["Horario"].ToString();
                 s.LugaresDisponiveis=(int.Parse(dr["Lugares"].ToString()));
                 s.PrecoEntrada = (float.Parse(dr["PEntrada"].ToString()));
+                s.IngressosVendidos1 = (int.Parse(dr["QIngresso"].ToString()));
                 
                 
                 return s;

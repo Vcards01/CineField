@@ -8,30 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProjetoCinema.BD;
-
+using ProjetoCinema.Model;
 
 namespace ProjetoCinema
 {
-    public partial class FormRelatorioProdutos : Form
+    public partial class FormRelatorioLucro : Form
     {
-        public FormRelatorioProdutos()
+        public FormRelatorioLucro()
         {
             InitializeComponent();
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void FormRelatorioLucro_Load(object sender, EventArgs e)
         {
-            ProdutosDAO dao = new ProdutosDAO();
-            List<Produtos> list = dao.ListAll();
-            RelatorioProduto report = new RelatorioProduto();
+            CaixaDAO dao = new CaixaDAO();
+            List<Caixa> list = dao.ListAll();
+            RelatorioLucro report = new RelatorioLucro();
             report.SetDataSource(list);
             crystalReportViewer1.ReportSource = report;
-
-        }
-
-        private void FormRelatorioProdutos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
