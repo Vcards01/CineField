@@ -52,10 +52,11 @@
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorioDeLucrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendaDeIngressosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.relatorioDeLucrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorioSessõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tpTopo.SuspendLayout();
@@ -286,6 +287,7 @@
             this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.relatorioDeVendasToolStripMenuItem,
             this.relatorioDeLucrosToolStripMenuItem,
+            this.relatorioSessõesToolStripMenuItem,
             this.vendaDeIngressosToolStripMenuItem,
             this.relatorioProdutosToolStripMenuItem});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
@@ -298,6 +300,13 @@
             this.relatorioDeVendasToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.relatorioDeVendasToolStripMenuItem.Text = "Relatorio de Vendas";
             this.relatorioDeVendasToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeVendasToolStripMenuItem_Click);
+            // 
+            // relatorioDeLucrosToolStripMenuItem
+            // 
+            this.relatorioDeLucrosToolStripMenuItem.Name = "relatorioDeLucrosToolStripMenuItem";
+            this.relatorioDeLucrosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.relatorioDeLucrosToolStripMenuItem.Text = "Relatorio de Lucros";
+            this.relatorioDeLucrosToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeLucrosToolStripMenuItem_Click);
             // 
             // vendaDeIngressosToolStripMenuItem
             // 
@@ -321,12 +330,12 @@
             this.menuStrip2.TabIndex = 8;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // relatorioDeLucrosToolStripMenuItem
+            // relatorioSessõesToolStripMenuItem
             // 
-            this.relatorioDeLucrosToolStripMenuItem.Name = "relatorioDeLucrosToolStripMenuItem";
-            this.relatorioDeLucrosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.relatorioDeLucrosToolStripMenuItem.Text = "Relatorio de Lucros";
-            this.relatorioDeLucrosToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeLucrosToolStripMenuItem_Click);
+            this.relatorioSessõesToolStripMenuItem.Name = "relatorioSessõesToolStripMenuItem";
+            this.relatorioSessõesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.relatorioSessõesToolStripMenuItem.Text = "Relatorio Sessões";
+            this.relatorioSessõesToolStripMenuItem.Click += new System.EventHandler(this.relatorioSessõesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -384,6 +393,7 @@
         private System.Windows.Forms.ToolStripMenuItem vendaDeIngressosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatorioProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatorioDeLucrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatorioSessõesToolStripMenuItem;
     }
 }
 
